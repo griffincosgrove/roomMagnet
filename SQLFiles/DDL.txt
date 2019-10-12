@@ -1,0 +1,88 @@
+	DROP TABLE RentedRoom
+	DROP TABLE Payment
+	DROP TABLE PropertyTask
+	DROP TABLE PropertyAmenity
+	DROP TABLE Property
+	DROP TABLE Host
+	DROP TABLE TenantTask
+	drop table TENANT
+	
+	CREATE TABLE TENANT (
+	TenantID int IDENTITY (1,1),
+	FirstName varchar(20) NOT NULL,
+	LastName varchar(30) NOT NULL,
+	Email varchar(30) NOT NULL,
+	PhoneNumber varchar(10) NOT NULL,
+	BirthDate datetime NOT NULL,
+	TenantType varchar(30) NOT NULL, --apparently this just means like postgrad intern etc, need to clarify
+	Password varchar(256) NOT NULL,
+	--just thought maybe there should be a description field in this table?
+	CONSTRAINT PK_TENANT PRIMARY KEY (TenantID))
+
+	CREATE TABLE TenantTask (
+	TenantID int,
+	Task varchar(30) NOT NULL,
+	CONSTRAINT PK_TENANTTASK PRIMARY KEY (TenantID),
+	CONSTRAINT FK_TENANTTASK_TENANT FOREIGN KEY (TenantID) REFERENCES Tenant)
+
+	CREATE TABLE Host(
+	HostID int IDENTITY (1,1),
+	FirstName varchar(20) NOT NULL,
+	LastName varchar(30) NOT NULL,
+	Email varchar(30) NOT NULL,
+	Password varchar(256) NOT NULL,
+	PhoneNumber varchar(10) NOT NULL,
+	HostAddress varchar(40) NOT NULL,
+	City varchar(30) NOT NULL,
+	ZipCode varchar(5) NOT NULL,
+	State varchar(15) NOT NULL,
+	BirthDate datetime NOT NULL,
+	--PropertyID int, do not think we need this.
+	CONSTRAINT PK_Host PRIMARY KEY (HostID))
+	--CONSTRAINT FK_Host FOREIGN KEY (PropertyID) REFERENCES Property); do not think we need this anymore
+	
+	CREATE TABLE Property (
+	PropertyID int IDENTITY (1,1),
+	Address varchar(40) NOT NULL,
+	City varchar(30) NOT NULL,
+	ZipCode char(5) NOT NULL,
+	Price money NOT NULL,
+	MaxNumberOfGuests int NOT NULL, --I am making this int in case we need to do conditionals later on
+	AvailableDate datetime NOT NULL, --I am not really sure what to do with this field, we will have to ask questions.
+	Neighborhood varchar(40) NOT NULL,
+	Description varchar(200) NOT NULL,
+	HostID int NOT NULL,
+	CONSTRAINT PK_PROPERTY PRIMARY KEY (PropertyID),
+	CONSTRAINT FK_PROPERTY_HOST FOREIGN KEY (HostID) REFERENCES Host);
+
+	CREATE TABLE PropertyAmenity (
+	PropertyID int,
+	Amenity varchar(30) NOT NULL,
+	CONSTRAINT PK_PROPERTYAMENITY PRIMARY KEY (PropertyID),
+	CONSTRAINT FK_PROPERTYAMENITY_PROPERTY FOREIGN KEY (PropertyID) REFERENCES Property);
+
+	CREATE TABLE PropertyTask (
+	PropertyID int,
+	Task varchar(30) NOT NULL,
+	CONSTRAINT PK_PROPERTYTAST PRIMARY KEY (PropertyID),
+	CONSTRAINT FK_PROPERTYTASK_PROPERTY FOREIGN KEY (PropertyID) REFERENCES Property);
+
+	CREATE TABLE Payment (
+	PaymentID int IDENTITY (1,1),
+	Amount money NOT NULL,
+	Date datetime NOT NULL,
+	HostID int NOT NULL,
+	PropertyID int NOT NULL,
+	CONSTRAINT PK_Payment PRIMARY KEY (PaymentID),
+	CONSTRAINT FK_Payment_Host FOREIGN KEY (HostID) REFERENCES Host,
+	CONSTRAINT FK_Payment_Property FOREIGN KEY (PropertyID) REFERENCES Property);
+
+	CREATE TABLE RentedRoom (
+	TenantID int,
+	PropertyID int,
+	RoomType varchar(30) NOT NULL, --more info on this, drop down, free response?
+	Price money NOT NULL,
+	CONSTRAINT PK1_RENTED_ROOM PRIMARY KEY (TenantID, PropertyID),
+	CONSTRAINT FK1_PROPERTYROOM_TENANT FOREIGN KEY (TenantID) REFERENCES Tenant,
+	CONSTRAINT FK2_PROPERTYROOM_PROPERTY FOREIGN KEY (PropertyID) REFERENCES Property)
+	
