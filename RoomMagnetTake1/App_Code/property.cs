@@ -106,7 +106,7 @@ public class property
 
     public string getAvailableDate()
     {
-        return this.availableDate;
+        return Convert.ToString(this.availableDate);
     }
 
     public string getNeighborhood()
@@ -116,7 +116,7 @@ public class property
 
     public string setDescription()
     {
-        return this.desciption;
+        return this.description;
     }
 
     public int getHostID()

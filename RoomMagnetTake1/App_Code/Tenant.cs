@@ -15,8 +15,9 @@ public class Tenant
     private string phoneNumber;
     private DateTime dateOfBirth;
     private string password;
+    private String tenantType;
 
-    public Tenant(string firstName, string lastName, string email, string phoneNumber, DateTime dateOfBirth, string password)
+    public Tenant(string firstName, string lastName, string email, string phoneNumber, DateTime dateOfBirth, string password, String tenantType)
     {
         setfirstName(firstName);
         setLastName(lastName);
@@ -24,7 +25,7 @@ public class Tenant
         setPhoneNumber(phoneNumber);
         setDateOfBirth(dateOfBirth);
         setPassword(password);
-
+        setTenantType(tenantType);
     }
     public void setfirstName(string firstName)
     {
@@ -69,6 +70,16 @@ public class Tenant
     public void setPassword(string password)
     {
         this.password = password;
+    }
+
+    public String getTenantType()
+    {
+        return this.tenantType;
+    }
+
+    public void setTenantType(String tenantType)
+    {
+        this.tenantType = tenantType;
     }
 
 
