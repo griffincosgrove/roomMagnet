@@ -533,9 +533,10 @@
                                       <asp:ListItem>2003</asp:ListItem>
                                       <asp:ListItem>2004</asp:ListItem>
                                       <asp:ListItem>2005</asp:ListItem>
-                                      <asp:ListItem>2006</asp:ListItem>      
 
-                                  </asp:DropDownList>
+                                      <asp:ListItem>2006</asp:ListItem>                              </asp:DropDownList>
+                                   
+
                                   
                               </div>
                           </div>
@@ -679,10 +680,8 @@
                         
                       <!-- End Input -->
                   </div>
-                  <a class="btn btn-sm btn-soft-primary transition-3d-hover" href="tenantform2.aspx">
-                      Next Step
-                      <span class="fas fa-angle-right ml-2"></span>
-                  </a>
+                  <asp:Button ID="btnCommitTenant" runat="server" Text="Next Step!" class="btn btn-sm btn-soft-primary transition-3d-hover" href="tenantform2.aspx" OnClick="btnCommitTenant_Click" />
+                 
                
               </form>
   </main>

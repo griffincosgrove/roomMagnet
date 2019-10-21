@@ -301,10 +301,11 @@
                               <span class="text-danger">*</span>
                           </label>
                           <div class="form-group">
-                              <input type="text" class="form-control" name="location" value="" placeholder="Street, city, state, zip code" aria-label="Street, city, state, zip code" required aria-describedby="locationLabel"
+                              <asp:TextBox ID="txtLocation" runat="server" lass="form-control" name="location" value="" placeholder="Street, city, state, zip code" aria-label="Street, city, state, zip code" required aria-describedby="locationLabel"
                                      data-msg="Please enter your location."
                                      data-error-class="u-has-error"
-                                     data-success-class="u-has-success">
+                                     data-success-class="u-has-success"></asp:TextBox>
+                            
                           </div>
                       </div>
                   </div>
@@ -317,8 +318,8 @@
                               <span class="text-danger">*</span>
                           </label>
                           <div class="form-group">
-                            <asp:DropDownList ID="DropDownList1"  class="form-control custom-select" 
-                                          data-msg="Please select month."
+                            <asp:DropDownList ID="ddGuest"  class="form-control custom-select" 
+                                          data-msg="Please select number of guest."
                                           data-error-class="u-has-error"
                                           data-success-class="u-has-success" runat="server">
                                       <asp:ListItem>Select</asp:ListItem>
@@ -466,10 +467,9 @@
                       <!-- End Input -->
                   </div>
               </div>
-              <a class="btn btn-sm btn-soft-primary transition-3d-hover" href="tenantform3.aspx">
-                  Next Step
-                  <span class="fas fa-angle-right ml-2"></span>
-              </a>
+              <asp:Button ID="btnStudent" runat="server" Text="Next Step" class="btn btn-sm btn-soft-primary transition-3d-hover" href="tenantform3.aspx" />
+        
+
           </form>
   </main>
   <!-- ========== END MAIN CONTENT ========== -->
