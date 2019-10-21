@@ -275,7 +275,7 @@
                     </div>
                     <!-- End Title -->
                     <!-- Personal Info Form -->
-                    <form class="js-validate">
+                    <form class="js-validate" runat="server">
                         <div class="row">
                             <!-- Input -->
                             <div class="col-sm-6 mb-6">
@@ -285,10 +285,12 @@
                                         <span class="text-danger">*</span>
                                     </label>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" name="firstname" value="Natalie" placeholder="Enter your first name" aria-label="Enter your first name" required aria-describedby="firstnameLabel"
+
+                                        <asp:TextBox ID ="txtFirstName" runat="server" class="form-control" name="firstname" 
+                                            value="Natalie" placeholder="Enter your first name" aria-label="Enter your first name" required aria-describedby="firstnameLabel"
                                                data-msg="Please enter your first name."
                                                data-error-class="u-has-error"
-                                               data-success-class="u-has-success">
+                                               data-success-class="u-has-success"></asp:TextBox>
                                         <small class="form-text text-muted">Displayed on your public profile, notifications and other places.</small>
                                     </div>
                                 </div>
@@ -296,16 +298,16 @@
                             <!-- End Input -->
                             <!-- Input -->
                             <div class="col-sm-6 mb-6">
-                                <div class="js-form-message">
+                                <div class="js-form-message" runat="server">
                                     <label id="lastnameLabel" class="form-label">
                                         Last Name
                                         <span class="text-danger">*</span>
                                     </label>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" name="lastname" value="Curtis" placeholder="Enter your last name" aria-label="Enter your last name" required aria-describedby="lastnameLabel"
+                                        <asp:TextBox ID ="txtLastName" runat="server" class="form-control" name="lastname" value="Curtis" placeholder="Enter your last name" aria-label="Enter your last name" required aria-describedby="lastnameLabel"
                                                data-msg="Please enter your last name."
                                                data-error-class="u-has-error"
-                                               data-success-class="u-has-success">
+                                               data-success-class="u-has-success"></asp:TextBox>
                                     </div>
                                 </div>
                             </div>
@@ -321,24 +323,24 @@
                                 </label>
                                 <div class="js-form-message">
                                     <div class="form-group">
-                                        <select class="form-control custom-select" required
-                                                data-msg="Please select month."
-                                                data-error-class="u-has-error"
-                                                data-success-class="u-has-success">
-                                            <option value="">Select month</option>
-                                            <option value="birthMonthSelect1">January</option>
-                                            <option value="birthMonthSelect2">February</option>
-                                            <option value="birthMonthSelect3">March</option>
-                                            <option value="birthMonthSelect4" selected="selected">April</option>
-                                            <option value="birthMonthSelect5">May</option>
-                                            <option value="birthMonthSelect6">June</option>
-                                            <option value="birthMonthSelect7">July</option>
-                                            <option value="birthMonthSelect8">August</option>
-                                            <option value="birthMonthSelect9">September</option>
-                                            <option value="birthMonthSelect10">October</option>
-                                            <option value="birthMonthSelect11">November</option>
-                                            <option value="birthMonthSelect12">December</option>
-                                        </select>
+                                        <asp:DropDownList ID="ddMonth"  class="form-control custom-select" 
+                                          data-msg="Please select month."
+                                          data-error-class="u-has-error"
+                                          data-success-class="u-has-success" runat="server">
+                                              <asp:ListItem>Month</asp:ListItem>
+                                              <asp:ListItem>January</asp:ListItem>
+                                              <asp:ListItem>February</asp:ListItem>
+                                              <asp:ListItem>March</asp:ListItem>
+                                              <asp:ListItem>April</asp:ListItem>
+                                              <asp:ListItem>May</asp:ListItem>
+                                              <asp:ListItem>June</asp:ListItem>
+                                              <asp:ListItem>July</asp:ListItem>
+                                              <asp:ListItem>August</asp:ListItem>
+                                              <asp:ListItem>September</asp:ListItem>
+                                              <asp:ListItem>October</asp:ListItem>
+                                              <asp:ListItem>November</asp:ListItem>
+                                              <asp:ListItem>December</asp:ListItem>
+                                          </asp:DropDownList>
                                     </div>
                                 </div>
                             </div>
@@ -350,43 +352,44 @@
                                         <span class="ast">*</span>
                                     </label>
                                     <div class="form-group">
-                                        <select class="form-control custom-select" required
-                                                data-msg="Please select date."
-                                                data-error-class="u-has-error"
-                                                data-success-class="u-has-success">
-                                            <option value="">Select date</option>
-                                            <option value="birthDateSelect1">1</option>
-                                            <option value="birthDateSelect2">2</option>
-                                            <option value="birthDateSelect3">3</option>
-                                            <option value="birthDateSelect4">4</option>
-                                            <option value="birthDateSelect5">5</option>
-                                            <option value="birthDateSelect6">6</option>
-                                            <option value="birthDateSelect7">7</option>
-                                            <option value="birthDateSelect8">8</option>
-                                            <option value="birthDateSelect9">9</option>
-                                            <option value="birthDateSelect10">10</option>
-                                            <option value="birthDateSelect11">11</option>
-                                            <option value="birthDateSelect12" selected="selected">12</option>
-                                            <option value="birthDateSelect13">13</option>
-                                            <option value="birthDateSelect14">14</option>
-                                            <option value="birthDateSelect15">15</option>
-                                            <option value="birthDateSelect16">16</option>
-                                            <option value="birthDateSelect17">17</option>
-                                            <option value="birthDateSelect18">18</option>
-                                            <option value="birthDateSelect19">19</option>
-                                            <option value="birthDateSelect20">20</option>
-                                            <option value="birthDateSelect21">21</option>
-                                            <option value="birthDateSelect22">22</option>
-                                            <option value="birthDateSelect23">23</option>
-                                            <option value="birthDateSelect24">24</option>
-                                            <option value="birthDateSelect25">25</option>
-                                            <option value="birthDateSelect26">26</option>
-                                            <option value="birthDateSelect27">27</option>
-                                            <option value="birthDateSelect28">28</option>
-                                            <option value="birthDateSelect29">29</option>
-                                            <option value="birthDateSelect30">30</option>
-                                            <option value="birthDateSelect31">31</option>
-                                        </select>
+                                        <asp:DropDownList ID="ddDay"  class="form-control custom-select" 
+                                          data-msg="Please select Date."
+                                          data-error-class="u-has-error"
+                                          data-success-class="u-has-success" runat="server">
+                                              <asp:ListItem>Day</asp:ListItem>
+                                              <asp:ListItem>1</asp:ListItem>
+                                              <asp:ListItem>2</asp:ListItem>
+                                              <asp:ListItem>3</asp:ListItem>
+                                              <asp:ListItem>4</asp:ListItem>
+                                              <asp:ListItem>5</asp:ListItem>
+                                              <asp:ListItem>6</asp:ListItem>
+                                              <asp:ListItem>7</asp:ListItem>
+                                              <asp:ListItem>8</asp:ListItem>
+                                              <asp:ListItem>9</asp:ListItem>
+                                              <asp:ListItem>10</asp:ListItem>
+                                              <asp:ListItem>11</asp:ListItem>
+                                              <asp:ListItem>12</asp:ListItem>
+                                              <asp:ListItem>13</asp:ListItem>
+                                              <asp:ListItem>14</asp:ListItem>
+                                              <asp:ListItem>15</asp:ListItem>
+                                              <asp:ListItem>16</asp:ListItem>
+                                              <asp:ListItem>17</asp:ListItem>
+                                              <asp:ListItem>18</asp:ListItem>
+                                              <asp:ListItem>19</asp:ListItem>
+                                              <asp:ListItem>20</asp:ListItem>
+                                              <asp:ListItem>21</asp:ListItem>
+                                              <asp:ListItem>22</asp:ListItem>
+                                              <asp:ListItem>23</asp:ListItem>
+                                              <asp:ListItem>24</asp:ListItem>
+                                              <asp:ListItem>25</asp:ListItem>
+                                              <asp:ListItem>26</asp:ListItem>
+                                              <asp:ListItem>27</asp:ListItem>
+                                              <asp:ListItem>28</asp:ListItem>
+                                              <asp:ListItem>29</asp:ListItem>
+                                              <asp:ListItem>30</asp:ListItem>
+                                              <asp:ListItem>31</asp:ListItem>
+
+                                          </asp:DropDownList>
                                     </div>
                                 </div>
                             </div>
@@ -398,130 +401,120 @@
                                         <span class="ast">*</span>
                                     </label>
                                     <div class="form-group">
-                                        <select class="form-control custom-select" required
-                                                data-msg="Please select year."
-                                                data-error-class="u-has-error"
-                                                data-success-class="u-has-success">
-                                            <option value="">Select year</option>
-                                            <option value="birthYearSelect1900">1900</option>
-                                            <option value="birthYearSelect1901">1901</option>
-                                            <option value="birthYearSelect1902">1902</option>
-                                            <option value="birthYearSelect1903">1903</option>
-                                            <option value="birthYearSelect1904">1904</option>
-                                            <option value="birthYearSelect1905">1905</option>
-                                            <option value="birthYearSelect1906">1906</option>
-                                            <option value="birthYearSelect1907">1907</option>
-                                            <option value="birthYearSelect1908">1908</option>
-                                            <option value="birthYearSelect1909">1909</option>
-                                            <option value="birthYearSelect1910">1910</option>
-                                            <option value="birthYearSelect1911">1911</option>
-                                            <option value="birthYearSelect1912">1912</option>
-                                            <option value="birthYearSelect1913">1913</option>
-                                            <option value="birthYearSelect1914">1914</option>
-                                            <option value="birthYearSelect1915">1915</option>
-                                            <option value="birthYearSelect1916">1916</option>
-                                            <option value="birthYearSelect1917">1917</option>
-                                            <option value="birthYearSelect1918">1918</option>
-                                            <option value="birthYearSelect1919">1919</option>
-                                            <option value="birthYearSelect1920">1920</option>
-                                            <option value="birthYearSelect1921">1921</option>
-                                            <option value="birthYearSelect1922">1922</option>
-                                            <option value="birthYearSelect1923">1923</option>
-                                            <option value="birthYearSelect1924">1924</option>
-                                            <option value="birthYearSelect1925">1925</option>
-                                            <option value="birthYearSelect1926">1926</option>
-                                            <option value="birthYearSelect1927">1927</option>
-                                            <option value="birthYearSelect1928">1928</option>
-                                            <option value="birthYearSelect1929">1929</option>
-                                            <option value="birthYearSelect1930">1930</option>
-                                            <option value="birthYearSelect1931">1931</option>
-                                            <option value="birthYearSelect1932">1932</option>
-                                            <option value="birthYearSelect1933">1933</option>
-                                            <option value="birthYearSelect1934">1934</option>
-                                            <option value="birthYearSelect1935">1935</option>
-                                            <option value="birthYearSelect1936">1936</option>
-                                            <option value="birthYearSelect1937">1937</option>
-                                            <option value="birthYearSelect1938">1938</option>
-                                            <option value="birthYearSelect1939">1939</option>
-                                            <option value="birthYearSelect1940">1940</option>
-                                            <option value="birthYearSelect1941">1941</option>
-                                            <option value="birthYearSelect1942">1942</option>
-                                            <option value="birthYearSelect1943">1943</option>
-                                            <option value="birthYearSelect1944">1944</option>
-                                            <option value="birthYearSelect1945">1945</option>
-                                            <option value="birthYearSelect1946">1946</option>
-                                            <option value="birthYearSelect1947">1947</option>
-                                            <option value="birthYearSelect1948">1948</option>
-                                            <option value="birthYearSelect1949">1949</option>
-                                            <option value="birthYearSelect1950">1950</option>
-                                            <option value="birthYearSelect1951">1951</option>
-                                            <option value="birthYearSelect1952">1952</option>
-                                            <option value="birthYearSelect1953">1953</option>
-                                            <option value="birthYearSelect1954">1954</option>
-                                            <option value="birthYearSelect1955">1955</option>
-                                            <option value="birthYearSelect1956">1956</option>
-                                            <option value="birthYearSelect1957">1957</option>
-                                            <option value="birthYearSelect1958">1958</option>
-                                            <option value="birthYearSelect1959">1959</option>
-                                            <option value="birthYearSelect1960">1960</option>
-                                            <option value="birthYearSelect1961">1961</option>
-                                            <option value="birthYearSelect1962">1962</option>
-                                            <option value="birthYearSelect1963">1963</option>
-                                            <option value="birthYearSelect1964">1964</option>
-                                            <option value="birthYearSelect1965">1965</option>
-                                            <option value="birthYearSelect1966">1966</option>
-                                            <option value="birthYearSelect1967">1967</option>
-                                            <option value="birthYearSelect1968">1968</option>
-                                            <option value="birthYearSelect1969">1969</option>
-                                            <option value="birthYearSelect1970">1970</option>
-                                            <option value="birthYearSelect1971">1971</option>
-                                            <option value="birthYearSelect1972">1972</option>
-                                            <option value="birthYearSelect1973">1973</option>
-                                            <option value="birthYearSelect1974">1974</option>
-                                            <option value="birthYearSelect1975">1975</option>
-                                            <option value="birthYearSelect1976">1976</option>
-                                            <option value="birthYearSelect1977">1977</option>
-                                            <option value="birthYearSelect1978">1978</option>
-                                            <option value="birthYearSelect1979">1979</option>
-                                            <option value="birthYearSelect1980">1980</option>
-                                            <option value="birthYearSelect1981">1981</option>
-                                            <option value="birthYearSelect1982">1982</option>
-                                            <option value="birthYearSelect1983">1983</option>
-                                            <option value="birthYearSelect1984">1984</option>
-                                            <option value="birthYearSelect1985">1985</option>
-                                            <option value="birthYearSelect1986" selected="selected">1986</option>
-                                            <option value="birthYearSelect1987">1987</option>
-                                            <option value="birthYearSelect1988">1988</option>
-                                            <option value="birthYearSelect1989">1989</option>
-                                            <option value="birthYearSelect1990">1990</option>
-                                            <option value="birthYearSelect1991">1991</option>
-                                            <option value="birthYearSelect1992">1992</option>
-                                            <option value="birthYearSelect1993">1993</option>
-                                            <option value="birthYearSelect1994">1994</option>
-                                            <option value="birthYearSelect1995">1995</option>
-                                            <option value="birthYearSelect1996">1996</option>
-                                            <option value="birthYearSelect1997">1997</option>
-                                            <option value="birthYearSelect1998">1998</option>
-                                            <option value="birthYearSelect1999">1999</option>
-                                            <option value="birthYearSelect2000">2000</option>
-                                            <option value="birthYearSelect2001">2001</option>
-                                            <option value="birthYearSelect2002">2002</option>
-                                            <option value="birthYearSelect2003">2003</option>
-                                            <option value="birthYearSelect2004">2004</option>
-                                            <option value="birthYearSelect2005">2005</option>
-                                            <option value="birthYearSelect2006">2006</option>
-                                            <option value="birthYearSelect2007">2007</option>
-                                            <option value="birthYearSelect2008">2008</option>
-                                            <option value="birthYearSelect2009">2009</option>
-                                            <option value="birthYearSelect2010">2010</option>
-                                            <option value="birthYearSelect2011">2011</option>
-                                            <option value="birthYearSelect2012">2012</option>
-                                            <option value="birthYearSelect2013">2013</option>
-                                            <option value="birthYearSelect2014">2014</option>
-                                            <option value="birthYearSelect2015">2015</option>
-                                            <option value="birthYearSelect2016">2016</option>
-                                            <option value="birthYearSelect2017">2017</option>
-                                        </select>
+                                        <asp:DropDownList ID="ddYear" runat="server" class="form-control custom-select" required
+                                          data-msg="Please select year."
+                                          data-error-class="u-has-error"
+                                          data-success-class="u-has-success">
+                                          <asp:ListItem>Year</asp:ListItem>
+                                          <asp:ListItem>1900</asp:ListItem>
+                                          <asp:ListItem>1901</asp:ListItem>
+                                          <asp:ListItem>1902</asp:ListItem>
+                                          <asp:ListItem>1903</asp:ListItem>
+                                          <asp:ListItem>1904</asp:ListItem>
+                                          <asp:ListItem>1905</asp:ListItem>
+                                          <asp:ListItem>1906</asp:ListItem>
+                                          <asp:ListItem>1907</asp:ListItem>
+                                          <asp:ListItem>1908</asp:ListItem>
+                                          <asp:ListItem>1909</asp:ListItem>
+                                          <asp:ListItem>1910</asp:ListItem>
+                                          <asp:ListItem>1911</asp:ListItem>
+                                          <asp:ListItem>1912</asp:ListItem>
+                                          <asp:ListItem>1913</asp:ListItem>
+                                          <asp:ListItem>1914</asp:ListItem>
+                                          <asp:ListItem>1915</asp:ListItem>
+                                          <asp:ListItem>1916</asp:ListItem>
+                                          <asp:ListItem>1917</asp:ListItem>
+                                          <asp:ListItem>1918</asp:ListItem>
+                                          <asp:ListItem>1919</asp:ListItem>
+                                          <asp:ListItem>1920</asp:ListItem>
+                                          <asp:ListItem>1921</asp:ListItem>
+                                          <asp:ListItem>1922</asp:ListItem>
+                                          <asp:ListItem>1923</asp:ListItem>
+                                          <asp:ListItem>1924</asp:ListItem>
+                                          <asp:ListItem>1925</asp:ListItem>
+                                          <asp:ListItem>1926</asp:ListItem>
+                                          <asp:ListItem>1927</asp:ListItem>
+                                          <asp:ListItem>1928</asp:ListItem>
+                                          <asp:ListItem>1929</asp:ListItem>
+                                          <asp:ListItem>1930</asp:ListItem>
+                                          <asp:ListItem>1931</asp:ListItem>
+                                          <asp:ListItem>1932</asp:ListItem>
+                                          <asp:ListItem>1933</asp:ListItem>
+                                          <asp:ListItem>1934</asp:ListItem>
+                                          <asp:ListItem>1935</asp:ListItem>
+                                          <asp:ListItem>1936</asp:ListItem>
+                                          <asp:ListItem>1937</asp:ListItem>
+                                          <asp:ListItem>1938</asp:ListItem>
+                                          <asp:ListItem>1939</asp:ListItem>
+                                          <asp:ListItem>1940</asp:ListItem>
+                                          <asp:ListItem>1941</asp:ListItem>
+                                          <asp:ListItem>1942</asp:ListItem>
+                                          <asp:ListItem>1943</asp:ListItem>
+                                          <asp:ListItem>1944</asp:ListItem>
+                                          <asp:ListItem>1945</asp:ListItem>
+                                          <asp:ListItem>1946</asp:ListItem>
+                                          <asp:ListItem>1947</asp:ListItem>
+                                          <asp:ListItem>1948</asp:ListItem>
+                                          <asp:ListItem>1949</asp:ListItem>
+                                          <asp:ListItem>1950</asp:ListItem>
+                                          <asp:ListItem>1951</asp:ListItem>
+                                          <asp:ListItem>1952</asp:ListItem>
+                                          <asp:ListItem>1953</asp:ListItem>
+                                          <asp:ListItem>1954</asp:ListItem>
+                                          <asp:ListItem>1955</asp:ListItem>
+                                          <asp:ListItem>1956</asp:ListItem>
+                                          <asp:ListItem>1957</asp:ListItem>
+                                          <asp:ListItem>1958</asp:ListItem>
+                                          <asp:ListItem>1959</asp:ListItem>
+                                          <asp:ListItem>1960</asp:ListItem>
+                                          <asp:ListItem>1961</asp:ListItem>
+                                          <asp:ListItem>1962</asp:ListItem>
+                                          <asp:ListItem>1963</asp:ListItem>
+                                          <asp:ListItem>1964</asp:ListItem>
+                                          <asp:ListItem>1965</asp:ListItem>
+                                          <asp:ListItem>1966</asp:ListItem>
+                                          <asp:ListItem>1967</asp:ListItem>
+                                          <asp:ListItem>1968</asp:ListItem>
+                                          <asp:ListItem>1969</asp:ListItem>
+                                          <asp:ListItem>1970</asp:ListItem>
+                                          <asp:ListItem>1971</asp:ListItem>
+                                          <asp:ListItem>1972</asp:ListItem>
+                                          <asp:ListItem>1973</asp:ListItem>
+                                          <asp:ListItem>1974</asp:ListItem>
+                                          <asp:ListItem>1975</asp:ListItem>
+                                          <asp:ListItem>1976</asp:ListItem>
+                                          <asp:ListItem>1977</asp:ListItem>
+                                          <asp:ListItem>1978</asp:ListItem>
+                                          <asp:ListItem>1979</asp:ListItem>
+                                          <asp:ListItem>1980</asp:ListItem>
+                                          <asp:ListItem>1981</asp:ListItem>
+                                          <asp:ListItem>1982</asp:ListItem>
+                                          <asp:ListItem>1983</asp:ListItem>
+                                          <asp:ListItem>1984</asp:ListItem>
+                                          <asp:ListItem>1985</asp:ListItem>
+                                          <asp:ListItem>1986</asp:ListItem>
+                                          <asp:ListItem>1987</asp:ListItem>
+                                          <asp:ListItem>1988</asp:ListItem>
+                                          <asp:ListItem>1989</asp:ListItem>
+                                          <asp:ListItem>1990</asp:ListItem>
+                                          <asp:ListItem>1991</asp:ListItem>
+                                          <asp:ListItem>1992</asp:ListItem>
+                                          <asp:ListItem>1993</asp:ListItem>
+                                          <asp:ListItem>1994</asp:ListItem>
+                                          <asp:ListItem>1995</asp:ListItem>
+                                          <asp:ListItem>1996</asp:ListItem>
+                                          <asp:ListItem>1997</asp:ListItem>
+                                          <asp:ListItem>1998</asp:ListItem>
+                                          <asp:ListItem>1999</asp:ListItem>
+                                          <asp:ListItem>2000</asp:ListItem>
+                                          <asp:ListItem>2001</asp:ListItem>
+                                          <asp:ListItem>2002</asp:ListItem>
+                                          <asp:ListItem>2003</asp:ListItem>
+                                          <asp:ListItem>2004</asp:ListItem>
+                                          <asp:ListItem>2005</asp:ListItem>
+                                          <asp:ListItem>2006</asp:ListItem>      
+
+                                      </asp:DropDownList>
                                     </div>
                                 </div>
                             </div>
@@ -534,14 +527,14 @@
                                         <span class="text-danger">*</span>
                                     </label>
                                     <div class="form-group">
-                                        <select class="form-control custom-select" required
-                                                data-msg="Please select your gender."
-                                                data-error-class="u-has-error"
-                                                data-success-class="u-has-success">
-                                            <option value="genderSelect1">Male</option>
-                                            <option value="genderSelect2" selected>Female</option>
-                                            <option value="genderSelect3">Other</option>
-                                        </select>
+                                        <asp:DropDownList ID="ddGender" runat="server" class="form-control custom-select" required
+                                          data-msg="Please select your gender."
+                                          data-error-class="u-has-error"
+                                          data-success-class="u-has-success">
+                                              <asp:ListItem>Gender</asp:ListItem>
+                                              <asp:ListItem>Male</asp:ListItem>
+                                              <asp:ListItem>Female</asp:ListItem>
+                                          </asp:DropDownList>
                                     </div>
                                 </div>
                             </div>
@@ -554,13 +547,15 @@
                                         <span class="text-danger">*</span>
                                     </label>
                                     <div class="form-group">
-                                        <select class="custom-select">
-                                            <option value="">Select language</option>
-                                            <option value="languageSelect1" selected>English</option>
-                                            <option value="languageSelect2">Français</option>
-                                            <option value="languageSelect3">Deutsch</option>
-                                            <option value="languageSelect4">Português</option>
-                                        </select>
+                                        <asp:DropDownList ID="ddLanguage" runat="server" class="form-control custom-select" required
+                                          data-msg="Please select your gender."
+                                          data-error-class="u-has-error"
+                                          data-success-class="u-has-success">
+                                              <asp:ListItem>English</asp:ListItem>
+                                              <asp:ListItem>Français</asp:ListItem>
+                                              <asp:ListItem>Deutsch</asp:ListItem>
+                                              <asp:ListItem>Português</asp:ListItem>
+                                        </asp:DropDownList>
                                     </div>
                                 </div>
                             </div>
@@ -575,10 +570,10 @@
                                         <span class="text-danger">*</span>
                                     </label>
                                     <div class="form-group">
-                                        <input type="email" class="form-control" name="email" value="natalie.curtis@gmail.com" placeholder="Enter your email address" aria-label="Enter your email address" required aria-describedby="emailLabel"
+                                        <asp:TextBox ID ="txtEmail" runat="server" class="form-control" name="email" value="natalie.curtis@gmail.com" placeholder="Enter your email address" aria-label="Enter your email address" required aria-describedby="emailLabel"
                                                data-msg="Please enter a valid email address."
                                                data-error-class="u-has-error"
-                                               data-success-class="u-has-success">
+                                               data-success-class="u-has-success"></asp:TextBox>
                                         <small class="form-text text-muted">We'll never share your email with anyone else.</small>
                                     </div>
                                 </div>
@@ -592,10 +587,10 @@
                                         <span class="text-danger">*</span>
                                     </label>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" name="address" value="" placeholder="Street, city, state, zip code" aria-label="Street, city, state, zip code" required aria-describedby="addressLabel"
+                                        <asp:TextBox ID ="txtAddress" runat="server" class="form-control" name="address" value="" placeholder="Street, city, state, zip code" aria-label="Street, city, state, zip code" required aria-describedby="addressLabel"
                                                data-msg="Please enter your address."
                                                data-error-class="u-has-error"
-                                               data-success-class="u-has-success">
+                                               data-success-class="u-has-success"></asp:TextBox>
                                     </div>
                                 </div>
                             </div>
@@ -610,10 +605,10 @@
                                         <span class="text-danger">*</span>
                                     </label>
                                     <div class="form-group">
-                                        <input class="form-control" type="tel" name="phoneNumber" value="+44 (0161) 347 8854" placeholder="Enter your phone number" aria-label="Enter your phone number" required aria-describedby="phoneNumberLabel"
+                                        <asp:TextBox ID ="txtPhoneNumber" runat="server" class="form-control" type="tel" name="phoneNumber" value="+1 (410) 347 8854" placeholder="Enter your phone number" aria-label="Enter your phone number" required aria-describedby="phoneNumberLabel"
                                                data-msg="Please enter a valid phone number"
                                                data-error-class="u-has-error"
-                                               data-success-class="u-has-success">
+                                               data-success-class="u-has-success"></asp:TextBox>
                                     </div>
                                 </div>
                                 <a class="d-inline-block u-text-muted navy" href="#">
@@ -628,16 +623,31 @@
                                         <span class="text-danger">*</span>
                                     </label>
                                     <div class="form-group">
-                                        <input class="form-control" type="password" name="password" value="********" placeholder="Enter a password" aria-label="Enter a Password" required aria-describedby="passwordLabel"
+                                       <asp:TextBox ID ="txtPassword" runat="server" class="form-control" type="password" name="password" value="********" placeholder="Enter a password" aria-label="Enter a Password" required aria-describedby="passwordLabel"
                                                data-msg="Please enter a password"
                                                data-error-class="u-has-error"
-                                               data-success-class="u-has-success">
+                                               data-success-class="u-has-success"></asp:TextBox>
                                     </div>
                                 </div>
+                                <div class="js-form-message">
+                                  <label id="confirmpasswordLabel" class="form-label">
+                                      Confirm Password
+                                      <span class="text-danger">*</span>
+                                  </label>
+                                  <div class="form-group">
+                                      <asp:TextBox ID="txtConfirmPassword" runat="server" class="form-control" type="password" name="password" value="********" placeholder="Enter a password" aria-label="Enter a Password" required aria-describedby="passwordLabel"
+                                             data-msg="Please enter a password"
+                                             data-error-class="u-has-error"
+                                             data-success-class="u-has-success"></asp:TextBox>
+                                 
+                              </div>
                             </div>
                             <!-- End Input -->
                         </div>
-                        <a href="hostform2.html"><button type="submit" class="btn btn-sm btn-primary transition-3d-hover mr-1">Next Step!</button></a>
+                         <a class="btn btn-sm btn-soft-primary transition-3d-hover" href="hostform2.aspx">
+                      Next Step
+                      <span class="fas fa-angle-right ml-2"></span>
+                  </a>
                     </form>
     </main>
     <!-- ========== END MAIN CONTENT ========== -->
