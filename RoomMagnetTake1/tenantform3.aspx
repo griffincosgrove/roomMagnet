@@ -292,7 +292,10 @@
               </div>
               <!-- End Title -->
 
-                <a href=""><button type="submit" class="btn btn-sm btn-primary transition-3d-hover mr-1">Take me to my Dashboard!</button></a>
+                          <a class="btn btn-sm btn-soft-primary transition-3d-hover" href="hostdashboard.aspx">
+                 Take me to my DashBoard!
+                  <span class="fas fa-angle-right ml-2"></span>
+              </a>
                 </form>
   </main>
   <!-- ========== END MAIN CONTENT ========== -->
