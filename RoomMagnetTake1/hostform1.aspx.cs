@@ -22,6 +22,7 @@ public partial class hostform1 : System.Web.UI.Page
     protected void btnCommitHost_Click(object sender, EventArgs e)
     {
         //Host newHost = new Host(getString(txtFirstName), getString(txtLastName), getString(txtEmail), getString(txtPhoneNumber), getString(txtAddress), getString(txt)
+        Response.Redirect("hostform2.aspx");
     }
 
     public String getString(TextBox txt)

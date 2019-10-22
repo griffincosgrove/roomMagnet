@@ -408,8 +408,10 @@
             <!-- End Input -->
           </div>
             </div>
-            <asp:Button ID="btnStudent" runat="server" Text="Next Step" class="btn btn-sm btn-soft-primary transition-3d-hover" href="tenantform3.aspx" />
-                </form>
+ <a class="btn btn-sm btn-primary transition-3d-hover mr-1" href="tenantform3.aspx">
+                Next Step!
+                <span class="fas fa-angle-right ml-2"></span>
+                </a>                </form>
   </main>
   <!-- ========== END MAIN CONTENT ========== -->
 

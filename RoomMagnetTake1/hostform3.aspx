@@ -207,8 +207,9 @@
                 <p class="col-6">Your basic profile has been created and your property is being listed. Feel free to visit your profile settings and add more information later.</p>
               </div> 
               <!-- End Title -->
-
-                <a href="hostdashboard.html"><button type="submit" class="btn btn-sm btn-primary transition-3d-hover ml-3">Take me to my Dashboard!</button></a>
+                <a class ="btn btn-sm btn-primary transition-3d-hover mr-1" href ="hostdashboard.aspx"> Take me to my Dashboard
+                <span class="fas fa-angle-right m1-2"></span>
+ </a>
                 </form>
   </main>
   <!-- ========== END MAIN CONTENT ========== -->
