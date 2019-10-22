@@ -236,14 +236,14 @@
                             <!-- End Docs -->
                             <!-- Button -->
                             <li class="nav-item u-header__nav-last-item">
-                                <a class="btn btn-sm btn-primary transition-3d-hover" href="">
+                                <a class="btn btn-sm btn-primary transition-3d-hover" href="login.aspx">
                                     Log In
                                 </a>
                             </li>
                             <!-- End Button -->
                             <!-- Button -->
                             <li class="nav-item u-header__nav-last-item">
-                                <a class="btn btn-sm btn-primary transition-3d-hover" href="signup.html">
+                                <a class="btn btn-sm btn-primary transition-3d-hover" href="signup.aspx">
                                     Sign Up
                                 </a>
                             </li>
@@ -274,7 +274,10 @@
                         <p class="col-6">Your basic profile has been created and your property is being listed. Feel free to visit your profile settings and add more information later.</p>
                     </div>
                     <!-- End Title -->
-                    <a href="hostdashboard.html"><button type="submit" class="btn btn-sm btn-primary transition-3d-hover mr-1">Take me to my Dashboard!</button></a>
+                       <a class="btn btn-sm btn-primary transition-3d-hover mr-1" href="login.aspx">
+                     Take me to my Dashboard
+                      <span class="fas fa-angle-right ml-2"></span>
+                  </a>
                 </form>
     </main>
     <!-- ========== END MAIN CONTENT ========== -->

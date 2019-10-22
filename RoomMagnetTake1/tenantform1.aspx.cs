@@ -33,7 +33,8 @@ public partial class tenantform1 : System.Web.UI.Page
         command.Parameters.AddWithValue("@phoneNumber", newTenant.getPhoneNumber());
         command.Parameters.AddWithValue("@dateOfBirth", newTenant.getDateOfBirth());
         command.Parameters.AddWithValue("@tenantType", newTenant.getTenantType());
-        command.Parameters.AddWithValue("@password", txtPassword.Text); //will have to HASH PASSWORDS LATER!
+
+        command.Parameters.AddWithValue("@password", PasswordHash.HashPassword(txtPassword.Text)); //will have to HASH PASSWORDS LATER!
 
         try
         {
@@ -44,6 +45,7 @@ public partial class tenantform1 : System.Web.UI.Page
 
             //window to show success of insert
             ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "NoDatabaseAlertMessage", "alert('New Tenant inserted')", true);
+            Response.Redirect("tenantform2.aspx");
         }
         catch
         {

@@ -252,7 +252,7 @@
 
               <!-- Button -->
               <li class="nav-item u-header__nav-last-item">
-                <a class="btn btn-sm btn-primary transition-3d-hover" href="">
+                <a class="btn btn-sm btn-primary transition-3d-hover" href="login.aspx">
                   Log In
                 </a>
               </li>
@@ -680,9 +680,10 @@
                         
                       <!-- End Input -->
                   </div>
-                  <asp:Button ID="btnCommitTenant" runat="server" Text="Next Step!" class="btn btn-sm btn-soft-primary transition-3d-hover" href="tenantform2.aspx" OnClick="btnCommitTenant_Click" />
+                
+                  <asp:Button href="tenantform2.aspx" ID="btnCommitTenant" runat="server" Text="Next Step!" class="btn btn-sm btn-soft-primary transition-3d-hover"  OnClick="btnCommitTenant_Click" />
                  
-               
+                  
               </form>
   </main>
   <!-- ========== END MAIN CONTENT ========== -->

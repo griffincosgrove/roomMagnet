@@ -302,7 +302,7 @@
 
                 <h3 class="h4 mb-3">Host</h3>
                 <p class="mb-4">I'm listing my spare room.</p>
-                <a class="btn btn-sm btn-soft-danger transition-3d-hover" href="hostform1.html">
+                <a class="btn btn-sm btn-soft-danger transition-3d-hover" href="hostform1.aspx">
                   List my Room
                   <span class="fas fa-angle-right ml-2"></span>
                 </a>
@@ -323,7 +323,7 @@
 
                 <h3 class="h4 mb-3">Tenant</h3>
                 <p class="mb-4">I'm looking for a place to stay.</p>
-                <a class="btn btn-sm btn-soft-primary transition-3d-hover" href="tenantform1.html">
+                <a class="btn btn-sm btn-soft-primary transition-3d-hover" href="tenantform1.aspx">
                   Find a Room
                   <span class="fas fa-angle-right ml-2"></span>
                 </a>
