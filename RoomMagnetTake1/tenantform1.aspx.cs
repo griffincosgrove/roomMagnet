@@ -21,7 +21,8 @@ public partial class tenantform1 : System.Web.UI.Page
     protected void btnCommitTenant_Click(object sender, EventArgs e)
     {
         //create new Tenant object
-        Tenant newTenant = new Tenant(txtFirstName.Text,txtLastName.Text,txtEmail.Text, txtPhonenumber.Text,DateTime.Now,txtPassword.Text,ddTenantType.SelectedValue);
+        Tenant newTenant = new Tenant(getString(txtFirstName), getString(txtLastName), getString(txtEmail), getString(txtPhonenumber), DateTime.Now, 
+            getString(txtPassword), ddTenantType.SelectedValue);
         
         //new paramterized query to insert a tenant
         SqlCommand command = new SqlCommand("INSERT into [Tenant] (FirstName,LastName,Email,PhoneNumber,BirthDate,TenantType,Password) " +
@@ -60,4 +61,11 @@ public partial class tenantform1 : System.Web.UI.Page
 
 
     }
+
+    public String getString(TextBox txt)
+    {
+        String returnString = HttpUtility.HtmlEncode(txt.Text);
+        return returnString;
+    }
+
 }

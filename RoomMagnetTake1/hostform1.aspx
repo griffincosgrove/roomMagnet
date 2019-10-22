@@ -645,10 +645,9 @@
                             </div>
                             <!-- End Input -->
                         </div>
-                         <a class="btn btn-sm btn-soft-primary transition-3d-hover" href="hostform2.aspx">
-                      Next Step
-                      <span class="fas fa-angle-right ml-2"></span>
-                  </a>
+                  <asp:Button ID="btnCommitHost" runat="server" Text="Next Step" class="btn btn-sm btn-soft-primary transition-3d-hover" href="tenantform2.aspx" OnClick="btnCommitHost_Click" />
+                 
+               
                     </form>
     </main>
     <!-- ========== END MAIN CONTENT ========== -->
