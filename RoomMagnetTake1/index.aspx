@@ -252,14 +252,14 @@
 
               <!-- Button -->
               <li class="nav-item u-header__nav-last-item">
-                <a class="btn btn-sm btn-primary transition-3d-hover" href="">
+                <a class="btn btn-sm btn-primary transition-3d-hover" href="login.aspx">
                   Log In
                 </a>
               </li>
               <!-- End Button -->
                 <!-- Button -->
               <li class="nav-item u-header__nav-last-item">
-                <a class="btn btn-sm btn-primary transition-3d-hover" href="signup.html">
+                <a class="btn btn-sm btn-primary transition-3d-hover" href="signup.aspx">
                   Sign Up
                 </a>
               </li>
@@ -310,7 +310,7 @@
               </div>
 
               <div class="col-md-2 mb-2">
-                <button type="submit" href="signup.html" class="btn btn-block btn-primary transition-3d-hover">Sign Up</button>
+                <button type="submit" href="signup.aspx" class="btn btn-block btn-primary transition-3d-hover">Sign Up</button>
               </div>
             </div>
 

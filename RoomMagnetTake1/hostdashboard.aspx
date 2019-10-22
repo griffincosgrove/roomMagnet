@@ -483,8 +483,10 @@
                 </span>
               </div>
               <div class="media-body">
-                <h1 class="h3 text-white font-weight-medium mb-1">Howdy, Natalie!</h1>
-                <span class="d-block text-white">natalie.curtis@gmail.com</span>
+                 <h1><asp:Label ID="lblFirstName" runat="server"  class="h3 text-white font-weight-medium mb-1"  Text="Howdy,Natalie!"></asp:Label> </h1> 
+                  <%--<h8><asp:Label ID="lblEmail" runat="server" class="d-block text-white" Text="natalie.curtis@gmail.com"></asp:Label> </h8> --%>
+
+
               </div>
             </div>
             <!-- End User Info -->
