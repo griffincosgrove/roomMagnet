@@ -34,7 +34,7 @@
         <!-- Nav -->
         <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar u-header__navbar--no-space">
           <!-- Logo -->
-          <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center" href="index.html" aria-label="RoomMagnet">
+          <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center" href="index.aspx" aria-label="RoomMagnet">
               <img src="images/logofinal4.svg">
           </a>
           <!-- End Logo -->
@@ -169,14 +169,14 @@
 
               <!-- Button -->
               <li class="nav-item u-header__nav-last-item">
-                <a class="btn btn-sm btn-primary transition-3d-hover" href="login.html">
+                <a class="btn btn-sm btn-primary transition-3d-hover" href="login.aspx">
                   Log In
                 </a>
               </li>
               <!-- End Button -->
                 <!-- Button -->
               <li class="nav-item u-header__nav-last-item">
-                <a class="btn btn-sm btn-primary transition-3d-hover" href="signup.html">
+                <a class="btn btn-sm btn-primary transition-3d-hover" href="signup.aspx">
                   Sign Up
                 </a>
               </li>
@@ -513,10 +513,10 @@
                 </label>
 
                 <div class="form-group">
-                  <input type="email" class="form-control" name="email" value="natalie.curtis@gmail.com" placeholder="Enter your email address" aria-label="Enter your email address" required aria-describedby="emailLabel"
-                         data-msg="Please enter a valid email address."
-                         data-error-class="u-has-error"
-                         data-success-class="u-has-success">
+                                            <asp:TextBox ID="txtEmail" runat="server" class="form-control" name="email" value="natalie.curtis@gmail.com" placeholder="Enter your email address" aria-label="Enter your email address" required aria-describedby="emailLabel"
+                                                data-msg="Please enter a valid email address."
+                                                data-error-class="u-has-error"
+                                                data-success-class="u-has-success"></asp:TextBox>
                   <small class="form-text text-muted">We'll never share your email with anyone else.</small>
                 </div>
               </div>
@@ -613,7 +613,7 @@
               
             <!-- End Input -->
             </div>
-            <asp:Button ID="btnCommitHost" runat="server" Text="Next Step" class="btn btn-sm btn-soft-primary transition-3d-hover" href="tenantform2.aspx" OnClick="btnCommitHost_Click" />
+            <asp:Button ID="btnCommitHost" runat="server" Text="Next Step" class="btn btn-sm btn-soft-primary transition-3d-hover" href="hostform2.aspx" OnClick="btnCommitHost_Click" />
                 </form>
   </main>
   <!-- ========== END MAIN CONTENT ========== -->
@@ -628,10 +628,10 @@
 
             <!-- List Group -->
             <ul class="list-group list-group-flush list-group-borderless mb-0">
-              <li><a class="list-group-item list-group-item-action" href="../account/dashboard.html">Account</a></li>
-              <li><a class="list-group-item list-group-item-action" href="../account/my-tasks.html">My tasks</a></li>
-              <li><a class="list-group-item list-group-item-action" href="../account/projects.html">Projects</a></li>
-              <li><a class="list-group-item list-group-item-action" href="../account/invite-friends.html">Invite friends</a></li>
+              <li><a class="list-group-item list-group-item-action" href="account/dashboard.html">Account</a></li>
+              <li><a class="list-group-item list-group-item-action" href="account/my-tasks.html">My tasks</a></li>
+              <li><a class="list-group-item list-group-item-action" href="account/projects.html">Projects</a></li>
+              <li><a class="list-group-item list-group-item-action" href="account/invite-friends.html">Invite friends</a></li>
             </ul>
             <!-- End List Group -->
           </div>
@@ -641,10 +641,10 @@
 
             <!-- List Group -->
             <ul class="list-group list-group-flush list-group-borderless mb-0">
-              <li><a class="list-group-item list-group-item-action" href="../pages/about-agency.html">About</a></li>
-              <li><a class="list-group-item list-group-item-action" href="../pages/services-agency.html">Services</a></li>
-              <li><a class="list-group-item list-group-item-action" href="../pages/careers.html">Careers</a></li>
-              <li><a class="list-group-item list-group-item-action" href="../blog/grid-right-sidebar.html">Blog</a></li>
+              <li><a class="list-group-item list-group-item-action" href="pages/about-agency.html">About</a></li>
+              <li><a class="list-group-item list-group-item-action" href="pages/services-agency.html">Services</a></li>
+              <li><a class="list-group-item list-group-item-action" href="pages/careers.html">Careers</a></li>
+              <li><a class="list-group-item list-group-item-action" href="blog/grid-right-sidebar.html">Blog</a></li>
             </ul>
             <!-- End List Group -->
           </div>
@@ -654,10 +654,10 @@
 
             <!-- List Group -->
             <ul class="list-group list-group-flush list-group-borderless mb-0">
-              <li><a class="list-group-item list-group-item-action" href="../pages/contacts-agency.html">Contacts</a></li>
-              <li><a class="list-group-item list-group-item-action" href="../pages/faq.html">Help</a></li>
-              <li><a class="list-group-item list-group-item-action" href="../pages/terms.html">Terms</a></li>
-              <li><a class="list-group-item list-group-item-action" href="../pages/privacy.html">Privacy</a></li>
+              <li><a class="list-group-item list-group-item-action" href="pages/contacts-agency.html">Contacts</a></li>
+              <li><a class="list-group-item list-group-item-action" href="pages/faq.html">Help</a></li>
+              <li><a class="list-group-item list-group-item-action" href="pages/terms.html">Terms</a></li>
+              <li><a class="list-group-item list-group-item-action" href="pages/privacy.html">Privacy</a></li>
             </ul>
             <!-- End List Group -->
           </div>
