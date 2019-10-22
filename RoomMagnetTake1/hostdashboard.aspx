@@ -14,8 +14,12 @@
   <link rel="shortcut icon" href="../../favicon.ico">
 
   <!-- Google Fonts -->
-  <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
-
+ <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/wpm1mqg.css">
+    <link href="https://fonts.googleapis.com/css?family=Paytone+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/bny7bsv.css">
+<link href="https://fonts.googleapis.com/css?family=Asap:400,500,600,700|Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+    
   <!-- CSS Implementing Plugins -->
   <link rel="stylesheet" href="../../assets/vendor/font-awesome/css/fontawesome-all.min.css">
   <link rel="stylesheet" href="../../assets/vendor/custombox/dist/custombox.min.css">
@@ -23,7 +27,7 @@
   <link rel="stylesheet" href="../../assets/vendor/hs-megamenu/src/hs.megamenu.css">
   <link rel="stylesheet" href="../../assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
   <link rel="stylesheet" href="../../assets/vendor/flatpickr/dist/flatpickr.min.css">
-
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- CSS Front Template -->
   <link rel="stylesheet" href="../../assets/css/theme.css">
 </head>
@@ -227,7 +231,7 @@
                  data-unfold-duration="500">
                 <span class="position-relative">
                   <span class="u-sidebar--account__toggle-text">Natalie Curtis</span>
-                  <img class="u-sidebar--account__toggle-img" src="../../assets/img/100x100/img1.jpg" alt="Image Description">
+                  <img class="u-sidebar--account__toggle-img" src="assets/img/100x100/img1.jpg" alt="Image Description">
                   <span class="badge badge-sm badge-success badge-pos rounded-circle">3</span>
                 </span>
               </a>
@@ -242,15 +246,9 @@
       <div id="logoAndNav" class="container">
         <!-- Nav -->
         <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar u-header__navbar--no-space">
-          <!-- Logo -->
-          <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center" href="../home/index.html" aria-label="Front">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="46px" height="46px" viewBox="0 0 46 46" xml:space="preserve" style="margin-bottom: 0;">
-              <path fill="#3F7DE0" opacity=".65" d="M23,41L23,41c-9.9,0-18-8-18-18v0c0-9.9,8-18,18-18h11.3C38,5,41,8,41,11.7V23C41,32.9,32.9,41,23,41z"/>
-              <path class="fill-info" opacity=".5" d="M28,35.9L28,35.9c-9.9,0-18-8-18-18v0c0-9.9,8-18,18-18l11.3,0C43,0,46,3,46,6.6V18C46,27.9,38,35.9,28,35.9z"/>
-              <path class="fill-primary" opacity=".7" d="M18,46L18,46C8,46,0,38,0,28v0c0-9.9,8-18,18-18h11.3c3.7,0,6.6,3,6.6,6.6V28C35.9,38,27.9,46,18,46z"/>
-              <path class="fill-white" d="M17.4,34V18.3h10.2v2.9h-6.4v3.4h4.8v2.9h-4.8V34H17.4z"/>
-            </svg>
-            <span class="u-header__navbar-brand-text">Front</span>
+                    <!-- Logo -->
+          <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center" href="index.html" aria-label="RoomMagnet">
+              <img src="images/logofinal4.svg">
           </a>
           <!-- End Logo -->
 
@@ -372,7 +370,7 @@
                     <div class="col-lg-4 u-header__promo d-none d-lg-block">
                       <a class="d-block u-header__promo-inner" href="#">
                         <div class="position-relative">
-                          <img class="img-fluid rounded mb-3" src="../../assets/img/380x227/img6.jpg" alt="Image Description">
+                          <img class="img-fluid rounded mb-3" src="assets/img/380x227/img6.jpg" alt="Image Description">
                         </div>
                         <span class="text-secondary font-size-1">Front makes you look at things from a different perspectives.</span>
                       </a>
@@ -385,7 +383,8 @@
               <!-- End Demos -->
 
               <!-- Docs -->
-              <li class="nav-item hs-has-mega-menu u-header__nav-item"
+
+                <li class="nav-item hs-has-mega-menu u-header__nav-item"
                   data-event="hover"
                   data-animation-in="slideInUp"
                   data-animation-out="fadeOut"
@@ -397,28 +396,14 @@
                 <div class="hs-mega-menu u-header__sub-menu" aria-labelledby="docsMegaMenu" style="min-width: 330px;">
                   <!-- Promo Item -->
                   <div class="u-header__promo-item">
-                    <a class="u-header__promo-link" href="../../documentation/index.html">
+                    <a class="u-header__promo-link" href="">
                       <div class="media align-items-center">
-                        <img class="js-svg-injector u-header__promo-icon" src="../../assets/svg/icons/icon-2.svg" alt="SVG">
+                        <img class="u-header__promo-icon" src="images/faq.svg" alt="SVG">
                         <div class="media-body">
                           <span class="u-header__promo-title">
                             FAQ
                           </span>
-                          <small class="u-header__promo-text">Need an answer?</small>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <!-- End Promo Item -->
-
-                  <!-- Promo Item -->
-                  <div class="u-header__promo-item">
-                    <a class="u-header__promo-link" href="../../starter/index.html">
-                      <div class="media align-items-center">
-                        <img class="js-svg-injector u-header__promo-icon" src="../../assets/svg/icons/icon-1.svg" alt="SVG">
-                        <div class="media-body">
-                          <span class="u-header__promo-title">Get started</span>
-                          <small class="u-header__promo-text">Components and snippets</small>
+                          <small class="u-header__promo-text">We've got the answer.</small>
                         </div>
                       </div>
                     </a>
@@ -431,8 +416,8 @@
                       <div class="col-6">
                         <div class="u-header__promo-footer-item">
                           <small class="text-muted d-block">Check what's new</small>
-                          <a class="small" href="../../documentation/getting-started/changelog.html">
-                            Changelog
+                          <a class="small" href="">
+                            Our Blog
                           </a>
                         </div>
                       </div>
@@ -477,16 +462,14 @@
             <!-- User Info -->
             <div class="media d-block d-sm-flex align-items-sm-center">
               <div class="u-lg-avatar position-relative mb-3 mb-sm-0 mr-3">
-                <img class="img-fluid rounded-circle" src="../../assets/img/160x160/img2.jpg" alt="Image Description">
+                <img class="img-fluid rounded-circle" src="images/elder4.jpg" alt="Image Description">
                 <span class="badge badge-md badge-outline-success badge-pos badge-pos--bottom-right rounded-circle">
                   <span class="fas fa-check"></span>
                 </span>
               </div>
               <div class="media-body">
-                 <h1><asp:Label ID="lblFirstName" runat="server"  class="h3 text-white font-weight-medium mb-1"  Text="Howdy,Natalie!"></asp:Label> </h1> 
-                  <%--<h8><asp:Label ID="lblEmail" runat="server" class="d-block text-white" Text="natalie.curtis@gmail.com"></asp:Label> </h8> --%>
-
-
+                <h1 class="h3 text-white font-weight-medium mb-1">Howdy, Natalie!</h1>
+                <span class="d-block text-white">natalie.curtis@gmail.com</span>
               </div>
             </div>
             <!-- End User Info -->
@@ -514,9 +497,7 @@
                       <ul id="generalDropdownMenu" class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" style="min-width: 230px;" aria-labelledby="generalDropdown">
                         <li><a class="nav-link u-header__sub-menu-nav-link" href="dashboard.html">Dashboard</a></li>
                         <li><a class="nav-link u-header__sub-menu-nav-link" href="profile.html">Profile</a></li>
-                        <li><a class="nav-link u-header__sub-menu-nav-link" href="my-tasks.html">My tasks</a></li>
-                        <li><a class="nav-link u-header__sub-menu-nav-link" href="projects.html">Projects</a></li>
-                        <li><a class="nav-link u-header__sub-menu-nav-link" href="members.html">Members</a></li>
+                        <li><a class="nav-link u-header__sub-menu-nav-link" href="messages.html">Messages</a></li>
                       </ul>
                     </li>
                     <!-- General -->
@@ -553,28 +534,6 @@
                       </ul>
                     </li>
                     <!-- Billing -->
-
-                    <!-- Accessibility -->
-                    <li class="nav-item hs-has-sub-menu u-header__nav-item"
-                        data-event="hover"
-                        data-animation-in="slideInUp"
-                        data-animation-out="fadeOut">
-                      <a id="accessibilityDropdown" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="accessibilityDropdownMenu">
-                        Accessibility
-                      </a>
-
-                      <ul id="accessibilityDropdownMenu" class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" style="min-width: 230px;" aria-labelledby="accessibilityDropdown">
-                        <li><a class="nav-link u-header__sub-menu-nav-link" href="invite-friends.html">Invite friends</a></li>
-                        <li><a class="nav-link u-header__sub-menu-nav-link" href="api-token.html">API Token</a></li>
-                      </ul>
-                    </li>
-                    <!-- Accessibility -->
-
-                    <!-- Others -->
-                    <li class="nav-item u-header__nav-item">
-                      <a class="nav-link u-header__nav-link" href="plans.html">Plans</a>
-                    </li>
-                    <!-- Others -->
                   </ul>
                 </div>
               </nav>
@@ -596,157 +555,58 @@
     </div>
     <!-- End Breadcrumb Section -->
 
-    <!-- Content Section -->
-    <div class="bg-light">
-      <div class="container space-2">
-        <!-- Stats -->
-        <div class="card-deck d-block d-lg-flex card-lg-gutters-3 mb-6">
-          <!-- Card -->
-          <div class="card mb-3 mb-lg-0">
-            <div class="card-body p-5">
-              <div class="media align-items-center">
-                <span class="btn btn-lg btn-icon btn-soft-primary rounded-circle mr-4">
-                  <span class="fas fa-dollar-sign btn-icon__inner"></span>
-                </span>
-                <div class="media-body">
-                  <span class="d-block font-size-3">$45.99</span>
-                  <h2 class="h6 text-secondary font-weight-normal mb-0">Available balance</h2>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- End Card -->
-
-          <!-- Card -->
-          <div class="card mb-3 mb-lg-0">
-            <div class="card-body p-5">
-              <div class="media align-items-center">
-                <span class="btn btn-lg btn-icon btn-soft-success rounded-circle mr-4">
-                  <span class="fas fa-coins btn-icon__inner"></span>
-                </span>
-                <div class="media-body">
-                  <span class="d-block font-size-3">$1.32</span>
-                  <h3 class="h6 text-secondary font-weight-normal mb-0">Reward balance</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- End Card -->
-
-          <!-- Card -->
-          <div class="card">
-            <div class="card-body p-5">
-              <div class="media align-items-center">
-                <span class="btn btn-lg btn-icon btn-soft-warning rounded-circle mr-4">
-                  <span class="fas fa-exchange-alt btn-icon__inner"></span>
-                </span>
-                <div class="media-body">
-                  <span class="d-block font-size-3">$0.00</span>
-                  <h3 class="h6 text-secondary font-weight-normal mb-0">Pending balance</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- End Card -->
-        </div>
-        <!-- End Stats -->
-
         <!-- Title -->
-        <div class="d-flex justify-content-between align-items-center mb-3">
+        <div class="d-flex justify-content-between align-items-center ml-4 mt-3 mb-3">
           <h3 class="h6 mb-0">Your listed properties</h3>
-          <a class="link-muted" href="#">View All</a>
+          <a class="link-muted mr-4" href="#">View All</a>
         </div>
         <!-- End Title -->
 
-        <!-- Earning Sources -->
-        <div class="mb-7">
           <div class="card-deck d-block d-lg-flex card-lg-gutters-3">
             <!-- Card -->
-            <div class="card card-frame mb-3">
-              <a class="card-body p-4 " href="#">
-                <div class="media align-items-center">
-                  <div class="u-avatar mr-3">
-                    <img class="img-fluid" src="../house/images/room1.jpg" alt="Image Description">
-                  </div>
-                  <div class="media-body">
-                    <span class="text-dark">Furnished rooms in well resourced home</span>
-                    <small class="d-block text-secondary">Available now</small>
-                  </div>
-                  <div class="media-body text-right">
-                    <span class="text-primary ml-3">
-                      $1,903
-                    </span>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <!-- End Card -->
-
-          </div>
-
-          <div class="card-deck d-block d-lg-flex card-lg-gutters-3">
-            <!-- Card -->
-            <div class="card card-frame mb-3">
+            <div class="card card-frame ml-5 mb-3">
               <a class="card-body p-4" href="#">
                 <div class="media align-items-center">
                   <div class="u-avatar mr-3">
-                    <img class="img-fluid rounded-circle" src="../../assets/img/160x160/img8.jpg" alt="Image Description">
+                    <img class="img-fluid" src="images/room2.jpg" alt="Property 1">
                   </div>
                   <div class="media-body">
-                    <span class="text-dark">PayPal</span>
-                    <small class="d-block text-secondary">Logo redesign</small>
+                    <span class="text-dark">Furnished Home With a Backyard</span>
+                    <small class="d-block text-secondary">Available Now</small>
                   </div>
                   <div class="media-body text-right">
                     <span class="text-primary ml-3">
                       $2,125
                     </span>
+                      </span>
                   </div>
+                  
                 </div>
               </a>
             </div>
             <!-- End Card -->
 
             <!-- Card -->
-            <div class="card card-frame mb-3">
+            <div class="card card-frame mr-5 mb-3">
               <a class="card-body p-4" href="#">
                 <div class="media align-items-center">
                   <div class="u-avatar mr-3">
-                    <img class="img-fluid rounded-circle" src="../../assets/img/160x160/img9.jpg" alt="Image Description">
+                    <img class="img-fluid" src="images/room3.jpg" alt="Property 2">
                   </div>
                   <div class="media-body">
-                    <span class="text-dark">Dribbble</span>
-                    <small class="d-block text-secondary">UI/UX</small>
+                    <span class="text-dark">Spacious Home Close to Campus</span>
+                    <small class="d-block text-secondary">Available Now</small>
                   </div>
                   <div class="media-body text-right">
                     <span class="text-primary ml-3">
-                      $9,000
+                      $1,000
                     </span>
                   </div>
                 </div>
               </a>
             </div>
             <!-- End Card -->
-
-            <!-- Card -->
-            <div class="card card-frame mb-3">
-              <a class="card-body p-4" href="#">
-                <div class="media align-items-center">
-                  <div class="u-avatar mr-3">
-                    <img class="img-fluid rounded-circle" src="../../assets/img/160x160/img4.jpg" alt="Image Description">
-                  </div>
-                  <div class="media-body">
-                    <span class="text-dark">Mapbox</span>
-                    <small class="d-block text-secondary">Branding</small>
-                  </div>
-                  <div class="media-body text-right">
-                    <span class="text-primary ml-3">
-                      $250
-                    </span>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <!-- End Card -->
+              
           </div>
         </div>
         <!-- End Earning Sources -->
@@ -754,11 +614,11 @@
         <!-- Card -->
         <div class="card-deck d-block d-lg-flex card-lg-gutters-3">
           <!-- Stats -->
-          <div class="card mb-7 mb-lg-0">
+          <div class="card mb-7 ml-5 mb-lg-0">
             <div class="card-body pt-4 pb-5 px-5 mb-3 mb-md-0">
               <!-- Title & Settings -->
               <div class="d-flex justify-content-between align-items-center">
-                <h4 class="h6 mb-0">Deposits</h4>
+                <h4 class="h6 mb-0">Time Rented</h4>
 
                 <!-- Settings Dropdown -->
                 <div class="position-relative">
@@ -800,22 +660,17 @@
 
               <!-- Deposit Info -->
               <div class="row mb-5">
-                <div class="col-sm-6 mb-4 mb-sm-0">
-                  <span class="align-top">$</span>
-                  <span class="font-size-3 font-weight-medium text-lh-sm">50,102</span>
-                  <div class="mb-1">
-                    <span class="text-secondary font-size-1">Deposit:</span>
-                    <span class="font-weight-medium font-size-1">$1,050</span>
-                  </div>
+                <div class="col-sm-6 mb-4 mb-sm-0 mt-8">
+                  <span class="font-size-3 font-weight-medium text-lh-sm">204 days</span>
                   <div>
                     <span class="text-primary font-weight-medium text-lh-sm">
                       <span class="fas fa-arrow-up text-success small"></span>
-                      +2.1% ($122)
+                      +2.1% (5 days)
                     </span>
                   </div>
                 </div>
 
-                <div class="col-sm-6 align-self-end">
+                <div class="col-sm-6 align-self-end mt-6">
                   <!-- Pie Circle -->
                   <div class="js-pie text-center"
                      data-circles-text-class="content-centered-y"
@@ -833,8 +688,6 @@
                   <!-- End Pie Circle -->
                 </div>
               </div>
-
-              <button type="button" class="btn btn-block btn-sm btn-primary transition-3d-hover">Add Funds</button>
               <!-- End Deposit Info -->
             </div>
 
@@ -843,7 +696,7 @@
               <div class="row align-items-center">
                 <div class="col-6 u-ver-divider">
                   <label class="small text-muted">Goal:</label>
-                  <small class="font-weight-medium">$100k</small>
+                  <small class="font-weight-medium">264 days</small>
                   <div class="js-hr-progress progress" style="height: 4px;">
                     <div class="js-hr-progress-bar progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
@@ -851,7 +704,7 @@
 
                 <div class="col-6">
                   <label class="small text-muted">Duration:</label>
-                  <small class="font-weight-medium">6 months</small>
+                  <small class="font-weight-medium">1 year</small>
                   <div class="js-hr-progress progress" style="height: 4px;">
                     <div class="js-hr-progress-bar progress-bar bg-success" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
@@ -867,7 +720,7 @@
             <div class="card-body pt-4 pb-5 px-5 mb-3 mb-md-0">
               <!-- Title & Settings -->
               <div class="d-flex justify-content-between align-items-center">
-                <h4 class="h6 mb-0">Balance</h4>
+                <h4 class="h6 mb-0">Views</h4>
 
                 <!-- Settings Dropdown -->
                 <div class="position-relative">
@@ -910,13 +763,13 @@
               <!-- Balance Info -->
               <div class="row align-items-center mb-4">
                 <div class="col-6 u-ver-divider">
-                  <label class="d-block small text-muted mb-0">Available:</label>
-                  <span class="font-weight-medium">$45.99</span>
+                  <label class="d-block small text-muted mb-0">Last Week:</label>
+                  <span class="font-weight-medium">139</span>
                 </div>
 
                 <div class="col-6">
-                  <label class="d-block small text-muted mb-0">Pending:</label>
-                  <span class="font-weight-medium">$0.00</span>
+                  <label class="d-block small text-muted mb-0">Total:</label>
+                  <span class="font-weight-medium">1,343</span>
                 </div>
               </div>
 
@@ -960,11 +813,11 @@
           <!-- End Stats -->
 
           <!-- Indicator -->
-          <div class="card">
+          <div class="card mr-5">
             <div class="card-body pt-4 pb-5 px-5 mb-3 mb-md-0">
               <!-- Title & Settings -->
               <div class="d-flex justify-content-between align-items-center">
-                <h4 class="h6 mb-0">Activity</h4>
+                <h4 class="h6 mb-0">Reviews</h4>
 
                 <!-- Settings Dropdown -->
                 <div class="position-relative">
@@ -1014,7 +867,12 @@
                       </span>
                       <div class="media-body">
                         <h5 class="font-size-1 mb-1">Amanta Owens</h5>
-                        <p class="small mb-1">Added new task: <span class="font-weight-medium">Slack home page redesign</span></p>
+                          <span class="fa fa-star" style="color:orange"></span>
+                          <span class="fa fa-star" style="color:orange"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span> 
+                        <p class="small mb-1"><span class="font-weight-medium">It was nice enough for a shorter stay. Room was small.</span></p>
                         <small class="d-block text-muted">30 min ago</small>
                       </div>
                     </li>
@@ -1025,7 +883,12 @@
                       </span>
                       <div class="media-body">
                         <h5 class="font-size-1 mb-1">Sebastian Diaz</h5>
-                        <p class="small mb-1">Added new task: <span class="font-weight-medium">Mapbox logo redesign</span></p>
+                          <span class="fa fa-star" style="color:orange"></span>
+                          <span class="fa fa-star" style="color:orange"></span>
+                          <span class="fa fa-star" style="color:orange"></span>
+                          <span class="fa fa-star" style="color:orange"></span>
+                          <span class="fa fa-star"></span>
+                        <p class="small mb-1"><span class="font-weight-medium">I loved the bedroom set-up at Natalie's. It was so beautiful!</span></p>
                         <small class="d-block text-muted">44 min ago</small>
                       </div>
                     </li>
@@ -1036,7 +899,12 @@
                       </span>
                       <div class="media-body">
                         <h5 class="font-size-1 mb-1">Eliza Donovan</h5>
-                        <p class="small mb-1">Added new task: <span class="font-weight-medium">Spotify branding</span></p>
+                          <span class="fa fa-star" style="color:orange"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                        <p class="small mb-1"><span class="font-weight-medium">Natalie's dog wouldn't stop barking throughout the night. I couldn't get any sleep, so I only could stay at her house for a month. Wouldn't recommend.</span></p>
                         <small class="d-block text-muted">1 hour ago</small>
                       </div>
                     </li>
@@ -1047,7 +915,12 @@
                       </span>
                       <div class="media-body">
                         <h5 class="font-size-1 mb-1">Cler Lockhart</h5>
-                        <p class="small mb-1">Added new task: <span class="font-weight-medium">Dropbox home page redesign</span></p>
+                          <span class="fa fa-star" style="color:orange"></span>
+                          <span class="fa fa-star" style="color:orange"></span>
+                          <span class="fa fa-star" style="color:orange"></span>
+                          <span class="fa fa-star" style="color:orange"></span>
+                          <span class="fa fa-star" style="color:orange"></span>
+                        <p class="small mb-1"><span class="font-weight-medium">I loved staying at Natalie's home! Her backyard was great for my dog. I couldn't recommend more.</span></p>
                         <small class="d-block text-muted">15 hours ago</small>
                       </div>
                     </li>
@@ -1058,23 +931,216 @@
                       </span>
                       <div class="media-body">
                         <h5 class="font-size-1 mb-1">James Collins</h5>
-                        <p class="small mb-1">Added new task: <span class="font-weight-medium">InVison branding</span></p>
+                          <span class="fa fa-star" style="color:orange"></span>
+                          <span class="fa fa-star" style="color:orange"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                        <p class="small mb-1"><span class="font-weight-medium">I hated that I didn't have my own bathroom, but otherwise it was pretty nice.</span></p>
                         <small class="d-block text-muted">1 day ago</small>
                       </div>
                     </li>
                   </ul>
                   <!-- End Activity Feed -->
+                
                 </div>
               </div>
             </div>
           </div>
           <!-- End Indicator -->
         </div>
-        <!-- End Card -->
+
+    <!-- Team Section -->
+    <div class="container space-2 space-md-3">
+      <!-- Title -->
+      <div class="w-md-80 w-lg-50 text-center mx-md-auto mb-9">
+        <span class="btn btn-xs btn-soft-success btn-pill mb-2">Our Team</span>
+        <h2 class="text-primary">Trust the <span class="font-weight-semi-bold">professionals</span></h2>
+        <p>Our top professionals are ready to help with your business</p>
       </div>
+      <!-- End Title -->
+
+      <!-- Slick Carousel -->
+      <div class="js-slick-carousel u-slick u-slick--gutters-3"
+           data-slides-show="2"
+           data-slides-scroll="1"
+           data-pagi-classes="text-center u-slick__pagination mt-7 mb-0"
+           data-responsive='[{
+             "breakpoint": 992,
+             "settings": {
+               "slidesToShow": 1
+             }
+           }, {
+             "breakpoint": 768,
+             "settings": {
+               "slidesToShow": 1
+             }
+           }, {
+             "breakpoint": 554,
+             "settings": {
+               "slidesToShow": 1
+             }
+           }]'>
+        <div class="js-slide px-3">
+          <!-- Team -->
+          <div class="row">
+            <div class="col-sm-6 d-sm-flex align-content-sm-start flex-sm-column text-center text-sm-left mb-7 mb-sm-0">
+              <div class="w-100">
+                <h3 class="h5 mb-4">Maria Muszynska</h3>
+              </div>
+              <div class="d-inline-block">
+                <span class="badge badge-primary badge-pill badge-bigger mb-3">#maria</span>
+              </div>
+              <p class="font-size-1">I am an ambitious workaholic, but apart from that, pretty simple person.</p>
+
+              <!-- Social Networks -->
+              <ul class="list-inline mt-auto mb-0">
+                <li class="list-inline-item mx-0">
+                  <a class="btn btn-sm btn-icon btn-soft-secondary" href="#">
+                    <span class="fab fa-facebook-f btn-icon__inner"></span>
+                  </a>
+                </li>
+                <li class="list-inline-item mx-0">
+                  <a class="btn btn-sm btn-icon btn-soft-secondary" href="#">
+                    <span class="fab fa-google btn-icon__inner"></span>
+                  </a>
+                </li>
+                <li class="list-inline-item mx-0">
+                  <a class="btn btn-sm btn-icon btn-soft-secondary" href="#">
+                    <span class="fab fa-twitter btn-icon__inner"></span>
+                  </a>
+                </li>
+              </ul>
+              <!-- End Social Networks -->
+            </div>
+            <div class="col-sm-6">
+              <img class="img-fluid rounded mx-auto" src="assets/img/350x400/img1.jpg" alt="Image Description">
+            </div>
+          </div>
+          <!-- End Team -->
+        </div>
+
+        <div class="js-slide px-3">
+          <!-- Team -->
+          <div class="row">
+            <div class="col-sm-6 d-sm-flex align-content-sm-start flex-sm-column text-center text-sm-left mb-7 mb-sm-0">
+              <div class="w-100">
+                <h3 class="h5 mb-4">Jack Wayley</h3>
+              </div>
+              <div class="d-inline-block">
+                <span class="badge badge-primary badge-pill badge-bigger mb-3">#jack</span>
+              </div>
+              <p class="font-size-1">I am an ambitious workaholic, but apart from that, pretty simple person.</p>
+
+              <!-- Social Networks -->
+              <ul class="list-inline mt-auto mb-0">
+                <li class="list-inline-item mx-0">
+                  <a class="btn btn-sm btn-icon btn-soft-secondary" href="#">
+                    <span class="fab fa-facebook-f btn-icon__inner"></span>
+                  </a>
+                </li>
+                <li class="list-inline-item mx-0">
+                  <a class="btn btn-sm btn-icon btn-soft-secondary" href="#">
+                    <span class="fab fa-google btn-icon__inner"></span>
+                  </a>
+                </li>
+                <li class="list-inline-item mx-0">
+                  <a class="btn btn-sm btn-icon btn-soft-secondary" href="#">
+                    <span class="fab fa-twitter btn-icon__inner"></span>
+                  </a>
+                </li>
+              </ul>
+              <!-- End Social Networks -->
+            </div>
+            <div class="col-sm-6">
+              <img class="img-fluid rounded mx-auto" src="assets/img/350x400/img2.jpg" alt="Image Description">
+            </div>
+          </div>
+          <!-- End Team -->
+        </div>
+
+        <div class="js-slide px-3">
+          <!-- Team -->
+          <div class="row">
+            <div class="col-sm-6 d-sm-flex align-content-sm-start flex-sm-column text-center text-sm-left mb-7 mb-sm-0">
+              <div class="w-100">
+                <h3 class="h5 mb-4">Emmely Jackson</h3>
+              </div>
+              <div class="d-inline-block">
+                <span class="badge badge-primary badge-pill badge-bigger mb-3">#emmely</span>
+              </div>
+              <p class="font-size-1">I am an ambitious workaholic, but apart from that, pretty simple person.</p>
+
+              <!-- Social Networks -->
+              <ul class="list-inline mt-auto mb-0">
+                <li class="list-inline-item mx-0">
+                  <a class="btn btn-sm btn-icon btn-soft-secondary" href="#">
+                    <span class="fab fa-facebook-f btn-icon__inner"></span>
+                  </a>
+                </li>
+                <li class="list-inline-item mx-0">
+                  <a class="btn btn-sm btn-icon btn-soft-secondary" href="#">
+                    <span class="fab fa-google btn-icon__inner"></span>
+                  </a>
+                </li>
+                <li class="list-inline-item mx-0">
+                  <a class="btn btn-sm btn-icon btn-soft-secondary" href="#">
+                    <span class="fab fa-twitter btn-icon__inner"></span>
+                  </a>
+                </li>
+              </ul>
+              <!-- End Social Networks -->
+            </div>
+            <div class="col-sm-6">
+              <img class="img-fluid rounded mx-auto" src="assets/img/350x400/img3.jpg" alt="Image Description">
+            </div>
+          </div>
+          <!-- End Team -->
+        </div>
+
+        <div class="js-slide px-3">
+          <!-- Team -->
+          <div class="row">
+            <div class="col-sm-6 d-sm-flex align-content-sm-start flex-sm-column text-center text-sm-left mb-7 mb-sm-0">
+              <div class="w-100">
+                <h3 class="h5 mb-4">Mark McManus</h3>
+              </div>
+              <div class="d-inline-block">
+                <span class="badge badge-primary badge-pill badge-bigger mb-3">#mark</span>
+              </div>
+              <p class="font-size-1">I am an ambitious workaholic, but apart from that, pretty simple person.</p>
+
+              <!-- Social Networks -->
+              <ul class="list-inline mt-auto mb-0">
+                <li class="list-inline-item mx-0">
+                  <a class="btn btn-sm btn-icon btn-soft-secondary" href="#">
+                    <span class="fab fa-facebook-f btn-icon__inner"></span>
+                  </a>
+                </li>
+                <li class="list-inline-item mx-0">
+                  <a class="btn btn-sm btn-icon btn-soft-secondary" href="#">
+                    <span class="fab fa-google btn-icon__inner"></span>
+                  </a>
+                </li>
+                <li class="list-inline-item mx-0">
+                  <a class="btn btn-sm btn-icon btn-soft-secondary" href="#">
+                    <span class="fab fa-twitter btn-icon__inner"></span>
+                  </a>
+                </li>
+              </ul>
+              <!-- End Social Networks -->
+            </div>
+            <div class="col-sm-6">
+              <img class="img-fluid rounded mx-auto" src="assets/img/350x400/img4.jpg" alt="Image Description">
+            </div>
+          </div>
+          <!-- End Team -->
+        </div>
+      </div>
+      <!-- End Slick Carousel -->
     </div>
-    <!-- End Content Section -->
-  </main>
+    <!-- End Team Section -->
+    
   <!-- ========== END MAIN ========== -->
 
   <!-- ========== FOOTER ========== -->
@@ -1126,18 +1192,7 @@
 
     <!-- Copyright -->
     <div class="container text-center space-1">
-      <!-- Logo -->
-      <a class="d-inline-flex align-items-center mb-2" href="../home/index.html" aria-label="Front">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="36px" height="36px" viewBox="0 0 46 46" xml:space="preserve" style="margin-bottom: 0;">
-          <path fill="#3F7DE0" opacity=".65" d="M23,41L23,41c-9.9,0-18-8-18-18v0c0-9.9,8-18,18-18h11.3C38,5,41,8,41,11.7V23C41,32.9,32.9,41,23,41z"/>
-          <path class="fill-info" opacity=".5" d="M28,35.9L28,35.9c-9.9,0-18-8-18-18v0c0-9.9,8-18,18-18l11.3,0C43,0,46,3,46,6.6V18C46,27.9,38,35.9,28,35.9z"/>
-          <path class="fill-primary" opacity=".7" d="M18,46L18,46C8,46,0,38,0,28v0c0-9.9,8-18,18-18h11.3c3.7,0,6.6,3,6.6,6.6V28C35.9,38,27.9,46,18,46z"/>
-          <path class="fill-white" d="M17.4,34V18.3h10.2v2.9h-6.4v3.4h4.8v2.9h-4.8V34H17.4z"/>
-        </svg>
-        <span class="brand brand-primary">Front</span>
-      </a>
-      <!-- End Logo -->
-      <p class="small text-muted">&copy; Front. 2019 Htmlstream. All rights reserved.</p>
+      <p class="small text-muted">&copy; RoomMagnet 2019.</p>
     </div>
     <!-- End Copyright -->
   </footer>
@@ -1174,7 +1229,7 @@
             <!-- Holder Info -->
             <header class="d-flex align-items-center u-sidebar--account__holder mt-3">
               <div class="position-relative">
-                <img class="u-sidebar--account__holder-img" src="../../assets/img/100x100/img1.jpg" alt="Image Description">
+                <img class="u-sidebar--account__holder-img" src="assets/img/100x100/img1.jpg" alt="Image Description">
                 <span class="badge badge-xs badge-outline-success badge-pos rounded-circle"></span>
               </div>
               <div class="ml-3">
@@ -1287,7 +1342,7 @@
         </div>
 
         <!-- Footer -->
-        <footer id="SVGwaveWithDots" class="svg-preloader u-sidebar__footer u-sidebar__footer--account">
+        <footer id="SVGwaveWithDots" class="u-sidebar__footer u-sidebar__footer--account">
           <ul class="list-inline mb-0">
             <li class="list-inline-item pr-3">
               <a class="u-sidebar__footer--account__text" href="../pages/privacy.html">Privacy</a>
@@ -1390,7 +1445,7 @@
                     <div class="card-body align-items-sm-center p-2">
                       <div class="media align-items-center">
                         <div class="u-avatar mr-3">
-                          <img class="img-fluid rounded-circle" src="../../assets/img/100x100/img8.jpg" alt="Image Description">
+                          <img class="img-fluid rounded-circle" src="assets/img/100x100/img8.jpg" alt="Image Description">
                         </div>
                         <div class="media-body">
                           <h4 class="h6 mb-0">Sebastian Diaz</h4>
@@ -1422,7 +1477,7 @@
                     <div class="card-body align-items-sm-center p-2">
                       <div class="media align-items-center">
                         <div class="u-avatar mr-3">
-                          <img class="img-fluid rounded-circle" src="../../assets/img/100x100/img12.jpg" alt="Image Description">
+                          <img class="img-fluid rounded-circle" src="assets/img/100x100/img12.jpg" alt="Image Description">
                         </div>
                         <div class="media-body">
                           <h4 class="h6 mb-0">Joseph Mack</h4>
@@ -1438,7 +1493,7 @@
                     <div class="card-body align-items-sm-center p-2">
                       <div class="media align-items-center">
                         <div class="u-avatar mr-3">
-                          <img class="img-fluid rounded-circle" src="../../assets/img/100x100/img10.jpg" alt="Image Description">
+                          <img class="img-fluid rounded-circle" src="assets/img/100x100/img10.jpg" alt="Image Description">
                         </div>
                         <div class="media-body">
                           <h4 class="h6 mb-0">Eliza Donovan</h4>
@@ -2262,6 +2317,9 @@
   <script src="../../assets/vendor/flatpickr/dist/flatpickr.min.js"></script>
   <script src="../../assets/vendor/appear.js"></script>
   <script src="../../assets/vendor/circles/circles.min.js"></script>
+    <script src="../../assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+  <script src="../../assets/vendor/slick-carousel/slick/slick.js"></script>
+  <script src="../../assets/vendor/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
 
   <!-- JS Front -->
   <script src="../../assets/js/hs.core.js"></script>
@@ -2278,81 +2336,125 @@
   <script src="../../assets/js/components/hs.progress-bar.js"></script>
   <script src="../../assets/js/components/hs.svg-injector.js"></script>
   <script src="../../assets/js/components/hs.go-to.js"></script>
+  <script src="../../assets/js/components/hs.fancybox.js"></script>
+  <script src="../../assets/js/components/hs.slick-carousel.js"></script>
+  <script src="../../assets/js/components/hs.validation.js"></script>
+  <script src="../../assets/js/components/hs.cubeportfolio.js"></script>
+
+
 
   <!-- JS Plugins Init. -->
   <script>
-    $(window).on('load', function () {
-      // initialization of HSMegaMenu component
-      $('.js-mega-menu').HSMegaMenu({
-        event: 'hover',
-        pageContainer: $('.container'),
-        breakpoint: 767.98,
-        hideTimeOut: 0
+      $(window).on('load', function () {
+          // initialization of HSMegaMenu component
+          $('.js-mega-menu').HSMegaMenu({
+              event: 'hover',
+              pageContainer: $('.container'),
+              breakpoint: 767.98,
+              hideTimeOut: 0
+          });
+
+          // initialization of HSMegaMenu component
+          $('.js-breadcrumb-menu').HSMegaMenu({
+              event: 'hover',
+              pageContainer: $('.container'),
+              breakpoint: 991.98,
+              hideTimeOut: 0
+          });
+
+          // initialization of svg injector module
+          $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
       });
 
-      // initialization of HSMegaMenu component
-      $('.js-breadcrumb-menu').HSMegaMenu({
-        event: 'hover',
-        pageContainer: $('.container'),
-        breakpoint: 991.98,
-        hideTimeOut: 0
+      $(document).on('ready', function () {
+          // initialization of header
+          $.HSCore.components.HSHeader.init($('#header'));
+
+          // initialization of unfold component
+          $.HSCore.components.HSUnfold.init($('[data-unfold-target]'), {
+              afterOpen: function () {
+                  $(this).find('input[type="search"]').focus();
+              }
+          });
+
+          // initialization of malihu scrollbar
+          $.HSCore.components.HSMalihuScrollBar.init($('.js-scrollbar'));
+
+          // initialization of forms
+          $.HSCore.components.HSFocusState.init();
+
+          // initialization of form validation
+          $.HSCore.components.HSValidation.init('.js-validate');
+
+          // initialization of autonomous popups
+          $.HSCore.components.HSModalWindow.init('[data-modal-target]', '.js-modal-window', {
+              autonomous: true
+          });
+
+          // initialization of step form
+          $.HSCore.components.HSStepForm.init('.js-step-form');
+
+          // initialization of show animations
+          $.HSCore.components.HSShowAnimation.init('.js-animation-link');
+
+          // initialization of range datepicker
+          $.HSCore.components.HSRangeDatepicker.init('.js-range-datepicker');
+
+          // initialization of chart pies
+          var items = $.HSCore.components.HSChartPie.init('.js-pie');
+
+          // initialization of horizontal progress bars
+          var horizontalProgressBars = $.HSCore.components.HSProgressBar.init('.js-hr-progress', {
+              direction: 'horizontal',
+              indicatorSelector: '.js-hr-progress-bar'
+          });
+
+          var verticalProgressBars = $.HSCore.components.HSProgressBar.init('.js-vr-progress', {
+              direction: 'vertical',
+              indicatorSelector: '.js-vr-progress-bar'
+          });
+
+          // initialization of go to
+          $.HSCore.components.HSGoTo.init('.js-go-to');
+      });
+      $(window).on('load', function () {
+          // initialization of HSMegaMenu component
+          $('.js-mega-menu').HSMegaMenu({
+              event: 'hover',
+              pageContainer: $('.container'),
+              breakpoint: 767.98,
+              hideTimeOut: 0
+          });
+
+          // initialization of svg injector module
+          $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
       });
 
-      // initialization of svg injector module
-      $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
-    });
+      $(document).on('ready', function () {
+          // initialization of header
+          $.HSCore.components.HSHeader.init($('#header'));
 
-    $(document).on('ready', function () {
-      // initialization of header
-      $.HSCore.components.HSHeader.init($('#header'));
+          // initialization of unfold component
+          $.HSCore.components.HSUnfold.init($('[data-unfold-target]'));
 
-      // initialization of unfold component
-      $.HSCore.components.HSUnfold.init($('[data-unfold-target]'), {
-        afterOpen: function () {
-          $(this).find('input[type="search"]').focus();
-        }
-      });
+          // initialization of fancybox
+          $.HSCore.components.HSFancyBox.init('.js-fancybox');
 
-      // initialization of malihu scrollbar
-      $.HSCore.components.HSMalihuScrollBar.init($('.js-scrollbar'));
+          // initialization of slick carousel
+          $.HSCore.components.HSSlickCarousel.init('.js-slick-carousel');
 
-      // initialization of forms
-      $.HSCore.components.HSFocusState.init();
+          // initialization of form validation
+          $.HSCore.components.HSValidation.init('.js-validate');
 
-      // initialization of form validation
-      $.HSCore.components.HSValidation.init('.js-validate');
+          // initialization of forms
+          $.HSCore.components.HSFocusState.init();
 
-      // initialization of autonomous popups
-      $.HSCore.components.HSModalWindow.init('[data-modal-target]', '.js-modal-window', {
-        autonomous: true
-      });
+          // initialization of cubeportfolio
+          $.HSCore.components.HSCubeportfolio.init('.cbp');
 
-      // initialization of step form
-      $.HSCore.components.HSStepForm.init('.js-step-form');
-
-      // initialization of show animations
-      $.HSCore.components.HSShowAnimation.init('.js-animation-link');
-
-      // initialization of range datepicker
-      $.HSCore.components.HSRangeDatepicker.init('.js-range-datepicker');
-
-      // initialization of chart pies
-      var items = $.HSCore.components.HSChartPie.init('.js-pie');
-
-      // initialization of horizontal progress bars
-      var horizontalProgressBars = $.HSCore.components.HSProgressBar.init('.js-hr-progress', {
-        direction: 'horizontal',
-        indicatorSelector: '.js-hr-progress-bar'
-      });
-
-      var verticalProgressBars = $.HSCore.components.HSProgressBar.init('.js-vr-progress', {
-        direction: 'vertical',
-        indicatorSelector: '.js-vr-progress-bar'
-      });
-
-      // initialization of go to
-      $.HSCore.components.HSGoTo.init('.js-go-to');
-    });
+          // initialization of go to
+          $.HSCore.components.HSGoTo.init('.js-go-to');
+      }); s
   </script>
 </body>
 </html>
