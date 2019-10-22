@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
   <!-- Title -->
-  <title>Landing House | Front - Responsive Website Template</title>
+  <title>RoomMagnet - Home</title>
 
   <!-- Required Meta Tags Always Come First -->
   <meta charset="utf-8">
@@ -15,6 +15,15 @@
 
   <!-- Google Fonts -->
   <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/wpm1mqg.css">
+    <link href="https://fonts.googleapis.com/css?family=Paytone+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/bny7bsv.css">
+<link href="https://fonts.googleapis.com/css?family=Asap:400,500,600,700|Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+
+
+
+
+
 
   <!-- CSS Implementing Plugins -->
   <link rel="stylesheet" href="../../assets/vendor/font-awesome/css/fontawesome-all.min.css">
@@ -34,14 +43,8 @@
         <!-- Nav -->
         <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar u-header__navbar--no-space">
           <!-- Logo -->
-          <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center" href="index.html" aria-label="Front">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="46px" height="46px" viewBox="0 0 46 46" xml:space="preserve" style="margin-bottom: 0;">
-              <path fill="#3F7DE0" opacity=".65" d="M23,41L23,41c-9.9,0-18-8-18-18v0c0-9.9,8-18,18-18h11.3C38,5,41,8,41,11.7V23C41,32.9,32.9,41,23,41z"/>
-              <path class="fill-info" opacity=".5" d="M28,35.9L28,35.9c-9.9,0-18-8-18-18v0c0-9.9,8-18,18-18l11.3,0C43,0,46,3,46,6.6V18C46,27.9,38,35.9,28,35.9z"/>
-              <path class="fill-primary" opacity=".7" d="M18,46L18,46C8,46,0,38,0,28v0c0-9.9,8-18,18-18h11.3c3.7,0,6.6,3,6.6,6.6V28C35.9,38,27.9,46,18,46z"/>
-              <path class="fill-white" d="M17.4,34V18.3h10.2v2.9h-6.4v3.4h4.8v2.9h-4.8V34H17.4z"/>
-            </svg>
-            <span class="u-header__navbar-brand-text">Front</span>
+          <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center" href="index.html" aria-label="RoomMagnet">
+              <img src="images/logofinal4.svg">
           </a>
           <!-- End Logo -->
 
@@ -59,45 +62,31 @@
           <!-- End Responsive Toggle Button -->
 
           <!-- Navigation -->
-          <div id="navBar" class="collapse navbar-collapse u-header__navbar-collapse">
+          <div id="navBar" class="collapse navbar-collapse u-header__navbar-collapse opensans">
             <ul class="navbar-nav u-header__navbar-nav">
 
               <!-- Demos -->
-              <li class="nav-item hs-has-mega-menu u-header__nav-item"
+              <li class="opensans nav-item hs-has-mega-menu u-header__nav-item"
                   data-event="hover"
                   data-animation-in="slideInUp"
                   data-animation-out="fadeOut"
-                  data-max-width="900px"
+                  data-max-width="400px"
                   data-position="right">
                 <a id="demosMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">How it Works</a>
 
                 <!-- Demos - Mega Menu -->
-                <div class="hs-mega-menu w-100 u-header__sub-menu" aria-labelledby="demosMegaMenu">
+                <div class="hs-mega-menu w-400 u-header__sub-menu" aria-labelledby="demosMegaMenu">
                   <div class="row no-gutters">
-                    <div class="col-lg-8">
+                    <div class="col-lg-12">
                       <div class="u-header__promo-card-deck">
                         <!-- Promo Item -->
                         <div class="u-header__promo-card u-header__promo-item">
-                          <a class="u-header__promo-link" href="../home/index.html">
+                          <a class="u-header__promo-link" href="#host">
                             <div class="media align-items-center">
-                              <img class="js-svg-injector u-header__promo-icon" src="../../assets/svg/icons/icon-21.svg" alt="SVG">
+                              <img class="u-header__promo-icon" src="images/host2.svg" alt="SVG">
                               <div class="media-body">
                                 <span class="u-header__promo-title">Host</span>
-                                <small class="u-header__promo-text">List your spare room to attract tenants</small>
-                              </div>
-                            </div>
-                          </a>
-                        </div>
-                        <!-- End Promo Item -->
-
-                        <!-- Promo Item -->
-                        <div class="u-header__promo-card u-header__promo-item">
-                          <a class="u-header__promo-link" href="../app-marketplace/index.html">
-                            <div class="media align-items-center">
-                              <img class="js-svg-injector u-header__promo-icon" src="../../assets/svg/icons/icon-45.svg" alt="SVG">
-                              <div class="media-body">
-                                <span class="u-header__promo-title">Tenant <span class="badge badge-success badge-pill ml-1">New</span></span>
-                                <small class="u-header__promo-text">Find a place to room</small>
+                                <small class="u-header__promo-text">List your spare room to attract tenants.</small>
                               </div>
                             </div>
                           </a>
@@ -106,28 +95,15 @@
                       </div>
 
                       <div class="u-header__promo-card-deck">
-                        <!-- Promo Item -->
-                        <div class="u-header__promo-card u-header__promo-item">
-                          <a class="u-header__promo-link" href="../job/index.html">
-                            <div class="media align-items-center">
-                              <img class="js-svg-injector u-header__promo-icon" src="../../assets/svg/icons/icon-19.svg" alt="SVG">
-                              <div class="media-body">
-                                <span class="u-header__promo-title">Job</span>
-                                <small class="u-header__promo-text">Job vacancy demo</small>
-                              </div>
-                            </div>
-                          </a>
-                        </div>
-                        <!-- End Promo Item -->
 
                         <!-- Promo Item -->
                         <div class="u-header__promo-card u-header__promo-item">
-                          <a class="u-header__promo-link" href="../help-desk/index.html">
+                          <a class="u-header__promo-link" href="#tenant">
                             <div class="media align-items-center">
-                              <img class="js-svg-injector u-header__promo-icon" src="../../assets/svg/icons/icon-4.svg" alt="SVG">
+                              <img class=" u-header__promo-icon" src="images/getdiscovered1.svg" alt="SVG">
                               <div class="media-body">
-                                <span class="u-header__promo-title">Help Desk</span>
-                                <small class="u-header__promo-text">List your spare room to attract tenants</small>
+                                <span class="u-header__promo-title">Tenant</span>
+                                <small class="u-header__promo-text">Find a place to room.</small>
                               </div>
                             </div>
                           </a>
@@ -136,46 +112,10 @@
                       </div>
 
                       <div class="u-header__promo-card-deck">
-                        <!-- Promo Item -->
-                        <div class="u-header__promo-card u-header__promo-item">
-                          <a class="u-header__promo-link" href="../crypto/index.html">
-                            <div class="media align-items-center">
-                              <img class="js-svg-injector u-header__promo-icon" src="../../assets/svg/icons/icon-5.svg" alt="SVG">
-                              <div class="media-body">
-                                <span class="u-header__promo-title">Crypto Landing</span>
-                                <small class="u-header__promo-text">Cryptocurrency demo</small>
-                              </div>
-                            </div>
-                          </a>
-                        </div>
-                        <!-- End Promo Item -->
 
-                        <!-- Promo Item -->
-                        <div class="u-header__promo-card u-header__promo-item">
-                          <div class="u-header__promo-link">
-                            <div class="media align-items-center">
-                              <img class="js-svg-injector u-header__promo-icon" src="../../assets/svg/icons/icon-23.svg" alt="SVG">
-                              <div class="media-body">
-                                <span class="u-header__promo-title text-secondary">New demos</span>
-                                <small class="u-header__promo-text">coming soon ...</small>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- End Promo Item -->
                       </div>
                     </div>
 
-                    <!-- Promo -->
-                    <div class="col-lg-4 u-header__promo d-none d-lg-block">
-                      <a class="d-block u-header__promo-inner" href="#">
-                        <div class="position-relative">
-                          <img class="img-fluid rounded mb-3" src="../../assets/img/380x227/img6.jpg" alt="Image Description">
-                        </div>
-                        <span class="text-secondary font-size-1">Front makes you look at things from a different perspectives.</span>
-                      </a>
-                    </div>
-                    <!-- End Promo -->
                   </div>
                 </div>
                 <!-- End Demos - Mega Menu -->
@@ -195,28 +135,14 @@
                 <div class="hs-mega-menu u-header__sub-menu" aria-labelledby="docsMegaMenu" style="min-width: 330px;">
                   <!-- Promo Item -->
                   <div class="u-header__promo-item">
-                    <a class="u-header__promo-link" href="../../documentation/index.html">
+                    <a class="u-header__promo-link" href="">
                       <div class="media align-items-center">
-                        <img class="js-svg-injector u-header__promo-icon" src="../../assets/svg/icons/icon-2.svg" alt="SVG">
+                        <img class="u-header__promo-icon" src="images/faq.svg" alt="SVG">
                         <div class="media-body">
                           <span class="u-header__promo-title">
                             FAQ
                           </span>
-                          <small class="u-header__promo-text">Need an answer?</small>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <!-- End Promo Item -->
-
-                  <!-- Promo Item -->
-                  <div class="u-header__promo-item">
-                    <a class="u-header__promo-link" href="../../starter/index.html">
-                      <div class="media align-items-center">
-                        <img class="js-svg-injector u-header__promo-icon" src="../../assets/svg/icons/icon-1.svg" alt="SVG">
-                        <div class="media-body">
-                          <span class="u-header__promo-title">Get started</span>
-                          <small class="u-header__promo-text">Components and snippets</small>
+                          <small class="u-header__promo-text">We've got the answer.</small>
                         </div>
                       </div>
                     </a>
@@ -229,8 +155,8 @@
                       <div class="col-6">
                         <div class="u-header__promo-footer-item">
                           <small class="text-muted d-block">Check what's new</small>
-                          <a class="small" href="../../documentation/getting-started/changelog.html">
-                            Changelog
+                          <a class="small" href="">
+                            Our Blog
                           </a>
                         </div>
                       </div>
@@ -280,8 +206,8 @@
     <div class="d-md-flex bg-img-hero" style="background-image: url(images/hero2.jpg);">
       <div class="container d-md-flex align-items-md-center height-md-100vh position-relative space-top-2 space-bottom-3 space-top-md-3 space-top-lg-2 space-bottom-md-0">
         <div class="w-lg-65 mb-5">
-          <div class="w-lg-65 w-xl-75 mb-5">
-            <h1 class="display-4 text-white"><strong class="live sunset">Live Smarter.</strong> <br>Room with <br>
+          <div class="w-lg-80 w-xl-80 mb-5">
+            <h1 class="display-4 text-white"><strong class="asap sunset">Live Smarter.</strong> <br>Room with <br>
                 <span class="u-text-animation u-text-animation--typing"></span>
               </h1>
           </div>
@@ -289,28 +215,19 @@
           <!-- Form -->
           <form class="js-validate">
             <div class="form-row mb-2">
-              <div class="col-6 col-md-5 mb-2">
+              <div class="col-6 col-md-9 mb-2">
                 <div class="js-form-message">
-                  <label class="sr-only" for="signupSrName">Name</label>
+                  <label class="sr-only" for="search">Find a place to share</label>
                   <div class="input-group">
-                    <input type="text" class="form-control" name="name" id="signupSrName" placeholder="Name" aria-label="Name" required
+                    <input type="text" class="form-control1" name="search" id="search" placeholder="Find a place to share" aria-label="Search" required
                            data-msg="Name must contain only letters.">
                   </div>
                 </div>
               </div>
 
-              <div class="col-6 col-md-5 mb-2">
-                <div class="js-form-message">
-                  <label class="sr-only" for="signupSrEmail">Email</label>
-                  <div class="input-group">
-                    <input type="email" class="form-control" name="email" id="signupSrEmail" placeholder="Email" aria-label="Email" required
-                           data-msg="Please enter a valid email address.">
-                  </div>
-                </div>
-              </div>
 
               <div class="col-md-2 mb-2">
-                <button type="submit" href="signup.aspx" class="btn btn-block btn-primary transition-3d-hover">Sign Up</button>
+                <button type="submit" href="signup.aspx" class="btn btn-block btn-soft-primary transition-3d-hover">Search</button>
               </div>
             </div>
 
@@ -341,33 +258,33 @@
     <div class="bg-light">
       <div class="container space-2 space-md-3">
         <!-- Title -->
-        <div class="w-md-60 w-lg-35s">
+        <div id="host" class="w-md-60 w-lg-35s">
           <h2 class="h1 font-weight-normal">
-            How to <span class="sunset font-weight-semi-bold">Roommagnet</span>
+            <span class="navy">How to</span> <span class="sunset font-weight-semi-bold asap1">RoomMagnet</span>
           </h2>
         </div>
           <div class="w-md-60 w-lg-35s mb-9">
-          <h3 class="h4 font-weight-normal">
+          <h3 class="display-5 navy font-weight-normal">
             Have a Room to Share? 
           </h3>
         </div>
           <div class="row">
         <div class="col-md-4 mb-7">
           <div class="text-center px-lg-3">
-            <span class="btn btn-icon btn-lg btn-soft-danger rounded-circle mb-5">
-              <span class="fab fa-yelp fa-2x btn-icon__inner btn-icon__inner-bottom-minus"></span>
+            <span class="btn btn-icon btn-lg btn-soft-danger rounded-circle mb-6">
+              <span class="btn-icon__inner btn-icon__inner-bottom-minus ml-1"><img src="images/clipboard.svg" alt="Add Your Listing" width="80"></span>
             </span>
-            <h3 class="h5">1. Add Your Listing</h3>
+            <h3 class="h5 font-weight-semi-bold">1. Add Your Listing</h3>
             <p class="mb-md-0">Upload photos, and add helpful information on exactly what you are offering. If you need help around the house and, are willing to offer a discount, then specify what tasks you would like completed. Tenants who choose RoomMagnets’ living option are ready to work and will select chores they feel suits their abilities.</p>
           </div>
         </div>
 
         <div class="col-md-4 mb-7">
           <div class="text-center px-lg-3">
-            <span class="btn btn-icon btn-lg btn-soft-primary rounded-circle mb-5">
-              <span class="fas fa-fire fa-2x btn-icon__inner btn-icon__inner-bottom-minus"></span>
+            <span class="btn btn-icon btn-lg btn-soft-primary rounded-circle mb-6">
+              <span class="btn-icon__inner btn-icon__inner-bottom-minus"><img src="images/getdiscovered1.svg" alt="Get Discovered" width="110"></span>
             </span>
-            <h3 class="h5">2. Get Discovered</h3>
+            <h3 class="h5 font-weight-semi-bold">2. Get Discovered</h3>
             <p class="mb-md-0">Upon confirmation, your listing will appear throughout the website and will be searchable by tenants interested in similar places.
 </p>
           </div>
@@ -375,10 +292,10 @@
 
         <div class="col-md-4 mb-7">
           <div class="text-center px-lg-3">
-            <span class="btn btn-icon btn-lg btn-soft-success rounded-circle mb-5">
-              <span class="fab fa-whmcs fa-2x btn-icon__inner btn-icon__inner-bottom-minus"></span>
+            <span class="btn btn-icon btn-lg btn-soft-success rounded-circle mb-6">
+              <span class="btn-icon__inner btn-icon__inner-bottom-minus"><img src="images/idea.svg" alt="Start Living Smarter!" width="90"></span>
             </span>
-            <h3 class="h5">3. Start Living Smarter!</h3>
+            <h3 class="h5 font-weight-semi-bold">3. Start Living Smarter!</h3>
             <p class="mb-md-0">Once your listing is discovered, interested tenants will 
 start coming to you! RoomMagnet will ensure that your communication is handled securely and professionally. When a match is made, you'll pay a one-time flat fee of $395.
 </p>
@@ -386,28 +303,28 @@ start coming to you! RoomMagnet will ensure that your communication is handled s
         </div>
       </div>
         <div class="w-md-60 w-lg-35s mb-9">
-          <h3 class="h4 font-weight-normal">
+          <h3 id="tenant" class="display-5 navy font-weight-normal">
             Looking for a Place? 
           </h3>
         </div>
                     <div class="row">
         <div class="col-md-4 mb-7">
           <div class="text-center px-lg-3">
-            <span class="btn btn-icon btn-lg btn-soft-danger rounded-circle mb-5">
-              <span class="fab fa-yelp fa-2x btn-icon__inner btn-icon__inner-bottom-minus"></span>
+            <span class="btn btn-icon btn-lg btn-soft-primary rounded-circle mb-6">
+              <span class="btn-icon__inner btn-icon__inner-bottom-minus ml-1"><img src="images/home2.svg" alt="Choose Your Home" width="110"></span>
             </span>
-            <h3 class="h5">1. Choose Your Home</h3>
+            <h3 class="h5 font-weight-semi-bold">1. Choose Your Home</h3>
             <p class="mb-md-0">Browse our listings and choose your favorite home.</p>
           </div>
         </div>
 
         <div class="col-md-4 mb-7">
           <div class="text-center px-lg-3">
-            <span class="btn btn-icon btn-lg btn-soft-primary rounded-circle mb-5">
-              <span class="fas fa-fire fa-2x btn-icon__inner btn-icon__inner-bottom-minus"></span>
+            <span class="btn btn-icon btn-lg btn-soft-danger rounded-circle mb-6">
+              <span class="btn-icon__inner btn-icon__inner-bottom-minus"><img src="images/man.svg" alt="Choose Your Host" width="90"></span>
             </span>
-            <h3 class="h5">2. Choose Your Host</h3>
-            <p class="mb-md-0">Read about your host in the listing and make contact through RoomMagnet 
+            <h3 class="h5 font-weight-semi-bold">2. Choose Your Host</h3>
+            <p class="mb-md-0">Read about your host in the listing and make contact through RoomMagnet.
 
 </p>
           </div>
@@ -415,10 +332,10 @@ start coming to you! RoomMagnet will ensure that your communication is handled s
 
         <div class="col-md-4 mb-7">
           <div class="text-center px-lg-3">
-            <span class="btn btn-icon btn-lg btn-soft-success rounded-circle mb-5">
-              <span class="fab fa-whmcs fa-2x btn-icon__inner btn-icon__inner-bottom-minus"></span>
+            <span class="btn btn-icon btn-lg btn-soft-success rounded-circle mb-6">
+              <span class="btn-icon__inner btn-icon__inner-bottom-minus mb-3"><img src="images/lawn-mower.svg" alt="Choose Your Chores" width="110"></span>
             </span>
-            <h3 class="h5">3. Choose your Chores</h3>
+            <h3 class="h5 font-weight-semi-bold">3. Choose your Chores</h3>
             <p class="mb-md-0">The more you choose, the less you pay!</p>
           </div>
         </div>
@@ -437,9 +354,9 @@ start coming to you! RoomMagnet will ensure that your communication is handled s
     <div>
       <div class="container space-2 space-md-3">
         <!-- Title -->
-        <div class="w-md-80 w-lg-50 text-center mx-md-auto mb-9">
+        <div class="w-md-80 w-lg-50 mb-9">
 
-          <h2 class="font-weight-medium">Find a home to share in your area.</h2>
+          <h2 class="font-weight-normal navy">Find a home to share in your area.</h2>
         </div>
         <!-- End Title -->
 
@@ -465,7 +382,7 @@ start coming to you! RoomMagnet will ensure that your communication is handled s
               <header class="position-absolute top-0 right-0 left-0 p-5">
                 <a class="media align-items-center text-white" href="#">
                   <div class="u-avatar mr-2">
-                    <img class="img-fluid rounded-circle" src="../../assets/img/100x100/img1.jpg" alt="Image Description">
+                    <img class="img-fluid rounded-circle" src="images/elder5.jpg" alt="Image Description">
                   </div>
                   <div class="media-body">
                     <span>Maria Muszynska</span>
@@ -473,7 +390,7 @@ start coming to you! RoomMagnet will ensure that your communication is handled s
                 </a>
               </header>
               <div class="position-absolute right-0 bottom-0 left-0 p-5">
-                <span class="h4 text-white">$455,000</span>
+                <span class="h4 text-white">$750/mo</span>
               </div>
             </div>
 
@@ -494,7 +411,7 @@ start coming to you! RoomMagnet will ensure that your communication is handled s
               <header class="position-absolute top-0 right-0 left-0 p-5">
                 <a class="media align-items-center text-white" href="#">
                   <div class="u-avatar mr-2">
-                    <img class="img-fluid rounded-circle" src="../../assets/img/100x100/img2.jpg" alt="Image Description">
+                    <img class="img-fluid rounded-circle" src="images/elder4.jpg" alt="Image Description">
                   </div>
                   <div class="media-body">
                     <span>Casy Williams</span>
@@ -502,7 +419,7 @@ start coming to you! RoomMagnet will ensure that your communication is handled s
                 </a>
               </header>
               <div class="position-absolute right-0 bottom-0 left-0 p-5">
-                <span class="h4 text-white">$750,000</span>
+                <span class="h4 text-white">$690/mo</span>
               </div>
             </div>
 
@@ -523,7 +440,7 @@ start coming to you! RoomMagnet will ensure that your communication is handled s
               <header class="position-absolute top-0 right-0 left-0 p-5">
                 <a class="media align-items-center text-white" href="#">
                   <div class="u-avatar mr-2">
-                    <img class="img-fluid rounded-circle" src="../../assets/img/100x100/img3.jpg" alt="Image Description">
+                    <img class="img-fluid rounded-circle" src="images/elder3.jpg" alt="Image Description">
                   </div>
                   <div class="media-body">
                     <span>Chris Johnson</span>
@@ -531,7 +448,7 @@ start coming to you! RoomMagnet will ensure that your communication is handled s
                 </a>
               </header>
               <div class="position-absolute right-0 bottom-0 left-0 p-5">
-                <span class="h4 text-white">$173,000</span>
+                <span class="h4 text-white">$598/mo</span>
               </div>
             </div>
 
@@ -552,7 +469,7 @@ start coming to you! RoomMagnet will ensure that your communication is handled s
               <header class="position-absolute top-0 right-0 left-0 p-5">
                 <a class="media align-items-center text-white" href="#">
                   <div class="u-avatar mr-2">
-                    <img class="img-fluid rounded-circle" src="../../assets/img/100x100/img4.jpg" alt="Image Description">
+                    <img class="img-fluid rounded-circle" src="images/elder2.jpg" alt="Image Description">
                   </div>
                   <div class="media-body">
                     <span>Elon Fisher</span>
@@ -560,7 +477,7 @@ start coming to you! RoomMagnet will ensure that your communication is handled s
                 </a>
               </header>
               <div class="position-absolute right-0 bottom-0 left-0 p-5">
-                <span class="h4 text-white">$199,000</span>
+                <span class="h4 text-white">$475/mo</span>
               </div>
             </div>
 
@@ -581,7 +498,7 @@ start coming to you! RoomMagnet will ensure that your communication is handled s
               <header class="position-absolute top-0 right-0 left-0 p-5">
                 <a class="media align-items-center text-white" href="#">
                   <div class="u-avatar mr-2">
-                    <img class="img-fluid rounded-circle" src="../../assets/img/100x100/img1.jpg" alt="Image Description">
+                    <img class="img-fluid rounded-circle" src="images/elder1.jpg" alt="Image Description">
                   </div>
                   <div class="media-body">
                     <span>Maria Muszynska</span>
@@ -589,7 +506,7 @@ start coming to you! RoomMagnet will ensure that your communication is handled s
                 </a>
               </header>
               <div class="position-absolute right-0 bottom-0 left-0 p-5">
-                <span class="h4 text-white">$376,000</span>
+                <span class="h4 text-white">$625/mo</span>
               </div>
             </div>
 
@@ -612,16 +529,14 @@ start coming to you! RoomMagnet will ensure that your communication is handled s
     </div>
     <!-- End Houses Section -->
 
-    <!-- Features Section -->
-    <div class="position-relative space-2 space-md-3 space-lg-4">
-    
+    <!-- Features Section -->    
 
     <!-- Testimonials -->
     <div class="bg-light">
       <div class="container space-2 space-md-3">
         <!-- Title -->
-        <div class="w-md-80 w-lg-50 text-center mx-md-auto mb-9">
-          <h2 class="font-weight-medium">Our Success Stories</h2>
+        <div class="w-md-80 w-lg-50 mb-9">
+          <h2 class="font-weight-normal navy">Our Success Stories</h2>
         </div>
         <!-- End Title -->
 
@@ -648,7 +563,7 @@ start coming to you! RoomMagnet will ensure that your communication is handled s
             <!-- Testimonial -->
             <div class="card-body p-5">
               <div class="mb-auto">
-                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Consectetur purus ut faucibus pulvinar elementum integer.</p>
+                <p class="mb-0">I had a wonderful stay with Karen and Bob. They made sure that I felt right at home. I'd always help them grocery shop when I was out running errands or help them out with yard work. They really appreciated it, and these little things really helped lower my rent!</p>
               </div>
             </div>
 
@@ -686,14 +601,14 @@ start coming to you! RoomMagnet will ensure that your communication is handled s
             <!-- Testimonial -->
             <div class="card-body p-5">
               <div class="mb-auto">
-                <p class="mb-0">Mattis vulputate enim nulla aliquet porttitor lacus luctus. Vulputate enim nulla aliquet porttitor lacus luctus accumsan. Sem fringilla ut morbi tincidunt augue interdum velit euismod.</p>
+                <p class="mb-0">My host's daughter moved out and lives on her own, so they had an empty space for me. Honestly don't know why I didn't do this any sooner! The rent is very affordable, so I don't have to worry as much about that factor while I'm pursuing my master's degree. I would definitely recommend this to my friends.</p>
               </div>
             </div>
 
             <div class="card-footer border-0 pt-0 px-5 pb-5">
               <div class="media">
                 <div class="u-avatar mr-3">
-                  <img class="img-fluid rounded-circle" src="../../assets/img/100x100/img2.jpg" alt="Image Description">
+                  <img class="img-fluid rounded-circle" src="../../assets/img/100x100/img3.jpg" alt="Image Description">
                 </div>
                 <div class="media-body">
                   <h4 class="h6 mb-1">Massalha Shady</h4>
@@ -724,17 +639,17 @@ start coming to you! RoomMagnet will ensure that your communication is handled s
             <!-- Testimonial -->
             <div class="card-body p-5">
               <div class="mb-auto">
-                <p class="mb-0">Semper quis lectus nulla at. Cursus eget nunc scelerisque viverra mauris in aliquam. Mattis pellentesque id nibh tortor id aliquet lectus proin nibh.</p>
+                <p class="mb-0">Thank you RoomMagnet, a true lifesaver! My husband and I aren't getting any younger, and have very little retirement saved up. Our children are grown and have moved on with their lives, so why not rent out the rooms we are no longer using? The process is very easy and painless, and the tenants also help out around the house.</p>
               </div>
             </div>
 
             <div class="card-footer border-0 pt-0 px-5 pb-5">
               <div class="media">
                 <div class="u-avatar mr-3">
-                  <img class="img-fluid rounded-circle" src="../../assets/img/100x100/img3.jpg" alt="Image Description">
+                  <img class="img-fluid rounded-circle" src="images/elder4.jpg" alt="Image Description">
                 </div>
                 <div class="media-body">
-                  <h4 class="h6 mb-1">Mark McManus</h4>
+                  <h4 class="h6 mb-1">Casy Williams</h4>
                   <ul class="list-inline text-warning small mb-0">
                     <li class="list-inline-item mx-0">
                       <span class="fas fa-star"></span>
@@ -760,7 +675,6 @@ start coming to you! RoomMagnet will ensure that your communication is handled s
         </div>
         <!-- End Slick Carousel -->
       </div>
-    </div>
     <!-- End Testimonials -->
 
    
@@ -837,7 +751,7 @@ start coming to you! RoomMagnet will ensure that your communication is handled s
 
       <div class="text-center py-7">
         <!-- Copyright -->
-        <p class="small text-muted mb-0">&copy; Front. 2019 Htmlstream.</p>
+        <p class="small text-muted mb-0">&copy; RoomMagnet 2019.</p>
         <!-- End Copyright -->
       </div>
     </div>
@@ -881,51 +795,51 @@ start coming to you! RoomMagnet will ensure that your communication is handled s
 
   <!-- JS Plugins Init. -->
   <script>
-    $(window).on('load', function () {
-      // initialization of HSMegaMenu component
-      $('.js-mega-menu').HSMegaMenu({
-        event: 'hover',
-        pageContainer: $('.container'),
-        breakpoint: 767.98,
-        hideTimeOut: 0
+      $(window).on('load', function () {
+          // initialization of HSMegaMenu component
+          $('.js-mega-menu').HSMegaMenu({
+              event: 'hover',
+              pageContainer: $('.container'),
+              breakpoint: 767.98,
+              hideTimeOut: 0
+          });
+
+          // initialization of svg injector module
+          $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
       });
 
-      // initialization of svg injector module
-      $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
-    });
+      $(document).on('ready', function () {
+          // initialization of header
+          $.HSCore.components.HSHeader.init($('#header'));
 
-    $(document).on('ready', function () {
-      // initialization of header
-      $.HSCore.components.HSHeader.init($('#header'));
+          // initialization of form validation
+          $.HSCore.components.HSValidation.init('.js-validate', {
+              rules: {
+                  confirmPassword: {
+                      equalTo: '#signupPassword'
+                  }
+              }
+          });
 
-      // initialization of form validation
-      $.HSCore.components.HSValidation.init('.js-validate', {
-        rules: {
-          confirmPassword: {
-            equalTo: '#signupPassword'
-          }
-        }
+
+          // initialization of fancybox
+          $.HSCore.components.HSFancyBox.init('.js-fancybox');
+
+          // initialization of text animation (typing)
+          var typed = new Typed(".u-text-animation.u-text-animation--typing", {
+              strings: ["another generation.", "a retiree.", "an empty nester.", "a new friend."],
+              typeSpeed: 60,
+              loop: true,
+              backSpeed: 25,
+              backDelay: 1500
+          });
+
+          // initialization of slick carousel
+          $.HSCore.components.HSSlickCarousel.init('.js-slick-carousel');
+
+          // initialization of go to
+          $.HSCore.components.HSGoTo.init('.js-go-to');
       });
-        
-
-      // initialization of fancybox
-      $.HSCore.components.HSFancyBox.init('.js-fancybox');
-
-        // initialization of text animation (typing)
-      var typed = new Typed(".u-text-animation.u-text-animation--typing", {
-        strings: ["another generation.", "a retiree.", "an empty nester.", "a new friend."],
-        typeSpeed: 60,
-        loop: true,
-        backSpeed: 25,
-        backDelay: 1500
-      });
-        
-      // initialization of slick carousel
-      $.HSCore.components.HSSlickCarousel.init('.js-slick-carousel');
-
-      // initialization of go to
-      $.HSCore.components.HSGoTo.init('.js-go-to');
-    });
   </script>
 </body>
 </html>
