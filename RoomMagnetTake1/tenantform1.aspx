@@ -34,14 +34,8 @@
         <!-- Nav -->
         <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar u-header__navbar--no-space">
           <!-- Logo -->
-          <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center" href="index.html" aria-label="Front">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="46px" height="46px" viewBox="0 0 46 46" xml:space="preserve" style="margin-bottom: 0;">
-              <path fill="#3F7DE0" opacity=".65" d="M23,41L23,41c-9.9,0-18-8-18-18v0c0-9.9,8-18,18-18h11.3C38,5,41,8,41,11.7V23C41,32.9,32.9,41,23,41z"/>
-              <path class="fill-info" opacity=".5" d="M28,35.9L28,35.9c-9.9,0-18-8-18-18v0c0-9.9,8-18,18-18l11.3,0C43,0,46,3,46,6.6V18C46,27.9,38,35.9,28,35.9z"/>
-              <path class="fill-primary" opacity=".7" d="M18,46L18,46C8,46,0,38,0,28v0c0-9.9,8-18,18-18h11.3c3.7,0,6.6,3,6.6,6.6V28C35.9,38,27.9,46,18,46z"/>
-              <path class="fill-white" d="M17.4,34V18.3h10.2v2.9h-6.4v3.4h4.8v2.9h-4.8V34H17.4z"/>
-            </svg>
-            <span class="u-header__navbar-brand-text">Front</span>
+          <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center" href="index.html" aria-label="RoomMagnet">
+              <img src="images/logofinal4.svg">
           </a>
           <!-- End Logo -->
 
@@ -59,45 +53,31 @@
           <!-- End Responsive Toggle Button -->
 
           <!-- Navigation -->
-          <div id="navBar" class="collapse navbar-collapse u-header__navbar-collapse">
+          <div id="navBar" class="collapse navbar-collapse u-header__navbar-collapse opensans">
             <ul class="navbar-nav u-header__navbar-nav">
 
               <!-- Demos -->
-              <li class="nav-item hs-has-mega-menu u-header__nav-item"
+              <li class="opensans nav-item hs-has-mega-menu u-header__nav-item"
                   data-event="hover"
                   data-animation-in="slideInUp"
                   data-animation-out="fadeOut"
-                  data-max-width="900px"
+                  data-max-width="400px"
                   data-position="right">
                 <a id="demosMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">How it Works</a>
 
                 <!-- Demos - Mega Menu -->
-                <div class="hs-mega-menu w-100 u-header__sub-menu" aria-labelledby="demosMegaMenu">
+                <div class="hs-mega-menu w-400 u-header__sub-menu" aria-labelledby="demosMegaMenu">
                   <div class="row no-gutters">
-                    <div class="col-lg-8">
+                    <div class="col-lg-12">
                       <div class="u-header__promo-card-deck">
                         <!-- Promo Item -->
                         <div class="u-header__promo-card u-header__promo-item">
-                          <a class="u-header__promo-link" href="../home/index.html">
+                          <a class="u-header__promo-link" href="#host">
                             <div class="media align-items-center">
-                              <img class="js-svg-injector u-header__promo-icon" src="../../assets/svg/icons/icon-21.svg" alt="SVG">
+                              <img class="u-header__promo-icon" src="images/host2.svg" alt="SVG">
                               <div class="media-body">
                                 <span class="u-header__promo-title">Host</span>
-                                <small class="u-header__promo-text">List your spare room to attract tenants</small>
-                              </div>
-                            </div>
-                          </a>
-                        </div>
-                        <!-- End Promo Item -->
-
-                        <!-- Promo Item -->
-                        <div class="u-header__promo-card u-header__promo-item">
-                          <a class="u-header__promo-link" href="../app-marketplace/index.html">
-                            <div class="media align-items-center">
-                              <img class="js-svg-injector u-header__promo-icon" src="../../assets/svg/icons/icon-45.svg" alt="SVG">
-                              <div class="media-body">
-                                <span class="u-header__promo-title">Tenant <span class="badge badge-success badge-pill ml-1">New</span></span>
-                                <small class="u-header__promo-text">Find a place to room</small>
+                                <small class="u-header__promo-text">List your spare room to attract tenants.</small>
                               </div>
                             </div>
                           </a>
@@ -106,28 +86,15 @@
                       </div>
 
                       <div class="u-header__promo-card-deck">
-                        <!-- Promo Item -->
-                        <div class="u-header__promo-card u-header__promo-item">
-                          <a class="u-header__promo-link" href="../job/index.html">
-                            <div class="media align-items-center">
-                              <img class="js-svg-injector u-header__promo-icon" src="../../assets/svg/icons/icon-19.svg" alt="SVG">
-                              <div class="media-body">
-                                <span class="u-header__promo-title">Job</span>
-                                <small class="u-header__promo-text">Job vacancy demo</small>
-                              </div>
-                            </div>
-                          </a>
-                        </div>
-                        <!-- End Promo Item -->
 
                         <!-- Promo Item -->
                         <div class="u-header__promo-card u-header__promo-item">
-                          <a class="u-header__promo-link" href="../help-desk/index.html">
+                          <a class="u-header__promo-link" href="#tenant">
                             <div class="media align-items-center">
-                              <img class="js-svg-injector u-header__promo-icon" src="../../assets/svg/icons/icon-4.svg" alt="SVG">
+                              <img class=" u-header__promo-icon" src="images/getdiscovered1.svg" alt="SVG">
                               <div class="media-body">
-                                <span class="u-header__promo-title">Help Desk</span>
-                                <small class="u-header__promo-text">List your spare room to attract tenants</small>
+                                <span class="u-header__promo-title">Tenant</span>
+                                <small class="u-header__promo-text">Find a place to room.</small>
                               </div>
                             </div>
                           </a>
@@ -136,46 +103,10 @@
                       </div>
 
                       <div class="u-header__promo-card-deck">
-                        <!-- Promo Item -->
-                        <div class="u-header__promo-card u-header__promo-item">
-                          <a class="u-header__promo-link" href="../crypto/index.html">
-                            <div class="media align-items-center">
-                              <img class="js-svg-injector u-header__promo-icon" src="../../assets/svg/icons/icon-5.svg" alt="SVG">
-                              <div class="media-body">
-                                <span class="u-header__promo-title">Crypto Landing</span>
-                                <small class="u-header__promo-text">Cryptocurrency demo</small>
-                              </div>
-                            </div>
-                          </a>
-                        </div>
-                        <!-- End Promo Item -->
 
-                        <!-- Promo Item -->
-                        <div class="u-header__promo-card u-header__promo-item">
-                          <div class="u-header__promo-link">
-                            <div class="media align-items-center">
-                              <img class="js-svg-injector u-header__promo-icon" src="../../assets/svg/icons/icon-23.svg" alt="SVG">
-                              <div class="media-body">
-                                <span class="u-header__promo-title text-secondary">New demos</span>
-                                <small class="u-header__promo-text">coming soon ...</small>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- End Promo Item -->
                       </div>
                     </div>
 
-                    <!-- Promo -->
-                    <div class="col-lg-4 u-header__promo d-none d-lg-block">
-                      <a class="d-block u-header__promo-inner" href="#">
-                        <div class="position-relative">
-                          <img class="img-fluid rounded mb-3" src="../../assets/img/380x227/img6.jpg" alt="Image Description">
-                        </div>
-                        <span class="text-secondary font-size-1">Front makes you look at things from a different perspectives.</span>
-                      </a>
-                    </div>
-                    <!-- End Promo -->
                   </div>
                 </div>
                 <!-- End Demos - Mega Menu -->
@@ -195,28 +126,14 @@
                 <div class="hs-mega-menu u-header__sub-menu" aria-labelledby="docsMegaMenu" style="min-width: 330px;">
                   <!-- Promo Item -->
                   <div class="u-header__promo-item">
-                    <a class="u-header__promo-link" href="../../documentation/index.html">
+                    <a class="u-header__promo-link" href="">
                       <div class="media align-items-center">
-                        <img class="js-svg-injector u-header__promo-icon" src="../../assets/svg/icons/icon-2.svg" alt="SVG">
+                        <img class="u-header__promo-icon" src="images/faq.svg" alt="SVG">
                         <div class="media-body">
                           <span class="u-header__promo-title">
                             FAQ
                           </span>
-                          <small class="u-header__promo-text">Need an answer?</small>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <!-- End Promo Item -->
-
-                  <!-- Promo Item -->
-                  <div class="u-header__promo-item">
-                    <a class="u-header__promo-link" href="../../starter/index.html">
-                      <div class="media align-items-center">
-                        <img class="js-svg-injector u-header__promo-icon" src="../../assets/svg/icons/icon-1.svg" alt="SVG">
-                        <div class="media-body">
-                          <span class="u-header__promo-title">Get started</span>
-                          <small class="u-header__promo-text">Components and snippets</small>
+                          <small class="u-header__promo-text">We've got the answer.</small>
                         </div>
                       </div>
                     </a>
@@ -229,8 +146,8 @@
                       <div class="col-6">
                         <div class="u-header__promo-footer-item">
                           <small class="text-muted d-block">Check what's new</small>
-                          <a class="small" href="../../documentation/getting-started/changelog.html">
-                            Changelog
+                          <a class="small" href="">
+                            Our Blog
                           </a>
                         </div>
                       </div>
@@ -259,7 +176,7 @@
               <!-- End Button -->
                 <!-- Button -->
               <li class="nav-item u-header__nav-last-item">
-                <a class="btn btn-sm btn-primary transition-3d-hover" href="signup.html">
+                <a class="btn btn-sm btn-primary transition-3d-hover" href="signup.aspx">
                   Sign Up
                 </a>
               </li>
@@ -272,7 +189,6 @@
       </div>
     </div>
   </header>
-  <!-- ========== END HEADER ========== -->
 
   <!-- ========== MAIN CONTENT ========== -->
   <main id="content" role="main">
@@ -287,61 +203,63 @@
          
                 
               <div class="mb-7">
-                <h1 class="h2 sunset font-weight-normal col-6 mb-2"><span class="h1 mb-1"><strong>Welcome! </strong></span><br>Let's start with the basics</h1>
+                  <h1 class="sunset font-weight-semi-bold asap2 col-7"><strong>Welcome! </strong><span class="h3 opensans display-5 navy font-weight-normal ml-1">Let's start with the basics.</span></h1>
                 <p class="col-6">Tell us a little about yourself.</p>
               </div>
                 <!-- End Title -->
 
     <!-- Personal Info Form -->
-              <form class="js-validate"  runat="server">
-                  <div class="row">
-                      <!-- Input -->
-                      <div class="col-sm-6 mb-6">
-                          <div class="js-form-message">
-                              <label id="nameLabel" class="form-label">
-                                  First Name
-                                  <span class="text-danger">*</span>
-                              </label>
-                              <div class="form-group">
-                                  <asp:TextBox ID="txtFirstName" runat="server" class="form-control" name="firstname" value="Natalie" placeholder="Enter your first name" aria-label="Enter your first name" required aria-describedby="firstnameLabel"
+        <form class="js-validate" runat="server">
+          <div class="row">
+            <!-- Input -->
+            <div class="col-sm-6 mb-6">
+              <div class="js-form-message">
+                <label id="nameLabel" class="form-label">
+                  First Name
+                  <span class="text-danger">*</span>
+                </label>
+
+                <div class="form-group">
+                 <asp:TextBox ID="txtFirstName" runat="server" class="form-control" name="firstname" value="Natalie" placeholder="Enter your first name" aria-label="Enter your first name" required aria-describedby="firstnameLabel"
                                          data-msg="Please enter your first name."
                                          data-error-class="u-has-error"
                                          data-success-class="u-has-success"></asp:TextBox>
-                             
-                                  <small class="form-text text-muted">Displayed on your public profile, notifications and other places.</small>
-                              </div>
-                          </div>
-                      </div>
-                      <!-- End Input -->
-                      <!-- Input -->
-                      <div class="col-sm-6 mb-6">
-                          <div class="js-form-message">
-                              <label id="lastnameLabel" class="form-label">
-                                  Last Name
-                                  <span class="text-danger">*</span>
-                              </label>
-                              <div class="form-group">
-                                  <asp:TextBox ID="txtLastName" runat="server" class="form-control" name="lastname" value="Curtis" placeholder="Enter your last name" aria-label="Enter your last name" required aria-describedby="lastnameLabel"
-                                         data-msg="Please enter your last name."
-                                         data-error-class="u-has-error"
-                                         data-success-class="u-has-success"></asp:TextBox>
-                                
-                              </div>
-                          </div>
-                      </div>
-                      <!-- End Input -->
-                  </div>
+                  <small class="form-text text-muted">Displayed on your public profile, notifications and other places.</small>
+                </div>
+              </div>
+            </div>
+            <!-- End Input -->
 
-                  <div class="row">
-                      <!-- Input -->
-                      <div class="col-md-2 mb-3 mb-sm-6">
+            <!-- Input -->
+            <div class="col-sm-6 mb-6">
+              <div class="js-form-message">
+                <label id="lastnameLabel2" class="form-label">
+                  Last Name
+                  <span class="text-danger">*</span>
+                </label>
+
+                <div class="form-group">
+<asp:TextBox ID="txtLastName" runat="server" class="form-control" name="lastname" value="Curtis" placeholder="Enter your last name" aria-label="Enter your last name" required aria-describedby="lastnameLabel"
+                                                 data-msg="Please enter your last name."
+                                                 data-error-class="u-has-error"
+                                                 data-success-class="u-has-success"></asp:TextBox>
+                </div>
+              </div>
+            </div>
+            <!-- End Input -->
+          </div>
+
+
+          <div class="row">
+            <!-- Input -->
+            <div class="col-md-2 mb-3 mb-sm-6">
                           <label class="form-label">
-                              Birth date
-                              <span class="text-danger">*</span>
-                          </label>
-                          <div class="js-form-message">
-                              <div class="form-group">
-                                  <asp:DropDownList ID="ddMonth"  class="form-control custom-select" 
+            Birth date
+            <span class="text-danger">*</span>
+          </label>
+              <div class="js-form-message">
+                <div class="form-group">
+                  <asp:DropDownList ID="ddMonth"  class="form-control custom-select" 
                                           data-msg="Please select month."
                                           data-error-class="u-has-error"
                                           data-success-class="u-has-success" runat="server">
@@ -359,20 +277,19 @@
                                       <asp:ListItem>November</asp:ListItem>
                                       <asp:ListItem>December</asp:ListItem>
                                   </asp:DropDownList>
-                                  
-                                     
-                              </div>
-                          </div>
-                      </div>
-                      <!-- End Input -->
-                      <!-- Input -->
-                      <div class="col-sm-4 col-md-2 mb-3 mb-sm-6">
-                          <div class="js-form-message">
-                              <label class="form-label">
-                                  <span class="ast">*</span>
-                              </label>
-                              <div class="form-group">
-                                       <asp:DropDownList ID="ddDay"  class="form-control custom-select" 
+                </div>
+              </div>
+            </div>
+            <!-- End Input -->
+
+            <!-- Input -->
+            <div class="col-sm-4 col-md-2 mb-3 mb-sm-6">
+              <div class="js-form-message">
+                  <label class="form-label">
+            <span class="ast">*</span>
+          </label>
+                <div class="form-group">
+                 <asp:DropDownList ID="ddDay"  class="form-control custom-select" 
                                           data-msg="Please select Date."
                                           data-error-class="u-has-error"
                                           data-success-class="u-has-success" runat="server">
@@ -410,19 +327,19 @@
                                       <asp:ListItem>31</asp:ListItem>
 
                                   </asp:DropDownList>
-                                  
-                              </div>
-                          </div>
-                      </div>
-                      <!-- End Input -->
-                      <!-- Input -->
-                      <div class="col-sm-4 col-md-2 mb-3 mb-sm-6">
-                          <div class="js-form-message">
-                              <label class="form-label">
-                                  <span class="ast">*</span>
-                              </label>
-                              <div class="form-group">
-                                  <asp:DropDownList ID="ddYear" runat="server" class="form-control custom-select" required
+                </div>
+              </div>
+            </div>
+            <!-- End Input -->
+
+            <!-- Input -->
+               <div class="col-sm-4 col-md-2 mb-3 mb-sm-6">
+  <div class="js-form-message">
+                  <label class="form-label">
+            <span class="ast">*</span>
+          </label>
+                <div class="form-group">
+                                                    <asp:DropDownList ID="ddYear" runat="server" class="form-control custom-select" required
                                           data-msg="Please select year."
                                           data-error-class="u-has-error"
                                           data-success-class="u-has-success">
@@ -534,23 +451,22 @@
                                       <asp:ListItem>2004</asp:ListItem>
                                       <asp:ListItem>2005</asp:ListItem>
 
-                                      <asp:ListItem>2006</asp:ListItem>                              </asp:DropDownList>
-                                   
+                                      <asp:ListItem>2006</asp:ListItem>        
+                                                        </asp:DropDownList>
+                </div>
+              </div>
+            </div>
+            <!-- End Input -->
 
-                                  
-                              </div>
-                          </div>
-                      </div>
-                      <!-- End Input -->
-                      <!-- Input -->
-                      <div class="col-sm-4 col-md-2 mb-6">
-                          <div class="js-form-message">
-                              <label id="lastnameLabel" class="form-label">
-                                  Gender
-                                  <span class="text-danger">*</span>
-                              </label>
-                              <div class="form-group">
-                                  <asp:DropDownList ID="ddGender" runat="server" class="form-control custom-select" required
+            <!-- Input -->
+            <div class="col-sm-4 col-md-2 mb-6">
+                <div class="js-form-message">
+                <label id="lastnameLabel" class="form-label">
+                  Gender
+                  <span class="text-danger">*</span>
+                </label>
+                <div class="form-group">
+                  <asp:DropDownList ID="ddGender" runat="server" class="form-control custom-select" required
                                           data-msg="Please select your gender."
                                           data-error-class="u-has-error"
                                           data-success-class="u-has-success">
@@ -558,61 +474,63 @@
                                       <asp:ListItem>Male</asp:ListItem>
                                       <asp:ListItem>Female</asp:ListItem>
                                   </asp:DropDownList>
-                                 
-                              </div>
-                          </div>
-                      </div>
-                      <!-- End Input -->
-                      <!-- Input -->
-                      <div class="col-sm-4 mb-3 mb-sm-6">
-                          <div class="js-form-message">
-                              <label class="form-label">
-                                  Preferred language
-                                  <span class="text-danger">*</span>
-                              </label>
-                              <div class="form-group">
-                                     <asp:DropDownList ID="ddLanguage" runat="server" class="form-control custom-select" required
+                </div>
+              </div>
+            </div>
+            <!-- End Input -->
+            <!-- Input -->
+            <div class="col-sm-4 mb-3 mb-sm-6">
+              <div class="js-form-message">
+                <label class="form-label">
+                  Preferred language
+                  <span class="text-danger">*</span>
+                </label>
+
+                <div class="form-group">
+<asp:DropDownList ID="ddLanguage" runat="server" class="form-control custom-select" required
                                           data-msg="Please select your gender."
                                           data-error-class="u-has-error"
                                           data-success-class="u-has-success">
-                                      <asp:ListItem>English</asp:ListItem>
-                                      <asp:ListItem>Français</asp:ListItem>
-                                      <asp:ListItem>Deutsch</asp:ListItem>
+                                          <asp:ListItem>English</asp:ListItem>
+                                          <asp:ListItem>Français</asp:ListItem>
+                                          <asp:ListItem>Deutsch</asp:ListItem>
                                           <asp:ListItem>Português</asp:ListItem>
-                                  </asp:DropDownList>
-                                  
-                              </div>
-                          </div>
-                      </div>
-                      <!-- End Input -->
-                  </div>
-                  <div class="row">
-                      <!-- Input -->
-                      <div class="col-sm-6 mb-6">
-                          <div class="js-form-message">
-                              <label id="emailLabel" class="form-label">
-                                  Email address
-                                  <span class="text-danger">*</span>
-                              </label>
-                              <div class="form-group">
-                                  <asp:TextBox ID="txtEmail" runat="server" class="form-control" name="email" value="natalie.curtis@gmail.com" placeholder="Enter your email address" aria-label="Enter your email address" required aria-describedby="emailLabel"
+                                      </asp:DropDownList>
+                </div>
+              </div>
+            </div>
+            <!-- End Input -->
+          </div>
+
+          <div class="row">
+            <!-- Input -->
+            <div class="col-sm-6 mb-6">
+              <div class="js-form-message">
+                <label id="emailLabel" class="form-label">
+                  Email address
+                  <span class="text-danger">*</span>
+                </label>
+
+                <div class="form-group">
+<asp:TextBox ID="txtEmail" runat="server" class="form-control" name="email" value="natalie.curtis@gmail.com" placeholder="Enter your email address" aria-label="Enter your email address" required aria-describedby="emailLabel"
                                          data-msg="Please enter a valid email address."
                                          data-error-class="u-has-error"
                                          data-success-class="u-has-success"></asp:TextBox>
-                        
-                                  <small class="form-text text-muted">We'll never share your email with anyone else.</small>
-                              </div>
-                          </div>
-                      </div>
-                      <!-- End Input -->
-                      <!-- Input -->
-                      <div class="col-sm-6 mb-6">
-                          <div class="js-form-message">
-                              <label id="locationLabel" class="form-label">
-                                  Tenant Type
-                                  <span class="text-danger">*</span>
-                              </label>
-                              <div class="form-group">
+                  <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+              </div>
+            </div>
+            <!-- End Input -->
+
+            <!-- Input -->
+            <div class="col-sm-6 mb-6">
+              <div class="js-form-message">
+                <label id="locationLabel" class="form-label">
+                  Tenant Type
+                  <span class="text-danger">*</span>
+                </label>
+
+                    <div class="form-group">
                                   <asp:DropDownList ID="ddTenantType" runat="server" class="form-control custom-select" required
                                           data-msg="Please select your gender."
                                           data-error-class="u-has-error"
@@ -622,69 +540,54 @@
                                       <asp:ListItem>Au Pair</asp:ListItem>
                                           <asp:ListItem>Other Type</asp:ListItem>
                                   </asp:DropDownList>
-                              </div>
-                          </div>
-                      </div>
-                      <!-- End Input -->
-                  </div>
-                  <div class="row">
-                      <!-- Input -->
-                      <div class="col-sm-6 mb-6">
-                          <div class="js-form-message">
-                              <label id="phoneNumberLabel" class="form-label">
-                                  Phone number
-                                  <span class="text-danger">*</span>
-                              </label>
-                              <div class="form-group">
-                                  <asp:TextBox ID="txtPhonenumber" runat="server"  class="form-control" type="tel" name="phoneNumber" value="+44 (0161) 347 8854" placeholder="Enter your phone number" aria-label="Enter your phone number" required aria-describedby="phoneNumberLabel"
+                </div>
+              </div>
+            </div>
+            <!-- End Input -->
+
+          </div>
+
+          <div class="row">
+            <!-- Input -->
+            <div class="col-sm-6 mb-6">
+              <div class="js-form-message">
+                <label id="phoneNumberLabel" class="form-label">
+                  Phone number
+                  <span class="text-danger">*</span>
+                </label>
+
+                <div class="form-group">
+<asp:TextBox ID="txtPhonenumber" runat="server"  class="form-control" type="tel" name="phoneNumber" value="+44 (0161) 347 8854" placeholder="Enter your phone number" aria-label="Enter your phone number" required aria-describedby="phoneNumberLabel"
                                          data-msg="Please enter a valid phone number"
                                          data-error-class="u-has-error"
                                          data-success-class="u-has-success"></asp:TextBox>
-                             
-                              </div>
-                          </div>
-                          <a class="d-inline-block u-text-muted navy" href="#">
-                              <span class="mr-1">&#43;</span>
-                              Add another number
-                          </a>
-                      </div>
-                      <div class="col-sm-6 mb-6">
-                          <div class="js-form-message">
-                              <label id="passwordLabel" class="form-label">
-                                  Password
-                                  <span class="text-danger">*</span>
-                              </label>
-                              <div class="form-group">
-                                  <asp:TextBox ID="txtPassword" runat="server" class="form-control" type="password" name="password" value="********" placeholder="Enter a password" aria-label="Enter a Password" required aria-describedby="passwordLabel"
-                                         data-msg="Please enter a password"
-                                         data-error-class="u-has-error"
-                                         data-success-class="u-has-success"></asp:TextBox>
-                                 
-                              </div>
-                          </div>
-                            <div class="js-form-message">
-                              <label id="confirmpasswordLabel" class="form-label">
-                                  Confirm Password
-                                  <span class="text-danger">*</span>
-                              </label>
-                              <div class="form-group">
-                                  <asp:TextBox ID="txtConfirmPassword" runat="server" class="form-control" type="password" name="password" value="********" placeholder="Enter a password" aria-label="Enter a Password" required aria-describedby="passwordLabel"
-                                         data-msg="Please enter a password"
-                                         data-error-class="u-has-error"
-                                         data-success-class="u-has-success"></asp:TextBox>
-                                 
-                              </div>
-                          </div>
+                </div>
+              </div>
+              <a class="d-inline-block u-text-muted navy" href="#">
+                <span class="mr-1">&#43;</span>
+                Add another number
+              </a>
+            </div>
+                          <div class="col-sm-6 mb-6">
+              <div class="js-form-message">
+                <label id="passwordLabel" class="form-label">
+                  Password
+                  <span class="text-danger">*</span>
+                </label>
 
-                      </div>
-                        
-                      <!-- End Input -->
-                  </div>
-                
-                  <asp:Button href="tenantform2.aspx" ID="btnCommitTenant" runat="server" Text="Next Step!" class="btn btn-sm btn-soft-primary transition-3d-hover"  OnClick="btnCommitTenant_Click" />
-                 
-                  
-              </form>
+                <div class="form-group">
+<asp:TextBox ID="txtPassword" runat="server" class="form-control" type="password" name="password" value="********" placeholder="Enter a password" aria-label="Enter a Password" required aria-describedby="passwordLabel"
+                                         data-msg="Please enter a password"
+                                         data-error-class="u-has-error"
+                                         data-success-class="u-has-success"></asp:TextBox>
+                </div>
+              </div>
+                              
+            </div>
+            <!-- End Input -->
+            </div>
+             <asp:Button href="tenantform2.aspx" ID="btnCommitTenant" runat="server" Text="Next Step!" class="btn btn-sm btn-soft-primary transition-3d-hover"  OnClick="btnCommitTenant_Click" />
+                </form>
   </main>
   <!-- ========== END MAIN CONTENT ========== -->
 
@@ -758,7 +661,7 @@
 
       <div class="text-center py-7">
         <!-- Copyright -->
-        <p class="small text-muted mb-0">&copy; Front. 2019 Htmlstream.</p>
+        <p class="small text-muted mb-0">&copy; RoomMagnet 2019.</p>
         <!-- End Copyright -->
       </div>
     </div>
@@ -802,51 +705,51 @@
 
   <!-- JS Plugins Init. -->
   <script>
-    $(window).on('load', function () {
-      // initialization of HSMegaMenu component
-      $('.js-mega-menu').HSMegaMenu({
-        event: 'hover',
-        pageContainer: $('.container'),
-        breakpoint: 767.98,
-        hideTimeOut: 0
+      $(window).on('load', function () {
+          // initialization of HSMegaMenu component
+          $('.js-mega-menu').HSMegaMenu({
+              event: 'hover',
+              pageContainer: $('.container'),
+              breakpoint: 767.98,
+              hideTimeOut: 0
+          });
+
+          // initialization of svg injector module
+          $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
       });
 
-      // initialization of svg injector module
-      $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
-    });
+      $(document).on('ready', function () {
+          // initialization of header
+          $.HSCore.components.HSHeader.init($('#header'));
 
-    $(document).on('ready', function () {
-      // initialization of header
-      $.HSCore.components.HSHeader.init($('#header'));
+          // initialization of form validation
+          $.HSCore.components.HSValidation.init('.js-validate', {
+              rules: {
+                  confirmPassword: {
+                      equalTo: '#signupPassword'
+                  }
+              }
+          });
 
-      // initialization of form validation
-      $.HSCore.components.HSValidation.init('.js-validate', {
-        rules: {
-          confirmPassword: {
-            equalTo: '#signupPassword'
-          }
-        }
+
+          // initialization of fancybox
+          $.HSCore.components.HSFancyBox.init('.js-fancybox');
+
+          // initialization of text animation (typing)
+          var typed = new Typed(".u-text-animation.u-text-animation--typing", {
+              strings: ["another generation.", "a retiree.", "an empty nester.", "a new friend."],
+              typeSpeed: 60,
+              loop: true,
+              backSpeed: 25,
+              backDelay: 1500
+          });
+
+          // initialization of slick carousel
+          $.HSCore.components.HSSlickCarousel.init('.js-slick-carousel');
+
+          // initialization of go to
+          $.HSCore.components.HSGoTo.init('.js-go-to');
       });
-        
-
-      // initialization of fancybox
-      $.HSCore.components.HSFancyBox.init('.js-fancybox');
-
-        // initialization of text animation (typing)
-      var typed = new Typed(".u-text-animation.u-text-animation--typing", {
-        strings: ["another generation.", "a retiree.", "an empty nester.", "a new friend."],
-        typeSpeed: 60,
-        loop: true,
-        backSpeed: 25,
-        backDelay: 1500
-      });
-        
-      // initialization of slick carousel
-      $.HSCore.components.HSSlickCarousel.init('.js-slick-carousel');
-
-      // initialization of go to
-      $.HSCore.components.HSGoTo.init('.js-go-to');
-    });
   </script>
 </body>
 </html>
