@@ -17,7 +17,7 @@ public partial class login : System.Web.UI.Page
                 SqlConnection sc = new SqlConnection(ConfigurationManager.ConnectionStrings["cs"].ConnectionString);
 
            
-            lblStatus.Text = "Database Connection Successful";
+            //lblStatus.Text = "Database Connection Successful";
 
             sc.Open();
             System.Data.SqlClient.SqlCommand findPass = new System.Data.SqlClient.SqlCommand();
