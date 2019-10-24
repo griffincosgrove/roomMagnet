@@ -11,13 +11,14 @@ public class Tenant
 {
     private string firstName;
     private string lastName;
+    private string gender;
     private string email;
     private string phoneNumber;
     private DateTime dateOfBirth;
     private string password;
     private String tenantType;
 
-    public Tenant(string firstName, string lastName, string email, string phoneNumber, DateTime dateOfBirth, string password, String tenantType)
+    public Tenant(string firstName, string lastName, String gender, string email, string phoneNumber, DateTime dateOfBirth, string password, String tenantType)
     {
         setfirstName(firstName);
         setLastName(lastName);
@@ -42,6 +43,16 @@ public class Tenant
     public string getLastName()
     {
         return this.lastName;
+    }
+
+    public String getGender()
+    {
+        return gender;
+    }
+
+    public void setGender(String gender)
+    {
+        this.gender = gender;
     }
     public void setEmail(string email)
     {
