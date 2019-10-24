@@ -9,6 +9,7 @@ public class Host
     //Declarations
     private String firstName;
     private String lastName;
+    private String gender;
     private String email;
     private String phoneNumber;
     private String streetAddress;
@@ -17,11 +18,12 @@ public class Host
     private String zipcode;
     private DateTime dateOfBirth;
 
-    public Host(String firstName, String lastName, String email, String phoneNumber,
+    public Host(String firstName, String lastName, String gender, String email, String phoneNumber,
         String streetAddress, String city, String state, String zipcode, DateTime dateOfBirth)
     {
         setFirstName(firstName);
         setLastName(lastName);
+        setGender(gender);
         setEmail(email);
         setPhoneNumber(phoneNumber);
         setStreetAddress(streetAddress);
@@ -41,6 +43,17 @@ public class Host
     {
         this.firstName = firstName;
     }
+
+    public String getGender()
+    {
+        return gender;
+    }
+
+    public void setGender(String gender)
+    {
+        this.gender = gender;
+    }
+
     //-----------------------------------------------------------------------
     public String getLastName()
     {

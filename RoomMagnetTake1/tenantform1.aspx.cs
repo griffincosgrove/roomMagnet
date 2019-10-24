@@ -21,15 +21,16 @@ public partial class tenantform1 : System.Web.UI.Page
     protected void btnCommitTenant_Click(object sender, EventArgs e)
     {
         //create new Tenant object
-        Tenant newTenant = new Tenant(getString(txtFirstName), getString(txtLastName), getString(txtEmail), getString(txtPhonenumber), DateTime.Now, 
+        Tenant newTenant = new Tenant(getString(txtFirstName), getString(txtLastName), ddGender.SelectedValue, getString(txtEmail), getString(txtPhonenumber), DateTime.Now, 
             getString(txtPassword), ddTenantType.SelectedValue);
         
         //new paramterized query to insert a tenant
-        SqlCommand command = new SqlCommand("INSERT into [Tenant] (FirstName,LastName,Email,PhoneNumber,BirthDate,TenantType,Password) " +
+        SqlCommand command = new SqlCommand("INSERT into [Tenant] (FirstName,LastName, Gender, Email,PhoneNumber,BirthDate,TenantType,Password) " +
             "VALUES(@firstName, @lastName, @email, @phoneNumber, @dateOfBirth, @tenantType, @password)", sc);
         //HANDLE HASHING PASSWORD -later :)
         command.Parameters.AddWithValue("@firstName", newTenant.getFirstName());
         command.Parameters.AddWithValue("@lastName", newTenant.getLastName());
+        command.Parameters.AddWithValue("@gender", newTenant.getGender());
         command.Parameters.AddWithValue("@email", newTenant.getEmail());
         command.Parameters.AddWithValue("@phoneNumber", newTenant.getPhoneNumber());
         command.Parameters.AddWithValue("@dateOfBirth", newTenant.getDateOfBirth());
