@@ -197,8 +197,8 @@
                     <img class="px-lg-3 pb-6" width="250" src="images/info2.png">
 
                     <div class="mb-7">
-                        <h1 class="sunset font-weight-semi-bold asap2 col-8"><strong>One more thing! </strong><span class="h3 opensans display-5 navy font-weight-normal ml-1">It's time to list your property.</span></h1>
-                        <p class="col-6">Help us find the right tenant for you.</p>
+                        <h1 class="sunset font-weight-semi-bold asap2 col-8"><strong>One more thing! </strong><span class="h3 opensans display-5 navy font-weight-normal ml-1">Find the best room for you.</span></h1>
+                        <p class="col-6">Help us find the right place for you.</p>
                     </div>
                     <!-- End Title -->
 
