@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Added comment to test if i can push now - kris -->
   <!-- Title -->
   <title>Landing House | Front - Responsive Website Template</title>
 
