@@ -14,7 +14,7 @@ DROP TABLE RentedRoom
 	Gender varchar(10) NOT NULL,
 	Email varchar(30) NOT NULL,
 	PhoneNumber varchar(20) NOT NULL,
-	BirthDate datetime NOT NULL,
+	BirthDate date NOT NULL,
 	TenantType varchar(30) NOT NULL, --apparently this just means like postgrad intern etc, need to clarify
 	Password varchar(256) NOT NULL,
 	--just thought maybe there should be a description field in this table?
