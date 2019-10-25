@@ -1,4 +1,4 @@
-	DROP TABLE RentedRoom
+DROP TABLE RentedRoom
 	DROP TABLE Payment
 	DROP TABLE PropertyTask
 	DROP TABLE PropertyAmenity
@@ -6,29 +6,31 @@
 	DROP TABLE Host
 	DROP TABLE TenantTask
 	drop table TENANT
-	
+
 	CREATE TABLE TENANT (
 	TenantID int IDENTITY (1,1),
 	FirstName varchar(20) NOT NULL,
 	LastName varchar(30) NOT NULL,
+	Gender varchar(10) NOT NULL,
 	Email varchar(30) NOT NULL,
-	PhoneNumber varchar(20) NOT NULL,
+	PhoneNumber varchar(10) NOT NULL,
 	BirthDate datetime NOT NULL,
 	TenantType varchar(30) NOT NULL, --apparently this just means like postgrad intern etc, need to clarify
 	Password varchar(256) NOT NULL,
 	--just thought maybe there should be a description field in this table?
-	CONSTRAINT PK_TENANT PRIMARY KEY (TenantID))
+	CONSTRAINT PK_TENANT PRIMARY KEY (TenantID));
 
 	CREATE TABLE TenantTask (
 	TenantID int,
 	Task varchar(30) NOT NULL,
 	CONSTRAINT PK_TENANTTASK PRIMARY KEY (TenantID),
-	CONSTRAINT FK_TENANTTASK_TENANT FOREIGN KEY (TenantID) REFERENCES Tenant)
+	CONSTRAINT FK_TENANTTASK_TENANT FOREIGN KEY (TenantID) REFERENCES Tenant);
 
 	CREATE TABLE Host(
 	HostID int IDENTITY (1,1),
 	FirstName varchar(20) NOT NULL,
 	LastName varchar(30) NOT NULL,
+	Gender varchar(10) NOT NULL,
 	Email varchar(30) NOT NULL,
 	Password varchar(256) NOT NULL,
 	PhoneNumber varchar(10) NOT NULL,
@@ -39,8 +41,8 @@
 	BirthDate datetime NOT NULL,
 	--PropertyID int, do not think we need this.
 	CONSTRAINT PK_Host PRIMARY KEY (HostID))
-	--CONSTRAINT FK_Host FOREIGN KEY (PropertyID) REFERENCES Property); do not think we need this anymore
-	
+	--CONSTRAINT FK_Host FOREIGN KEY (PropertyID) REFERENCES Property); do not think we need this anymore;
+
 	CREATE TABLE Property (
 	PropertyID int IDENTITY (1,1),
 	Address varchar(40) NOT NULL,
@@ -84,5 +86,4 @@
 	Price money NOT NULL,
 	CONSTRAINT PK1_RENTED_ROOM PRIMARY KEY (TenantID, PropertyID),
 	CONSTRAINT FK1_PROPERTYROOM_TENANT FOREIGN KEY (TenantID) REFERENCES Tenant,
-	CONSTRAINT FK2_PROPERTYROOM_PROPERTY FOREIGN KEY (PropertyID) REFERENCES Property)
-	
+	CONSTRAINT FK2_PROPERTYROOM_PROPERTY FOREIGN KEY (PropertyID) REFERENCES Property);
