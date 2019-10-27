@@ -28,6 +28,7 @@
   <link rel="stylesheet" href="../../assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
   <link rel="stylesheet" href="../../assets/vendor/flatpickr/dist/flatpickr.min.css">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.0/slick.css" rel="stylesheet"/>
   <!-- CSS Front Template -->
   <link rel="stylesheet" href="../../assets/css/theme.css">
 </head>
@@ -231,7 +232,7 @@
                  data-unfold-duration="500">
                 <span class="position-relative">
                   <span class="u-sidebar--account__toggle-text">Natalie Curtis</span>
-                  <img class="u-sidebar--account__toggle-img" src="assets/img/100x100/img1.jpg" alt="Image Description">
+                  <img class="u-sidebar--account__toggle-img" src="images/elder4.jpg" alt="Image Description">
                   <span class="badge badge-sm badge-success badge-pos rounded-circle">3</span>
                 </span>
               </a>
@@ -370,7 +371,7 @@
                     <div class="col-lg-4 u-header__promo d-none d-lg-block">
                       <a class="d-block u-header__promo-inner" href="#">
                         <div class="position-relative">
-                          <img class="img-fluid rounded mb-3" src="assets/img/380x227/img6.jpg" alt="Image Description">
+                          <img class="img-fluid rounded mb-3" src="../../assets/img/380x227/img6.jpg" alt="Image Description">
                         </div>
                         <span class="text-secondary font-size-1">Front makes you look at things from a different perspectives.</span>
                       </a>
@@ -379,7 +380,6 @@
                   </div>
                 </div>
                 <!-- End Demos - Mega Menu -->
-              </li>
               <!-- End Demos -->
 
               <!-- Docs -->
@@ -450,7 +450,7 @@
   <!-- ========== MAIN ========== -->
   <main id="content" role="main">
     <!-- Breadcrumb Section -->
-    <div class="bg-primary">
+    <div class="sunsetbackground">
       <div class="container space-top-1 pb-3">
         <div class="row">
           <div class="col-lg-5 order-lg-2 text-lg-right mb-4 mb-lg-0">
@@ -468,7 +468,7 @@
                 </span>
               </div>
               <div class="media-body">
-                <h1 class="h3 text-white font-weight-medium mb-1">Howdy, Natalie!</h1>
+                <h1 class="h3 text-white font-weight-medium mb-1"><span class="asap1">Hi, Natalie!</span></h1>
                 <span class="d-block text-white">natalie.curtis@gmail.com</span>
               </div>
             </div>
@@ -578,7 +578,6 @@
                     <span class="text-primary ml-3">
                       $2,125
                     </span>
-                      </span>
                   </div>
                   
                 </div>
@@ -608,7 +607,6 @@
             <!-- End Card -->
               
           </div>
-        </div>
         <!-- End Earning Sources -->
 
         <!-- Card -->
@@ -949,16 +947,15 @@
           </div>
           <!-- End Indicator -->
         </div>
-
-    <!-- Team Section -->
-    <div class="container space-2 space-md-3">
-      <!-- Title -->
-      <div class="w-md-80 w-lg-50 text-center mx-md-auto mb-9">
-        <span class="btn btn-xs btn-soft-success btn-pill mb-2">Our Team</span>
-        <h2 class="text-primary">Trust the <span class="font-weight-semi-bold">professionals</span></h2>
-        <p>Our top professionals are ready to help with your business</p>
+      
+<!-- Title -->
+      <div class="w-md-80 w-lg-50 text-center mx-md-auto mt-9">
+          <h2 class="asap2 sunset">Tenant Applicants </h2>
+        <p>These are the people interested in sharing your place.</p>
       </div>
       <!-- End Title -->
+    <!-- Team Section -->
+    <div class="container space-2 space-md-3">
 
       <!-- Slick Carousel -->
       <div class="js-slick-carousel u-slick u-slick--gutters-3"
@@ -968,12 +965,12 @@
            data-responsive='[{
              "breakpoint": 992,
              "settings": {
-               "slidesToShow": 1
+               "slidesToShow": 2
              }
            }, {
              "breakpoint": 768,
              "settings": {
-               "slidesToShow": 1
+               "slidesToShow": 2
              }
            }, {
              "breakpoint": 554,
@@ -986,12 +983,9 @@
           <div class="row">
             <div class="col-sm-6 d-sm-flex align-content-sm-start flex-sm-column text-center text-sm-left mb-7 mb-sm-0">
               <div class="w-100">
-                <h3 class="h5 mb-4">Maria Muszynska</h3>
+                <h3 class="h5 asap2 mb-4">Maria Muszynska</h3>
               </div>
-              <div class="d-inline-block">
-                <span class="badge badge-primary badge-pill badge-bigger mb-3">#maria</span>
-              </div>
-              <p class="font-size-1">I am an ambitious workaholic, but apart from that, pretty simple person.</p>
+              <p class="font-size-1">I'm looking for a host that will allow me to bring my dog. Please message if interested!</p>
 
               <!-- Social Networks -->
               <ul class="list-inline mt-auto mb-0">
@@ -1014,7 +1008,7 @@
               <!-- End Social Networks -->
             </div>
             <div class="col-sm-6">
-              <img class="img-fluid rounded mx-auto" src="assets/img/350x400/img1.jpg" alt="Image Description">
+              <img class="img-fluid rounded mx-auto" src="../../assets/img/350x400/img1.jpg" alt="Image Description">
             </div>
           </div>
           <!-- End Team -->
@@ -1025,12 +1019,9 @@
           <div class="row">
             <div class="col-sm-6 d-sm-flex align-content-sm-start flex-sm-column text-center text-sm-left mb-7 mb-sm-0">
               <div class="w-100">
-                <h3 class="h5 mb-4">Jack Wayley</h3>
+                <h3 class="h5 asap2 mb-4">Jack Wayley</h3>
               </div>
-              <div class="d-inline-block">
-                <span class="badge badge-primary badge-pill badge-bigger mb-3">#jack</span>
-              </div>
-              <p class="font-size-1">I am an ambitious workaholic, but apart from that, pretty simple person.</p>
+              <p class="font-size-1">I would love a quiet environment where I am able to get my work done.</p>
 
               <!-- Social Networks -->
               <ul class="list-inline mt-auto mb-0">
@@ -1053,7 +1044,7 @@
               <!-- End Social Networks -->
             </div>
             <div class="col-sm-6">
-              <img class="img-fluid rounded mx-auto" src="assets/img/350x400/img2.jpg" alt="Image Description">
+              <img class="img-fluid rounded mx-auto" src="../../assets/img/350x400/img2.jpg" alt="Image Description">
             </div>
           </div>
           <!-- End Team -->
@@ -1064,12 +1055,9 @@
           <div class="row">
             <div class="col-sm-6 d-sm-flex align-content-sm-start flex-sm-column text-center text-sm-left mb-7 mb-sm-0">
               <div class="w-100">
-                <h3 class="h5 mb-4">Emmely Jackson</h3>
+                <h3 class="h5 asap2 mb-4">Emmely Jackson</h3>
               </div>
-              <div class="d-inline-block">
-                <span class="badge badge-primary badge-pill badge-bigger mb-3">#emmely</span>
-              </div>
-              <p class="font-size-1">I am an ambitious workaholic, but apart from that, pretty simple person.</p>
+              <p class="font-size-1">As long as I can bring my friends over, I'm happy!</p>
 
               <!-- Social Networks -->
               <ul class="list-inline mt-auto mb-0">
@@ -1092,7 +1080,7 @@
               <!-- End Social Networks -->
             </div>
             <div class="col-sm-6">
-              <img class="img-fluid rounded mx-auto" src="assets/img/350x400/img3.jpg" alt="Image Description">
+              <img class="img-fluid rounded mx-auto" src="../../assets/img/350x400/img3.jpg" alt="Image Description">
             </div>
           </div>
           <!-- End Team -->
@@ -1103,12 +1091,9 @@
           <div class="row">
             <div class="col-sm-6 d-sm-flex align-content-sm-start flex-sm-column text-center text-sm-left mb-7 mb-sm-0">
               <div class="w-100">
-                <h3 class="h5 mb-4">Mark McManus</h3>
+                <h3 class="h5 asap2 mb-4">Mark McManus</h3>
               </div>
-              <div class="d-inline-block">
-                <span class="badge badge-primary badge-pill badge-bigger mb-3">#mark</span>
-              </div>
-              <p class="font-size-1">I am an ambitious workaholic, but apart from that, pretty simple person.</p>
+              <p class="font-size-1">I am a pretty simple person, but I do like a clean home.</p>
 
               <!-- Social Networks -->
               <ul class="list-inline mt-auto mb-0">
@@ -1131,7 +1116,7 @@
               <!-- End Social Networks -->
             </div>
             <div class="col-sm-6">
-              <img class="img-fluid rounded mx-auto" src="assets/img/350x400/img4.jpg" alt="Image Description">
+              <img class="img-fluid rounded mx-auto" src="../../assets/img/350x400/img4.jpg" alt="Image Description">
             </div>
           </div>
           <!-- End Team -->
@@ -1140,7 +1125,8 @@
       <!-- End Slick Carousel -->
     </div>
     <!-- End Team Section -->
-    
+
+    </main> 
   <!-- ========== END MAIN ========== -->
 
   <!-- ========== FOOTER ========== -->
@@ -1229,7 +1215,7 @@
             <!-- Holder Info -->
             <header class="d-flex align-items-center u-sidebar--account__holder mt-3">
               <div class="position-relative">
-                <img class="u-sidebar--account__holder-img" src="assets/img/100x100/img1.jpg" alt="Image Description">
+                <img class="u-sidebar--account__holder-img" src="images/elder4.jpg" alt="Image Description">
                 <span class="badge badge-xs badge-outline-success badge-pos rounded-circle"></span>
               </div>
               <div class="ml-3">
@@ -1445,7 +1431,7 @@
                     <div class="card-body align-items-sm-center p-2">
                       <div class="media align-items-center">
                         <div class="u-avatar mr-3">
-                          <img class="img-fluid rounded-circle" src="assets/img/100x100/img8.jpg" alt="Image Description">
+                          <img class="img-fluid rounded-circle" src="../../assets/img/100x100/img8.jpg" alt="Image Description">
                         </div>
                         <div class="media-body">
                           <h4 class="h6 mb-0">Sebastian Diaz</h4>
@@ -1477,7 +1463,7 @@
                     <div class="card-body align-items-sm-center p-2">
                       <div class="media align-items-center">
                         <div class="u-avatar mr-3">
-                          <img class="img-fluid rounded-circle" src="assets/img/100x100/img12.jpg" alt="Image Description">
+                          <img class="img-fluid rounded-circle" src="../../assets/img/100x100/img12.jpg" alt="Image Description">
                         </div>
                         <div class="media-body">
                           <h4 class="h6 mb-0">Joseph Mack</h4>
@@ -1493,7 +1479,7 @@
                     <div class="card-body align-items-sm-center p-2">
                       <div class="media align-items-center">
                         <div class="u-avatar mr-3">
-                          <img class="img-fluid rounded-circle" src="assets/img/100x100/img10.jpg" alt="Image Description">
+                          <img class="img-fluid rounded-circle" src="../../assets/img/100x100/img10.jpg" alt="Image Description">
                         </div>
                         <div class="media-body">
                           <h4 class="h6 mb-0">Eliza Donovan</h4>
@@ -2306,8 +2292,20 @@
   <script src="../../assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
   <script src="../../assets/vendor/popper.js/dist/umd/popper.min.js"></script>
   <script src="../../assets/vendor/bootstrap/bootstrap.min.js"></script>
+    <!-- JS Global Compulsory -->
+  <script src="../../assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="../../assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+  <script src="../../assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+  <script src="../../assets/vendor/bootstrap/bootstrap.min.js"></script>
 
   <!-- JS Implementing Plugins -->
+    <!-- JS Implementing Plugins -->
+  <script src="../../assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+  <script src="../../assets/vendor/svg-injector/dist/svg-injector.min.js"></script>
+  <script src="../../assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+  <script src="../../assets/vendor/slick-carousel/slick/slick.js"></script>
+  <script src="../../assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+  <script src="../../assets/vendor/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
   <script src="../../assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
   <script src="../../assets/vendor/svg-injector/dist/svg-injector.min.js"></script>
   <script src="../../assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
@@ -2322,29 +2320,52 @@
   <script src="../../assets/vendor/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
 
   <!-- JS Front -->
+     <!-- JS Front -->
   <script src="../../assets/js/hs.core.js"></script>
   <script src="../../assets/js/components/hs.header.js"></script>
   <script src="../../assets/js/components/hs.unfold.js"></script>
+  <script src="../../assets/js/components/hs.fancybox.js"></script>
+  <script src="../../assets/js/components/hs.slick-carousel.js"></script>
+  <script src="../../assets/js/components/hs.validation.js"></script>
+  <script src="../../assets/js/components/hs.focus-state.js"></script>
+  <script src="../../assets/js/components/hs.cubeportfolio.js"></script>
+  <script src="../../assets/js/components/hs.svg-injector.js"></script>
+  <script src="../../assets/js/components/hs.go-to.js"></script>
+    
+  <script src="../../assets/js/hs.core.js"></script>
+    
+  <script src="../../assets/js/components/hs.header.js"></script>
+    
+  <script src="../../assets/js/components/hs.unfold.js"></script>
+  <script src="../../assets/js/components/hs.fancybox.js"></script>
+  
   <script src="../../assets/js/components/hs.malihu-scrollbar.js"></script>
+    
   <script src="../../assets/js/components/hs.focus-state.js"></script>
   <script src="../../assets/js/components/hs.validation.js"></script>
+    
   <script src="../../assets/js/components/hs.modal-window.js"></script>
+    
   <script src="../../assets/js/components/hs.step-form.js"></script>
   <script src="../../assets/js/components/hs.show-animation.js"></script>
   <script src="../../assets/js/components/hs.range-datepicker.js"></script>
   <script src="../../assets/js/components/hs.chart-pie.js"></script>
   <script src="../../assets/js/components/hs.progress-bar.js"></script>
   <script src="../../assets/js/components/hs.svg-injector.js"></script>
+    
   <script src="../../assets/js/components/hs.go-to.js"></script>
-  <script src="../../assets/js/components/hs.fancybox.js"></script>
-  <script src="../../assets/js/components/hs.slick-carousel.js"></script>
   <script src="../../assets/js/components/hs.validation.js"></script>
   <script src="../../assets/js/components/hs.cubeportfolio.js"></script>
+    <script src="../../assets/js/components/hs.slick-carousel.js"></script>
+      <script src="../../assets/js/components/hs.go-to.js"></script>
 
 
 
   <!-- JS Plugins Init. -->
   <script>
+      // initialization of slick carousel
+      $.HSCore.components.HSSlickCarousel.init('.js-slick-carousel');
+
       $(window).on('load', function () {
           // initialization of HSMegaMenu component
           $('.js-mega-menu').HSMegaMenu({
@@ -2376,6 +2397,7 @@
                   $(this).find('input[type="search"]').focus();
               }
           });
+
 
           // initialization of malihu scrollbar
           $.HSCore.components.HSMalihuScrollBar.init($('.js-scrollbar'));
@@ -2425,6 +2447,7 @@
               breakpoint: 767.98,
               hideTimeOut: 0
           });
+
 
           // initialization of svg injector module
           $.HSCore.components.HSSVGIngector.init('.js-svg-injector');

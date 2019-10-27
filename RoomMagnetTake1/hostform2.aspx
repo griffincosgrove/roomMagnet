@@ -246,7 +246,7 @@
 	<asp:ListItem Value="CA">California</asp:ListItem>
 	<asp:ListItem Value="CO">Colorado</asp:ListItem>
 	<asp:ListItem Value="CT">Connecticut</asp:ListItem>
-	<asp:ListItem Value="DC">District of Columbia</asp:ListItem>
+	<asp:ListItem Value="DC">DC</asp:ListItem>
 	<asp:ListItem Value="DE">Delaware</asp:ListItem>
 	<asp:ListItem Value="FL">Florida</asp:ListItem>
 	<asp:ListItem Value="GA">Georgia</asp:ListItem>

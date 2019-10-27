@@ -340,7 +340,7 @@
             <span class="ast">*</span>
           </label>
                 <div class="form-group">
-                        <asp:DropDownList ID="ddYear" runat="server" class="form-control custom-select" required
+                        <asp:DropDownList ID="ddYear" runat="server" class="form-control custom-select" required="true"
                             data-msg="Please select year."
                             data-error-class="u-has-error"
                             data-success-class="u-has-success">
@@ -488,14 +488,14 @@
                 </label>
 
                 <div class="form-group">
-                   <asp:DropDownList ID="ddLanguage" runat="server" class="form-control custom-select" required		
+                   <asp:DropDownList ID="ddLanguage" runat="server" class="form-control custom-select" required="true"		
                                           data-msg="Please select your gender."		
                                           data-error-class="u-has-error"		
                                           data-success-class="u-has-success">		
                                               <asp:ListItem>English</asp:ListItem>		
-                                              <asp:ListItem>Français</asp:ListItem>		
-                                              <asp:ListItem>Deutsch</asp:ListItem>		
-                                              <asp:ListItem>Português</asp:ListItem>		
+                                              <asp:ListItem>Español</asp:ListItem>		
+                                              <asp:ListItem>中文</asp:ListItem>		
+                                              		
                                         </asp:DropDownList>
                 </div>
               </div>
@@ -527,34 +527,89 @@
             <div class="col-sm-6 mb-6">
               <div class="js-form-message">
                 <label id="addressLabel" class="form-label">
-                  Address
+                  Mailing Address
                   <span class="text-danger">*</span>
                 </label>
 
                 <div class="form-group">
-                  <input type="text" class="form-control" name="addressstreet" value="" placeholder="Street" aria-label="Street" required aria-describedby="addressLabel"
+                  <asp:TextBox ID="txtStreet" runat="server" type="text" class="form-control" name="addressstreet" value="" placeholder="Street" aria-label="Street" required aria-describedby="addressLabel"
                          data-msg="Please enter your street address."
                          data-error-class="u-has-error"
-                         data-success-class="u-has-success">
+                         data-success-class="u-has-success"> </asp:TextBox>
                 </div>
                     <div class="row">
                   <div class="form-group col-5">
-                  <input type="text" class="form-control" name="addresscity" value="" placeholder="City" aria-label="City" required aria-describedby="addressLabel"
+                  <asp:TextBox ID="txtCity" runat="server" type="text" class="form-control" name="addresscity" value="" placeholder="City" aria-label="City" required aria-describedby="addressLabel"
                          data-msg="Please enter your city."
                          data-error-class="u-has-error"
-                         data-success-class="u-has-success">
+                         data-success-class="u-has-success">  </asp:TextBox>
                 </div>
                    <div class="form-group col-3">
-                  <input type="text" class="form-control" name="addressstate" value="" placeholder="State" aria-label="State" required aria-describedby="addressLabel"
-                         data-msg="Please enter your state."
-                         data-error-class="u-has-error"
-                         data-success-class="u-has-success">
+                       <asp:DropDownList ID="ddState" runat="server" class="form-control custom-select" required="true" aria-describedby="addressLabel"
+                           data-msg="Please enter your state."
+                           data-error-class="u-has-error"
+                           data-success-class="u-has-success">
+                           <asp:ListItem Value="0">State</asp:ListItem>
+                           <asp:ListItem Value="AL">Alabama</asp:ListItem>
+                           <asp:ListItem Value="AK">Alaska</asp:ListItem>
+                           <asp:ListItem Value="AZ">Arizona</asp:ListItem>
+                           <asp:ListItem Value="AR">Arkansas</asp:ListItem>
+                           <asp:ListItem Value="CA">California</asp:ListItem>
+                           <asp:ListItem Value="CO">Colorado</asp:ListItem>
+                           <asp:ListItem Value="CT">Connecticut</asp:ListItem>
+                           <asp:ListItem Value="DC">DC</asp:ListItem>
+                           <asp:ListItem Value="DE">Delaware</asp:ListItem>
+                           <asp:ListItem Value="FL">Florida</asp:ListItem>
+                           <asp:ListItem Value="GA">Georgia</asp:ListItem>
+                           <asp:ListItem Value="HI">Hawaii</asp:ListItem>
+                           <asp:ListItem Value="ID">Idaho</asp:ListItem>
+                           <asp:ListItem Value="IL">Illinois</asp:ListItem>
+                           <asp:ListItem Value="IN">Indiana</asp:ListItem>
+                           <asp:ListItem Value="IA">Iowa</asp:ListItem>
+                           <asp:ListItem Value="KS">Kansas</asp:ListItem>
+                           <asp:ListItem Value="KY">Kentucky</asp:ListItem>
+                           <asp:ListItem Value="LA">Louisiana</asp:ListItem>
+                           <asp:ListItem Value="ME">Maine</asp:ListItem>
+                           <asp:ListItem Value="MD">Maryland</asp:ListItem>
+                           <asp:ListItem Value="MA">Massachusetts</asp:ListItem>
+                           <asp:ListItem Value="MI">Michigan</asp:ListItem>
+                           <asp:ListItem Value="MN">Minnesota</asp:ListItem>
+                           <asp:ListItem Value="MS">Mississippi</asp:ListItem>
+                           <asp:ListItem Value="MO">Missouri</asp:ListItem>
+                           <asp:ListItem Value="MT">Montana</asp:ListItem>
+                           <asp:ListItem Value="NE">Nebraska</asp:ListItem>
+                           <asp:ListItem Value="NV">Nevada</asp:ListItem>
+                           <asp:ListItem Value="NH">New Hampshire</asp:ListItem>
+                           <asp:ListItem Value="NJ">New Jersey</asp:ListItem>
+                           <asp:ListItem Value="NM">New Mexico</asp:ListItem>
+                           <asp:ListItem Value="NY">New York</asp:ListItem>
+                           <asp:ListItem Value="NC">North Carolina</asp:ListItem>
+                           <asp:ListItem Value="ND">North Dakota</asp:ListItem>
+                           <asp:ListItem Value="OH">Ohio</asp:ListItem>
+                           <asp:ListItem Value="OK">Oklahoma</asp:ListItem>
+                           <asp:ListItem Value="OR">Oregon</asp:ListItem>
+                           <asp:ListItem Value="PA">Pennsylvania</asp:ListItem>
+                           <asp:ListItem Value="RI">Rhode Island</asp:ListItem>
+                           <asp:ListItem Value="SC">South Carolina</asp:ListItem>
+                           <asp:ListItem Value="SD">South Dakota</asp:ListItem>
+                           <asp:ListItem Value="TN">Tennessee</asp:ListItem>
+                           <asp:ListItem Value="TX">Texas</asp:ListItem>
+                           <asp:ListItem Value="UT">Utah</asp:ListItem>
+                           <asp:ListItem Value="VT">Vermont</asp:ListItem>
+                           <asp:ListItem Value="VA">Virginia</asp:ListItem>
+                           <asp:ListItem Value="WA">Washington</asp:ListItem>
+                           <asp:ListItem Value="WV">West Virginia</asp:ListItem>
+                           <asp:ListItem Value="WI">Wisconsin</asp:ListItem>
+                           <asp:ListItem Value="WY">Wyoming</asp:ListItem>
+
+                       </asp:DropDownList>
                 </div>
                   <div class="form-group col-4">
-                  <input type="text" class="form-control" name="addresszip" value="" placeholder="Zip code" aria-label="Zip code" required aria-describedby="addressLabel"
+                      
+                  <asp:TextBox ID="txtZip" runat="server" class="form-control" name="addresszip" value="" placeholder="Zip code" aria-label="Zip code" required aria-describedby="addressLabel"
                          data-msg="Please enter your zip code."
                          data-error-class="u-has-error"
-                         data-success-class="u-has-success">
+                         data-success-class="u-has-success"> </asp:TextBox>
                         </div>
                 </div>
               </div>
@@ -592,7 +647,7 @@
                 </label>
 
                 <div class="form-group">
-<asp:TextBox ID="txtPassword" runat="server" class="form-control" type="password" name="password" value="********" placeholder="Enter a password" aria-label="Enter a Password" required aria-describedby="passwordLabel"
+<asp:TextBox ID="txtPassword" runat="server" class="form-control" type="password" name="password" placeholder="Enter a password" aria-label="Enter a Password" required="true" aria-describedby="passwordLabel"
                                                         data-msg="Please enter a password"
                                                         data-error-class="u-has-error"
                                                         data-success-class="u-has-success"></asp:TextBox>
@@ -603,7 +658,7 @@
                   <span class="text-danger">*</span>
                 </label>
                   <div class="form-group">
-                                                            <asp:TextBox ID="txtConfirmPassword" runat="server" class="form-control" type="password" name="password" value="********" placeholder="Enter a password" aria-label="Enter a Password" required aria-describedby="passwordLabel"
+                                                            <asp:TextBox ID="txtConfirmPassword" runat="server" class="form-control" type="password" name="password" placeholder="Enter a password" aria-label="Enter a Password" required="true" aria-describedby="passwordLabel"
                                                                 data-msg="Please enter a password"
                                                                 data-error-class="u-has-error"
                                                                 data-success-class="u-has-success"></asp:TextBox>

@@ -529,10 +529,10 @@
                                             data-msg="Please select your gender."
                                             data-error-class="u-has-error"
                                             data-success-class="u-has-success">
-                                            <asp:ListItem>Graduate Student</asp:ListItem>
+                                            <asp:ListItem>Student</asp:ListItem>
                                             <asp:ListItem>Intern</asp:ListItem>
-                                            <asp:ListItem>Au Pair</asp:ListItem>
-                                            <asp:ListItem>Other Type</asp:ListItem>
+                                            <asp:ListItem>Professional</asp:ListItem>
+                                            <asp:ListItem>Other</asp:ListItem>
                                         </asp:DropDownList>
                                     </div>
                                 </div>
