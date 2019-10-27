@@ -1,23 +1,29 @@
 DROP TABLE RentedRoom
-	DROP TABLE Payment
-	DROP TABLE PropertyTask
-	DROP TABLE PropertyAmenity
-	DROP TABLE Property
-	DROP TABLE Host
-	DROP TABLE TenantTask
-	drop table TENANT
+DROP TABLE Payment
+DROP TABLE PropertyTask
+DROP TABLE PropertyAmenity
+DROP TABLE Property
+DROP TABLE Host
+DROP TABLE TenantTask
+DROP table TENANT
+DROP TABLE CUSTOMER
+
+	CREATE TABLE CUSTOMER (
+	Email varchar(50) NOT NULL,
+	Password varchar(256) NOT NULL,
+	CONSTRAINT PK_USER_UserID PRIMARY KEY (EMAIL))
 
 	CREATE TABLE TENANT (
 	TenantID int IDENTITY (1,1),
 	FirstName varchar(20) NOT NULL,
 	LastName varchar(30) NOT NULL,
 	Gender varchar(10) NOT NULL,
-	Email varchar(30) NOT NULL,
+	Email varchar(50) NOT NULL,
 	PhoneNumber varchar(20) NOT NULL,
 	BirthDate date NOT NULL,
 	TenantType varchar(30) NOT NULL, --apparently this just means like postgrad intern etc, need to clarify
-	Password varchar(256) NOT NULL,
 	--just thought maybe there should be a description field in this table?
+	CONSTRAINT FK_TENANT FOREIGN KEY (Email) references CUSTOMER,
 	CONSTRAINT PK_TENANT PRIMARY KEY (TenantID));
 
 	CREATE TABLE TenantTask (
@@ -31,8 +37,7 @@ DROP TABLE RentedRoom
 	FirstName varchar(20) NOT NULL,
 	LastName varchar(30) NOT NULL,
 	Gender varchar(10) NOT NULL,
-	Email varchar(30) NOT NULL,
-	Password varchar(256) NOT NULL,
+	Email varchar(50) NOT NULL,
 	PhoneNumber varchar(10) NOT NULL,
 	HostAddress varchar(40) NOT NULL,
 	City varchar(30) NOT NULL,
@@ -40,6 +45,7 @@ DROP TABLE RentedRoom
 	State varchar(15) NOT NULL,
 	BirthDate datetime NOT NULL,
 	--PropertyID int, do not think we need this.
+	CONSTRAINT FK_HOST_EMAIL FOREIGN KEY (EMAIL) REFERENCES CUSTOMER,
 	CONSTRAINT PK_Host PRIMARY KEY (HostID))
 	--CONSTRAINT FK_Host FOREIGN KEY (PropertyID) REFERENCES Property); do not think we need this anymore;
 
