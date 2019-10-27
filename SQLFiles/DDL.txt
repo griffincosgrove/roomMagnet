@@ -38,10 +38,10 @@ DROP TABLE CUSTOMER
 	LastName varchar(30) NOT NULL,
 	Gender varchar(10) NOT NULL,
 	Email varchar(50) NOT NULL,
-	PhoneNumber varchar(10) NOT NULL,
+	PhoneNumber varchar(20) NOT NULL,
 	HostAddress varchar(40) NOT NULL,
 	City varchar(30) NOT NULL,
-	ZipCode varchar(5) NOT NULL,
+	ZipCode varchar(10) NOT NULL,
 	State varchar(15) NOT NULL,
 	BirthDate datetime NOT NULL,
 	--PropertyID int, do not think we need this.
