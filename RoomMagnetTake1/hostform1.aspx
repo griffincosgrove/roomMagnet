@@ -658,10 +658,10 @@
                   <span class="text-danger">*</span>
                 </label>
                   <div class="form-group">
-                                                            <asp:TextBox ID="txtConfirmPassword" runat="server" class="form-control" type="password" name="password" placeholder="Enter a password" aria-label="Enter a Password" required="true" aria-describedby="passwordLabel"
-                                                                data-msg="Please enter a password"
-                                                                data-error-class="u-has-error"
-                                                                data-success-class="u-has-success"></asp:TextBox>
+                      <asp:TextBox ID="txtConfirmPassword" runat="server" class="form-control" type="password" name="password" placeholder="Enter a password" aria-label="Enter a Password" required="true" aria-describedby="passwordLabel"
+                          data-msg="Please enter a password"
+                          data-error-class="u-has-error"
+                          data-success-class="u-has-success"></asp:TextBox>
                 </div>
               </div>
             </div>

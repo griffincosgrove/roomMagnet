@@ -570,7 +570,7 @@
                                     </label>
 
                                     <div class="form-group">
-                                        <asp:TextBox ID="txtPassword" runat="server" class="form-control" type="password" name="password" value="********" placeholder="Enter a password" aria-label="Enter a Password" required aria-describedby="passwordLabel"
+                                        <asp:TextBox ID="txtPassword" runat="server" class="form-control" type="password" name="password" value="" placeholder="Enter a password" aria-label="Enter a Password" required aria-describedby="passwordLabel"
                                             data-msg="Please enter a password"
                                             data-error-class="u-has-error"
                                             data-success-class="u-has-success"></asp:TextBox>
