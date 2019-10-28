@@ -169,8 +169,8 @@
 
             <div id="languageDropdown" class="dropdown-menu dropdown-unfold" aria-labelledby="languageDropdownInvoker">
               <a class="dropdown-item active" href="#">English</a>
-              <a class="dropdown-item" href="#">Deutsch</a>
-              <a class="dropdown-item" href="#">Español‎</a>
+              <a class="dropdown-item" href="#">Español</a>
+              <a class="dropdown-item" href="#">‎中文</a>
             </div>
           </div>
           <!-- End Language -->
