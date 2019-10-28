@@ -20,7 +20,7 @@ public partial class tenantform1 : System.Web.UI.Page
 
     protected void btnCommitTenant_Click(object sender, EventArgs e)
     {
-        if (checkPasswordsMatches())
+        if (checkPasswordsMatches() && checkIfUserExists())
         {
 
             Customer newCustomer = new Customer(getString(txtEmail));
@@ -121,5 +121,34 @@ public partial class tenantform1 : System.Web.UI.Page
 
         return retBool;
     }
+
+    protected Boolean checkIfUserExists()
+    {
+        Boolean retBool = false;
+        String email = txtEmail.Text;
+
+        SqlCommand search = new SqlCommand("Select email from customer where upper(email) = @email", sc);
+        search.Parameters.AddWithValue("@email", getString(txtEmail).ToUpper());
+
+        sc.Open();
+
+        SqlDataReader reader = search.ExecuteReader();
+
+        if (reader.HasRows)
+        {
+            while (reader.Read())
+            {
+                ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "User Error", "alert('Email already exists, please reset your password')", true);
+            }
+
+        }
+        else
+        {
+            retBool = true;
+        }
+
+        sc.Close();
+        return retBool;
+    } 
 
 }

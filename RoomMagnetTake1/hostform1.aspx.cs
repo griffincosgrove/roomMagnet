@@ -21,7 +21,7 @@ public partial class hostform1 : System.Web.UI.Page
 
     protected void btnCommitHost_Click(object sender, EventArgs e)
     {
-        if (checkPasswordsMatches())
+        if (checkPasswordsMatches() && checkIfUserExists())
         {
             Host newHost = new Host(getString(txtFirstName), getString(txtLastName), ddGender.Text, getString(txtEmail), getString(txtPhoneNumber),
                 getString(txtStreet), getString(txtCity), ddState.Text, getString(txtZip), convertToDateFormat(combineBirthday()));
@@ -116,6 +116,35 @@ public partial class hostform1 : System.Web.UI.Page
             ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "Password Error", "alert('Passwords do not match')", true);
         }
 
+        return retBool;
+    }
+
+    protected Boolean checkIfUserExists()
+    {
+        Boolean retBool = false;
+        String email = txtEmail.Text;
+
+        SqlCommand search = new SqlCommand("Select email from customer where upper(email) = @email", sc);
+        search.Parameters.AddWithValue("@email", getString(txtEmail).ToUpper());
+
+        sc.Open();
+
+        SqlDataReader reader = search.ExecuteReader();
+
+        if(reader.HasRows)
+        {
+            while(reader.Read())
+            {
+                ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "User Error", "alert('Email already exists, please reset your password')", true);
+            }
+
+        }
+        else
+        {
+            retBool = true;
+        }
+
+        sc.Close();
         return retBool;
     }
 
