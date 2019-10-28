@@ -23,8 +23,8 @@ public partial class login : System.Web.UI.Page
             System.Data.SqlClient.SqlCommand findPass = new System.Data.SqlClient.SqlCommand();
             findPass.Connection = sc;
             // SELECT PASSWORD STRING WHERE THE ENTERED USERNAME MATCHES
-            findPass.CommandText = "select password from TENANT where Email = @Email";
-            findPass.Parameters.Add(new SqlParameter("@Email", txtUsername.Text));
+            findPass.CommandText = "select password from Customer where Email = @Email";
+            findPass.Parameters.Add(new SqlParameter("@Email", getString(txtUsername)));
 
             SqlDataReader reader = findPass.ExecuteReader(); // create a reader
 
@@ -62,5 +62,11 @@ public partial class login : System.Web.UI.Page
     protected void lnkCreate_Click(object sender, EventArgs e)
     {
         Response.Redirect("createUser.aspx", false);
+    }
+
+    public String getString(TextBox txt)
+    {
+        String returnString = HttpUtility.HtmlEncode(txt.Text);
+        return returnString;
     }
 }
