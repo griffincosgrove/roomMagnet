@@ -37,12 +37,12 @@ public partial class hostform1 : System.Web.UI.Page
             {
                 sc.Open();
                 customerInsert.ExecuteNonQuery();
-                ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "NoDatabaseAlertMessage", "alert('New Host inserted')", true);
+                //ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "NoDatabaseAlertMessage", "alert('New Host inserted')", true);
             }
 
             catch
             {
-                ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "NoDatabaseAlertMessage", "alert('Host NOT Inserted')", true);
+                ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "NoDatabaseAlertMessage", "alert('customer NOT Inserted')", true);
             }
             finally
             {

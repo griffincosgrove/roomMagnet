@@ -460,7 +460,7 @@
                   <span class="text-danger">*</span>
                                     </label>
                                     <div class="form-group">
-                                        <asp:DropDownList ID="ddGender" runat="server" class="form-control custom-select" required
+                                        <asp:DropDownList ID="ddGender" runat="server" class="form-control custom-select"
                                             data-msg="Please select your gender."
                                             data-error-class="u-has-error"
                                             data-success-class="u-has-success">
@@ -525,10 +525,11 @@
                                     </label>
 
                                     <div class="form-group">
-                                        <asp:DropDownList ID="ddTenantType" runat="server" class="form-control custom-select" required
-                                            data-msg="Please select your gender."
+                                        <asp:DropDownList ID="ddTenantType" runat="server" class="form-control custom-select"
+                                            data-msg="Please select your tenant type."
                                             data-error-class="u-has-error"
                                             data-success-class="u-has-success">
+                                            <asp:ListItem>Type</asp:ListItem>
                                             <asp:ListItem>Student</asp:ListItem>
                                             <asp:ListItem>Intern</asp:ListItem>
                                             <asp:ListItem>Professional</asp:ListItem>
@@ -574,6 +575,18 @@
                                             data-msg="Please enter a password"
                                             data-error-class="u-has-error"
                                             data-success-class="u-has-success"></asp:TextBox>
+
+                                        <label id="confirmpasswordLabel" class="form-label">
+                                            <br />
+                                            Confirm Password
+                  <span class="text-danger">*</span>
+                                        </label>
+
+                                        <asp:TextBox ID="txtConfirmPassword" runat="server" class="form-control" type="password" name="password" placeholder="Enter a password" aria-label="Enter a Password" required="true" aria-describedby="passwordLabel"
+                                            data-msg="Please enter a password"
+                                            data-error-class="u-has-error"
+                                            data-success-class="u-has-success"></asp:TextBox>
+
                                     </div>
                                 </div>
 
