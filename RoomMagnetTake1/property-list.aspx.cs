@@ -9,6 +9,7 @@ public partial class property_list : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        lblSearchField.Text = "Property for sale in " + Session["City"];
 
     }
 }

@@ -213,21 +213,21 @@
           </div>
 
           <!-- Form -->
-          <form class="js-validate">
+          <form class="js-validate" runat="server">
             <div class="form-row mb-2">
               <div class="col-6 col-md-9 mb-2">
                 <div class="js-form-message">
                   <label class="sr-only" for="search">Find a place to share</label>
                   <div class="input-group">
-                    <input type="text" class="form-control1" name="search" id="search" placeholder="Find a place to share" aria-label="Search" required
-                           data-msg="Name must contain only letters.">
+                      <asp:TextBox ID="txtSearchBar" runat="server" class="form-control1" placeholder="Find a place to share" aria-label="Search"
+                           data-msg="Name must contain only letters." ></asp:TextBox>
                   </div>
                 </div>
               </div>
 
 
               <div class="col-md-2 mb-2">
-                <button type="submit" href="signup.aspx" class="btn btn-block btn-soft-primary transition-3d-hover">Search</button>
+                  <asp:Button ID="btnSearch" runat="server" Text="Search" class="btn btn-block btn-soft-primary transition-3d-hover" OnClick="btnSearch_Click" />
               </div>
             </div>
 

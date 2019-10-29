@@ -11,4 +11,12 @@ public partial class index : System.Web.UI.Page
     {
 
     }
+
+
+
+    protected void btnSearch_Click(object sender, EventArgs e)
+    {
+        Session["City"] = txtSearchBar.Text;
+        Response.Redirect("property-list.aspx");
+    }
 }
