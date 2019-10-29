@@ -36,7 +36,7 @@
         <!-- Nav -->
         <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar u-header__navbar--no-space">
           <!-- Logo -->
-          <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center u-header__navbar-brand-text-white" href="index.html" aria-label="Front">
+          <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center u-header__navbar-brand-text-white" href="index.aspx" aria-label="Front">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="46px" height="46px" viewBox="0 0 46 46" xml:space="preserve" style="margin-bottom: 0;">
               <path fill="#E1E4EA" opacity=".65" d="M23,41.1L23,41.1c-9.9,0-18-8-18-18l0,0c0-9.9,8-18,18-18h11.3c3.7,0,6.6,3,6.6,6.6v11.4C41,33,32.9,41.1,23,41.1z"/>
               <path class="fill-white" opacity=".5" d="M28,36L28,36c-9.9,0-18-8-18-18l0,0c0-9.9,8-18,18-18h11.3C43,0.1,46,3.1,46,6.7v11.4C46,28,38,36,28,36z"/>
@@ -65,7 +65,7 @@
             <ul class="navbar-nav u-header__navbar-nav">
               <!-- Home -->
               <li class="nav-item u-header__nav-item">
-                <a class="nav-link u-header__nav-link" href="index.html">Home</a>
+                <a class="nav-link u-header__nav-link" href="index.aspx">Home</a>
               </li>
               <!-- End Home -->
 
@@ -78,9 +78,9 @@
 
                 <!-- Pages - Submenu -->
                 <ul id="pagesSubMenu" class="hs-sub-menu u-header__sub-menu" aria-labelledby="pagesMegaMenu" style="min-width: 230px;">
-                  <li><a class="nav-link u-header__sub-menu-nav-link" href="property-list.html">Listing</a></li>
-                  <li><a class="nav-link u-header__sub-menu-nav-link" href="property-grid.html">Listing (Grid)</a></li>
-                  <li><a class="nav-link u-header__sub-menu-nav-link" href="property-description.html">Property description</a></li>
+                  <li><a class="nav-link u-header__sub-menu-nav-link" href="property-list.aspx">Listing</a></li>
+                  <li><a class="nav-link u-header__sub-menu-nav-link" href="property-grid.aspx">Listing (Grid)</a></li>
+                  <li><a class="nav-link u-header__sub-menu-nav-link" href="property-description.aspx">Property description</a></li>
                 </ul>
                 <!-- End Pages - Submenu -->
               </li>
@@ -88,7 +88,7 @@
 
               <!-- Selling -->
               <li class="nav-item u-header__nav-item">
-                <a class="nav-link u-header__nav-link" href="property-seller.html">Selling</a>
+                <a class="nav-link u-header__nav-link" href="property-seller.aspx">Selling</a>
               </li>
               <!-- End Selling -->
 
@@ -108,7 +108,7 @@
                       <div class="u-header__promo-card-deck">
                         <!-- Promo Item -->
                         <div class="u-header__promo-card u-header__promo-item">
-                          <a class="u-header__promo-link" href="../home/index.html">
+                          <a class="u-header__promo-link" href="../home/index.aspx">
                             <div class="media align-items-center">
                               <img class="js-svg-injector u-header__promo-icon" src="../../assets/svg/icons/icon-21.svg" alt="SVG">
                               <div class="media-body">
@@ -122,7 +122,7 @@
 
                         <!-- Promo Item -->
                         <div class="u-header__promo-card u-header__promo-item">
-                          <a class="u-header__promo-link" href="../app-marketplace/index.html">
+                          <a class="u-header__promo-link" href="../app-marketplace/index.aspx">
                             <div class="media align-items-center">
                               <img class="js-svg-injector u-header__promo-icon" src="../../assets/svg/icons/icon-45.svg" alt="SVG">
                               <div class="media-body">
@@ -138,7 +138,7 @@
                       <div class="u-header__promo-card-deck">
                         <!-- Promo Item -->
                         <div class="u-header__promo-card u-header__promo-item">
-                          <a class="u-header__promo-link" href="../job/index.html">
+                          <a class="u-header__promo-link" href="../job/index.aspx">
                             <div class="media align-items-center">
                               <img class="js-svg-injector u-header__promo-icon" src="../../assets/svg/icons/icon-19.svg" alt="SVG">
                               <div class="media-body">
@@ -152,7 +152,7 @@
 
                         <!-- Promo Item -->
                         <div class="u-header__promo-card u-header__promo-item">
-                          <a class="u-header__promo-link" href="../help-desk/index.html">
+                          <a class="u-header__promo-link" href="../help-desk/index.aspx">
                             <div class="media align-items-center">
                               <img class="js-svg-injector u-header__promo-icon" src="../../assets/svg/icons/icon-4.svg" alt="SVG">
                               <div class="media-body">
@@ -168,7 +168,7 @@
                       <div class="u-header__promo-card-deck">
                         <!-- Promo Item -->
                         <div class="u-header__promo-card u-header__promo-item">
-                          <a class="u-header__promo-link" href="../crypto/index.html">
+                          <a class="u-header__promo-link" href="../crypto/index.aspx">
                             <div class="media align-items-center">
                               <img class="js-svg-injector u-header__promo-icon" src="../../assets/svg/icons/icon-5.svg" alt="SVG">
                               <div class="media-body">
@@ -225,7 +225,7 @@
                 <div class="hs-mega-menu u-header__sub-menu" aria-labelledby="docsMegaMenu" style="min-width: 330px;">
                   <!-- Promo Item -->
                   <div class="u-header__promo-item">
-                    <a class="u-header__promo-link" href="../../documentation/index.html">
+                    <a class="u-header__promo-link" href="../../documentation/index.aspx">
                       <div class="media align-items-center">
                         <img class="js-svg-injector u-header__promo-icon" src="../../assets/svg/icons/icon-2.svg" alt="SVG">
                         <div class="media-body">
@@ -242,7 +242,7 @@
 
                   <!-- Promo Item -->
                   <div class="u-header__promo-item">
-                    <a class="u-header__promo-link" href="../../starter/index.html">
+                    <a class="u-header__promo-link" href="../../starter/index.aspx">
                       <div class="media align-items-center">
                         <img class="js-svg-injector u-header__promo-icon" src="../../assets/svg/icons/icon-1.svg" alt="SVG">
                         <div class="media-body">
@@ -260,7 +260,7 @@
                       <div class="col-6">
                         <div class="u-header__promo-footer-item">
                           <small class="text-muted d-block">Check what's new</small>
-                          <a class="small" href="../../documentation/getting-started/changelog.html">
+                          <a class="small" href="../../documentation/getting-started/changelog.aspx">
                             Changelog
                           </a>
                         </div>
@@ -656,7 +656,8 @@
     <div class="container space-1">
       <!-- Title -->
       <div class="mb-4">
-        <h1 class="h4 font-weight-medium">Property for sale in London</h1>
+        <h1 class="h4 font-weight-medium">
+            <asp:Label ID="lblSearchField" runat="server" Text="Property for sale in London"></asp:Label></h1>
       </div>
       <!-- End Title -->
 
@@ -701,10 +702,10 @@
 
             <!-- Button Group -->
             <div class="btn-group btn-group-toggle d-flex">
-              <a class="btn btn-xs btn-outline-secondary btn-custom-toggle-primary flex-fill" href="property-grid.html">
+              <a class="btn btn-xs btn-outline-secondary btn-custom-toggle-primary flex-fill" href="property-grid.aspx">
                 <span class="fas fa-th-large"></span>
               </a>
-              <a class="btn btn-xs btn-outline-secondary btn-custom-toggle-primary flex-fill active" href="property-list.html">
+              <a class="btn btn-xs btn-outline-secondary btn-custom-toggle-primary flex-fill active" href="property-list.aspx">
                 <span class="fas fa-list"></span>
               </a>
             </div>
@@ -770,7 +771,7 @@
                 <div class="row">
                   <div class="col-8">
                     <h2 class="h4 mb-1">
-                      <a href="property-description.html">$689,000</a>
+                      <a href="property-description.aspx">$689,000</a>
                     </h2>
                   </div>
                   <div class="col-4 text-right">
@@ -780,7 +781,7 @@
 
                 <!-- Location -->
                 <div class="mb-3">
-                  <a class="font-size-1" href="property-description.html">
+                  <a class="font-size-1" href="property-description.aspx">
                     <span class="fas fa-map-marker-alt mr-1"></span>
                     Borrett Close, London SE17
                   </a>
@@ -824,7 +825,7 @@
                     <span class="fas fa-star mr-1"></span>
                     Save
                   </a>
-                  <a class="btn btn-sm btn-soft-primary transition-3d-hover ml-auto" href="property-description.html">
+                  <a class="btn btn-sm btn-soft-primary transition-3d-hover ml-auto" href="property-description.aspx">
                     Details
                     <span class="fas fa-angle-right ml-1"></span>
                   </a>
@@ -884,12 +885,12 @@
 
               <div class="col-md-8">
                 <h3 class="h4 mb-1">
-                  <a href="property-description.html">$725,000 - $755,000</a>
+                  <a href="property-description.aspx">$725,000 - $755,000</a>
                 </h3>
 
                 <!-- Location -->
                 <div class="mb-3">
-                  <a class="font-size-1" href="property-description.html">
+                  <a class="font-size-1" href="property-description.aspx">
                     <span class="fas fa-map-marker-alt mr-1"></span>
                     Alderney House, Enfield EN3
                   </a>
@@ -933,7 +934,7 @@
                     <span class="fas fa-star mr-1"></span>
                     Save
                   </a>
-                  <a class="btn btn-sm btn-soft-primary transition-3d-hover ml-auto" href="property-description.html">
+                  <a class="btn btn-sm btn-soft-primary transition-3d-hover ml-auto" href="property-description.aspx">
                     Details
                     <span class="fas fa-angle-right ml-1"></span>
                   </a>
@@ -1001,7 +1002,7 @@
                 <div class="row">
                   <div class="col-8">
                     <h3 class="h4 mb-1">
-                      <a href="property-description.html">$999,000</a>
+                      <a href="property-description.aspx">$999,000</a>
                     </h3>
                   </div>
                   <div class="col-4 text-right">
@@ -1011,7 +1012,7 @@
 
                 <!-- Location -->
                 <div class="mb-3">
-                  <a class="font-size-1" href="property-description.html">
+                  <a class="font-size-1" href="property-description.aspx">
                     <span class="fas fa-map-marker-alt mr-1"></span>
                     The Drive, Ilford IG1
                   </a>
@@ -1055,7 +1056,7 @@
                     <span class="fas fa-star mr-1"></span>
                     Save
                   </a>
-                  <a class="btn btn-sm btn-soft-primary transition-3d-hover ml-auto" href="property-description.html">
+                  <a class="btn btn-sm btn-soft-primary transition-3d-hover ml-auto" href="property-description.aspx">
                     Details
                     <span class="fas fa-angle-right ml-1"></span>
                   </a>
@@ -1123,7 +1124,7 @@
                 <div class="row">
                   <div class="col-8">
                     <h3 class="h4 mb-1">
-                      <a href="property-description.html">$255,000 - $300,000</a>
+                      <a href="property-description.aspx">$255,000 - $300,000</a>
                     </h3>
                   </div>
                   <div class="col-4 text-right">
@@ -1133,7 +1134,7 @@
 
                 <!-- Location -->
                 <div class="mb-3">
-                  <a class="font-size-1" href="property-description.html">
+                  <a class="font-size-1" href="property-description.aspx">
                     <span class="fas fa-map-marker-alt mr-1"></span>
                     Bellvue Court, Staines Road, Hounslow TW3
                   </a>
@@ -1177,7 +1178,7 @@
                     <span class="fas fa-star mr-1"></span>
                     Save
                   </a>
-                  <a class="btn btn-sm btn-soft-primary transition-3d-hover ml-auto" href="property-description.html">
+                  <a class="btn btn-sm btn-soft-primary transition-3d-hover ml-auto" href="property-description.aspx">
                     Details
                     <span class="fas fa-angle-right ml-1"></span>
                   </a>
@@ -1243,12 +1244,12 @@
 
               <div class="col-md-8">
                 <h3 class="h4 mb-1">
-                  <a href="property-description.html">$488,000</a>
+                  <a href="property-description.aspx">$488,000</a>
                 </h3>
 
                 <!-- Location -->
                 <div class="mb-3">
-                  <a class="font-size-1" href="property-description.html">
+                  <a class="font-size-1" href="property-description.aspx">
                     <span class="fas fa-map-marker-alt mr-1"></span>
                     Burns Way, Hounslow TW5
                   </a>
@@ -1292,7 +1293,7 @@
                     <span class="fas fa-star mr-1"></span>
                     Save
                   </a>
-                  <a class="btn btn-sm btn-soft-primary transition-3d-hover ml-auto" href="property-description.html">
+                  <a class="btn btn-sm btn-soft-primary transition-3d-hover ml-auto" href="property-description.aspx">
                     Details
                     <span class="fas fa-angle-right ml-1"></span>
                   </a>
