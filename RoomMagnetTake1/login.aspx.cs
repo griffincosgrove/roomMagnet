@@ -12,8 +12,8 @@ public partial class login : System.Web.UI.Page
     protected void btnLogin_Click(object sender, EventArgs e)
     {
         // connect to database to retrieve stored password string
-        try
-        {
+        //try
+        //{
                 SqlConnection sc = new SqlConnection(ConfigurationManager.ConnectionStrings["cs"].ConnectionString);
 
            
@@ -24,7 +24,13 @@ public partial class login : System.Web.UI.Page
             findPass.Connection = sc;
             // SELECT PASSWORD STRING WHERE THE ENTERED USERNAME MATCHES
             findPass.CommandText = "select password from Customer where Email = @Email";
-            findPass.Parameters.Add(new SqlParameter("@Email", getString(txtUsername)));
+            findPass.Parameters.Add(new SqlParameter("@Email", getString(txtEmail)));
+
+            SqlCommand findhost = new SqlCommand("select email from host where UPPER(email) = @email", sc);
+            findhost.Parameters.AddWithValue("@email", getString(txtEmail).ToUpper());
+
+            SqlCommand findTenant = new SqlCommand("select email from host where UPPER(email) = @email", sc);
+            findTenant.Parameters.AddWithValue("@email", getString(txtEmail).ToUpper());
 
             SqlDataReader reader = findPass.ExecuteReader(); // create a reader
 
@@ -36,26 +42,41 @@ public partial class login : System.Web.UI.Page
 
                     if (PasswordHash.ValidatePassword(txtPassword.Text, storedHash)) // if the entered password matches what is stored, it will show success
                     {
-                        lblStatus.Text = "Success!";
-                        btnLogin.Enabled = false;
-                        txtUsername.Enabled = false;
-                        txtPassword.Enabled = false;
-                        Session["USER_ID"] = txtUsername.Text;
-                        Response.Redirect("hostdashboard.aspx");
+                        Session["USER_ID"] = txtEmail.Text;
+
+                        sc.Close();
+                        sc.Open();
+
+                        if(findhost.ExecuteReader().HasRows)
+                        {
+                            Response.Redirect("hostdashboard.aspx");
+                        }
+
+                        sc.Close();
+                        sc.Open();
+
+                        if(findTenant.ExecuteReader().HasRows)
+                        {
+                            Response.Redirect("index.aspx"); //will change this to tenant dashboard later.
+                        }
                     }
                     else
-                        lblStatus.Text = "Password is wrong.";
+                    {
+                        ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "Password Error", "alert('Password is incorrect')", true);
+                    }
                 }
             }
             else // if the username doesn't exist, it will show failure
-                lblStatus.Text = "Login failed.";
+            {
+                ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "NoDatabaseAlertMessage", "alert('Email not found')", true);
+            }
 
             sc.Close();
-        }
-        catch
-        {
-            lblStatus.Text = "Database Error.";
-        }
+        //}
+        //catch
+        //{
+            //ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "NoDatabaseAlertMessage", "alert('error')", true);
+        //}
 
     }
 
