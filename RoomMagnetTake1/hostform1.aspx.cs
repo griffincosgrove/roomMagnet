@@ -6,8 +6,13 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.SqlClient;
 using System.Configuration;
+using System.Net.Mail;
+using System.Net;
 
 public partial class hostform1 : System.Web.UI.Page
+
+    //roommagnet484@gmail.com
+    //roommagnet123
 {
     // connection string at the class level so we can reference it later. this is the string in the web.config !!
     SqlConnection sc = new SqlConnection(ConfigurationManager.ConnectionStrings["cs"].ConnectionString);
@@ -67,8 +72,16 @@ public partial class hostform1 : System.Web.UI.Page
             {
                 sc.Open();
                 command.ExecuteNonQuery();
+
                 ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "NoDatabaseAlertMessage", "alert('New Host inserted')", true);
+
                 Session["USER_ID"] = newHost.getEmail();
+
+                Email.sendConfirmationEmail(Session["USER_ID"].ToString());
+
+                Email.sendWelcomeEmail(Session["USER_ID"].ToString());
+
+                Response.Redirect("hostform2.aspx");
             }
             catch
             {
@@ -80,8 +93,6 @@ public partial class hostform1 : System.Web.UI.Page
             }
 
 
-
-            Response.Redirect("hostform2.aspx");
         }
     }
 
@@ -150,3 +161,6 @@ public partial class hostform1 : System.Web.UI.Page
     }
 
 }
+
+
+

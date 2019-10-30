@@ -71,7 +71,14 @@ public partial class tenantform1 : System.Web.UI.Page
 
                 //window to show success of insert
                 ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "NoDatabaseAlertMessage", "alert('New Tenant inserted')", true);
+                Session["USER_ID"] = newCustomer.getEmail();
+
+                Email.sendConfirmationEmail(Session["USER_ID"].ToString());
+
+                Email.sendWelcomeEmail(Session["USER_ID"].ToString());
+
                 Response.Redirect("tenantform2.aspx");
+
             }
             catch
             {
