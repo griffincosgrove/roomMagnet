@@ -68,6 +68,7 @@ public partial class hostform1 : System.Web.UI.Page
                 sc.Open();
                 command.ExecuteNonQuery();
                 ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "NoDatabaseAlertMessage", "alert('New Host inserted')", true);
+                Session["USER_ID"] = newHost.getEmail();
             }
             catch
             {

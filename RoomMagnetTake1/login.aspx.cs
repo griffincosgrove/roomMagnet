@@ -12,8 +12,8 @@ public partial class login : System.Web.UI.Page
     protected void btnLogin_Click(object sender, EventArgs e)
     {
         // connect to database to retrieve stored password string
-        //try
-        //{
+        try
+        {
                 SqlConnection sc = new SqlConnection(ConfigurationManager.ConnectionStrings["cs"].ConnectionString);
 
            
@@ -72,11 +72,11 @@ public partial class login : System.Web.UI.Page
             }
 
             sc.Close();
-        //}
-        //catch
-        //{
-            //ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "NoDatabaseAlertMessage", "alert('error')", true);
-        //}
+        }
+        catch
+        {
+            ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "NoDatabaseAlertMessage", "alert('error')", true);
+        }
 
     }
 
