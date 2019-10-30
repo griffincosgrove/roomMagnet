@@ -54,6 +54,7 @@ DROP TABLE CUSTOMER
 	Address varchar(40) NOT NULL,
 	City varchar(30) NOT NULL,
 	ZipCode char(5) NOT NULL,
+	State varchar(20) NOT NULL,
 	Price money NOT NULL,
 	MaxNumberOfGuests int NOT NULL, --I am making this int in case we need to do conditionals later on
 	AvailableDate datetime NOT NULL, --I am not really sure what to do with this field, we will have to ask questions.
