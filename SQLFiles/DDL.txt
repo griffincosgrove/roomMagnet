@@ -61,6 +61,7 @@ DROP TABLE CUSTOMER
 	Neighborhood varchar(40) NOT NULL,
 	Description varchar(200) NOT NULL,
 	HostID int NOT NULL,
+	ImageFilePath varchar(256),
 	CONSTRAINT PK_PROPERTY PRIMARY KEY (PropertyID),
 	CONSTRAINT FK_PROPERTY_HOST FOREIGN KEY (HostID) REFERENCES Host);
 
