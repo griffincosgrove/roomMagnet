@@ -14,8 +14,13 @@ public partial class hostform2 : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
-        
+        if(Session["User_ID"] == null)
+        {
+            ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "Error", "alert('Login please')", true);
+            Response.Redirect("login.aspx");
+        }
     }
+
 
 
 
@@ -48,15 +53,21 @@ public partial class hostform2 : System.Web.UI.Page
         return retInt;
     }
 
+    protected void btnUploadFile_Clicked(object sender, EventArgs e)
+    {
+        renameFilePath();
+    }
+
 
 
     protected void btnCommitProperty_Click(object sender, EventArgs e)
     {
-        Property newProperty = new Property(getString(txtaddressstreet), getString(txtaddresscity), getString(txtZip), DDstate.Text, Convert.ToDouble(getString(txtPrice)),
-                    Convert.ToInt32(ddNumberOfGuests.Text), convertToDateFormat(combineBirthday()), getString(txtNeighborhood), getString(txtDescription), getHostID());
 
-        SqlCommand insert = new SqlCommand("INSERT INTO [PROPERTY] (Address, City, ZipCode, State, Price, MaxNumberOfGuests, AvailableDate, Neighborhood, Description, HostID) " +
-            "VALUES( @address, @city, @zip, @state, @price, @maxNumberOfGuests, @availableDate, @neighborhood, @description, @hostID)", sc);
+        Property newProperty = new Property(getString(txtaddressstreet), getString(txtaddresscity), getString(txtZip), DDstate.Text, Convert.ToDouble(getString(txtPrice)),
+                    Convert.ToInt32(ddNumberOfGuests.Text), convertToDateFormat(combineBirthday()), getString(txtNeighborhood), getString(txtDescription), getHostID(), renameFilePath()); ;
+
+        SqlCommand insert = new SqlCommand("INSERT INTO [PROPERTY] (Address, City, ZipCode, State, Price, MaxNumberOfGuests, AvailableDate, Neighborhood, Description, HostID, imageFilePath) " +
+            "VALUES(@address, @city, @zip, @state, @price, @maxNumberOfGuests, @availableDate, @neighborhood, @description, @hostID, @fileImagePath)", sc);
 
         insert.Parameters.AddWithValue("@address", newProperty.getAddress());
         insert.Parameters.AddWithValue("@city", newProperty.getCity());
@@ -68,22 +79,41 @@ public partial class hostform2 : System.Web.UI.Page
         insert.Parameters.AddWithValue("@neighborhood", newProperty.getNeighborhood());
         insert.Parameters.AddWithValue("@description", newProperty.getDescription());
         insert.Parameters.AddWithValue("@hostID", newProperty.getHostID());
-        try
-        {
+        insert.Parameters.AddWithValue("@fileImagePath", newProperty.getImageFilePath());
+        //try
+        //{
             sc.Open();
 
             insert.ExecuteNonQuery();
-        }
+        //}
 
-        catch
-        {
-            ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "NoDatabaseAlertMessage", "alert('error')", true);
-        }
-        finally
-        {
+        //catch
+        //{
+            //ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "NoDatabaseAlertMessage", "alert('error')", true);
+        //}
+        //finally
+        //{
             sc.Close();
-        }
+        //}
 
         Response.Redirect("hostform3.aspx");
+    }
+
+    protected string renameFilePath()
+    {
+        string str = "";
+        if (FileUploadImage.HasFile)
+        {
+            FileUploadImage.SaveAs("/propertyImages/" + Session["User_ID"].ToString() + ".png");
+            str += "/propertyImages/" + Session["User_ID"].ToString() + ".jpg";
+
+        }
+        else
+        {
+            str += "/propertyImages/error.png";
+
+        }
+
+        return str;
     }
 }

@@ -479,6 +479,7 @@
                                  data-success-class="u-has-success"></asp:TextBox>
                 </div>
               </div>
+                        <asp:FileUpload ID="FileUploadImage" runat="server" />
             </div>
                   <div class="col-sm-3 mb-6">
               <div class="js-form-message">

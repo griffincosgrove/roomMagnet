@@ -15,11 +15,12 @@ public class Property
     private string neighborhood;
     private string description;
     private int hostID;
+    private string imageFilePath;
 
-    
+
 
     public Property(string address, string city, String zipcode, String state, double price, int maxNumberOfGuests, DateTime availableDate, string neighborhood,
-        string description, int hostID)
+        string description, int hostID, String imageFilePath)
     {
         setAddress(address);
         setCity(city);
@@ -31,10 +32,21 @@ public class Property
         setNeighborhood(neighborhood);
         setDescription(description);
         setHostID(hostID);
+        setImageFilePath(imageFilePath);
 
 
     }
     ///SETTERS
+    public string getImageFilePath()
+    {
+        return this.imageFilePath;
+    }
+
+    public void setImageFilePath(string imageFilePath)
+    {
+        this.imageFilePath =  imageFilePath;
+    }
+
     public void setAddress(string address)
     {
         this.address = address;
