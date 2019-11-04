@@ -299,7 +299,7 @@
   <!-- ========== END HEADER ========== -->
 
   <!-- ========== MAIN CONTENT ========== -->
-  <main id="content" role="main">
+  <form id="content" role="main" runat="server">
     <!-- Search Section -->
     <div class="bg-light">
       <div class="container space-1">
@@ -314,7 +314,7 @@
                     <span class="fas fa-search"></span>
                   </span>
                 </div>
-                <input type="text" class="form-control" name="text" id="searchPropertySr" placeholder="Search property" aria-label="Search property" aria-describedby="searchProperty" value="London">
+                  <asp:TextBox ID="searchPropertySr" class="form-control" placeholder="Search property" aria-label="Search property" aria-describedby="searchProperty"  runat="server"></asp:TextBox>
               </div>
             </div>
             <!-- End Search Property Input -->
@@ -645,7 +645,7 @@
           </div>
 
           <div class="col-sm-auto">
-            <button type="submit" class="btn btn-sm btn-primary">Search</button>
+              <asp:Button ID="btnSearch" class="btn btn-sm btn-primary" runat="server" Text="Search" OnClick="btnSearch_Click" />
           </div>
         </div>
       </div>
@@ -873,14 +873,11 @@
             <div class="card p-4">
               <!-- Asset Type -->
               <div class="border-bottom pb-4 mb-4">
-                <label class="form-label mb-2">Asset type</label>
+                <label class="form-label mb-2">Price</label>
 
                 <!-- Radio Checkbox -->
                 <div class="custom-control custom-checkbox font-size-1 text-lh-md mb-2">
-                  <input type="checkbox" class="custom-control-input" id="assetTypeRadioChechbox1" name="assetTypeRadioChechbox">
-                  <label class="custom-control-label" for="assetTypeRadioChechbox1">
-                    Bank owned
-                  </label>
+                    <asp:TextBox ID="txtMaxPrice" placeholder="Max Price" runat="server" TextMode="Number" Width="88px" AutoPostBack="True" OnTextChanged="txtMaxPrice_TextChanged"></asp:TextBox>
                 </div>
                 <!-- End Radio Checkbox -->
 
@@ -1106,7 +1103,8 @@
                   <button type="submit" class="btn btn-block btn-sm btn-soft-secondary">Clear</button>
                 </div>
                 <div class="col-6">
-                  <button type="submit" class="btn btn-block btn-sm btn-primary">Save</button>
+                    <asp:Button ID="btnFilter" class="btn btn-block btn-sm btn-primary" runat="server" Text="Apply Filter"/>
+                 
                 </div>
               </div>
               <!-- End Buttons -->
@@ -1117,7 +1115,7 @@
       </div>
     </div>
     <!-- End List of Properties Section -->
-  </main>
+  </form>
   <!-- ========== END MAIN CONTENT ========== -->
 
   <!-- ========== FOOTER ========== -->

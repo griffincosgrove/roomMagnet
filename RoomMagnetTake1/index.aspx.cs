@@ -20,6 +20,7 @@ public partial class index : System.Web.UI.Page
         Session["Zipcode"] = txtSearchBar.Text;
         //add property item for the inserted zip code
         //document.getelementsbyclassname("row");
+
         Response.Redirect("property-list.aspx");
     }
 }
