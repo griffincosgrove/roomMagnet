@@ -206,10 +206,11 @@
                   <h1 class="sunset font-weight-semi-bold asap2 col-8"><strong>One more thing! </strong><span class="h3 opensans display-5 navy font-weight-normal ml-1">It's time to list your property.</span></h1>
                 <p class="col-6">Help us find the right tenant for you.</p>
               </div>
+                </form>
               <!-- End Title -->
 
     <!-- Personal Info Form -->
-    <form class="js-validate" runat="server">
+    <form class="js-validate" runat="server" enctype="multipart/form-data">
         <div class="row">
             <!-- Input -->
             <div class="col-sm-6 mb-6">
@@ -234,7 +235,7 @@
                          data-success-class="u-has-success"></asp:TextBox>
                 </div>
                    <div class="form-group col-3">
-               <asp:DropDownList ID="state" runat="server" class="form-control custom-select" required aria-describedby="addressLabel"
+               <asp:DropDownList ID="DDstate" runat="server" class="form-control custom-select" required aria-describedby="addressLabel"
                                 data-msg="Please enter your state."
                                 data-error-class="u-has-error"
                                 data-success-class="u-has-success"> 
@@ -294,7 +295,7 @@
 </asp:DropDownList>
                 </div>
                   <div class="form-group col-4">
-                  <asp:TextBox ID="TextBox1" runat="server" class="form-control" name="addresszip" value="Zip code" placeholder="addresszip" aria-label="Zip code" required aria-describedby="addressLabel"
+                  <asp:TextBox ID="txtZip" runat="server" class="form-control" name="addresszip" value="Zip code" placeholder="addresszip" aria-label="Zip code" required aria-describedby="addressLabel"
                           data-msg="Please enter your zip code."
                          data-error-class="u-has-error"
                          data-success-class="u-has-success"></asp:TextBox>
@@ -465,7 +466,7 @@
             </div>
               <div class="row">
             <!-- Input -->
-            <div class="col-sm-6 mb-6">
+            <div class="col-sm-6 mb-6" runat="server" enctype="multipart/form-data">
               <div class="js-form-message">
                 <label id="descriptionLabel" class="form-label">
                   Description
@@ -479,6 +480,9 @@
                                  data-success-class="u-has-success"></asp:TextBox>
                 </div>
               </div>
+                
+                <asp:FileUpload ID="FileUploadImage" runat="server" />
+                
             </div>
                   <div class="col-sm-3 mb-6">
               <div class="js-form-message">
@@ -499,10 +503,9 @@
     
             <!-- End Input -->
         
-            <a class="btn btn-sm btn-primary transition-3d-hover mr-1" href="hostform3.aspx">
-                Next Step!
+            <asp:Button ID="btnCommitProperty" runat="server" Text="Next Step!" type="submit" class="btn btn-primary transition-3d-hover" OnClick="btnCommitProperty_Click"/>
+                
                 <span class="fas fa-angle-right ml-2"></span>
-                </a>
                 </form>
   </main>
   <!-- ========== END MAIN CONTENT ========== -->

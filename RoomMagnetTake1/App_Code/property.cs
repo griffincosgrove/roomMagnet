@@ -3,39 +3,63 @@
 /// <summary>
 /// Summary description for Class1
 /// </summary>
-public class property
+public class Property
 {
     private string address;
     private string city;
-    private int zipcode;
+    private String zipcode;
+    private String state;
     private double price;
     private int maxNumberOfGuests;
     private DateTime availableDate;
     private string neighborhood;
     private string description;
     private int hostID;
+    private string imageFilePath;
 
-    
 
-    public property(string address, string city, int zipcode, double price, int maxNumberOfGuests, DateTime availableDate, string neighborhood,
-        string description, int hostID)
+
+    public Property(string address, string city, String zipcode, String state, double price, int maxNumberOfGuests, DateTime availableDate, string neighborhood,
+        string description, int hostID, String imageFilePath)
     {
         setAddress(address);
         setCity(city);
         setZipcode(zipcode);
+        setState(state);
         setPrice(price);
         setMaxGuests(maxNumberOfGuests);
         setAvailableDate(availableDate);
         setNeighborhood(neighborhood);
         setDescription(description);
         setHostID(hostID);
+        setImageFilePath(imageFilePath);
 
 
     }
     ///SETTERS
+    public string getImageFilePath()
+    {
+        return this.imageFilePath;
+    }
+
+    public void setImageFilePath(string imageFilePath)
+    {
+        this.imageFilePath =  imageFilePath;
+    }
+
     public void setAddress(string address)
     {
         this.address = address;
+    }
+
+    public String getState()
+    {
+        return this.state;
+    }
+
+    public void setState(String state)
+    {
+        this.state = state;
     }
 
     public void setCity(string city)
@@ -43,7 +67,7 @@ public class property
         this.city = city;
     }
 
-    public void setZipcode(int zipcode)
+    public void setZipcode(String zipcode)
     {
         this.zipcode = zipcode;
     }
@@ -89,7 +113,7 @@ public class property
         return this.city;
     }
 
-    public int getZipcode()
+    public String getZipcode()
     {
         return this.zipcode;
     }
@@ -114,7 +138,7 @@ public class property
         return this.neighborhood;
     }
 
-    public string setDescription()
+    public string getDescription()
     {
         return this.description;
     }

@@ -54,12 +54,14 @@ DROP TABLE CUSTOMER
 	Address varchar(40) NOT NULL,
 	City varchar(30) NOT NULL,
 	ZipCode char(5) NOT NULL,
+	State varchar(20) NOT NULL,
 	Price money NOT NULL,
 	MaxNumberOfGuests int NOT NULL, --I am making this int in case we need to do conditionals later on
 	AvailableDate datetime NOT NULL, --I am not really sure what to do with this field, we will have to ask questions.
 	Neighborhood varchar(40) NOT NULL,
 	Description varchar(200) NOT NULL,
 	HostID int NOT NULL,
+	ImageFilePath varchar(256),
 	CONSTRAINT PK_PROPERTY PRIMARY KEY (PropertyID),
 	CONSTRAINT FK_PROPERTY_HOST FOREIGN KEY (HostID) REFERENCES Host);
 
