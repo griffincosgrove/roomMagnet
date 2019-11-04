@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.SqlClient;
 using System.Configuration;
+using System.IO;
 
 public partial class hostform2 : System.Web.UI.Page
 {
@@ -14,7 +15,10 @@ public partial class hostform2 : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
-        if(Session["User_ID"] == null)
+        Page.Form.Attributes.Add("enctype", "multipart/form-data");
+
+
+        if (Session["User_ID"] == null)
         {
             ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "Error", "alert('Login please')", true);
             Response.Redirect("login.aspx");
@@ -48,7 +52,7 @@ public partial class hostform2 : System.Web.UI.Page
         SqlCommand command = new SqlCommand("Select hostID from host where UPPER(email) = UPPER(@email)", sc);
         command.Parameters.AddWithValue("@email", Session["User_ID"].ToString());
         sc.Open();
-        retInt= Convert.ToInt32(command.ExecuteScalar());
+        retInt = Convert.ToInt32(command.ExecuteScalar());
         sc.Close();
         return retInt;
     }
@@ -64,7 +68,7 @@ public partial class hostform2 : System.Web.UI.Page
     {
 
         Property newProperty = new Property(getString(txtaddressstreet), getString(txtaddresscity), getString(txtZip), DDstate.Text, Convert.ToDouble(getString(txtPrice)),
-                    Convert.ToInt32(ddNumberOfGuests.Text), convertToDateFormat(combineBirthday()), getString(txtNeighborhood), getString(txtDescription), getHostID(), renameFilePath()); ;
+                    Convert.ToInt32(ddNumberOfGuests.Text), convertToDateFormat(combineBirthday()), getString(txtNeighborhood), getString(txtDescription), getHostID(), renameFilePath());
 
         SqlCommand insert = new SqlCommand("INSERT INTO [PROPERTY] (Address, City, ZipCode, State, Price, MaxNumberOfGuests, AvailableDate, Neighborhood, Description, HostID, imageFilePath) " +
             "VALUES(@address, @city, @zip, @state, @price, @maxNumberOfGuests, @availableDate, @neighborhood, @description, @hostID, @fileImagePath)", sc);
@@ -82,18 +86,18 @@ public partial class hostform2 : System.Web.UI.Page
         insert.Parameters.AddWithValue("@fileImagePath", newProperty.getImageFilePath());
         //try
         //{
-            sc.Open();
+        sc.Open();
 
-            insert.ExecuteNonQuery();
+        insert.ExecuteNonQuery();
         //}
 
         //catch
         //{
-            //ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "NoDatabaseAlertMessage", "alert('error')", true);
+        //ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "NoDatabaseAlertMessage", "alert('error')", true);
         //}
         //finally
         //{
-            sc.Close();
+        sc.Close();
         //}
 
         Response.Redirect("hostform3.aspx");
@@ -104,9 +108,12 @@ public partial class hostform2 : System.Web.UI.Page
         string str = "";
         if (FileUploadImage.HasFile)
         {
-            FileUploadImage.SaveAs("/propertyImages/" + Session["User_ID"].ToString() + ".png");
-            str += "/propertyImages/" + Session["User_ID"].ToString() + ".jpg";
+            string relativePath = @"~/propertyImages/" + Session["User_ID"].ToString() + Path.GetExtension(FileUploadImage.FileName);
+            FileUploadImage.SaveAs(Server.MapPath(relativePath));
 
+            //FileUploadImage.SaveAs("~/propertyImages/" + Session["User_ID"].ToString() + ".png");
+            //str += "/propertyImages/" + Session["User_ID"].ToString() + ".jpg";
+            return relativePath;
         }
         else
         {
@@ -115,5 +122,17 @@ public partial class hostform2 : System.Web.UI.Page
         }
 
         return str;
+    }
+
+    protected void testMethod()
+    {
+        if (FileUploadImage.HasFile)
+        {
+            ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "NoDatabaseAlertMessage", "alert('it work')", true);
+        }
+        else
+        {
+            ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "NoDatabaseAlertMessage", "alert('no work')", true);
+        }
     }
 }

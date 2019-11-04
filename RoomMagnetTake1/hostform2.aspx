@@ -206,10 +206,11 @@
                   <h1 class="sunset font-weight-semi-bold asap2 col-8"><strong>One more thing! </strong><span class="h3 opensans display-5 navy font-weight-normal ml-1">It's time to list your property.</span></h1>
                 <p class="col-6">Help us find the right tenant for you.</p>
               </div>
+                </form>
               <!-- End Title -->
 
     <!-- Personal Info Form -->
-    <form class="js-validate" runat="server">
+    <form class="js-validate" runat="server" enctype="multipart/form-data">
         <div class="row">
             <!-- Input -->
             <div class="col-sm-6 mb-6">
@@ -465,7 +466,7 @@
             </div>
               <div class="row">
             <!-- Input -->
-            <div class="col-sm-6 mb-6">
+            <div class="col-sm-6 mb-6" runat="server" enctype="multipart/form-data">
               <div class="js-form-message">
                 <label id="descriptionLabel" class="form-label">
                   Description
@@ -479,7 +480,16 @@
                                  data-success-class="u-has-success"></asp:TextBox>
                 </div>
               </div>
-                        <asp:FileUpload ID="FileUploadImage" runat="server" />
+                <asp:ScriptManager ID="ScriptManager1" runat="server" AjaxFrameworkMode="Disabled">
+                </asp:ScriptManager>
+                <asp:UpdatePanel ID="UpdatePanel1" UpdateMode="Always" runat="server">
+
+                    <Triggers>
+                        <asp:PostBackTrigger ControlID="btnUploadFile" runat="server" />
+                    </Triggers>
+                </asp:UpdatePanel>
+                <asp:FileUpload ID="FileUploadImage" runat="server" />
+                <asp:Button ID="btnUploadFile" runat="server" Text="Upload File" class="btn btn-primary transition-3d-hover" OnClick="btnUploadFile_Clicked" />
             </div>
                   <div class="col-sm-3 mb-6">
               <div class="js-form-message">
