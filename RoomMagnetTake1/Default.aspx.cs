@@ -5,21 +5,14 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-
-public partial class index : System.Web.UI.Page
+public partial class _Default : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
-    }
-
-
-
-    protected void btnSearch_Click(object sender, EventArgs e)
-    {
-        Session["Zipcode"] = txtSearchBar.Text;
+        Session["Zipcode"] = "";
+        Session["USER_ID"] = "";
         //add property item for the inserted zip code
         //document.getelementsbyclassname("row");
-        Response.Redirect("property-list.aspx");
+        Response.Redirect("index.aspx");
     }
 }

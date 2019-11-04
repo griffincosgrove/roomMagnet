@@ -25,13 +25,22 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "RoomMagnetTake1", "RoomMagn
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "SQLConnection", "SQLConnection\SQLConnection.njsproj", "{29CE8388-B0F8-41C3-A82E-5022AFE4EBBA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{DBFD03A1-32AD-44CD-ADB6-ECEFE9D454AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DBFD03A1-32AD-44CD-ADB6-ECEFE9D454AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBFD03A1-32AD-44CD-ADB6-ECEFE9D454AE}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBFD03A1-32AD-44CD-ADB6-ECEFE9D454AE}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{29CE8388-B0F8-41C3-A82E-5022AFE4EBBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29CE8388-B0F8-41C3-A82E-5022AFE4EBBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29CE8388-B0F8-41C3-A82E-5022AFE4EBBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29CE8388-B0F8-41C3-A82E-5022AFE4EBBA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
