@@ -480,16 +480,9 @@
                                  data-success-class="u-has-success"></asp:TextBox>
                 </div>
               </div>
-                <asp:ScriptManager ID="ScriptManager1" runat="server" AjaxFrameworkMode="Disabled">
-                </asp:ScriptManager>
-                <asp:UpdatePanel ID="UpdatePanel1" UpdateMode="Always" runat="server">
-
-                    <Triggers>
-                        <asp:PostBackTrigger ControlID="btnUploadFile" runat="server" />
-                    </Triggers>
-                </asp:UpdatePanel>
+                
                 <asp:FileUpload ID="FileUploadImage" runat="server" />
-                <asp:Button ID="btnUploadFile" runat="server" Text="Upload File" class="btn btn-primary transition-3d-hover" OnClick="btnUploadFile_Clicked" />
+                
             </div>
                   <div class="col-sm-3 mb-6">
               <div class="js-form-message">

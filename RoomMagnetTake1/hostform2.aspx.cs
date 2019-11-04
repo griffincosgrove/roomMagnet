@@ -57,12 +57,6 @@ public partial class hostform2 : System.Web.UI.Page
         return retInt;
     }
 
-    protected void btnUploadFile_Clicked(object sender, EventArgs e)
-    {
-        renameFilePath();
-    }
-
-
 
     protected void btnCommitProperty_Click(object sender, EventArgs e)
     {
@@ -84,21 +78,21 @@ public partial class hostform2 : System.Web.UI.Page
         insert.Parameters.AddWithValue("@description", newProperty.getDescription());
         insert.Parameters.AddWithValue("@hostID", newProperty.getHostID());
         insert.Parameters.AddWithValue("@fileImagePath", newProperty.getImageFilePath());
-        //try
-        //{
+        try
+        {
         sc.Open();
 
         insert.ExecuteNonQuery();
-        //}
+        }
 
-        //catch
-        //{
-        //ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "NoDatabaseAlertMessage", "alert('error')", true);
-        //}
-        //finally
-        //{
+        catch
+        {
+        ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "NoDatabaseAlertMessage", "alert('error')", true);
+        }
+        finally
+        {
         sc.Close();
-        //}
+        }
 
         Response.Redirect("hostform3.aspx");
     }
@@ -124,15 +118,4 @@ public partial class hostform2 : System.Web.UI.Page
         return str;
     }
 
-    protected void testMethod()
-    {
-        if (FileUploadImage.HasFile)
-        {
-            ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "NoDatabaseAlertMessage", "alert('it work')", true);
-        }
-        else
-        {
-            ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "NoDatabaseAlertMessage", "alert('no work')", true);
-        }
-    }
 }
