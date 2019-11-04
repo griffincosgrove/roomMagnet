@@ -27,11 +27,11 @@ public partial class property_list : System.Web.UI.Page
     {
 
         lblSearchField.Text = "Property for sale in " + Session["zipCode"];
-
+        
         sc.Open();
         SqlCommand displayProperty = new SqlCommand();
         displayProperty.Connection = sc;
-        String searchString = "SELECT Host.HostID, Host.FirstName, Host.LastName, Host.Gender, Host.Email, Property.Address, Property.ZipCode, Property.City,Property.Neighborhood, Property.AvailableDate, Property.MaxNumberOfGuests, Property.Price, Property.Description FROM Host INNER JOIN Property ON Host.HostID = Property.HostID  where Property.ZipCode = @zipcode";
+        String searchString = "SELECT Host.HostID, Host.FirstName, Host.LastName, Host.Gender, Host.Email, Property.Address, Property.ZipCode, Property.City,Property.Neighborhood, Property.AvailableDate, Property.MaxNumberOfGuests, Property.Price, Property.Description, Property.ImageFilePath FROM Host INNER JOIN Property ON Host.HostID = Property.HostID  where Property.ZipCode = @zipcode";
         displayProperty.CommandText = searchString;
         displayProperty.Parameters.AddWithValue("@zipcode", Session["ZipCode"].ToString());
         SqlDataReader readProperty = displayProperty.ExecuteReader();
@@ -50,6 +50,7 @@ public partial class property_list : System.Web.UI.Page
                 String description = readProperty["Description"].ToString();
                 DateTime availableDate = Convert.ToDateTime(readProperty["AvailableDate"]);
                 String displayedAvailableDate = availableDate.ToString("MM/dd/yyy");
+                String filePath = readProperty["ImageFilePath"].ToString();
 
 
 
@@ -89,7 +90,7 @@ public partial class property_list : System.Web.UI.Page
 
                 HtmlGenericControl img1 = new HtmlGenericControl("img");
                 img1.Attributes["class"] = "img-fluid w-100";
-                img1.Attributes["src"] = "../../assets/img/480x320/img19.jpg";
+                img1.Attributes["src"] = filePath;
                 img1.Attributes["alt"] = "Image Description";
                 anchortag.Controls.Add(img1);
 
@@ -304,7 +305,7 @@ public partial class property_list : System.Web.UI.Page
     {
 
         lblSearchField.Text = "Property for sale in " + Session["zipCode"].ToString();
-        searchPropertySr.Text = Session["zipCode"].ToString();
+        //searchPropertySr.Text = Session["zipCode"].ToString();
         sc.Open();
         SqlCommand displayProperty = new SqlCommand();
         displayProperty.Connection = sc;
@@ -576,4 +577,6 @@ public partial class property_list : System.Web.UI.Page
     }
 
 
+
+   
 }

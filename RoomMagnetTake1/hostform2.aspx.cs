@@ -100,9 +100,11 @@ public partial class hostform2 : System.Web.UI.Page
     protected string renameFilePath()
     {
         string str = "";
+        int index = Session["User_ID"].ToString().IndexOf("@");
+        String imageName = Session["User_ID"].ToString().Substring(0,index);
         if (FileUploadImage.HasFile)
         {
-            string relativePath = @"~/propertyImages/" + Session["User_ID"].ToString() + Path.GetExtension(FileUploadImage.FileName);
+            string relativePath = @"/propertyImages/" + imageName + Path.GetExtension(FileUploadImage.FileName);
             FileUploadImage.SaveAs(Server.MapPath(relativePath));
 
             //FileUploadImage.SaveAs("~/propertyImages/" + Session["User_ID"].ToString() + ".png");
