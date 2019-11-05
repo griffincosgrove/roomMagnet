@@ -57,7 +57,7 @@ public partial class login : System.Web.UI.Page
 
                         if(findTenant.ExecuteReader().HasRows)
                         {
-                            Response.Redirect("index.aspx"); //will change this to tenant dashboard later.
+                            Response.Redirect("indexSignedIn.aspx"); //will change this to tenant dashboard later.
                         }
                     }
                     else
