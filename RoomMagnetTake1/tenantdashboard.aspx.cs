@@ -9,6 +9,11 @@ public partial class tenantdashboard : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+    }
 
+    protected void tenantSearchbtn_Click(object sender, EventArgs e)
+    {
+        Session["zipCode"] = search.Text;
+        Response.Redirect("property-list.aspx");
     }
 }
