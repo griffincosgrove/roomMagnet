@@ -14,14 +14,14 @@ public partial class tenantform1 : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
-        txtFirstName.Text = "Mary";
-        txtLastName.Text = "Madison";
-        ddMonth.SelectedValue = "May";
-        ddDay.SelectedValue = "6";
-        ddYear.SelectedValue = "1995";
-        ddGender.SelectedValue = "Female";
-        txtEmail.Text = "cosgrogc@dukes.jmu.edu";
-        ddTenantType.SelectedValue = "Student";
+        //txtFirstName.Text = "Mary";
+        //txtLastName.Text = "Madison";
+        //ddMonth.SelectedValue = "May";
+        //ddDay.SelectedValue = "6";
+        //ddYear.SelectedValue = "1995";
+        //ddGender.SelectedValue = "Female";
+        //txtEmail.Text = "cosgrogc@dukes.jmu.edu";
+        //ddTenantType.SelectedValue = "Student";
 
     }
 

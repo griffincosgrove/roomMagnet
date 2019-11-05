@@ -300,15 +300,22 @@
           </div>
         </div>
       </div>
+                 <div class="container-fluid">
+  <div class="row">
+    <div class="col-12 px-0 mb-5">
+      <img class="img-fluid" src="images/mow3.jpg">
+    </div>
+  </div>  
+</div>
         <div class="w-md-60 w-lg-35s mb-9">
-          <h3 id="tenant" class="display-5 navy font-weight-normal">
+          <h3 id="tenant" class="display-5 mt-3 navy font-weight-normal">
             Looking for a Place? 
           </h3>
         </div>
                     <div class="row">
         <div class="col-md-4 mb-7">
           <div class="text-center px-lg-3">
-            <span class="btn btn-icon btn-lg btn-soft-primary rounded-circle mb-6">
+            <span class="btn btn-icon btn-lg btn-soft-primary1 rounded-circle mb-6">
               <span class="btn-icon__inner btn-icon__inner-bottom-minus ml-1"><img src="images/home2.svg" alt="Choose Your Home" width="110"></span>
             </span>
             <h3 class="h5 font-weight-semi-bold">1. Choose Your Home</h3>
