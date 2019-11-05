@@ -24,16 +24,16 @@ public partial class hostform2 : System.Web.UI.Page
             Response.Redirect("login.aspx");
         }
 
-        txtaddressstreet.Text = "1227 Colvin Meadows Lane";
-        txtaddresscity.Text = "Great Falls";
-        DDstate.SelectedValue = "VA";
-        txtZip.Text = "22066";
-        ddNumberOfGuests.SelectedValue = "1";
-        ddMonth.SelectedValue = "June";
-        ddDay.SelectedValue = "24";
-        txtPrice.Text = "1500";
-        txtDescription.Text = "Nice house in suburbs of DC";
-        txtNeighborhood.Text = "Colvin Meadows Estate";
+        //txtaddressstreet.Text = "1227 Colvin Meadows Lane";
+        //txtaddresscity.Text = "Great Falls";
+        //DDstate.SelectedValue = "VA";
+        //txtZip.Text = "22066";
+        //ddNumberOfGuests.SelectedValue = "1";
+        //ddMonth.SelectedValue = "June";
+        //ddDay.SelectedValue = "24";
+        //txtPrice.Text = "1500";
+        //txtDescription.Text = "Nice house in suburbs of DC";
+        //txtNeighborhood.Text = "Colvin Meadows Estate";
     }
 
 

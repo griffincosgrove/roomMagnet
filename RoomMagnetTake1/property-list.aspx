@@ -156,7 +156,7 @@
         <!-- Nav -->
         <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar u-header__navbar--no-space">
                     <!-- Logo -->
-          <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center" href="index.html" aria-label="RoomMagnet">
+          <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center" href="index.aspx" aria-label="RoomMagnet">
               <img src="images/logofinal4.svg">
           </a>
           <!-- End Logo -->
@@ -187,7 +187,7 @@
                       <div class="u-header__promo-card-deck">
                         <!-- Promo Item -->
                         <div class="u-header__promo-card u-header__promo-item">
-                          <a class="u-header__promo-link" href="../home/index.html">
+                          <a class="u-header__promo-link" href="../home/index.aspx">
                             <div class="media align-items-center">
                               <img class="js-svg-injector u-header__promo-icon" src="../../assets/svg/icons/icon-21.svg" alt="SVG">
                               <div class="media-body">
@@ -201,7 +201,7 @@
 
                         <!-- Promo Item -->
                         <div class="u-header__promo-card u-header__promo-item">
-                          <a class="u-header__promo-link" href="../app-marketplace/index.html">
+                          <a class="u-header__promo-link" href="../app-marketplace/index.aspx">
                             <div class="media align-items-center">
                               <img class="js-svg-injector u-header__promo-icon" src="../../assets/svg/icons/icon-45.svg" alt="SVG">
                               <div class="media-body">
@@ -217,7 +217,7 @@
                       <div class="u-header__promo-card-deck">
                         <!-- Promo Item -->
                         <div class="u-header__promo-card u-header__promo-item">
-                          <a class="u-header__promo-link" href="../job/index.html">
+                          <a class="u-header__promo-link" href="../job/index.aspx">
                             <div class="media align-items-center">
                               <img class="js-svg-injector u-header__promo-icon" src="../../assets/svg/icons/icon-19.svg" alt="SVG">
                               <div class="media-body">
@@ -231,7 +231,7 @@
 
                         <!-- Promo Item -->
                         <div class="u-header__promo-card u-header__promo-item">
-                          <a class="u-header__promo-link" href="../help-desk/index.html">
+                          <a class="u-header__promo-link" href="../help-desk/index.aspx">
                             <div class="media align-items-center">
                               <img class="js-svg-injector u-header__promo-icon" src="../../assets/svg/icons/icon-4.svg" alt="SVG">
                               <div class="media-body">
@@ -247,7 +247,7 @@
                       <div class="u-header__promo-card-deck">
                         <!-- Promo Item -->
                         <div class="u-header__promo-card u-header__promo-item">
-                          <a class="u-header__promo-link" href="../crypto/index.html">
+                          <a class="u-header__promo-link" href="../crypto/index.aspx">
                             <div class="media align-items-center">
                               <img class="js-svg-injector u-header__promo-icon" src="../../assets/svg/icons/icon-5.svg" alt="SVG">
                               <div class="media-body">
@@ -714,7 +714,7 @@
       <!-- Title -->
       <div class="mb-4">
         <h1 class="h4 font-weight-medium">
-            <asp:Label ID="lblSearchField" runat="server" Text="Property for sale in London"></asp:Label></h1>
+            <asp:Label ID="lblSearchField" runat="server" Text="Properties for sale"></asp:Label></h1>
       </div>
       <!-- End Title -->
 

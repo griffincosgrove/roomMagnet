@@ -341,7 +341,7 @@
               <span class="btn-icon__inner btn-icon__inner-bottom-minus mb-3"><img src="images/lawn-mower.svg" alt="Choose Your Chores" width="110"></span>
             </span>
             <h3 class="h5 font-weight-semi-bold">3. Choose your Chores</h3>
-            <p class="mb-md-0">The more you choose, the less you pay!</p>
+            <p class="mb-md-0">Work out an agreement with your host to potentially get rent deductions!</p>
           </div>
         </div>
       </div>
