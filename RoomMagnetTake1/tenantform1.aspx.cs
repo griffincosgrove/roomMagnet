@@ -20,7 +20,7 @@ public partial class tenantform1 : System.Web.UI.Page
         ddDay.SelectedValue = "6";
         ddYear.SelectedValue = "1995";
         ddGender.SelectedValue = "Female";
-        txtEmail.Text = "cosgrovegc@dukes.jmu.edu";
+        txtEmail.Text = "cosgrogc@dukes.jmu.edu";
         ddTenantType.SelectedValue = "Student";
 
     }
