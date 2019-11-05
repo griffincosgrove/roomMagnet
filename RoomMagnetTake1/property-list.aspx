@@ -139,8 +139,8 @@
                  data-unfold-animation-out="fadeOutRight"
                  data-unfold-duration="500">
                 <span class="position-relative">
-                  <span class="u-sidebar--account__toggle-text">Jack Donegan</span>
-                  <img class="u-sidebar--account__toggle-img" src="images/tenant1.jpg" alt="Image Description">
+                  <span class="u-sidebar--account__toggle-text">Mary Madison</span>
+                  <img class="u-sidebar--account__toggle-img" src="images/mary.jpg" alt="Image Description">
                   <span class="badge badge-sm badge-success badge-pos rounded-circle">4</span>
                 </span>
               </a>
@@ -1282,11 +1282,11 @@
             <!-- Holder Info -->
             <header class="d-flex align-items-center u-sidebar--account__holder mt-3">
               <div class="position-relative">
-                <img class="u-sidebar--account__holder-img" src="images/tenant1.jpg" alt="Image Description">
+                <img class="u-sidebar--account__holder-img" src="images/mary.jpg" alt="Image Description">
                 <span class="badge badge-xs badge-outline-success badge-pos rounded-circle"></span>
               </div>
               <div class="ml-3">
-                <span class="font-weight-semi-bold">Jack Donegan<span class="badge badge-success ml-1">Tenant</span></span>
+                <span class="font-weight-semi-bold">Mary Madison<span class="badge badge-success ml-1">Tenant</span></span>
               </div>
 
             </header>
