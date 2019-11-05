@@ -14,8 +14,8 @@ public partial class property_list : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
-       
-
+        searchPropertySr.Text = Session["zipCode"].ToString();
+        lblSearchField.Text = "Property for sale in " + Session["zipCode"];
 
     }
 

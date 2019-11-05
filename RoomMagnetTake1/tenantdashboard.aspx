@@ -139,8 +139,8 @@
                  data-unfold-animation-out="fadeOutRight"
                  data-unfold-duration="500">
                 <span class="position-relative">
-                  <span class="u-sidebar--account__toggle-text">Jack Donegan</span>
-                  <img class="u-sidebar--account__toggle-img" src="images/tenant1.jpg" alt="Image Description">
+                  <span class="u-sidebar--account__toggle-text">Mary Madison</span>
+                  <img class="u-sidebar--account__toggle-img" src="images/mary.jpg" alt="Image Description">
                   <span class="badge badge-sm badge-success badge-pos rounded-circle">4</span>
                 </span>
               </a>
@@ -370,14 +370,14 @@
             <!-- User Info -->
             <div class="media d-block d-sm-flex align-items-sm-center">
               <div class="u-lg-avatar position-relative mb-3 mb-sm-0 mr-3">
-                <img class="img-fluid rounded-circle" src="images/tenant1.jpg" alt="Image Description">
+                <img class="img-fluid rounded-circle" width="100" height="100" src="images/mary.jpg" alt="Image Description">
                 <span class="badge badge-md badge-outline-success badge-pos badge-pos--bottom-right rounded-circle">
                   <span class="fas fa-check"></span>
                 </span>
               </div>
               <div class="media-body">
-                <h1 class="h3 text-white font-weight-medium mb-1"><span class="asap1">Hi, tenant Jack!</span></h1>
-                <span class="d-block text-white">jackdonegan12@gmail.com</span>
+                <h1 class="h3 text-white font-weight-medium mb-1"><span class="asap1">Hi, tenant Mary!</span></h1>
+                <span class="d-block text-white">MaryMadison@gmail.com</span>
               </div>
             </div>
             <!-- End User Info -->
@@ -403,7 +403,7 @@
                       </a>
 
                       <ul id="generalDropdownMenu" class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" style="min-width: 230px;" aria-labelledby="generalDropdown">
-                        <li><a class="nav-link u-header__sub-menu-nav-link" href="tenantdashboard.aspx">Dashboard</a></li>
+                        <li><a class="nav-link u-header__sub-menu-nav-link" href="dashboard.aspx">Dashboard</a></li>
                         <li><a class="nav-link u-header__sub-menu-nav-link" href="profile.aspx">Profile</a></li>
                       </ul>
                     </li>
@@ -459,7 +459,7 @@
 
         <!-- Title -->
         <div class="d-flex justify-content-between align-items-center ml-4 mt-3 mb-3">
-            <h3 class="h5 mb-0">Explore Rooms Near You</h3>
+            <h1 class="col-6 h3 display-5 ml-2 my-5 navy font-weight-normal">Explore Rooms Near You</h1>
         </div>
         <!-- End Title -->
       
@@ -470,21 +470,18 @@
                 <div class="js-form-message">
                   <label class="sr-only" for="search">Find a place to share</label>
                   <div class="input-group">
-                    <asp:TextBox ID="search" runat="server" class="form-control1" placeholder="Find a place to share" aria-label="Search" 
+                <asp:TextBox ID="search" runat="server" class="form-control1" placeholder="Find a place to share" aria-label="Search" 
                            data-msg="Name must contain only letters."></asp:TextBox>
-                    
                   </div>
                 </div>
               </div>
 
 
-              <div class="col-md-2 mb-2" runat="server">
-
+              <div class="col-md-2 mb-2">
 <asp:Button ID="tenantSearchbtn" href="property-list.aspx" runat="server" class="btn btn-block btn-soft-primary transition-3d-hover" OnClick="tenantSearchbtn_Click" Text="Search" />
               </div>
             </div>
-              </form>
-      
+      </form>
     <!-- List of Properties Section -->
     <div class="container space-top-1 space-bottom-2">
       <div class="row">
@@ -589,30 +586,42 @@
             <!-- Property Item -->
             <div class="card mb-5">
               <!-- Gallery -->
-
+              <a class="js-fancybox u-media-viewer" href="javascript:;"
+                 data-src="../../assets/img/1920x1080/img36.jpg"
+                 data-fancybox="fancyboxGallery1"
+                 data-caption="Front in frames - image #01"
+                 data-speed="700"
+                 data-is-infinite="true">
                 <img class="card-img-top w-100" src="images/room2.jpg" alt="Image Description">
+
+                <div class="position-absolute top-0 left-0 pt-2 pl-3">
+                </div>
 
                 <div class="position-absolute bottom-0 left-0 right-0 pb-2 px-3">
                   <div class="row justify-content-between align-items-center">
                     <div class="col-8">
-                      <h3 class="h5 text-white mb-0">$425/mo</h3>
+                      <h2 class="h5 text-white mb-0">$425/mo</h2>
                     </div>
 
                     <div class="col-4 text-right">
+                      <span class="btn btn-icon btn-sm btn-white">
+                        <span class="fas fa-images btn-icon__inner"></span>
+                      </span>
                     </div>
                   </div>
                 </div>
+              </a>
 
               <img class="js-fancybox d-none" alt="Image Description"
-                   data-fancybox="fancyboxGallery2"
-                   data-src="../../assets/img/1920x1080/img39.jpg"
+                   data-fancybox="fancyboxGallery1"
+                   data-src="../../assets/img/1920x1080/img37.jpg"
                    data-caption="Front in frames - image #02"
                    data-speed="700"
                    data-is-infinite="true">
               <img class="js-fancybox d-none" alt="Image Description"
                    data-caption="Front in frames - image #03"
-                   data-src="../../assets/img/1920x1080/img35.jpg"
-                   data-fancybox="fancyboxGallery2"
+                   data-src="../../assets/img/1920x1080/img38.jpg"
+                   data-fancybox="fancyboxGallery1"
                    data-speed="700"
                    data-is-infinite="true">
               <!-- End Gallery -->
@@ -848,11 +857,11 @@
                 <!-- Posted Info -->
                 <div class="media align-items-center border-top border-bottom py-3 mb-3">
                   <span class="btn btn-icon btn-soft-success rounded-circle mr-3">
-                    <img class="img-fluid rounded-circle" src="images/elder2.jpg" alt="Image Description" title="Sammy Jackson">
+                    <img class="img-fluid rounded-circle" src="images/elder2.jpg" alt="Image Description" title="Mary Madison">
                   </span>
                   <div class="media-body">
                     <small class="d-block text-muted">Listed on Jan 20, 2019 by</small>
-                    <span class="d-block">Sammy Jackson</span>
+                    <span class="d-block">Mary Madison</span>
                   </div>
                 </div>
                 <!-- End Posted Info -->
@@ -937,81 +946,34 @@
                   <ul class="list-unstyled u-indicator-vertical-dashed">
                     <li class="media u-indicator-vertical-dashed-item">
                       <span class="btn btn-xs btn-icon btn-primary rounded-circle mr-3">
-                        <span class="btn-icon__inner">A</span>
+                        <span class="btn-icon__inner">R</span>
                       </span>
                       <div class="media-body">
-                        <h5 class="font-size-1 mb-1">Amanta Owens</h5>
-                          <span class="fa fa-star" style="color:orange"></span>
-                          <span class="fa fa-star" style="color:orange"></span>
-                          <span class="fa fa-star"></span>
-                          <span class="fa fa-star"></span>
-                          <span class="fa fa-star"></span> 
-                        <p class="small mb-1"><span class="font-weight-medium">It was nice enough for a shorter stay. Room was small.</span></p>
+                        <h5 class="font-size-1 mb-1">Room Magnet</h5>
+                        <p class="small mb-1"><span class="font-weight-medium">Background Check Approved</span></p>
                         <small class="d-block text-muted">30 min ago</small>
                       </div>
                     </li>
 
                     <li class="media u-indicator-vertical-dashed-item">
                       <span class="btn btn-xs btn-icon btn-success rounded-circle mr-3">
-                        <span class="btn-icon__inner">S</span>
+                        <span class="btn-icon__inner">M</span>
                       </span>
                       <div class="media-body">
-                        <h5 class="font-size-1 mb-1">Sebastian Diaz</h5>
-                          <span class="fa fa-star" style="color:orange"></span>
-                          <span class="fa fa-star" style="color:orange"></span>
-                          <span class="fa fa-star" style="color:orange"></span>
-                          <span class="fa fa-star" style="color:orange"></span>
-                          <span class="fa fa-star"></span>
-                        <p class="small mb-1"><span class="font-weight-medium">I loved the bedroom set-up at Natalie's. It was so beautiful!</span></p>
-                        <small class="d-block text-muted">44 min ago</small>
+                        <h5 class="font-size-1 mb-1">Matt Tenson</h5>
+                        <p class="small mb-1"><span class="font-weight-medium">Tenant Application Approved</span></p>
+                        <small class="d-block text-muted">2 days ago</small>
                       </div>
                     </li>
 
                     <li class="media u-indicator-vertical-dashed-item">
                       <span class="btn btn-xs btn-icon btn-warning rounded-circle mr-3">
-                        <span class="btn-icon__inner text-white">F</span>
+                        <span class="btn-icon__inner text-white">T</span>
                       </span>
                       <div class="media-body">
-                        <h5 class="font-size-1 mb-1">Eliza Donovan</h5>
-                          <span class="fa fa-star" style="color:orange"></span>
-                          <span class="fa fa-star"></span>
-                          <span class="fa fa-star"></span>
-                          <span class="fa fa-star"></span>
-                          <span class="fa fa-star"></span>
-                        <p class="small mb-1"><span class="font-weight-medium">Natalie's dog wouldn't stop barking throughout the night. I couldn't get any sleep, so I only could stay at her house for a month. Wouldn't recommend.</span></p>
-                        <small class="d-block text-muted">1 hour ago</small>
-                      </div>
-                    </li>
-
-                    <li class="media u-indicator-vertical-dashed-item">
-                      <span class="btn btn-xs btn-icon btn-primary rounded-circle mr-3">
-                        <span class="btn-icon__inner">C</span>
-                      </span>
-                      <div class="media-body">
-                        <h5 class="font-size-1 mb-1">Cler Lockhart</h5>
-                          <span class="fa fa-star" style="color:orange"></span>
-                          <span class="fa fa-star" style="color:orange"></span>
-                          <span class="fa fa-star" style="color:orange"></span>
-                          <span class="fa fa-star" style="color:orange"></span>
-                          <span class="fa fa-star" style="color:orange"></span>
-                        <p class="small mb-1"><span class="font-weight-medium">I loved staying at Natalie's home! Her backyard was great for my dog. I couldn't recommend more.</span></p>
-                        <small class="d-block text-muted">15 hours ago</small>
-                      </div>
-                    </li>
-
-                    <li class="media u-indicator-vertical-dashed-item">
-                      <span class="btn btn-xs btn-icon btn-danger rounded-circle mr-3">
-                        <span class="btn-icon__inner">J</span>
-                      </span>
-                      <div class="media-body">
-                        <h5 class="font-size-1 mb-1">James Collins</h5>
-                          <span class="fa fa-star" style="color:orange"></span>
-                          <span class="fa fa-star" style="color:orange"></span>
-                          <span class="fa fa-star"></span>
-                          <span class="fa fa-star"></span>
-                          <span class="fa fa-star"></span>
-                        <p class="small mb-1"><span class="font-weight-medium">I hated that I didn't have my own bathroom, but otherwise it was pretty nice.</span></p>
-                        <small class="d-block text-muted">1 day ago</small>
+                        <h5 class="font-size-1 mb-1">Taylor Smith </h5>
+                        <p class="small mb-1"><span class="font-weight-medium">Tenant Application Denied</span></p>
+                        <small class="d-block text-muted">3 days ago</small>
                       </div>
                     </li>
                   </ul>
@@ -1049,23 +1011,7 @@
                      data-unfold-hide-on-scroll="true"
                      data-unfold-animation-in="slideInUp"
                      data-unfold-animation-out="fadeOut">
-                    <span class="fas fa-ellipsis-h btn-icon__inner"></span>
                   </a>
-
-                  <div id="activitySettingsDropdown" class="dropdown-menu dropdown-unfold dropdown-menu-right" aria-labelledby="activitySettingsDropdownInvoker" style="min-width: 190px;">
-                    <a class="dropdown-item" href="#">
-                      <small class="fas fa-eye dropdown-item-icon"></small>
-                      Mark as read
-                    </a>
-                    <a class="dropdown-item" href="#">
-                      <small class="fas fa-eye-slash dropdown-item-icon"></small>
-                      Mark as unread
-                    </a>
-                    <a class="dropdown-item" href="#">
-                      <small class="fas fa-archive dropdown-item-icon"></small>
-                      Archive
-                    </a>
-                  </div>
                 </div>
                 <!-- End Settings Dropdown -->
               </div>
@@ -1078,82 +1024,32 @@
                   <!-- Activity Feed -->
                   <ul class="list-unstyled u-indicator-vertical-dashed">
                     <li class="media u-indicator-vertical-dashed-item">
-                      <span class="btn btn-xs btn-icon btn-primary rounded-circle mr-3">
-                        <span class="btn-icon__inner">A</span>
+                      <span class="btn btn-xs mr-3">
+                        <span class="btn-icon__inner"></span>
                       </span>
                       <div class="media-body">
-                        <h5 class="font-size-1 mb-1">Amanta Owens</h5>
-                          <span class="fa fa-star" style="color:orange"></span>
-                          <span class="fa fa-star" style="color:orange"></span>
-                          <span class="fa fa-star"></span>
-                          <span class="fa fa-star"></span>
-                          <span class="fa fa-star"></span> 
-                        <p class="small mb-1"><span class="font-weight-medium">It was nice enough for a shorter stay. Room was small.</span></p>
-                        <small class="d-block text-muted">30 min ago</small>
+                        <h5 class="font-size-1 mb-1">Clean, Cozy Room</h5>
+                        <p class="small mb-1"><span class="font-weight-medium"><img src=images/saved2.jpg width=100%></span></p>
                       </div>
                     </li>
 
                     <li class="media u-indicator-vertical-dashed-item">
-                      <span class="btn btn-xs btn-icon btn-success rounded-circle mr-3">
-                        <span class="btn-icon__inner">S</span>
+                      <span class="btn btn-xs mr-3">
+                        <span class="btn-icon__inner"></span>
                       </span>
                       <div class="media-body">
-                        <h5 class="font-size-1 mb-1">Sebastian Diaz</h5>
-                          <span class="fa fa-star" style="color:orange"></span>
-                          <span class="fa fa-star" style="color:orange"></span>
-                          <span class="fa fa-star" style="color:orange"></span>
-                          <span class="fa fa-star" style="color:orange"></span>
-                          <span class="fa fa-star"></span>
-                        <p class="small mb-1"><span class="font-weight-medium">I loved the bedroom set-up at Natalie's. It was so beautiful!</span></p>
-                        <small class="d-block text-muted">44 min ago</small>
+                        <h5 class="font-size-1 mb-1">Welcoming Living Room</h5>
+                        <p class="small mb-1"><span class="font-weight-medium"><img src=images/saved3.jpg width=100%></span></p>
                       </div>
                     </li>
 
                     <li class="media u-indicator-vertical-dashed-item">
-                      <span class="btn btn-xs btn-icon btn-warning rounded-circle mr-3">
-                        <span class="btn-icon__inner text-white">F</span>
+                      <span class="btn btn-xs mr-3">
+                        <span class="btn-icon__inner text-white"></span>
                       </span>
                       <div class="media-body">
-                        <h5 class="font-size-1 mb-1">Eliza Donovan</h5>
-                          <span class="fa fa-star" style="color:orange"></span>
-                          <span class="fa fa-star"></span>
-                          <span class="fa fa-star"></span>
-                          <span class="fa fa-star"></span>
-                          <span class="fa fa-star"></span>
-                        <p class="small mb-1"><span class="font-weight-medium">Natalie's dog wouldn't stop barking throughout the night. I couldn't get any sleep, so I only could stay at her house for a month. Wouldn't recommend.</span></p>
-                        <small class="d-block text-muted">1 hour ago</small>
-                      </div>
-                    </li>
-
-                    <li class="media u-indicator-vertical-dashed-item">
-                      <span class="btn btn-xs btn-icon btn-primary rounded-circle mr-3">
-                        <span class="btn-icon__inner">C</span>
-                      </span>
-                      <div class="media-body">
-                        <h5 class="font-size-1 mb-1">Cler Lockhart</h5>
-                          <span class="fa fa-star" style="color:orange"></span>
-                          <span class="fa fa-star" style="color:orange"></span>
-                          <span class="fa fa-star" style="color:orange"></span>
-                          <span class="fa fa-star" style="color:orange"></span>
-                          <span class="fa fa-star" style="color:orange"></span>
-                        <p class="small mb-1"><span class="font-weight-medium">I loved staying at Natalie's home! Her backyard was great for my dog. I couldn't recommend more.</span></p>
-                        <small class="d-block text-muted">15 hours ago</small>
-                      </div>
-                    </li>
-
-                    <li class="media u-indicator-vertical-dashed-item">
-                      <span class="btn btn-xs btn-icon btn-danger rounded-circle mr-3">
-                        <span class="btn-icon__inner">J</span>
-                      </span>
-                      <div class="media-body">
-                        <h5 class="font-size-1 mb-1">James Collins</h5>
-                          <span class="fa fa-star" style="color:orange"></span>
-                          <span class="fa fa-star" style="color:orange"></span>
-                          <span class="fa fa-star"></span>
-                          <span class="fa fa-star"></span>
-                          <span class="fa fa-star"></span>
-                        <p class="small mb-1"><span class="font-weight-medium">I hated that I didn't have my own bathroom, but otherwise it was pretty nice.</span></p>
-                        <small class="d-block text-muted">1 day ago</small>
+                        <h5 class="font-size-1 mb-1">Exposed Brick Crash Pad</h5>
+                        <p class="small mb-1"><span class="font-weight-medium"><img src=images/saved4.jpg width=100%></span></p>
                       </div>
                     </li>
                   </ul>
@@ -1255,11 +1151,11 @@
             <!-- Holder Info -->
             <header class="d-flex align-items-center u-sidebar--account__holder mt-3">
               <div class="position-relative">
-                <img class="u-sidebar--account__holder-img" src="images/tenant1.jpg" alt="Image Description">
+                <img class="u-sidebar--account__holder-img" src="images/mary.jpg" width="100" alt="Image Description">
                 <span class="badge badge-xs badge-outline-success badge-pos rounded-circle"></span>
               </div>
               <div class="ml-3">
-                <span class="font-weight-semi-bold">Jack Donegan<span class="badge badge-success ml-1">Tenant</span></span>
+                <span class="font-weight-semi-bold">Mary Madison<span class="badge badge-success ml-1">Tenant</span></span>
               </div>
 
             </header>
@@ -2341,121 +2237,121 @@
 
   <!-- JS Plugins Init. -->
   <script>
-       // initialization of slick carousel
+      // initialization of slick carousel
       $.HSCore.components.HSSlickCarousel.init('.js-slick-carousel');
 
-    $(window).on('load', function () {
-      // initialization of HSMegaMenu component
-      $('.js-mega-menu').HSMegaMenu({
-        event: 'hover',
-        pageContainer: $('.container'),
-        breakpoint: 767.98,
-        hideTimeOut: 0
+      $(window).on('load', function () {
+          // initialization of HSMegaMenu component
+          $('.js-mega-menu').HSMegaMenu({
+              event: 'hover',
+              pageContainer: $('.container'),
+              breakpoint: 767.98,
+              hideTimeOut: 0
+          });
+
+          // initialization of HSMegaMenu component
+          $('.js-breadcrumb-menu').HSMegaMenu({
+              event: 'hover',
+              pageContainer: $('.container'),
+              breakpoint: 991.98,
+              hideTimeOut: 0
+          });
+
+          // initialization of svg injector module
+          $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
       });
 
-      // initialization of HSMegaMenu component
-      $('.js-breadcrumb-menu').HSMegaMenu({
-        event: 'hover',
-        pageContainer: $('.container'),
-        breakpoint: 991.98,
-        hideTimeOut: 0
-      });
+      $(document).on('ready', function () {
+          // initialization of header
+          $.HSCore.components.HSHeader.init($('#header'));
 
-      // initialization of svg injector module
-      $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
-    });
+          // initialization of unfold component
+          $.HSCore.components.HSUnfold.init($('[data-unfold-target]'), {
+              afterOpen: function () {
+                  $(this).find('input[type="search"]').focus();
+              }
+          });
 
-    $(document).on('ready', function () {
-      // initialization of header
-      $.HSCore.components.HSHeader.init($('#header'));
 
-      // initialization of unfold component
-      $.HSCore.components.HSUnfold.init($('[data-unfold-target]'), {
-        afterOpen: function () {
-          $(this).find('input[type="search"]').focus();
-        }
-      });
-        
+          // initialization of malihu scrollbar
+          $.HSCore.components.HSMalihuScrollBar.init($('.js-scrollbar'));
 
-      // initialization of malihu scrollbar
-      $.HSCore.components.HSMalihuScrollBar.init($('.js-scrollbar'));
+          // initialization of forms
+          $.HSCore.components.HSFocusState.init();
 
-      // initialization of forms
-      $.HSCore.components.HSFocusState.init();
+          // initialization of form validation
+          $.HSCore.components.HSValidation.init('.js-validate');
 
-      // initialization of form validation
-      $.HSCore.components.HSValidation.init('.js-validate');
+          // initialization of autonomous popups
+          $.HSCore.components.HSModalWindow.init('[data-modal-target]', '.js-modal-window', {
+              autonomous: true
+          });
 
-      // initialization of autonomous popups
-      $.HSCore.components.HSModalWindow.init('[data-modal-target]', '.js-modal-window', {
-        autonomous: true
-      });
+          // initialization of step form
+          $.HSCore.components.HSStepForm.init('.js-step-form');
 
-      // initialization of step form
-      $.HSCore.components.HSStepForm.init('.js-step-form');
+          // initialization of show animations
+          $.HSCore.components.HSShowAnimation.init('.js-animation-link');
 
-      // initialization of show animations
-      $.HSCore.components.HSShowAnimation.init('.js-animation-link');
+          // initialization of range datepicker
+          $.HSCore.components.HSRangeDatepicker.init('.js-range-datepicker');
 
-      // initialization of range datepicker
-      $.HSCore.components.HSRangeDatepicker.init('.js-range-datepicker');
+          // initialization of chart pies
+          var items = $.HSCore.components.HSChartPie.init('.js-pie');
 
-      // initialization of chart pies
-      var items = $.HSCore.components.HSChartPie.init('.js-pie');
+          // initialization of horizontal progress bars
+          var horizontalProgressBars = $.HSCore.components.HSProgressBar.init('.js-hr-progress', {
+              direction: 'horizontal',
+              indicatorSelector: '.js-hr-progress-bar'
+          });
 
-      // initialization of horizontal progress bars
-      var horizontalProgressBars = $.HSCore.components.HSProgressBar.init('.js-hr-progress', {
-        direction: 'horizontal',
-        indicatorSelector: '.js-hr-progress-bar'
-      });
+          var verticalProgressBars = $.HSCore.components.HSProgressBar.init('.js-vr-progress', {
+              direction: 'vertical',
+              indicatorSelector: '.js-vr-progress-bar'
+          });
 
-      var verticalProgressBars = $.HSCore.components.HSProgressBar.init('.js-vr-progress', {
-        direction: 'vertical',
-        indicatorSelector: '.js-vr-progress-bar'
-      });
-
-      // initialization of go to
-      $.HSCore.components.HSGoTo.init('.js-go-to');
+          // initialization of go to
+          $.HSCore.components.HSGoTo.init('.js-go-to');
       });
       $(window).on('load', function () {
-      // initialization of HSMegaMenu component
-      $('.js-mega-menu').HSMegaMenu({
-        event: 'hover',
-        pageContainer: $('.container'),
-        breakpoint: 767.98,
-        hideTimeOut: 0
+          // initialization of HSMegaMenu component
+          $('.js-mega-menu').HSMegaMenu({
+              event: 'hover',
+              pageContainer: $('.container'),
+              breakpoint: 767.98,
+              hideTimeOut: 0
+          });
+
+
+          // initialization of svg injector module
+          $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
       });
-          
 
-      // initialization of svg injector module
-      $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
-    });
+      $(document).on('ready', function () {
+          // initialization of header
+          $.HSCore.components.HSHeader.init($('#header'));
 
-    $(document).on('ready', function () {
-      // initialization of header
-      $.HSCore.components.HSHeader.init($('#header'));
+          // initialization of unfold component
+          $.HSCore.components.HSUnfold.init($('[data-unfold-target]'));
 
-      // initialization of unfold component
-      $.HSCore.components.HSUnfold.init($('[data-unfold-target]'));
+          // initialization of fancybox
+          $.HSCore.components.HSFancyBox.init('.js-fancybox');
 
-      // initialization of fancybox
-      $.HSCore.components.HSFancyBox.init('.js-fancybox');
-    
-              // initialization of slick carousel
-      $.HSCore.components.HSSlickCarousel.init('.js-slick-carousel');
+          // initialization of slick carousel
+          $.HSCore.components.HSSlickCarousel.init('.js-slick-carousel');
 
-      // initialization of form validation
-      $.HSCore.components.HSValidation.init('.js-validate');
+          // initialization of form validation
+          $.HSCore.components.HSValidation.init('.js-validate');
 
-      // initialization of forms
-      $.HSCore.components.HSFocusState.init();
+          // initialization of forms
+          $.HSCore.components.HSFocusState.init();
 
-      // initialization of cubeportfolio
-      $.HSCore.components.HSCubeportfolio.init('.cbp');
-       
-        // initialization of go to
-      $.HSCore.components.HSGoTo.init('.js-go-to');
-    });
+          // initialization of cubeportfolio
+          $.HSCore.components.HSCubeportfolio.init('.cbp');
+
+          // initialization of go to
+          $.HSCore.components.HSGoTo.init('.js-go-to');
+      });
   </script>
 </body>
 </html>

@@ -52,96 +52,16 @@
 
           <!-- Input -->
           <form class="js-focus-state input-group">
-            <input type="search" class="form-control" placeholder="Search Front" aria-label="Search Front">
+            <input type="search" class="form-control" placeholder="Search Competitor Properties" aria-label="Search Front">
             <div class="input-group-append">
               <button type="button" class="btn btn-primary">Search</button>
             </div>
           </form>
           <!-- End Input -->
-
-          <!-- Content -->
-          <div class="row d-none d-md-flex mt-7">
-            <div class="col-sm-6">
-              <strong class="d-block mb-2">Quick Links</strong>
-
-              <div class="row">
-                <!-- List Group -->
-                <div class="col-6">
-                  <div class="list-group list-group-transparent list-group-flush list-group-borderless">
-                    <a class="list-group-item list-group-item-action" href="#">
-                      <span class="fas fa-angle-right list-group-icon"></span>
-                      Search Results List
-                    </a>
-                    <a class="list-group-item list-group-item-action" href="#">
-                      <span class="fas fa-angle-right list-group-icon"></span>
-                      Search Results Grid
-                    </a>
-                    <a class="list-group-item list-group-item-action" href="#">
-                      <span class="fas fa-angle-right list-group-icon"></span>
-                      About
-                    </a>
-                    <a class="list-group-item list-group-item-action" href="#">
-                      <span class="fas fa-angle-right list-group-icon"></span>
-                      Services
-                    </a>
-                    <a class="list-group-item list-group-item-action" href="#">
-                      <span class="fas fa-angle-right list-group-icon"></span>
-                      Invoice
-                    </a>
-                  </div>
-                </div>
-                <!-- End List Group -->
-
-                <!-- List Group -->
-                <div class="col-6">
-                  <div class="list-group list-group-transparent list-group-flush list-group-borderless">
-                    <a class="list-group-item list-group-item-action" href="#">
-                      <span class="fas fa-angle-right list-group-icon"></span>
-                      Profile
-                    </a>
-                    <a class="list-group-item list-group-item-action" href="#">
-                      <span class="fas fa-angle-right list-group-icon"></span>
-                      User Contacts
-                    </a>
-                    <a class="list-group-item list-group-item-action" href="#">
-                      <span class="fas fa-angle-right list-group-icon"></span>
-                      Reviews
-                    </a>
-                    <a class="list-group-item list-group-item-action" href="#">
-                      <span class="fas fa-angle-right list-group-icon"></span>
-                      Settings
-                    </a>
-                  </div>
-                </div>
-                <!-- End List Group -->
-              </div>
-            </div>
-
-            <div class="col-sm-6">
-              <!-- Banner -->
-              <div class="rounded u-search-push-top__banner">
-                <div class="d-flex align-items-center">
-                  <div class="u-search-push-top__banner-container">
-                    <img class="img-fluid u-search-push-top__banner-img" src="../../assets/img/mockups/img3.png" alt="Image Description">
-                    <img class="img-fluid u-search-push-top__banner-img" src="../../assets/img/mockups/img2.png" alt="Image Description">
-                  </div>
-
-                  <div>
-                    <div class="mb-4">
-                      <strong class="d-block mb-2">Featured Item</strong>
-                      <p>Create astonishing web sites and pages.</p>
-                    </div>
-                    <a class="btn btn-xs btn-soft-success transition-3d-hover" href="index.aspx">Apply Now <span class="fas fa-angle-right ml-2"></span></a>
-                  </div>
-                </div>
-              </div>
-              <!-- End Banner -->
-            </div>
           </div>
           <!-- End Content -->
         </div>
       </div>
-    </div>
     <!-- End Search -->
 
     <div class="u-header__section">
@@ -169,8 +89,8 @@
 
             <div id="languageDropdown" class="dropdown-menu dropdown-unfold" aria-labelledby="languageDropdownInvoker">
               <a class="dropdown-item active" href="#">English</a>
+              <a class="dropdown-item" href="#">Deutsch</a>
               <a class="dropdown-item" href="#">Español</a>
-              <a class="dropdown-item" href="#">‎中文</a>
             </div>
           </div>
           <!-- End Language -->
@@ -194,8 +114,8 @@
               </a>
 
               <div id="jumpToDropdown" class="dropdown-menu dropdown-unfold" aria-labelledby="jumpToDropdownInvoker">
-                <a class="dropdown-item" href="../pages/faq.html">Help</a>
-                <a class="dropdown-item" href="../pages/contacts-agency.html">Contacts</a>
+                <a class="dropdown-item" href="../pages/faq.aspx">Help</a>
+                <a class="dropdown-item" href="../pages/contacts-agency.aspx">Contacts</a>
               </div>
             </div>
             <!-- End Jump To -->
@@ -231,8 +151,8 @@
                  data-unfold-animation-out="fadeOutRight"
                  data-unfold-duration="500">
                 <span class="position-relative">
-                  <span class="u-sidebar--account__toggle-text">Natalie Curtis</span>
-                  <img class="u-sidebar--account__toggle-img" src="images/elder4.jpg" alt="Image Description">
+                  <span class="u-sidebar--account__toggle-text">Deborah Duke</span>
+                  <img class="u-sidebar--account__toggle-img" src="images/deborah.jpg" alt="Image Description">
                   <span class="badge badge-sm badge-success badge-pos rounded-circle">3</span>
                 </span>
               </a>
@@ -248,7 +168,7 @@
         <!-- Nav -->
         <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar u-header__navbar--no-space">
                     <!-- Logo -->
-          <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center" href="index.html" aria-label="RoomMagnet">
+          <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center" href="index.aspx" aria-label="RoomMagnet">
               <img src="images/logofinal4.svg">
           </a>
           <!-- End Logo -->
@@ -279,7 +199,7 @@
                       <div class="u-header__promo-card-deck">
                         <!-- Promo Item -->
                         <div class="u-header__promo-card u-header__promo-item">
-                          <a class="u-header__promo-link" href="../home/index.html">
+                          <a class="u-header__promo-link" href="../home/index.aspx">
                             <div class="media align-items-center">
                               <img class="js-svg-injector u-header__promo-icon" src="../../assets/svg/icons/icon-21.svg" alt="SVG">
                               <div class="media-body">
@@ -293,7 +213,7 @@
 
                         <!-- Promo Item -->
                         <div class="u-header__promo-card u-header__promo-item">
-                          <a class="u-header__promo-link" href="../app-marketplace/index.html">
+                          <a class="u-header__promo-link" href="../app-marketplace/index.aspx">
                             <div class="media align-items-center">
                               <img class="js-svg-injector u-header__promo-icon" src="../../assets/svg/icons/icon-45.svg" alt="SVG">
                               <div class="media-body">
@@ -309,7 +229,7 @@
                       <div class="u-header__promo-card-deck">
                         <!-- Promo Item -->
                         <div class="u-header__promo-card u-header__promo-item">
-                          <a class="u-header__promo-link" href="../job/index.html">
+                          <a class="u-header__promo-link" href="../job/index.aspx">
                             <div class="media align-items-center">
                               <img class="js-svg-injector u-header__promo-icon" src="../../assets/svg/icons/icon-19.svg" alt="SVG">
                               <div class="media-body">
@@ -323,7 +243,7 @@
 
                         <!-- Promo Item -->
                         <div class="u-header__promo-card u-header__promo-item">
-                          <a class="u-header__promo-link" href="../help-desk/index.html">
+                          <a class="u-header__promo-link" href="../help-desk/index.aspx">
                             <div class="media align-items-center">
                               <img class="js-svg-injector u-header__promo-icon" src="../../assets/svg/icons/icon-4.svg" alt="SVG">
                               <div class="media-body">
@@ -339,7 +259,7 @@
                       <div class="u-header__promo-card-deck">
                         <!-- Promo Item -->
                         <div class="u-header__promo-card u-header__promo-item">
-                          <a class="u-header__promo-link" href="../crypto/index.html">
+                          <a class="u-header__promo-link" href="../crypto/index.aspx">
                             <div class="media align-items-center">
                               <img class="js-svg-injector u-header__promo-icon" src="../../assets/svg/icons/icon-5.svg" alt="SVG">
                               <div class="media-body">
@@ -416,7 +336,7 @@
                       <div class="col-6">
                         <div class="u-header__promo-footer-item">
                           <small class="text-muted d-block">Check what's new</small>
-                          <a class="small" href="">
+                          <a class="small" style="color:#fe654f" href="">
                             Our Blog
                           </a>
                         </div>
@@ -424,7 +344,7 @@
                       <div class="col-6 u-header__promo-footer-ver-divider">
                         <div class="u-header__promo-footer-item">
                           <small class="text-muted d-block">Have a question?</small>
-                          <a class="small" href="http://htmlstream.com/contact-us">
+                          <a class="small" style="color:#fe654f" href="http://htmlstream.com/contact-us">
                             Contact us
                           </a>
                         </div>
@@ -462,14 +382,14 @@
             <!-- User Info -->
             <div class="media d-block d-sm-flex align-items-sm-center">
               <div class="u-lg-avatar position-relative mb-3 mb-sm-0 mr-3">
-                <img class="img-fluid rounded-circle" src="images/elder4.jpg" alt="Image Description">
+                <img class="img-fluid rounded-circle" src="images/deborah.jpg" alt="Image Description">
                 <span class="badge badge-md badge-outline-success badge-pos badge-pos--bottom-right rounded-circle">
                   <span class="fas fa-check"></span>
                 </span>
               </div>
               <div class="media-body">
-                <h1 class="h3 text-white font-weight-medium mb-1"><span class="asap1">Hi, Natalie!</span></h1>
-                <span class="d-block text-white">natalie.curtis@gmail.com</span>
+                <h1 class="h3 text-white font-weight-medium mb-1"><span class="asap1">Hi, host Deborah!</span></h1>
+                <span class="d-block text-white">deborah.duke@gmail.com</span>
               </div>
             </div>
             <!-- End User Info -->
@@ -495,29 +415,11 @@
                       </a>
 
                       <ul id="generalDropdownMenu" class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" style="min-width: 230px;" aria-labelledby="generalDropdown">
-                        <li><a class="nav-link u-header__sub-menu-nav-link" href="dashboard.html">Dashboard</a></li>
-                        <li><a class="nav-link u-header__sub-menu-nav-link" href="profile.html">Profile</a></li>
-                        <li><a class="nav-link u-header__sub-menu-nav-link" href="messages.html">Messages</a></li>
+                        <li><a class="nav-link u-header__sub-menu-nav-link" href="dashboard.aspx">Dashboard</a></li>
+                        <li><a class="nav-link u-header__sub-menu-nav-link" href="profile.aspx">Profile</a></li>
                       </ul>
                     </li>
                     <!-- General -->
-
-                    <!-- Account Settings -->
-                    <li class="nav-item hs-has-sub-menu u-header__nav-item"
-                        data-event="hover"
-                        data-animation-in="slideInUp"
-                        data-animation-out="fadeOut">
-                      <a id="accountSettingsDropdown" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="accountSettingsDropdownMenu">
-                        Account settings
-                      </a>
-
-                      <ul id="accountSettingsDropdownMenu" class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" style="min-width: 230px;" aria-labelledby="accountSettingsDropdown">
-                        <li><a class="nav-link u-header__sub-menu-nav-link" href="edit-profile.html">Edit profile</a></li>
-                        <li><a class="nav-link u-header__sub-menu-nav-link" href="change-password.html">Change password</a></li>
-                        <li><a class="nav-link u-header__sub-menu-nav-link" href="notifications.html">Notifications</a></li>
-                      </ul>
-                    </li>
-                    <!-- Account Settings -->
 
                     <!-- Billing -->
                     <li class="nav-item hs-has-sub-menu u-header__nav-item"
@@ -529,11 +431,23 @@
                       </a>
 
                       <ul id="billingDropdownMenu" class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" style="min-width: 230px;" aria-labelledby="billingDropdown">
-                        <li><a class="nav-link u-header__sub-menu-nav-link" href="activity.html">Activity</a></li>
-                        <li><a class="nav-link u-header__sub-menu-nav-link" href="payment-methods.html">Payment methods</a></li>
+                        <li><a class="nav-link u-header__sub-menu-nav-link" href="activity.aspx">Activity</a></li>
+                        <li><a class="nav-link u-header__sub-menu-nav-link" href="payment-methods.aspx">Payment methods</a></li>
                       </ul>
                     </li>
                     <!-- Billing -->
+                      
+                    <!-- Messages -->
+                    <li class="nav-item u-header__nav-item"
+                        data-event="hover"
+                        data-animation-in="slideInUp"
+                        data-animation-out="fadeOut">
+                      <a class="nav-link u-header__nav-link" href="javascript:;" >
+                        Messages
+                      </a>
+                    </li>
+                    <!-- Messages Settings -->
+                      
                   </ul>
                 </div>
               </nav>
@@ -557,11 +471,13 @@
 
         <!-- Title -->
         <div class="d-flex justify-content-between align-items-center ml-4 mt-3 mb-3">
-          <h3 class="h6 mb-0">Your listed properties</h3>
+          <h1 class="col-6 h3 display-5 my-3 navy font-weight-normal">Your listed properties</h1>
           <a class="link-muted mr-4" href="#">View All</a>
         </div>
         <!-- End Title -->
 
+      
+      
           <div class="card-deck d-block d-lg-flex card-lg-gutters-3">
             <!-- Card -->
             <div class="card card-frame ml-5 mb-3">
@@ -576,7 +492,7 @@
                   </div>
                   <div class="media-body text-right">
                     <span class="text-primary ml-3">
-                      $2,125
+                      $300/mo
                     </span>
                   </div>
                   
@@ -598,7 +514,7 @@
                   </div>
                   <div class="media-body text-right">
                     <span class="text-primary ml-3">
-                      $1,000
+                      $425/mo
                     </span>
                   </div>
                 </div>
@@ -616,16 +532,16 @@
             <div class="card-body pt-4 pb-5 px-5 mb-3 mb-md-0">
               <!-- Title & Settings -->
               <div class="d-flex justify-content-between align-items-center">
-                <h4 class="h6 mb-0">Time Rented</h4>
+                <h4 class="h6 mb-0">Activity</h4>
 
                 <!-- Settings Dropdown -->
                 <div class="position-relative">
-                  <a id="depositSettingsDropdownInvoker" class="btn btn-sm btn-icon btn-soft-secondary btn-bg-transparent" href="javascript:;" role="button"
-                     aria-controls="depositSettingsDropdown"
+                  <a id="activitySettingsDropdownInvoker" class="btn btn-sm btn-icon btn-soft-secondary btn-bg-transparent" href="javascript:;" role="button"
+                     aria-controls="activitySettingsDropdown"
                      aria-haspopup="true"
                      aria-expanded="false"
                      data-unfold-event="click"
-                     data-unfold-target="#depositSettingsDropdown"
+                     data-unfold-target="#activitySettingsDropdown"
                      data-unfold-type="css-animation"
                      data-unfold-duration="300"
                      data-unfold-delay="300"
@@ -635,14 +551,14 @@
                     <span class="fas fa-ellipsis-h btn-icon__inner"></span>
                   </a>
 
-                  <div id="depositSettingsDropdown" class="dropdown-menu dropdown-unfold dropdown-menu-right" aria-labelledby="depositSettingsDropdownInvoker" style="min-width: 190px;">
+                  <div id="activitySettingsDropdown" class="dropdown-menu dropdown-unfold dropdown-menu-right" aria-labelledby="activitySettingsDropdownInvoker" style="min-width: 190px;">
                     <a class="dropdown-item" href="#">
-                      <small class="fas fa-cogs dropdown-item-icon"></small>
-                      Settings
+                      <small class="fas fa-eye dropdown-item-icon"></small>
+                      Mark as read
                     </a>
                     <a class="dropdown-item" href="#">
-                      <small class="fas fa-cloud-download-alt dropdown-item-icon"></small>
-                      Download
+                      <small class="fas fa-eye-slash dropdown-item-icon"></small>
+                      Mark as unread
                     </a>
                     <a class="dropdown-item" href="#">
                       <small class="fas fa-archive dropdown-item-icon"></small>
@@ -656,59 +572,53 @@
 
               <hr class="mt-3 mb-4">
 
-              <!-- Deposit Info -->
-              <div class="row mb-5">
-                <div class="col-sm-6 mb-4 mb-sm-0 mt-8">
-                  <span class="font-size-3 font-weight-medium text-lh-sm">204 days</span>
-                  <div>
-                    <span class="text-primary font-weight-medium text-lh-sm">
-                      <span class="fas fa-arrow-up text-success small"></span>
-                      +2.1% (5 days)
-                    </span>
-                  </div>
+              <div class="overflow-hidden">
+                <div class="js-scrollbar pr-3" style="max-height: 300px;">
+                  <!-- Activity Feed -->
+                  <ul class="list-unstyled u-indicator-vertical-dashed">
+                    <li class="media u-indicator-vertical-dashed-item">
+                      <span class="btn btn-xs btn-icon btn-primary rounded-circle mr-3">
+                        <span class="btn-icon__inner">R</span>
+                      </span>
+                      <div class="media-body">
+                        <h5 class="font-size-1 mb-1">Room Magnet</h5>
+                        <p class="small mb-1"><span class="font-weight-medium">Host Background Check Approved</span></p>
+                        <small class="d-block text-muted">30 min ago</small>
+                      </div>
+                    </li>
+
+                    <li class="media u-indicator-vertical-dashed-item">
+                      <span class="btn btn-xs btn-icon btn-success rounded-circle mr-3">
+                        <span class="btn-icon__inner">M</span>
+                      </span>
+                      <div class="media-body">
+                        <h5 class="font-size-1 mb-1">Matt Tenson</h5>
+                        <p class="small mb-1"><span class="font-weight-medium">Tenant Background Check Approved</span></p>
+                        <small class="d-block text-muted">2 days ago</small>
+                      </div>
+                    </li>
+
+                    <li class="media u-indicator-vertical-dashed-item">
+                      <span class="btn btn-xs btn-icon btn-warning rounded-circle mr-3">
+                        <span class="btn-icon__inner text-white">T</span>
+                      </span>
+                      <div class="media-body">
+                        <h5 class="font-size-1 mb-1">Taylor Smith </h5>
+                        <p class="small mb-1"><span class="font-weight-medium">Tenant Background Check Denied</span></p>
+                        <small class="d-block text-muted">3 days ago</small>
+                      </div>
+                    </li>
+                  </ul>
                 </div>
 
                 <div class="col-sm-6 align-self-end mt-6">
                   <!-- Pie Circle -->
-                  <div class="js-pie text-center"
-                     data-circles-text-class="content-centered-y"
-                     data-circles-value="54"
-                     data-circles-max-value="100"
-                     data-circles-bg-color="rgba(0, 201, 167, 0.1)"
-                     data-circles-fg-color="#00c9a7"
-                     data-circles-radius="50"
-                     data-circles-stroke-width="4"
-                     data-circles-additional-text="%"
-                     data-circles-duration="2000"
-                     data-circles-scroll-animate="true"
-                     data-circles-color="#00c9a7"
-                     data-circles-font-size="24"></div>
+                  <div 
+                     data-circles-text-class="content-centered-y"></div>
                   <!-- End Pie Circle -->
                 </div>
               </div>
               <!-- End Deposit Info -->
-            </div>
-
-            <div class="card-footer p-5">
-              <!-- Progress Info -->
-              <div class="row align-items-center">
-                <div class="col-6 u-ver-divider">
-                  <label class="small text-muted">Goal:</label>
-                  <small class="font-weight-medium">264 days</small>
-                  <div class="js-hr-progress progress" style="height: 4px;">
-                    <div class="js-hr-progress-bar progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-
-                <div class="col-6">
-                  <label class="small text-muted">Duration:</label>
-                  <small class="font-weight-medium">1 year</small>
-                  <div class="js-hr-progress progress" style="height: 4px;">
-                    <div class="js-hr-progress-bar progress-bar bg-success" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-              </div>
-              <!-- End Progress Info -->
             </div>
           </div>
           <!-- End Stats -->
@@ -886,7 +796,7 @@
                           <span class="fa fa-star" style="color:orange"></span>
                           <span class="fa fa-star" style="color:orange"></span>
                           <span class="fa fa-star"></span>
-                        <p class="small mb-1"><span class="font-weight-medium">I loved the bedroom set-up at Natalie's. It was so beautiful!</span></p>
+                        <p class="small mb-1"><span class="font-weight-medium">I loved the bedroom set-up at Deborah's. It was so beautiful!</span></p>
                         <small class="d-block text-muted">44 min ago</small>
                       </div>
                     </li>
@@ -902,7 +812,7 @@
                           <span class="fa fa-star"></span>
                           <span class="fa fa-star"></span>
                           <span class="fa fa-star"></span>
-                        <p class="small mb-1"><span class="font-weight-medium">Natalie's dog wouldn't stop barking throughout the night. I couldn't get any sleep, so I only could stay at her house for a month. Wouldn't recommend.</span></p>
+                        <p class="small mb-1"><span class="font-weight-medium">deborah's dog wouldn't stop barking throughout the night. I couldn't get any sleep, so I only could stay at her house for a month. Wouldn't recommend.</span></p>
                         <small class="d-block text-muted">1 hour ago</small>
                       </div>
                     </li>
@@ -918,7 +828,7 @@
                           <span class="fa fa-star" style="color:orange"></span>
                           <span class="fa fa-star" style="color:orange"></span>
                           <span class="fa fa-star" style="color:orange"></span>
-                        <p class="small mb-1"><span class="font-weight-medium">I loved staying at Natalie's home! Her backyard was great for my dog. I couldn't recommend more.</span></p>
+                        <p class="small mb-1"><span class="font-weight-medium">I loved staying at deborah's home! Her backyard was great for my dog. I couldn't recommend more.</span></p>
                         <small class="d-block text-muted">15 hours ago</small>
                       </div>
                     </li>
@@ -986,26 +896,13 @@
                 <h3 class="h5 asap2 mb-4">Maria Muszynska</h3>
               </div>
               <p class="font-size-1">I'm looking for a host that will allow me to bring my dog. Please message if interested!</p>
-
-              <!-- Social Networks -->
-              <ul class="list-inline mt-auto mb-0">
-                <li class="list-inline-item mx-0">
-                  <a class="btn btn-sm btn-icon btn-soft-secondary" href="#">
-                    <span class="fab fa-facebook-f btn-icon__inner"></span>
-                  </a>
-                </li>
-                <li class="list-inline-item mx-0">
-                  <a class="btn btn-sm btn-icon btn-soft-secondary" href="#">
-                    <span class="fab fa-google btn-icon__inner"></span>
-                  </a>
-                </li>
-                <li class="list-inline-item mx-0">
-                  <a class="btn btn-sm btn-icon btn-soft-secondary" href="#">
-                    <span class="fab fa-twitter btn-icon__inner"></span>
-                  </a>
-                </li>
+              <p class="font-size-1">Looking for homes with</p>
+              <ul class="font-size-1" style="color: #77838f;">
+                <li>one bedroom</li>
+                <li>shared/private bathroom</li>
+                <li>a private entrance</li>
+                <li>a yard</li>
               </ul>
-              <!-- End Social Networks -->
             </div>
             <div class="col-sm-6">
               <img class="img-fluid rounded mx-auto" src="../../assets/img/350x400/img1.jpg" alt="Image Description">
@@ -1022,26 +919,13 @@
                 <h3 class="h5 asap2 mb-4">Jack Wayley</h3>
               </div>
               <p class="font-size-1">I would love a quiet environment where I am able to get my work done.</p>
-
-              <!-- Social Networks -->
-              <ul class="list-inline mt-auto mb-0">
-                <li class="list-inline-item mx-0">
-                  <a class="btn btn-sm btn-icon btn-soft-secondary" href="#">
-                    <span class="fab fa-facebook-f btn-icon__inner"></span>
-                  </a>
-                </li>
-                <li class="list-inline-item mx-0">
-                  <a class="btn btn-sm btn-icon btn-soft-secondary" href="#">
-                    <span class="fab fa-google btn-icon__inner"></span>
-                  </a>
-                </li>
-                <li class="list-inline-item mx-0">
-                  <a class="btn btn-sm btn-icon btn-soft-secondary" href="#">
-                    <span class="fab fa-twitter btn-icon__inner"></span>
-                  </a>
-                </li>
+              <p class="font-size-1">Looking for homes with</p>
+              <ul class="font-size-1" style="color: #77838f;">
+                <li>one bedroom</li>
+                <li>private bathroom</li>
+                <li>chores as payment</li>
+                <li>no pets</li>
               </ul>
-              <!-- End Social Networks -->
             </div>
             <div class="col-sm-6">
               <img class="img-fluid rounded mx-auto" src="../../assets/img/350x400/img2.jpg" alt="Image Description">
@@ -1057,27 +941,14 @@
               <div class="w-100">
                 <h3 class="h5 asap2 mb-4">Emmely Jackson</h3>
               </div>
-              <p class="font-size-1">As long as I can bring my friends over, I'm happy!</p>
-
-              <!-- Social Networks -->
-              <ul class="list-inline mt-auto mb-0">
-                <li class="list-inline-item mx-0">
-                  <a class="btn btn-sm btn-icon btn-soft-secondary" href="#">
-                    <span class="fab fa-facebook-f btn-icon__inner"></span>
-                  </a>
-                </li>
-                <li class="list-inline-item mx-0">
-                  <a class="btn btn-sm btn-icon btn-soft-secondary" href="#">
-                    <span class="fab fa-google btn-icon__inner"></span>
-                  </a>
-                </li>
-                <li class="list-inline-item mx-0">
-                  <a class="btn btn-sm btn-icon btn-soft-secondary" href="#">
-                    <span class="fab fa-twitter btn-icon__inner"></span>
-                  </a>
-                </li>
+                <p class="font-size-1">As long as I can bring my friends over, I'm happy!</p><br/>
+              <p class="font-size-1">Looking for homes with</p>
+              <ul class="font-size-1" style="color: #77838f;">
+                <li>one bedroom</li>
+                <li>private/shared bathroom</li>
+                <li>females only</li>
+                <li>pets</li>
               </ul>
-              <!-- End Social Networks -->
             </div>
             <div class="col-sm-6">
               <img class="img-fluid rounded mx-auto" src="../../assets/img/350x400/img3.jpg" alt="Image Description">
@@ -1093,27 +964,14 @@
               <div class="w-100">
                 <h3 class="h5 asap2 mb-4">Mark McManus</h3>
               </div>
-              <p class="font-size-1">I am a pretty simple person, but I do like a clean home.</p>
-
-              <!-- Social Networks -->
-              <ul class="list-inline mt-auto mb-0">
-                <li class="list-inline-item mx-0">
-                  <a class="btn btn-sm btn-icon btn-soft-secondary" href="#">
-                    <span class="fab fa-facebook-f btn-icon__inner"></span>
-                  </a>
-                </li>
-                <li class="list-inline-item mx-0">
-                  <a class="btn btn-sm btn-icon btn-soft-secondary" href="#">
-                    <span class="fab fa-google btn-icon__inner"></span>
-                  </a>
-                </li>
-                <li class="list-inline-item mx-0">
-                  <a class="btn btn-sm btn-icon btn-soft-secondary" href="#">
-                    <span class="fab fa-twitter btn-icon__inner"></span>
-                  </a>
-                </li>
+              <p class="font-size-1">I am a pretty simple person, but I do like a clean home.</p><br/>
+              <p class="font-size-1">Looking for homes with</p>
+              <ul class="font-size-1" style="color: #77838f;">
+                <li>one bedroom</li>
+                <li>one office space</li>
+                <li>private bathroom</li>
+                <li>no pets</li>
               </ul>
-              <!-- End Social Networks -->
             </div>
             <div class="col-sm-6">
               <img class="img-fluid rounded mx-auto" src="../../assets/img/350x400/img4.jpg" alt="Image Description">
@@ -1140,9 +998,9 @@
 
             <!-- List Group -->
             <ul class="list-group list-group-flush list-group-borderless mb-0">
-              <li><a class="list-group-item list-group-item-action" href="../pages/about-agency.html">About</a></li>
-              <li><a class="list-group-item list-group-item-action" href="../pages/services-agency.html">Services</a></li>
-              <li><a class="list-group-item list-group-item-action" href="../pages/careers.html">Careers</a></li>
+              <li><a class="list-group-item list-group-item-action" href="../pages/about-agency.aspx">About</a></li>
+              <li><a class="list-group-item list-group-item-action" href="../pages/services-agency.aspx">Services</a></li>
+              <li><a class="list-group-item list-group-item-action" href="../pages/careers.aspx">Careers</a></li>
             </ul>
             <!-- End List Group -->
           </div>
@@ -1152,9 +1010,9 @@
 
             <!-- List Group -->
             <ul class="list-group list-group-flush list-group-borderless mb-0">
-              <li><a class="list-group-item list-group-item-action" href="dashboard.html">Account</a></li>
-              <li><a class="list-group-item list-group-item-action" href="my-tasks.html">My tasks</a></li>
-              <li><a class="list-group-item list-group-item-action" href="projects.html">Projects</a></li>
+              <li><a class="list-group-item list-group-item-action" href="dashboard.aspx">Account</a></li>
+              <li><a class="list-group-item list-group-item-action" href="my-tasks.aspx">My tasks</a></li>
+              <li><a class="list-group-item list-group-item-action" href="projects.aspx">Projects</a></li>
             </ul>
             <!-- End List Group -->
           </div>
@@ -1164,9 +1022,9 @@
 
             <!-- List Group -->
             <ul class="list-group list-group-flush list-group-borderless mb-0">
-              <li><a class="list-group-item list-group-item-action" href="../pages/faq.html">Help</a></li>
-              <li><a class="list-group-item list-group-item-action" href="../pages/terms.html">Terms</a></li>
-              <li><a class="list-group-item list-group-item-action" href="../pages/privacy.html">Privacy</a></li>
+              <li><a class="list-group-item list-group-item-action" href="../pages/faq.aspx">Help</a></li>
+              <li><a class="list-group-item list-group-item-action" href="../pages/terms.aspx">Terms</a></li>
+              <li><a class="list-group-item list-group-item-action" href="../pages/privacy.aspx">Privacy</a></li>
             </ul>
             <!-- End List Group -->
           </div>
@@ -1215,39 +1073,13 @@
             <!-- Holder Info -->
             <header class="d-flex align-items-center u-sidebar--account__holder mt-3">
               <div class="position-relative">
-                <img class="u-sidebar--account__holder-img" src="images/elder4.jpg" alt="Image Description">
+                <img class="u-sidebar--account__holder-img" src="images/deborah.jpg" alt="Image Description">
                 <span class="badge badge-xs badge-outline-success badge-pos rounded-circle"></span>
               </div>
               <div class="ml-3">
-                <span class="font-weight-semi-bold">Natalie Curtis <span class="badge badge-success ml-1">Pro</span></span>
-                <span class="u-sidebar--account__holder-text">Lead Support Adviser</span>
+                <span class="font-weight-semi-bold">deborah Curtis <span class="badge badge-success ml-1">Host</span></span>
               </div>
 
-              <!-- Settings -->
-              <div class="btn-group position-relative ml-auto mb-auto">
-                <a id="sidebar-account-settings-invoker" class="btn btn-xs btn-icon btn-text-secondary rounded" href="javascript:;" role="button"
-                        aria-controls="sidebar-account-settings"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                        data-toggle="dropdown"
-                        data-unfold-event="click"
-                        data-unfold-target="#sidebar-account-settings"
-                        data-unfold-type="css-animation"
-                        data-unfold-duration="300"
-                        data-unfold-delay="300"
-                        data-unfold-animation-in="slideInUp"
-                        data-unfold-animation-out="fadeOut">
-                  <span class="fas fa-ellipsis-v btn-icon__inner"></span>
-                </a>
-
-                <div id="sidebar-account-settings" class="dropdown-menu dropdown-unfold dropdown-menu-right" aria-labelledby="sidebar-account-settings-invoker">
-                  <a class="dropdown-item" href="#">Settings</a>
-                  <a class="dropdown-item" href="#">History</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Sign Out</a>
-                </div>
-              </div>
-              <!-- End Settings -->
             </header>
             <!-- End Holder Info -->
 
@@ -1255,51 +1087,21 @@
               <!-- List Links -->
               <ul class="list-unstyled u-sidebar--account__list">
                 <li class="u-sidebar--account__list-item">
-                  <a class="u-sidebar--account__list-link" href="dashboard.html">
+                  <a class="u-sidebar--account__list-link" href="dashboard.aspx">
                     <span class="fas fa-home u-sidebar--account__list-icon mr-2"></span>
                     Dashboard
                   </a>
                 </li>
                 <li class="u-sidebar--account__list-item">
-                  <a class="u-sidebar--account__list-link" href="profile.html">
+                  <a class="u-sidebar--account__list-link" href="profile.aspx">
                     <span class="fas fa-user-circle u-sidebar--account__list-icon mr-2"></span>
                     Profile
                   </a>
                 </li>
                 <li class="u-sidebar--account__list-item">
-                  <a class="u-sidebar--account__list-link" href="my-tasks.html">
-                    <span class="fas fa-tasks u-sidebar--account__list-icon mr-2"></span>
-                    My tasks
-                  </a>
-                </li>
-                <li class="u-sidebar--account__list-item">
-                  <a class="u-sidebar--account__list-link" href="projects.html">
-                    <span class="fas fa-layer-group u-sidebar--account__list-icon mr-2"></span>
-                    Projects <span class="badge badge-danger float-right mt-1">3</span>
-                  </a>
-                </li>
-                <li class="u-sidebar--account__list-item">
-                  <a class="u-sidebar--account__list-link" href="members.html">
-                    <span class="fas fa-users u-sidebar--account__list-icon mr-2"></span>
-                    Members
-                  </a>
-                </li>
-                <li class="u-sidebar--account__list-item">
-                  <a class="u-sidebar--account__list-link" href="activity.html">
+                  <a class="u-sidebar--account__list-link" href="activity.aspx">
                     <span class="fas fa-exchange-alt u-sidebar--account__list-icon mr-2"></span>
-                    Activity
-                  </a>
-                </li>
-                <li class="u-sidebar--account__list-item">
-                  <a class="u-sidebar--account__list-link" href="payment-methods.html">
-                    <span class="fas fa-wallet u-sidebar--account__list-icon mr-2"></span>
-                    Payment methods
-                  </a>
-                </li>
-                <li class="u-sidebar--account__list-item">
-                  <a class="u-sidebar--account__list-link" href="plans.html">
-                    <span class="fas fa-cubes u-sidebar--account__list-icon mr-2"></span>
-                    Plans
+                    Activity <span class="badge badge-danger float-right mt-1">3</span>
                   </a>
                 </li>
               </ul>
@@ -1310,15 +1112,15 @@
               <!-- List Links -->
               <ul class="list-unstyled u-sidebar--account__list">
                 <li class="u-sidebar--account__list-item">
-                  <a class="u-sidebar--account__list-link" href="invite-friends.html">
+                  <a class="u-sidebar--account__list-link" href="invite-friends.aspx">
                     <span class="fas fa-user-plus u-sidebar--account__list-icon mr-2"></span>
-                    Invite friends
+                    Settings
                   </a>
                 </li>
                 <li class="u-sidebar--account__list-item">
-                  <a class="u-sidebar--account__list-link" href="api-token.html">
+                  <a class="u-sidebar--account__list-link" href="api-token.aspx">
                     <span class="fas fa-key u-sidebar--account__list-icon mr-2"></span>
-                    API Token
+                    Log Out
                   </a>
                 </li>
               </ul>
@@ -1331,24 +1133,18 @@
         <footer id="SVGwaveWithDots" class="u-sidebar__footer u-sidebar__footer--account">
           <ul class="list-inline mb-0">
             <li class="list-inline-item pr-3">
-              <a class="u-sidebar__footer--account__text" href="../pages/privacy.html">Privacy</a>
+              <a class="u-sidebar__footer--account__text" href="../pages/privacy.aspx">Privacy</a>
             </li>
             <li class="list-inline-item pr-3">
-              <a class="u-sidebar__footer--account__text" href="../pages/terms.html">Terms</a>
+              <a class="u-sidebar__footer--account__text" href="../pages/terms.aspx">Terms</a>
             </li>
             <li class="list-inline-item">
-              <a class="u-sidebar__footer--account__text" href="../pages/help.html">
+              <a class="u-sidebar__footer--account__text" href="../pages/help.aspx">
                 <i class="fas fa-info-circle"></i>
               </a>
             </li>
           </ul>
 
-          <!-- SVG Background Shape -->
-          <div class="position-absolute right-0 bottom-0 left-0">
-            <img class="js-svg-injector" src="../../assets/svg/components/wave-bottom-with-dots.svg" alt="Image Description"
-                   data-parent="#SVGwaveWithDots">
-          </div>
-          <!-- End SVG Background Shape -->
         </footer>
         <!-- End Footer -->
       </div>
@@ -2477,7 +2273,7 @@
 
           // initialization of go to
           $.HSCore.components.HSGoTo.init('.js-go-to');
-      }); s
+      }); 
   </script>
 </body>
 </html>
