@@ -98,12 +98,6 @@ font-weight: 900;
 font-style: normal;
     font-size: 1.3em;
 }
-
-.asapnotbold{
-    font-family: 'Asap', sans-serif;
-    font-weight: 100;
-    font-size:1.3em;
-    letter-spacing: .5px;}	
 .asap{
     font-family: 'Asap', sans-serif;
     font-weight: 900;
@@ -17326,6 +17320,13 @@ button:focus {
   background: rgba(214, 239, 255, 0.5);
   border-color: transparent;
 }
+
+.btn-soft-primary1 {
+  color: #d6efff;
+  background: rgba(214, 239, 255, 0.5);
+  border-color: transparent;
+}
+
 
 .btn-soft-primary[href]:hover, .btn-soft-primary[href]:focus, .btn-soft-primary[href]:active, .btn-soft-primary[href].active, .btn-soft-primary[type]:hover, .btn-soft-primary[type]:focus, .btn-soft-primary[type]:active, .btn-soft-primary[type].active {
   color: #fff;
