@@ -593,7 +593,7 @@
                             </div>
                             <!-- End Input -->
                         </div>
-                        <asp:Button href="tenantform2.aspx" ID="btnCommitTenant" runat="server" Text="Next Step!" class="btn btn-sm btn-soft-primary transition-3d-hover" OnClick="btnCommitTenant_Click" />
+                        <asp:Button href="tenantform3.aspx" ID="btnCommitTenant" runat="server" Text="Next Step!" class="btn btn-sm btn-soft-primary transition-3d-hover" OnClick="btnCommitTenant_Click" />
                     </form>
     </main>
     <!-- ========== END MAIN CONTENT ========== -->

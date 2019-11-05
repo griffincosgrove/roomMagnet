@@ -21,7 +21,7 @@ public class Email
             message.From = new MailAddress(sender);
             message.To.Add(new MailAddress(email));
             message.Subject = "Please Confirm Email";
-            message.Body = "Please confirm your email by";
+            message.Body = "You recently signed up for RoomMagnet, if this was a mistake please reply with STOP";
             //message.IsBodyHtml = true; //to make message body as html  
             //message.Body = htmlString;
             smtp.Port = 587;
@@ -44,7 +44,8 @@ public class Email
             message.From = new MailAddress(sender);
             message.To.Add(new MailAddress(email));
             message.Subject = "Welcome to RoomMagnet";
-            message.Body = "We are excited to have you with us.";
+            message.Body = "We are excited to have you with us. We want to change the world, and we can not do that without you! " +
+                "You will receive an email from Intellicorp about completing our background check.";
             //message.IsBodyHtml = true; //to make message body as html  
             //message.Body = htmlString;
             smtp.Port = 587;
