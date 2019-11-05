@@ -208,7 +208,7 @@
               </div> 
               <!-- End Title -->
 
- <a class="btn btn-sm btn-soft-primary transition-3d-hover" href="login.aspx">
+ <a class="btn btn-sm btn-soft-primary transition-3d-hover" href="tenantdashboard.aspx">
                  Take me to my DashBoard!		
                   <span class="fas fa-angle-right ml-2"></span>		
               </a>

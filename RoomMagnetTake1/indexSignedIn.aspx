@@ -226,15 +226,15 @@
                 <div class="js-form-message">
                   <label class="sr-only" for="search">Find a place to share</label>
                   <div class="input-group">
-                      <asp:TextBox ID="txtSearchBar" runat="server" class="form-control1" placeholder="Enter a zipcode and find a place to share!" aria-label="Search"
-                           data-msg="Name must contain only letters." ></asp:TextBox>
+                                   <asp:Button ID="Button1" runat="server" Text="Search Properties Now!" class="btn btn-block btn-soft-primary transition-3d-hover" OnClick="btnSearch_Click" Width="248px" />
+
                   </div>
                 </div>
               </div>
 
 
               <div class="col-md-2 mb-2">
-                  <asp:Button ID="btnSearch" runat="server" Text="Search" class="btn btn-block btn-soft-primary transition-3d-hover" OnClick="btnSearch_Click" />
+                  
               </div>
             </div>
 
