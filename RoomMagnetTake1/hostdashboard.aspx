@@ -131,7 +131,7 @@
                       <strong class="d-block mb-2">Featured Item</strong>
                       <p>Create astonishing web sites and pages.</p>
                     </div>
-                    <a class="btn btn-xs btn-soft-success transition-3d-hover" href="index.html">Apply Now <span class="fas fa-angle-right ml-2"></span></a>
+                    <a class="btn btn-xs btn-soft-success transition-3d-hover" href="index.aspx">Apply Now <span class="fas fa-angle-right ml-2"></span></a>
                   </div>
                 </div>
               </div>
