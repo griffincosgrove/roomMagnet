@@ -17,7 +17,7 @@ public partial class indexSignedIn : System.Web.UI.Page
 
     protected void btnSearch_Click(object sender, EventArgs e)
     {
-        Session["Zipcode"] = txtSearchBar.Text;
+       // Session["Zipcode"] = txtSearchBar.Text;
         //add property item for the inserted zip code
         //document.getelementsbyclassname("row");
 
