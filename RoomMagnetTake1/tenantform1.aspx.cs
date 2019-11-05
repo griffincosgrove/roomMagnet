@@ -20,7 +20,7 @@ public partial class tenantform1 : System.Web.UI.Page
 
     protected void btnCommitTenant_Click(object sender, EventArgs e)
     {
-        if (checkPasswordsMatches() && checkIfUserExists())
+        if (checkPasswordsMatches() && checkIfUserExists() && checkPasswordLength())
         {
 
             Customer newCustomer = new Customer(getString(txtEmail));
@@ -77,7 +77,9 @@ public partial class tenantform1 : System.Web.UI.Page
 
                 Email.sendWelcomeEmail(Session["USER_ID"].ToString());
 
-                Response.Redirect("tenantform2.aspx");
+                Session["User_ID"] = newCustomer.getEmail();
+
+                Response.Redirect("tenantform3.aspx");
 
             }
             catch
@@ -157,5 +159,19 @@ public partial class tenantform1 : System.Web.UI.Page
         sc.Close();
         return retBool;
     } 
+
+    protected bool checkPasswordLength()
+    {
+        bool retBool = false;
+        if((txtPassword.Text.Length >= 8) && (txtConfirmPassword.Text.Length >= 8))
+        {
+            retBool = true;
+        }
+        else
+        {
+            ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "User Error", "alert('Password must be at least 8 characters')", true);
+        }
+        return retBool;
+    }
 
 }

@@ -26,7 +26,7 @@ public partial class hostform1 : System.Web.UI.Page
 
     protected void btnCommitHost_Click(object sender, EventArgs e)
     {
-        if (checkPasswordsMatches() && checkIfUserExists())
+        if (checkPasswordsMatches() && checkIfUserExists() && checkPasswordLength())
         {
             Host newHost = new Host(getString(txtFirstName), getString(txtLastName), ddGender.Text, getString(txtEmail), getString(txtPhoneNumber),
                 getString(txtStreet), getString(txtCity), ddState.Text, getString(txtZip), convertToDateFormat(combineBirthday()));
@@ -157,6 +157,20 @@ public partial class hostform1 : System.Web.UI.Page
         }
 
         sc.Close();
+        return retBool;
+    }
+
+    protected bool checkPasswordLength()
+    {
+        bool retBool = false;
+        if ((txtPassword.Text.Length >= 8) && (txtConfirmPassword.Text.Length >= 8))
+        {
+            retBool = true;
+        }
+        else
+        {
+            ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "User Error", "alert('Password must be at least 8 characters')", true);
+        }
         return retBool;
     }
 

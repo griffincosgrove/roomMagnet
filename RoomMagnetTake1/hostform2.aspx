@@ -480,7 +480,7 @@
                                  data-success-class="u-has-success"></asp:TextBox>
                 </div>
               </div>
-                
+                <asp:Label ID="lblFileUpload" runat="server" Text="Select an image of your property" class="form-label"></asp:Label>
                 <asp:FileUpload ID="FileUploadImage" runat="server" />
                 
             </div>

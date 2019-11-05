@@ -29,7 +29,7 @@ public partial class login : System.Web.UI.Page
             SqlCommand findhost = new SqlCommand("select email from host where UPPER(email) = @email", sc);
             findhost.Parameters.AddWithValue("@email", getString(txtEmail).ToUpper());
 
-            SqlCommand findTenant = new SqlCommand("select email from host where UPPER(email) = @email", sc);
+            SqlCommand findTenant = new SqlCommand("select email from tenant where UPPER(email) = @email", sc);
             findTenant.Parameters.AddWithValue("@email", getString(txtEmail).ToUpper());
 
             SqlDataReader reader = findPass.ExecuteReader(); // create a reader
