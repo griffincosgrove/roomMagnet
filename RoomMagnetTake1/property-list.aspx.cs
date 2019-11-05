@@ -14,8 +14,8 @@ public partial class property_list : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
+       
 
-        
 
     }
 
@@ -25,6 +25,7 @@ public partial class property_list : System.Web.UI.Page
 
     protected void btnSearch_Click(object sender, EventArgs e)
     {
+        Session["zipCode"] = searchPropertySr.Text;
 
         lblSearchField.Text = "Property for sale in " + Session["zipCode"];
         
@@ -81,7 +82,7 @@ public partial class property_list : System.Web.UI.Page
                 HtmlGenericControl anchortag = new HtmlGenericControl("a");
                 anchortag.Attributes["class"] = "js-fancybox u-media-viewer mb-3";
                 anchortag.Attributes["href"] = "javascript:;";
-                anchortag.Attributes["data-src"] = "../../assets/img/1920x1080/img36.jpg";
+                anchortag.Attributes["data-src"] = filePath;
                 anchortag.Attributes["data-fancybox"] = "fancyboxGallery1";
                 anchortag.Attributes["data-caption"] = "Front in frames - image #01";
                 anchortag.Attributes["data-speed"] = "700";
@@ -109,8 +110,8 @@ public partial class property_list : System.Web.UI.Page
                 img2.Attributes["class"] = "js-fancybox d-none";
                 img2.Attributes["alt"] = "Image Description";
                 img2.Attributes["data-fancybox"] = "fancyboxGallery1";
-                img2.Attributes["data-src"] = "../../assets/img/1920x1080/img37.jpg";
-                img2.Attributes["data-caption"] = "Front in frames - image #02";
+                img2.Attributes["data-src"] = filePath;
+                img2.Attributes["data-caption"] = "Enlarged Image";
                 img2.Attributes["data-speed"] = "700";
                 img2.Attributes["data-is-infinite"] = "true";
                 div3.Controls.Add(img2);
@@ -119,7 +120,7 @@ public partial class property_list : System.Web.UI.Page
                 img3.Attributes["class"] = "js-fancybox d-none";
                 img3.Attributes["alt"] = "Image Description";
                 img3.Attributes["data-caption"] = "Front in frames - image #03";
-                img3.Attributes["data-src"] = "../../assets/img/1920x1080/img38.jpg";
+                img3.Attributes["data-src"] = filePath;
                 img3.Attributes["data-fancybox"] = "fancyboxGallery1";
                 img3.Attributes["data-speed"] = "700";
                 img3.Attributes["data-is-infinite"] = "true";
@@ -195,8 +196,8 @@ public partial class property_list : System.Web.UI.Page
                 div12.Controls.Add(anchortagDescription);
 
                 HtmlGenericControl span5 = new HtmlGenericControl("span");
-                span5.Attributes["class"] = "fas fa-map-marker-alt mr-1";
-                span5.InnerHtml = "     " + neighborhood + ", " + city;
+                span5.Attributes["class"] = "fas fa-map-marker-alt mr-1" ;
+                span5.InnerText = "     " + neighborhood + ", " + city;
                 anchortagDescription.Controls.Add(span5);
 
                 HtmlGenericControl ul = new HtmlGenericControl("ul");
@@ -254,10 +255,7 @@ public partial class property_list : System.Web.UI.Page
                 anchorNumber.Attributes["href"] = "javascript:;";
                 div13.Controls.Add(anchorNumber);
 
-                HtmlGenericControl spanNumber = new HtmlGenericControl("span");
-                spanNumber.Attributes["class"] = "fas fa-phone mr-1";
-                spanNumber.InnerHtml = " xxx-xxx-xxxx";
-                anchorNumber.Controls.Add(spanNumber);
+              
 
                 HtmlGenericControl anchorContact = new HtmlGenericControl("a");
                 anchorContact.Attributes["class"] = "text-secondary mr-4";
@@ -282,11 +280,12 @@ public partial class property_list : System.Web.UI.Page
                 HtmlGenericControl anchorDetails = new HtmlGenericControl("a");
                 anchorDetails.Attributes["class"] = "btn btn-sm btn-soft-primary transition-3d-hover ml-auto";
                 anchorDetails.Attributes["href"] = "property-description.aspx";
+                anchorDetails.InnerHtml = " Details";
                 div13.Controls.Add(anchorDetails);
 
                 HtmlGenericControl spanDetails = new HtmlGenericControl("span");
                 spanDetails.Attributes["class"] = "fas fa-angle-right ml-1";
-                spanDetails.InnerHtml = " Details";
+                
                 anchorDetails.Controls.Add(spanDetails);
 
 
@@ -303,13 +302,14 @@ public partial class property_list : System.Web.UI.Page
 
     protected void txtMaxPrice_TextChanged(object sender, EventArgs e)
     {
+        Session["zipCode"] = searchPropertySr.Text;
 
         lblSearchField.Text = "Property for sale in " + Session["zipCode"].ToString();
         //searchPropertySr.Text = Session["zipCode"].ToString();
         sc.Open();
         SqlCommand displayProperty = new SqlCommand();
         displayProperty.Connection = sc;
-        String searchString = "SELECT Host.HostID, Host.FirstName, Host.LastName, Host.Gender, Host.Email, Property.Address, Property.ZipCode, Property.City,Property.Neighborhood, Property.AvailableDate, Property.MaxNumberOfGuests, Property.Price, Property.Description FROM Host INNER JOIN Property ON Host.HostID = Property.HostID  where Property.ZipCode = @zipcode and Property.Price <" + txtMaxPrice.Text;
+        String searchString = "SELECT Host.HostID, Host.FirstName, Host.LastName, Host.Gender, Host.Email, Property.Address, Property.ZipCode, Property.City,Property.Neighborhood, Property.AvailableDate, Property.MaxNumberOfGuests, Property.Price, Property.Description, Property.ImageFilePath FROM Host INNER JOIN Property ON Host.HostID = Property.HostID  where Property.ZipCode = @zipcode and Property.Price <" + txtMaxPrice.Text;
         displayProperty.CommandText = searchString;
         displayProperty.Parameters.AddWithValue("@zipcode", Session["ZipCode"].ToString());
         SqlDataReader readProperty = displayProperty.ExecuteReader();
@@ -319,6 +319,7 @@ public partial class property_list : System.Web.UI.Page
         {
             while (readProperty.Read())
             {
+                
 
                 String city = readProperty["City"].ToString();
                 String neighborhood = readProperty["NeighborHood"].ToString();
@@ -328,7 +329,9 @@ public partial class property_list : System.Web.UI.Page
                 String description = readProperty["Description"].ToString();
                 DateTime availableDate = Convert.ToDateTime(readProperty["AvailableDate"]);
                 String displayedAvailableDate = availableDate.ToString("MM/dd/yyy");
-
+                
+                String filePath = readProperty["ImageFilePath"].ToString();
+                
 
 
 
@@ -360,14 +363,14 @@ public partial class property_list : System.Web.UI.Page
                 anchortag.Attributes["href"] = "javascript:;";
                 anchortag.Attributes["data-src"] = "../../assets/img/1920x1080/img36.jpg";
                 anchortag.Attributes["data-fancybox"] = "fancyboxGallery1";
-                anchortag.Attributes["data-caption"] = "Front in frames - image #01";
+                anchortag.Attributes["data-caption"] = filePath;
                 anchortag.Attributes["data-speed"] = "700";
                 anchortag.Attributes["data-is-infinite"] = "true";
                 div3.Controls.Add(anchortag);
 
                 HtmlGenericControl img1 = new HtmlGenericControl("img");
                 img1.Attributes["class"] = "img-fluid w-100";
-                img1.Attributes["src"] = "../../assets/img/480x320/img19.jpg";
+                img1.Attributes["src"] = filePath;
                 img1.Attributes["alt"] = "Image Description";
                 anchortag.Controls.Add(img1);
 
@@ -386,7 +389,7 @@ public partial class property_list : System.Web.UI.Page
                 img2.Attributes["class"] = "js-fancybox d-none";
                 img2.Attributes["alt"] = "Image Description";
                 img2.Attributes["data-fancybox"] = "fancyboxGallery1";
-                img2.Attributes["data-src"] = "../../assets/img/1920x1080/img37.jpg";
+                img2.Attributes["data-src"] = filePath;
                 img2.Attributes["data-caption"] = "Front in frames - image #02";
                 img2.Attributes["data-speed"] = "700";
                 img2.Attributes["data-is-infinite"] = "true";
@@ -396,7 +399,7 @@ public partial class property_list : System.Web.UI.Page
                 img3.Attributes["class"] = "js-fancybox d-none";
                 img3.Attributes["alt"] = "Image Description";
                 img3.Attributes["data-caption"] = "Front in frames - image #03";
-                img3.Attributes["data-src"] = "../../assets/img/1920x1080/img38.jpg";
+                img3.Attributes["data-src"] = filePath;
                 img3.Attributes["data-fancybox"] = "fancyboxGallery1";
                 img3.Attributes["data-speed"] = "700";
                 img3.Attributes["data-is-infinite"] = "true";
@@ -531,10 +534,7 @@ public partial class property_list : System.Web.UI.Page
                 anchorNumber.Attributes["href"] = "javascript:;";
                 div13.Controls.Add(anchorNumber);
 
-                HtmlGenericControl spanNumber = new HtmlGenericControl("span");
-                spanNumber.Attributes["class"] = "fas fa-phone mr-1";
-                spanNumber.InnerHtml = " xxx-xxx-xxxx";
-                anchorNumber.Controls.Add(spanNumber);
+               
 
                 HtmlGenericControl anchorContact = new HtmlGenericControl("a");
                 anchorContact.Attributes["class"] = "text-secondary mr-4";
@@ -576,7 +576,7 @@ public partial class property_list : System.Web.UI.Page
         }
     }
 
-
+     
 
    
 }
