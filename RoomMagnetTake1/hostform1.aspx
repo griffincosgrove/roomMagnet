@@ -169,7 +169,7 @@
 
               <!-- Button -->
               <li class="nav-item u-header__nav-last-item">
-                <a class="btn btn-sm btn-primary transition-3d-hover" href="login.aspx">
+                <a class="btn btn-sm btn-primary transition-3d-hover" href="<%--login--%>.aspx">
                   Log In
                 </a>
               </li>

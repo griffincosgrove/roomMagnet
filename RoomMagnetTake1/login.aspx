@@ -34,7 +34,7 @@
         <!-- Nav -->
         <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar u-header__navbar--no-space">
           <!-- Logo -->
-          <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center" href="index.html" aria-label="RoomMagnet">
+          <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center" href="index.aspx" aria-label="RoomMagnet">
               <img src="images/logofinal4.svg">
           </a>
           <!-- End Logo -->
@@ -169,14 +169,14 @@
 
               <!-- Button -->
               <li class="nav-item u-header__nav-last-item">
-                <a class="btn btn-sm btn-primary transition-3d-hover" href="login.html">
+                <a class="btn btn-sm btn-primary transition-3d-hover" href="login.aspx">
                   Log In
                 </a>
               </li>
               <!-- End Button -->
                 <!-- Button -->
               <li class="nav-item u-header__nav-last-item">
-                <a class="btn btn-sm btn-primary transition-3d-hover" href="signup.html">
+                <a class="btn btn-sm btn-primary transition-3d-hover" href="signup.aspx">
                   Sign Up
                 </a>
               </li>
@@ -238,7 +238,7 @@
         <div class="row align-items-center mb-5">
           <div class="col-6">
             <span class="small text-muted">Don't have an account?</span>
-            <a class="small sunset" href="signup.html">Sign up</a>
+            <a class="small sunset" href="signup.aspx">Sign up</a>
           </div>
         </div>
               <div class="row align-items-center col-6 text-left">
