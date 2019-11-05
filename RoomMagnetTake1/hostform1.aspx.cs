@@ -19,7 +19,18 @@ public partial class hostform1 : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        txtFirstName.Text = "Mary";
+        txtLastName.Text = "Madison";
+        ddMonth.SelectedValue = "June";
+        ddDay.SelectedValue = "24";
+        ddYear.SelectedValue = "1995";
+        ddGender.SelectedValue = "Female";
+        txtEmail.Text = "griffinccosgrove@gmail.com";
+        txtStreet.Text = "1227 Colvin Meadows Lane";
+        txtCity.Text = "Great Falls";
+        ddState.SelectedValue = "VA";
+        txtZip.Text = "22066";
+        txtPhoneNumber.Text = "7033444815";
     }
 
 

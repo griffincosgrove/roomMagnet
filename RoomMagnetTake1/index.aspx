@@ -274,7 +274,7 @@
               <span class="btn-icon__inner btn-icon__inner-bottom-minus ml-1"><img src="images/clipboard.svg" alt="Add Your Listing" width="80"></span>
             </span>
             <h3 class="h5 font-weight-semi-bold">1. Add Your Listing</h3>
-            <p class="mb-md-0">Upload photos, and add helpful information on exactly what you are offering. If you need help around the house and, are willing to offer a discount, then specify what tasks you would like completed. Tenants who choose RoomMagnets’ living option are ready to work and will select chores they feel suits their abilities.</p>
+            <p class="mb-md-0">Upload photos, and add helpful information.</p>
           </div>
         </div>
 
@@ -284,7 +284,7 @@
               <span class="btn-icon__inner btn-icon__inner-bottom-minus"><img src="images/getdiscovered1.svg" alt="Get Discovered" width="110"></span>
             </span>
             <h3 class="h5 font-weight-semi-bold">2. Get Discovered</h3>
-            <p class="mb-md-0">Upon confirmation, your listing will appear throughout the website and will be searchable by tenants interested in similar places.
+            <p class="mb-md-0">Your listing will appear throughout the website and will be searchable by tenants.
 </p>
           </div>
         </div>
@@ -295,8 +295,7 @@
               <span class="btn-icon__inner btn-icon__inner-bottom-minus"><img src="images/idea.svg" alt="Start Living Smarter!" width="90"></span>
             </span>
             <h3 class="h5 font-weight-semi-bold">3. Start Living Smarter!</h3>
-            <p class="mb-md-0">Once your listing is discovered, interested tenants will 
-start coming to you! RoomMagnet will ensure that your communication is handled securely and professionally. When a match is made, you'll pay a first month's rent to us.
+            <p class="mb-md-0"> When a match is made, you'll pay a first month's rent to us.
 </p>
           </div>
         </div>
