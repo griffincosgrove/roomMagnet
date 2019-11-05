@@ -114,8 +114,8 @@
               </a>
 
               <div id="jumpToDropdown" class="dropdown-menu dropdown-unfold" aria-labelledby="jumpToDropdownInvoker">
-                <a class="dropdown-item" href="../pages/faq.html">Help</a>
-                <a class="dropdown-item" href="../pages/contacts-agency.html">Contacts</a>
+                <a class="dropdown-item" href="../pages/faq.aspx">Help</a>
+                <a class="dropdown-item" href="../pages/contacts-agency.aspx">Contacts</a>
               </div>
             </div>
             <!-- End Jump To -->
@@ -156,7 +156,7 @@
         <!-- Nav -->
         <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar u-header__navbar--no-space">
                     <!-- Logo -->
-          <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center" href="index.html" aria-label="RoomMagnet">
+          <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center" href="index.aspx" aria-label="RoomMagnet">
               <img src="images/logofinal4.svg">
           </a>
           <!-- End Logo -->
@@ -187,7 +187,7 @@
                       <div class="u-header__promo-card-deck">
                         <!-- Promo Item -->
                         <div class="u-header__promo-card u-header__promo-item">
-                          <a class="u-header__promo-link" href="../home/index.html">
+                          <a class="u-header__promo-link" href="../home/index.aspx">
                             <div class="media align-items-center">
                               <img class="js-svg-injector u-header__promo-icon" src="../../assets/svg/icons/icon-21.svg" alt="SVG">
                               <div class="media-body">
@@ -201,7 +201,7 @@
 
                         <!-- Promo Item -->
                         <div class="u-header__promo-card u-header__promo-item">
-                          <a class="u-header__promo-link" href="../app-marketplace/index.html">
+                          <a class="u-header__promo-link" href="../app-marketplace/index.aspx">
                             <div class="media align-items-center">
                               <img class="js-svg-injector u-header__promo-icon" src="../../assets/svg/icons/icon-45.svg" alt="SVG">
                               <div class="media-body">
@@ -217,7 +217,7 @@
                       <div class="u-header__promo-card-deck">
                         <!-- Promo Item -->
                         <div class="u-header__promo-card u-header__promo-item">
-                          <a class="u-header__promo-link" href="../job/index.html">
+                          <a class="u-header__promo-link" href="../job/index.aspx">
                             <div class="media align-items-center">
                               <img class="js-svg-injector u-header__promo-icon" src="../../assets/svg/icons/icon-19.svg" alt="SVG">
                               <div class="media-body">
@@ -231,7 +231,7 @@
 
                         <!-- Promo Item -->
                         <div class="u-header__promo-card u-header__promo-item">
-                          <a class="u-header__promo-link" href="../help-desk/index.html">
+                          <a class="u-header__promo-link" href="../help-desk/index.aspx">
                             <div class="media align-items-center">
                               <img class="js-svg-injector u-header__promo-icon" src="../../assets/svg/icons/icon-4.svg" alt="SVG">
                               <div class="media-body">
@@ -247,7 +247,7 @@
                       <div class="u-header__promo-card-deck">
                         <!-- Promo Item -->
                         <div class="u-header__promo-card u-header__promo-item">
-                          <a class="u-header__promo-link" href="../crypto/index.html">
+                          <a class="u-header__promo-link" href="../crypto/index.aspx">
                             <div class="media align-items-center">
                               <img class="js-svg-injector u-header__promo-icon" src="../../assets/svg/icons/icon-5.svg" alt="SVG">
                               <div class="media-body">
@@ -403,8 +403,8 @@
                       </a>
 
                       <ul id="generalDropdownMenu" class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" style="min-width: 230px;" aria-labelledby="generalDropdown">
-                        <li><a class="nav-link u-header__sub-menu-nav-link" href="dashboard.html">Dashboard</a></li>
-                        <li><a class="nav-link u-header__sub-menu-nav-link" href="profile.html">Profile</a></li>
+                        <li><a class="nav-link u-header__sub-menu-nav-link" href="tenantdashboard.aspx">Dashboard</a></li>
+                        <li><a class="nav-link u-header__sub-menu-nav-link" href="profile.aspx">Profile</a></li>
                       </ul>
                     </li>
                     <!-- General -->
@@ -419,8 +419,8 @@
                       </a>
 
                       <ul id="billingDropdownMenu" class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" style="min-width: 230px;" aria-labelledby="billingDropdown">
-                        <li><a class="nav-link u-header__sub-menu-nav-link" href="activity.html">Activity</a></li>
-                        <li><a class="nav-link u-header__sub-menu-nav-link" href="payment-methods.html">Payment methods</a></li>
+                        <li><a class="nav-link u-header__sub-menu-nav-link" href="activity.aspx">Activity</a></li>
+                        <li><a class="nav-link u-header__sub-menu-nav-link" href="payment-methods.aspx">Payment methods</a></li>
                       </ul>
                     </li>
                     <!-- Billing -->
@@ -464,23 +464,26 @@
         <!-- End Title -->
       
           <!-- Form -->
-          <form class="js-validate">
+          <form class="js-validate" runat="server">
             <div class="form-row mb-2 ml-6">
               <div class="col-6 col-md-9 mb-2">
                 <div class="js-form-message">
                   <label class="sr-only" for="search">Find a place to share</label>
                   <div class="input-group">
-                    <input type="text" class="form-control1" name="search" id="search" placeholder="Find a place to share" aria-label="Search" required
-                           data-msg="Name must contain only letters.">
+                    <asp:TextBox ID="search" runat="server" class="form-control1" placeholder="Find a place to share" aria-label="Search" 
+                           data-msg="Name must contain only letters."></asp:TextBox>
+                    
                   </div>
                 </div>
               </div>
 
 
-              <div class="col-md-2 mb-2">
-                <button type="submit" href="signup.html" class="btn btn-block btn-soft-primary transition-3d-hover">Search</button>
+              <div class="col-md-2 mb-2" runat="server">
+
+<asp:Button ID="tenantSearchbtn" href="property-list.aspx" runat="server" class="btn btn-block btn-soft-primary transition-3d-hover" OnClick="tenantSearchbtn_Click" Text="Search" />
               </div>
             </div>
+              </form>
       
     <!-- List of Properties Section -->
     <div class="container space-top-1 space-bottom-2">
@@ -573,7 +576,7 @@
                     <span class="fas fa-heart mr-1"></span>
                     Save
                   </a>
-                  <a class="btn btn-sm btn-soft-primary transition-3d-hover ml-auto" href="property-description.html">
+                  <a class="btn btn-sm btn-soft-primary transition-3d-hover ml-auto" href="property-description.aspx">
                   Details
                   <span class="fas fa-angle-right ml-1"></span>
                 </a>
@@ -655,7 +658,7 @@
                     <span class="fas fa-heart mr-1"></span>
                     Save
                   </a>
-                  <a class="btn btn-sm btn-soft-primary transition-3d-hover ml-auto" href="property-description.html">
+                  <a class="btn btn-sm btn-soft-primary transition-3d-hover ml-auto" href="property-description.aspx">
                   Details
                   <span class="fas fa-angle-right ml-1"></span>
                 </a>
@@ -760,7 +763,7 @@
                     <span class="fas fa-heart mr-1"></span>
                     Save
                   </a>
-                  <a class="btn btn-sm btn-soft-primary transition-3d-hover ml-auto" href="property-description.html">
+                  <a class="btn btn-sm btn-soft-primary transition-3d-hover ml-auto" href="property-description.aspx">
                   Details
                   <span class="fas fa-angle-right ml-1"></span>
                 </a>
@@ -860,7 +863,7 @@
                     <span class="fas fa-heart mr-1"></span>
                     Save
                   </a>
-                  <a class="btn btn-sm btn-soft-primary transition-3d-hover ml-auto" href="property-description.html">
+                  <a class="btn btn-sm btn-soft-primary transition-3d-hover ml-auto" href="property-description.aspx">
                   Details
                   <span class="fas fa-angle-right ml-1"></span>
                 </a>
@@ -1177,9 +1180,9 @@
 
             <!-- List Group -->
             <ul class="list-group list-group-flush list-group-borderless mb-0">
-              <li><a class="list-group-item list-group-item-action" href="../pages/about-agency.html">About</a></li>
-              <li><a class="list-group-item list-group-item-action" href="../pages/services-agency.html">Services</a></li>
-              <li><a class="list-group-item list-group-item-action" href="../pages/careers.html">Careers</a></li>
+              <li><a class="list-group-item list-group-item-action" href="../pages/about-agency.aspx">About</a></li>
+              <li><a class="list-group-item list-group-item-action" href="../pages/services-agency.aspx">Services</a></li>
+              <li><a class="list-group-item list-group-item-action" href="../pages/careers.aspx">Careers</a></li>
             </ul>
             <!-- End List Group -->
           </div>
@@ -1189,9 +1192,9 @@
 
             <!-- List Group -->
             <ul class="list-group list-group-flush list-group-borderless mb-0">
-              <li><a class="list-group-item list-group-item-action" href="dashboard.html">Account</a></li>
-              <li><a class="list-group-item list-group-item-action" href="my-tasks.html">My tasks</a></li>
-              <li><a class="list-group-item list-group-item-action" href="projects.html">Projects</a></li>
+              <li><a class="list-group-item list-group-item-action" href="dashboard.aspx">Account</a></li>
+              <li><a class="list-group-item list-group-item-action" href="my-tasks.aspx">My tasks</a></li>
+              <li><a class="list-group-item list-group-item-action" href="projects.aspx">Projects</a></li>
             </ul>
             <!-- End List Group -->
           </div>
@@ -1201,9 +1204,9 @@
 
             <!-- List Group -->
             <ul class="list-group list-group-flush list-group-borderless mb-0">
-              <li><a class="list-group-item list-group-item-action" href="../pages/faq.html">Help</a></li>
-              <li><a class="list-group-item list-group-item-action" href="../pages/terms.html">Terms</a></li>
-              <li><a class="list-group-item list-group-item-action" href="../pages/privacy.html">Privacy</a></li>
+              <li><a class="list-group-item list-group-item-action" href="../pages/faq.aspx">Help</a></li>
+              <li><a class="list-group-item list-group-item-action" href="../pages/terms.aspx">Terms</a></li>
+              <li><a class="list-group-item list-group-item-action" href="../pages/privacy.aspx">Privacy</a></li>
             </ul>
             <!-- End List Group -->
           </div>
@@ -1266,19 +1269,19 @@
               <!-- List Links -->
               <ul class="list-unstyled u-sidebar--account__list">
                 <li class="u-sidebar--account__list-item">
-                  <a class="u-sidebar--account__list-link" href="dashboard.html">
+                  <a class="u-sidebar--account__list-link" href="dashboard.aspx">
                     <span class="fas fa-home u-sidebar--account__list-icon mr-2"></span>
                     Dashboard
                   </a>
                 </li>
                 <li class="u-sidebar--account__list-item">
-                  <a class="u-sidebar--account__list-link" href="profile.html">
+                  <a class="u-sidebar--account__list-link" href="profile.aspx">
                     <span class="fas fa-user-circle u-sidebar--account__list-icon mr-2"></span>
                     Profile
                   </a>
                 </li>
                 <li class="u-sidebar--account__list-item">
-                  <a class="u-sidebar--account__list-link" href="activity.html">
+                  <a class="u-sidebar--account__list-link" href="activity.aspx">
                     <span class="fas fa-exchange-alt u-sidebar--account__list-icon mr-2"></span>
                     Activity <span class="badge badge-danger float-right mt-1">4</span>
                   </a>
@@ -1291,13 +1294,13 @@
               <!-- List Links -->
               <ul class="list-unstyled u-sidebar--account__list">
                 <li class="u-sidebar--account__list-item">
-                  <a class="u-sidebar--account__list-link" href="invite-friends.html">
+                  <a class="u-sidebar--account__list-link" href="invite-friends.aspx">
                     <span class="fas fa-user-plus u-sidebar--account__list-icon mr-2"></span>
                     Settings
                   </a>
                 </li>
                 <li class="u-sidebar--account__list-item">
-                  <a class="u-sidebar--account__list-link" href="api-token.html">
+                  <a class="u-sidebar--account__list-link" href="api-token.aspx">
                     <span class="fas fa-key u-sidebar--account__list-icon mr-2"></span>
                     Log Out
                   </a>
@@ -1312,13 +1315,13 @@
         <footer id="SVGwaveWithDots" class="u-sidebar__footer u-sidebar__footer--account">
           <ul class="list-inline mb-0">
             <li class="list-inline-item pr-3">
-              <a class="u-sidebar__footer--account__text" href="../pages/privacy.html">Privacy</a>
+              <a class="u-sidebar__footer--account__text" href="../pages/privacy.aspx">Privacy</a>
             </li>
             <li class="list-inline-item pr-3">
-              <a class="u-sidebar__footer--account__text" href="../pages/terms.html">Terms</a>
+              <a class="u-sidebar__footer--account__text" href="../pages/terms.aspx">Terms</a>
             </li>
             <li class="list-inline-item">
-              <a class="u-sidebar__footer--account__text" href="../pages/help.html">
+              <a class="u-sidebar__footer--account__text" href="../pages/help.aspx">
                 <i class="fas fa-info-circle"></i>
               </a>
             </li>
@@ -2452,7 +2455,7 @@
        
         // initialization of go to
       $.HSCore.components.HSGoTo.init('.js-go-to');
-    });s
+    });
   </script>
 </body>
 </html>
