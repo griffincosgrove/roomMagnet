@@ -14,8 +14,11 @@ public partial class property_list : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
-        searchPropertySr.Text = Session["zipCode"].ToString();
-        lblSearchField.Text = "Property for sale in " + Session["zipCode"];
+        if (Session["zipCode"] != null)
+        {
+            searchPropertySr.Text = Session["zipCode"].ToString();
+            lblSearchField.Text = "Property for sale in " + Session["zipCode"];
+        }
 
     }
 
@@ -136,7 +139,7 @@ public partial class property_list : System.Web.UI.Page
 
                 HtmlGenericControl img4 = new HtmlGenericControl("img");
                 img4.Attributes["class"] = "img-fluid rounded-circle";
-                img4.Attributes["src"] = "../../assets/img/100x100/img1.jpg";
+                img4.Attributes["src"] = "images/deborah.jpg";
                 img4.Attributes["alt"] = "Image Description";
                 img4.Attributes["title"] = "name ex.monica fox";
                 div6.Controls.Add(img4);
@@ -415,7 +418,7 @@ public partial class property_list : System.Web.UI.Page
 
                 HtmlGenericControl img4 = new HtmlGenericControl("img");
                 img4.Attributes["class"] = "img-fluid rounded-circle";
-                img4.Attributes["src"] = "../../assets/img/100x100/img1.jpg";
+                img4.Attributes["src"] = "images/deborah.jpg";
                 img4.Attributes["alt"] = "Image Description";
                 img4.Attributes["title"] = "name ex.monica fox";
                 div6.Controls.Add(img4);
