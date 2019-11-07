@@ -6,9 +6,11 @@ using System.Web;
 public class Customer
 {
     private String email;
-    public Customer(String email)
+    private String activeProfile = "y";
+    public Customer(String email, String activeProfile)
     {
         setEmail(email);
+        setActiveProfile(activeProfile);
     }
 
     public void setEmail(String email)
@@ -19,5 +21,13 @@ public class Customer
     public String getEmail()
     {
         return this.email;
+    }
+    public void setActiveProfile(string activeProfile)
+    {
+        this.activeProfile = activeProfile;
+    }
+    public string getActiveProfile()
+    {
+        return this.activeProfile;
     }
 }
