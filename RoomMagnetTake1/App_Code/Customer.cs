@@ -6,7 +6,7 @@ using System.Web;
 public class Customer
 {
     private String email;
-    private String activeProfile = "y";
+    private String activeProfile;
     public Customer(String email, String activeProfile)
     {
         setEmail(email);
