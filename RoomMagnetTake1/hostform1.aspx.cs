@@ -42,12 +42,13 @@ public partial class hostform1 : System.Web.UI.Page
             Host newHost = new Host(getString(txtFirstName), getString(txtLastName), ddGender.Text, getString(txtEmail), getString(txtPhoneNumber),
                 getString(txtStreet), getString(txtCity), ddState.Text, getString(txtZip), convertToDateFormat(combineBirthday()));
 
-            Customer newCustomer = new Customer(getString(txtEmail));
+            Customer newCustomer = new Customer(getString(txtEmail),"y");
 
-            SqlCommand customerInsert = new SqlCommand("INSERT INTO [dbo].[Customer] (Email, Password) VALUES( @email, @password)", sc);
+            SqlCommand customerInsert = new SqlCommand("INSERT INTO [dbo].[Customer] (Email, Password, ActiveProfile) VALUES( @email, @password, @activeProfile)", sc);
 
             customerInsert.Parameters.AddWithValue("@email", newCustomer.getEmail());
             customerInsert.Parameters.AddWithValue("@password", PasswordHash.HashPassword(txtPassword.Text));
+            customerInsert.Parameters.AddWithValue("@activeProfile", newCustomer.getActiveProfile());
 
             try
             {

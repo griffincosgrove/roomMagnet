@@ -31,23 +31,24 @@ public partial class tenantform1 : System.Web.UI.Page
         if (checkPasswordsMatches() && checkIfUserExists() && checkPasswordLength())
         {
 
-            Customer newCustomer = new Customer(getString(txtEmail));
+            Customer newCustomer = new Customer(getString(txtEmail),"y");
 
-            SqlCommand customerInsert = new SqlCommand("INSERT INTO [dbo].[Customer] (Email, Password) VALUES( @email, @password)", sc);
+            SqlCommand customerInsert = new SqlCommand("INSERT INTO [dbo].[Customer] (Email, Password, ActiveProfile) VALUES ( @email, @password, @activeProfile)", sc);
 
             customerInsert.Parameters.AddWithValue("@email", newCustomer.getEmail());
             customerInsert.Parameters.AddWithValue("@password", PasswordHash.HashPassword(txtPassword.Text));
+            customerInsert.Parameters.AddWithValue("@activeProfile", newCustomer.getActiveProfile());
 
             try
             {
                 sc.Open();
                 customerInsert.ExecuteNonQuery();
-                ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "NoDatabaseAlertMessage", "alert('New Host inserted')", true);
+                ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "NoDatabaseAlertMessage", "alert('New tenant inserted')", true);
             }
 
             catch
             {
-                ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "NoDatabaseAlertMessage", "alert('customer NOT Inserted')", true);
+                ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "NoDatabaseAlertMessage", "alert('Tenant NOT Inserted')", true);
             }
             finally
             {
