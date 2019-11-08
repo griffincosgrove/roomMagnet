@@ -12,6 +12,8 @@ public class Email
 {
     public const String sender = "roommagnet484@gmail.com";
 
+    //AIzaSyBMuwzhdXNIf_AuZb0vBYJbol4KvxaFji0
+
     public static void sendConfirmationEmail(String email)
     {
         try

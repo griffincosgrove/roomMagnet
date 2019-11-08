@@ -24,16 +24,16 @@ public partial class hostform2 : System.Web.UI.Page
             Response.Redirect("login.aspx");
         }
 
-        //txtaddressstreet.Text = "1227 Colvin Meadows Lane";
-        //txtaddresscity.Text = "Great Falls";
-        //DDstate.SelectedValue = "VA";
-        //txtZip.Text = "22066";
+        //txtaddressstreet.Text = "925 Prospect Place";
+        //txtaddresscity.Text = "Brooklyn";
+        //DDstate.SelectedValue = "NY";
+        //txtZip.Text = "22213";
         //ddNumberOfGuests.SelectedValue = "1";
-        //ddMonth.SelectedValue = "June";
-        //ddDay.SelectedValue = "24";
+        //ddMonth.SelectedValue = "December";
+        //ddDay.SelectedValue = "20";
         //txtPrice.Text = "1500";
-        //txtDescription.Text = "Nice house in suburbs of DC";
-        //txtNeighborhood.Text = "Colvin Meadows Estate";
+        //txtDescription.Text = "Small room with privacy";
+        //txtNeighborhood.Text = "East Brooklyn";
     }
 
 
