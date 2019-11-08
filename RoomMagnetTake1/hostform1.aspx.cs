@@ -23,13 +23,13 @@ public partial class hostform1 : System.Web.UI.Page
         //txtLastName.Text = "Duke";
         //ddMonth.SelectedValue = "June";
         //ddDay.SelectedValue = "24";
-        //ddYear.SelectedValue = "1995";
+        //ddYear.SelectedValue = "1978";
         //ddGender.SelectedValue = "Female";
         //txtEmail.Text = "griffinccosgrove@gmail.com";
-        //txtStreet.Text = "1227 Colvin Meadows Lane";
-        //txtCity.Text = "Great Falls";
-        //ddState.SelectedValue = "VA";
-        //txtZip.Text = "22066";
+        //txtStreet.Text = "925 Prospect Place";
+        //txtCity.Text = "Brooklyn";
+        //ddState.SelectedValue = "NY";
+        //txtZip.Text = "22213";
         //txtPhoneNumber.Text = "7033444815";
     }
 
