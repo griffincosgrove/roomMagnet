@@ -38,6 +38,8 @@ public partial class tenantdashboard : System.Web.UI.Page
     protected void tenantSearchbtn_Click(object sender, EventArgs e)
     {
         Session["zipCode"] = search.Text;
+        Session["City"] = search.Text;
+        Session["SearchFromTDash"] = true;
         Response.Redirect("property-list.aspx");
     }
 }
