@@ -14,30 +14,59 @@ public partial class property_list : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
+        /*
         if (Session["zipCode"] != null)
         {
             searchPropertySr.Text = Session["zipCode"].ToString();
             lblSearchField.Text = "Property for sale in " + Session["zipCode"];
         }
+        */
+        if (Session["SearchFromTDash"] is true)
+        {
+            searchPropertySr.Text = Session["zipCode"].ToString();
+            lblSearchField.Text = "Property for sale in " + Session["zipCode"];
+            Session["SearchFromTDash"] = false; //to prevent infinite loop
+            btnSearch_Click(btnSearch, null);
+
+        }
 
     }
-
-
-
 
 
     protected void btnSearch_Click(object sender, EventArgs e)
     {
         Session["zipCode"] = searchPropertySr.Text;
+        Session["City"] = searchPropertySr.Text;
+        String searchTxt = searchPropertySr.Text; 
 
         lblSearchField.Text = "Property for sale in " + Session["zipCode"];
         
         sc.Open();
         SqlCommand displayProperty = new SqlCommand();
         displayProperty.Connection = sc;
-        String searchString = "SELECT Host.HostID, Host.FirstName, Host.LastName, Host.Gender, Host.Email, Property.Address, Property.ZipCode, Property.City,Property.Neighborhood, Property.AvailableDate, Property.MaxNumberOfGuests, Property.Price, Property.Description, Property.ImageFilePath FROM Host INNER JOIN Property ON Host.HostID = Property.HostID  where Property.ZipCode = @zipcode";
-        displayProperty.CommandText = searchString;
-        displayProperty.Parameters.AddWithValue("@zipcode", Session["ZipCode"].ToString());
+        String searchString = "";
+        try
+        {
+            int num;
+            bool isZip = Int32.TryParse(searchTxt, out num);
+            if(isZip == true)
+            {
+                searchString = "SELECT Host.HostID, Host.FirstName, Host.LastName, Host.Gender, Host.Email, Property.Address, Property.ZipCode, Property.City,Property.Neighborhood, Property.AvailableDate, Property.MaxNumberOfGuests, Property.Price, Property.Description, Property.ImageFilePath FROM Host INNER JOIN Property ON Host.HostID = Property.HostID  where Property.ZipCode = @zipcode";
+                displayProperty.CommandText = searchString;
+                displayProperty.Parameters.AddWithValue("@zipcode", Session["ZipCode"].ToString());
+            }
+            else
+            {
+                searchString = "SELECT Host.HostID, Host.FirstName, Host.LastName, Host.Gender, Host.Email, Property.Address, Property.ZipCode, Property.City,Property.Neighborhood, Property.AvailableDate, Property.MaxNumberOfGuests, Property.Price, Property.Description, Property.ImageFilePath FROM Host INNER JOIN Property ON Host.HostID = Property.HostID  where Property.City = @City";
+                displayProperty.CommandText = searchString;
+                displayProperty.Parameters.AddWithValue("@city", Session["City"].ToString());
+            }
+        }
+        catch
+        {
+
+        }
+        
         SqlDataReader readProperty = displayProperty.ExecuteReader();
 
 
