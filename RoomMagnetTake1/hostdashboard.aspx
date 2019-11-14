@@ -388,8 +388,8 @@
                 </span>
               </div>
               <div class="media-body">
-                <h1 class="h3 text-white font-weight-medium mb-1"><span class="asap1">Hi, host Deborah!</span></h1>
-                <span class="d-block text-white">deborah.duke@gmail.com</span>
+                <h1 class="h3 text-white font-weight-medium mb-1"><span class="asap1"><asp:Label ID="hostNameLbl" Text="Welcome!" runat="server"> </asp:Label></span></h1>
+                <span class="d-block text-white"><asp:Label ID="hostEmailLbl" Text="MaryMadison@dukes.jmu.edu" runat="server"> </asp:Label></span>
               </div>
             </div>
             <!-- End User Info -->

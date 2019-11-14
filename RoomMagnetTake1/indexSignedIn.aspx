@@ -37,6 +37,7 @@
 </head>
 <body>
   <!-- ========== HEADER ========== -->
+    <form class="js-validate" runat="server">
   <header id="header" class="u-header u-header--floating-md">
     <div id="logoAndNav" class="container">
       <div class="u-header__section u-header--floating__inner">
@@ -60,7 +61,7 @@
             </span>
           </button>
           <!-- End Responsive Toggle Button -->
-
+           
           <!-- Navigation -->
           <div id="navBar" class="collapse navbar-collapse u-header__navbar-collapse opensans">
             <ul class="navbar-nav u-header__navbar-nav">
@@ -176,30 +177,25 @@
               </li>
               <!-- End Docs -->
 
-              <!-- Button -->
-              <li class="nav-item u-header__nav-last-item">
-                <a class="btn btn-sm btn-primary transition-3d-hover" href="indexSignedIn.aspx">
-                  Welcome!
-                </a>
-              </li>
-              <!-- End Button -->
+            <form class="js-validate">
                 <!-- Button -->
               <li class="nav-item u-header__nav-last-item">
                 <a class="btn btn-sm btn-primary transition-3d-hover" href="hostdashboard.aspx">
-                  Dashboard
+                  My Dashboard
                 </a>
               </li>
               <!-- End Button -->
                 <!-- Button -->
               <li class="nav-item u-header__nav-last-item">
-                <a class="btn btn-sm btn-primary transition-3d-hover" href="index.aspx">
-                  Log Out
-                </a>
+                
+                  <asp:Button ID="btnLogOut" runat="server" Text="Log Out" class="btn btn-block btn-soft-primary transition-3d-hover" OnClick="btnLogOut_Click" Width="248px" />
               </li>
               <!-- End Button -->
+                </form>
             </ul>
           </div>
           <!-- End Navigation -->
+               
         </nav>
         <!-- End Nav -->
       </div>
@@ -209,6 +205,7 @@
 
   <!-- ========== MAIN CONTENT ========== -->
   <main id="content" role="main">
+     
     <!-- Hero Section -->
     <div class="d-md-flex bg-img-hero" style="background-image: url(images/hero2.jpg);">
       <div class="container d-md-flex align-items-md-center height-md-100vh position-relative space-top-2 space-bottom-3 space-top-md-3 space-top-lg-2 space-bottom-md-0">
@@ -220,7 +217,7 @@
           </div>
 
           <!-- Form -->
-          <form class="js-validate" runat="server">
+          <form class="js-validate">
             <div class="form-row mb-2">
               <div class="col-6 col-md-9 mb-2">
                 <div class="js-form-message">
@@ -684,7 +681,7 @@ start coming to you! RoomMagnet will ensure that your communication is handled s
       </div>
     <!-- End Testimonials -->
 
-   
+   </form>
   </main>
   <!-- ========== END MAIN CONTENT ========== -->
 
@@ -763,6 +760,7 @@ start coming to you! RoomMagnet will ensure that your communication is handled s
       </div>
     </div>
   </footer>
+
   <!-- ========== END FOOTER ========== -->
 
   <!-- Go to Top -->
