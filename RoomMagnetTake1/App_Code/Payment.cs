@@ -8,18 +8,37 @@ public class Payment
 {
     //Declarations
     private double paymentAmount;
-    private DateTime date;
+    private DateTime dueDate;
+    string description;
     private int hostID;
     private int propID;
 
-    public Payment(double paymentAmount, DateTime date, int hostID, int propID)
+    public Payment(double paymentAmount, DateTime Duedate, string description, int hostID, int propID)
     {
         setPaymentAmount(paymentAmount);
-        setDate(date);
+        setDate(Duedate);
+        setDescription(description);
         setHostID(hostID);
         setPropID(propID);
     }
 
+    public Payment(double paymentAmount, DateTime Duedate, string description)
+    {
+        setPaymentAmount(paymentAmount);
+        setDate(Duedate);
+        setDescription(description);
+    }
+
+
+    public string getDescription()
+    {
+        return this.description;
+    }
+
+    public void setDescription(string description)
+    {
+        this.description = description;
+    }
     public double getPaymentAmount()
     {
         return paymentAmount;
@@ -30,11 +49,11 @@ public class Payment
     }
     public DateTime getDate()
     {
-        return date;
+        return dueDate;
     }
     public void setDate(DateTime date)
     {
-        this.date = date;
+        this.dueDate = date;
     }
     public int getHostID()
     {
