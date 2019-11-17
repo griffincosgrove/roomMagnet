@@ -177,12 +177,9 @@
               </li>
               <!-- End Docs -->
 
-            <form class="js-validate">
                 <!-- Button -->
               <li class="nav-item u-header__nav-last-item">
-                <a class="btn btn-sm btn-primary transition-3d-hover" href="hostdashboard.aspx">
-                  My Dashboard
-                </a>
+                <asp:Button runat="server" ID="btnDashboard" Text="My Dashboard" OnClick="btnDashboard_Click" class="btn btn-sm btn-primary transition-3d-hover" />
               </li>
               <!-- End Button -->
                 <!-- Button -->
@@ -191,7 +188,6 @@
                   <asp:Button ID="btnLogOut" runat="server" Text="Log Out" class="btn btn-block btn-soft-primary transition-3d-hover" OnClick="btnLogOut_Click" Width="248px" />
               </li>
               <!-- End Button -->
-                </form>
             </ul>
           </div>
           <!-- End Navigation -->
@@ -217,7 +213,6 @@
           </div>
 
           <!-- Form -->
-          <form class="js-validate">
             <div class="form-row mb-2">
               <div class="col-6 col-md-9 mb-2">
                 <div class="js-form-message">
@@ -249,7 +244,6 @@
               </div>
             </div>
             <!-- End Checkbox -->
-          </form>
           <!-- End Form -->
         </div>
 
@@ -736,7 +730,6 @@ start coming to you! RoomMagnet will ensure that your communication is handled s
             </div>
 
             <!-- Subscribe Form -->
-            <form class="js-validate js-form-message">
               <label class="sr-only" for="subscribeSrEmail">Your email address</label>
               <div class="input-group">
                 <input type="email" class="form-control" name="email" id="subscribeSrEmail" placeholder="Your email address" aria-label="Your email address" aria-describedby="subscribeButton" required
@@ -747,7 +740,6 @@ start coming to you! RoomMagnet will ensure that your communication is handled s
                   <button class="btn btn-primary" type="submit" id="subscribeButton">Subscribe</button>
                 </div>
               </div>
-            </form>
             <!-- End Subscribe Form -->
           </div>
         </div>

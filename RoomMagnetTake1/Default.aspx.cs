@@ -12,6 +12,7 @@ public partial class _Default : System.Web.UI.Page
         Session["Zipcode"] = "";
         Session["USER_ID"] = "";
         Session["SearchFromTDash"] = false;
+        Session["Type"] = ""; //this is for tenant or host
         //add property item for the inserted zip code
         //document.getelementsbyclassname("row");
         Response.Redirect("index.aspx");
