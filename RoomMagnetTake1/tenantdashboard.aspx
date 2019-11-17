@@ -377,7 +377,8 @@
               </div>
               <div class="media-body" runat="server">
                 <h1 class="h3 text-white font-weight-medium mb-1"><span class="asap1"><asp:Label ID="tenantNameLbl" Text="Welcome!" runat="server"> </asp:Label></span></h1>
-                <span class="d-block text-white"><asp:Label ID="tenantEmailLbl" Text="MaryMadison@dukes.jmu.edu" runat="server"> </asp:Label></span>
+                <span class="d-block text-white">
+                    <asp:Label ID="tenantEmailLbl" Text="MaryMadison@dukes.jmu.edu" runat="server"> </asp:Label></span>
               </div>
             </div>
             <!-- End User Info -->

@@ -27,7 +27,7 @@ public partial class tenantdashboard : System.Web.UI.Page
             SqlDataReader reader = displayTenantDash.ExecuteReader();
             if (reader.Read())
             {
-                tenantNameLbl.Text = ("Welcome tenant " + reader["FirstName"].ToString());
+                tenantNameLbl.Text = ("Welcome Tenant " + reader["FirstName"].ToString());
                 tenantEmailLbl.Text = (reader["Email"].ToString());
             }
         }

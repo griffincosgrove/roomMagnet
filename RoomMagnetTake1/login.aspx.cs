@@ -19,7 +19,7 @@ public partial class login : System.Web.UI.Page
            
             //lblStatus.Text = "Database Connection Successful";
 
-            sc.Open();
+            
             System.Data.SqlClient.SqlCommand findPass = new System.Data.SqlClient.SqlCommand();
             findPass.Connection = sc;
             // SELECT PASSWORD STRING WHERE THE ENTERED USERNAME MATCHES
@@ -32,6 +32,15 @@ public partial class login : System.Web.UI.Page
             SqlCommand findTenant = new SqlCommand("select email from tenant where UPPER(email) = @email", sc);
             findTenant.Parameters.AddWithValue("@email", getString(txtEmail).ToUpper());
 
+            SqlCommand findAdmin = new SqlCommand("select email from AdminCredentials where UPPER(email) = @email", sc);
+            findAdmin.Parameters.AddWithValue("@email", getString(txtEmail).ToUpper());
+
+            SqlCommand adminPass = new SqlCommand("select password from AdminCredentials where Email = @Email", sc);
+            adminPass.Parameters.Add(new SqlParameter("@Email", getString(txtEmail)));
+            
+            sc.Open();
+
+            
             SqlDataReader reader = findPass.ExecuteReader(); // create a reader
 
             if (reader.HasRows) // if the username exists, it will continue
@@ -49,7 +58,9 @@ public partial class login : System.Web.UI.Page
 
                         if(findhost.ExecuteReader().HasRows)
                         {
+                            Session["Type"] = "host";
                             Response.Redirect("hostdashboard.aspx");
+                            
                         }
 
                         sc.Close();
@@ -57,8 +68,11 @@ public partial class login : System.Web.UI.Page
 
                         if(findTenant.ExecuteReader().HasRows)
                         {
-                            Response.Redirect("indexSignedIn.aspx"); //will change this to tenant dashboard later.
+                            Session["Type"] = "tenant";
+                            Response.Redirect("tenantdashboard.aspx"); //will change this to tenant dashboard later.                            
                         }
+
+                        sc.Close();
                     }
                     else
                     {
@@ -66,6 +80,35 @@ public partial class login : System.Web.UI.Page
                     }
                 }
             }
+        sc.Close();
+            sc.Open();
+            SqlDataReader adminReader = adminPass.ExecuteReader();
+            if (adminReader.HasRows)
+            {
+            while (adminReader.Read()) // this will read the single record that matches the entered username
+            {
+                string adminHash = adminReader["password"].ToString();
+
+                if (PasswordHash.ValidatePassword(txtPassword.Text, adminHash)) // if the entered password matches what is stored, it will show success
+                {
+                    Session["USER_ID"] = txtEmail.Text;
+
+                    sc.Close();
+                    sc.Open();
+
+                    if (findAdmin.ExecuteReader().HasRows)
+                    {
+                        Session["Type"] = "admin";
+                        Response.Redirect("admindashboard.aspx");                        
+                    }
+                    sc.Close();
+                }
+                else
+                {
+                    ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "Password Error", "alert('Password is incorrect')", true);
+                }
+            }
+        }
             else // if the username doesn't exist, it will show failure
             {
                 ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "NoDatabaseAlertMessage", "alert('Email not found')", true);

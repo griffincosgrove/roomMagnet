@@ -31,4 +31,27 @@ public partial class indexSignedIn : System.Web.UI.Page
         Session.Clear();
         Response.Redirect("index.aspx");
     }
+
+    protected void btnDashboard_Click(object sender, EventArgs e)
+    {
+        if(Session["Type"].ToString() != "")
+        {
+            if (Session["Type"].ToString().Equals("tenant"))
+            {
+                Response.Redirect("tenantdashboard.aspx");
+            }
+            else if (Session["Type"].ToString().Equals("host"))
+            {
+                Response.Redirect("hostdashboard.aspx");
+            }
+            else if (Session["Type"].ToString().Equals("admin"))
+            {
+                Response.Redirect("admindashboard.aspx");
+            }
+        }
+        else
+        {
+            ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "Type error", "alert('Error Dashboard not found')", true);
+        }
+    }
 }

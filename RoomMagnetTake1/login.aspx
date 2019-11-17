@@ -211,7 +211,7 @@
               <form class="js-validate" runat="server">
         <div class="js-form-message form-group">
           <label class="form-label" for="signinSrEmail">Email address</label>
-    <asp:TextBox ID="txtEmail" runat="server" class="form-control" name="email" value="natalie.curtis@gmail.com" placeholder="Enter your email address" aria-label="Enter your email address" required aria-describedby="emailLabel"
+    <asp:TextBox ID="txtEmail" runat="server" class="form-control" name="email" placeholder="Enter your email address" aria-label="Enter your email address" required aria-describedby="emailLabel"
         data-msg="Please enter a valid email address."
         data-error-class="u-has-error"
         data-success-class="u-has-success"></asp:TextBox>
