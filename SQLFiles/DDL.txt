@@ -1,3 +1,5 @@
+--name db 'roommagnet'
+
 DROP TABLE RentedRoom
 DROP TABLE Payment
 DROP TABLE PropertyTask
