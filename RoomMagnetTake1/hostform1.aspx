@@ -339,7 +339,10 @@
                   <label class="form-label">
             <span class="ast">*</span>
           </label>
+
                 <div class="form-group">
+
+
                         <asp:DropDownList ID="ddYear" runat="server" class="form-control custom-select" required="true"
                             data-msg="Please select year."
                             data-error-class="u-has-error"
@@ -665,7 +668,21 @@
                 </div>
               </div>
             </div>
-              
+                                          <!-- Checkbox -->
+            <div class="js-form-message">
+              <div class="custom-control custom-checkbox d-flex align-items-center text-muted">
+                <input type="checkbox" class="custom-control-input" id="termsCheckbox" name="termsCheckbox" required
+                       data-msg="Please accept our Terms and Conditions.">
+                <label class="custom-control-label text-Blue" for="termsCheckbox">
+                  <small>
+                    I understand my information will not be posted until I read and approve our
+                    <a class="link-skyblue" href="../pages/terms.html">Terms and Conditions.</a>
+                  </small>
+                </label>
+              </div>
+            </div>
+            <!-- End Checkbox -->
+
             <!-- End Input -->
             </div>
             <asp:Button ID="btnCommitHost" runat="server" Text="Next Step" class="btn btn-sm btn-soft-primary transition-3d-hover" href="hostform2.aspx" OnClick="btnCommitHost_Click" />
