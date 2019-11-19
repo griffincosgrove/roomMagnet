@@ -22,7 +22,17 @@ public partial class admindashboard : System.Web.UI.Page
         StripeConfiguration.ApiKey = "sk_test_18Gn9oGB42sHsUO89q2zx0Cp00aZRNckFV";
 
         // `source` is obtained with Stripe.js; see https://stripe.com/docs/payments/cards/collecting/web#create-token
-        var options = new ChargeCreateOptions
+
+        var customer = new CustomerCreateOptions
+        {
+            Email = "cosgrogc@dukes.jmu.edu",
+            Description = "Charge for Griffin Cosgrove",
+            Name = "Griffin Cosgrove",
+        };
+        var service2 = new CustomerService();
+        service2.Create(customer);
+
+        var charge = new ChargeCreateOptions
         {
             Amount = Convert.ToInt32(txtAmount.Text), // amount from amount textbox
             Currency = "usd", //could change depending on the currency selected but we could just keep it as is
@@ -31,7 +41,7 @@ public partial class admindashboard : System.Web.UI.Page
             
         };
         var service = new ChargeService();
-        service.Create(options);
+        service.Create(charge);
     }
 
     public String getString(TextBox txt)
