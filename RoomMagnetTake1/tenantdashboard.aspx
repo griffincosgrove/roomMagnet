@@ -446,6 +446,10 @@
 
           <div class="ml-lg-auto">
             <!-- Button -->
+              <a class="btn btn-sm btn-soft-white text-nowrap transition-3d-hover" href="edit-tenantprofile.aspx">
+              <span class="fas fa-plus small mr-2"></span>
+                Edit Profile
+            </a>
             <a class="btn btn-sm btn-soft-white text-nowrap transition-3d-hover" href="#requestPaymentModal"
                data-modal-target="#requestPaymentModal">
               <span class="fas fa-plus small mr-2"></span>
