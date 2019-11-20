@@ -143,7 +143,7 @@
                                 data-unfold-animation-out="fadeOutRight"
                                 data-unfold-duration="500">
                                 <span class="position-relative">
-                                    <span class="u-sidebar--account__toggle-text"><asp:Label ID="tenantNameLbl2" Text="User" runat="server"> </asp:Label></span>
+                                    <span class="u-sidebar--account__toggle-text"><asp:Label ID="tenantNameLbl2" Text="Mary Madison" runat="server"> </asp:Label></span>
                                     <img class="u-sidebar--account__toggle-img" src="images/mary.jpg" alt="Image Description">
                                     <span class="badge badge-sm badge-success badge-pos rounded-circle">4</span>
                                 </span>
@@ -473,10 +473,6 @@
                         <!-- Input -->
                         <div class="col-sm-6 mb-6">
                             <div class="js-form-message">
-                                <label id="nameLabel" class="form-label">
-                                    First Name
-                  <span class="text-danger">*</span>
-                                </label>
                             </div>
                         </div>
                         <!-- End Input -->
@@ -493,7 +489,7 @@
                                 </label>
 
                                 <div class="form-group">
-                                        <asp:TextBox ID="txtEmail" runat="server" class="form-control" name="email" value="natalie.curtis@gmail.com" placeholder="Enter your email address" aria-label="Enter your email address" required aria-describedby="emailLabel"
+                                        <asp:TextBox ID="txtEmail" runat="server" class="form-control" name="email" placeholder="Enter your email address" aria-label="Enter your email address" required aria-describedby="emailLabel"
                                             data-msg="Please enter a valid email address."
                                             data-error-class="u-has-error"
                                             data-success-class="u-has-success"></asp:TextBox>
@@ -515,7 +511,7 @@
                                 </label>
 
                                 <div class="form-group">
-                                        <asp:TextBox ID="txtPhonenumber" runat="server" class="form-control" type="tel" name="phoneNumber" value="+44 (0161) 347 8854" placeholder="Enter your phone number" aria-label="Enter your phone number" required aria-describedby="phoneNumberLabel"
+                                        <asp:TextBox ID="txtPhonenumber" runat="server" class="form-control" type="tel" name="phoneNumber" placeholder="Enter your phone number" aria-label="Enter your phone number" required aria-describedby="phoneNumberLabel"
                                             data-msg="Please enter a valid phone number"
                                             data-error-class="u-has-error"
                                             data-success-class="u-has-success"></asp:TextBox>
