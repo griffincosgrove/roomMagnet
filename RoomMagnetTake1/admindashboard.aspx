@@ -466,7 +466,6 @@
               </div>
               <div class="media-body">
                 <h1 class="h3 text-white font-weight-medium mb-1"><span class="asap1">Hi, Admin!</span></h1>
-                <span class="d-block text-white">if you want email like others, it'll go here. if not take this out</span>
               </div>
             </div>
             <!-- End User Info -->
@@ -497,52 +496,24 @@
                       </ul>
                     </li>
                     <!-- General -->
-
-                    <!-- Account Settings -->
-                    <li class="nav-item hs-has-sub-menu u-header__nav-item"
+                              <li class="nav-item hs-has-sub-menu u-header__nav-item"
                         data-event="hover"
                         data-animation-in="slideInUp"
                         data-animation-out="fadeOut">
-                      <a id="accountSettingsDropdown" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="accountSettingsDropdownMenu">
-                        Account settings
+                      <a id="billingDropdown2" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="billingDropdownMenu">
+                        <span class="fa fa-inbox mr-1"></span> Messages
                       </a>
 
-                      <ul id="accountSettingsDropdownMenu" class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" style="min-width: 230px;" aria-labelledby="accountSettingsDropdown">
-                        <li><a class="nav-link u-header__sub-menu-nav-link" href="edit-admin-profile.aspx">Edit profile</a></li>
-                        <li><a class="nav-link u-header__sub-menu-nav-link" href="change-password.aspx">Change password</a></li>
-                        <li><a class="nav-link u-header__sub-menu-nav-link" href="notifications.aspx">Notifications</a></li>
+                      <ul id="billingDropdownMenu2" class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" style="min-width: 230px;" aria-labelledby="billingDropdown">
+                        <li><a class="nav-link u-header__sub-menu-nav-link" href="adminmessage.html">Inbox</a></li>
+                        <li><a class="nav-link u-header__sub-menu-nav-link" href="adminmessage.html">Sent</a></li>
                       </ul>
                     </li>
                     <!-- Account Settings -->
+                    <!-- Account Settings -->
 
                     <!-- Billing -->
-                    <li class="nav-item hs-has-sub-menu u-header__nav-item"
-                        data-event="hover"
-                        data-animation-in="slideInUp"
-                        data-animation-out="fadeOut">
-                      <a id="billingDropdown" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="billingDropdownMenu">
-                        Billing
-                      </a>
-
-                      <ul id="billingDropdownMenu" class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" style="min-width: 230px;" aria-labelledby="billingDropdown">
-                        <li><a class="nav-link u-header__sub-menu-nav-link" href="activity.aspx">Activity</a></li>
-                        <li><a class="nav-link u-header__sub-menu-nav-link" href="payment-methods.aspx">Payment methods</a></li>
-                      </ul>
-                    </li>
                     <!-- Billing -->
-        <li class="nav-item hs-has-sub-menu u-header__nav-item"
-                        data-event="hover"
-                        data-animation-in="slideInUp"
-                        data-animation-out="fadeOut">
-                      <a id="billingDropdown" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="billingDropdownMenu">
-                        Messages
-                      </a>
-
-                      <ul id="billingDropdownMenu" class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" style="min-width: 230px;" aria-labelledby="billingDropdown">
-                        <li><a class="nav-link u-header__sub-menu-nav-link" href="activity.aspx">Inbox</a></li>
-                        <li><a class="nav-link u-header__sub-menu-nav-link" href="payment-methods.aspx">Sent</a></li>
-                      </ul>
-                    </li>
                   </ul>
                 </div>
               </nav>

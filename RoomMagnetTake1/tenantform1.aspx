@@ -553,7 +553,7 @@
                                     </label>
 
                                     <div class="form-group">
-                                        <asp:TextBox ID="txtPhonenumber" runat="server" class="form-control" type="tel" name="phoneNumber" value="+44 (0161) 347 8854" placeholder="Enter your phone number" aria-label="Enter your phone number" required aria-describedby="phoneNumberLabel"
+                                        <asp:TextBox ID="txtPhonenumber" runat="server" class="form-control" type="tel" name="phoneNumber" value="" placeholder="Enter your phone number" aria-label="Enter your phone number" required aria-describedby="phoneNumberLabel"
                                             data-msg="Please enter a valid phone number"
                                             data-error-class="u-has-error"
                                             data-success-class="u-has-success"></asp:TextBox>
