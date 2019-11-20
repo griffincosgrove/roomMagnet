@@ -250,6 +250,7 @@
                                 <label class="form-label">
                                     Birth date
             <span class="text-danger">*</span>
+                                <br />
                                 </label>
                                 <div class="js-form-message">
                                     <div class="form-group">

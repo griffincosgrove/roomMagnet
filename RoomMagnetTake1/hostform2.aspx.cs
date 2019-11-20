@@ -11,6 +11,7 @@ using System.IO;
 public partial class hostform2 : System.Web.UI.Page
 {
     SqlConnection sc = new SqlConnection(ConfigurationManager.ConnectionStrings["cs"].ConnectionString);
+    DateTime lastUpdated = DateTime.Now;
 
 
     protected void Page_Load(object sender, EventArgs e)
@@ -73,10 +74,10 @@ public partial class hostform2 : System.Web.UI.Page
     {
 
         Property newProperty = new Property(getString(txtaddressstreet), getString(txtaddresscity), getString(txtZip), DDstate.Text, Convert.ToDouble(getString(txtPrice)),
-                    Convert.ToInt32(ddNumberOfGuests.Text), convertToDateFormat(combineBirthday()), getString(txtNeighborhood), getString(txtDescription), getHostID(), renameFilePath());
+                    Convert.ToInt32(ddNumberOfGuests.Text), convertToDateFormat(combineBirthday()), getString(txtNeighborhood), getString(txtDescription), getHostID(), renameFilePath(), lastUpdated);
 
-        SqlCommand insert = new SqlCommand("INSERT INTO [PROPERTY] (Address, City, ZipCode, State, Price, MaxNumberOfGuests, AvailableDate, Neighborhood, Description, HostID, imageFilePath) " +
-            "VALUES(@address, @city, @zip, @state, @price, @maxNumberOfGuests, @availableDate, @neighborhood, @description, @hostID, @fileImagePath)", sc);
+        SqlCommand insert = new SqlCommand("INSERT INTO [PROPERTY] (Address, City, ZipCode, State, Price, MaxNumberOfGuests, AvailableDate, Neighborhood, Description, HostID, imageFilePath, lastUpdated) " +
+            "VALUES(@address, @city, @zip, @state, @price, @maxNumberOfGuests, @availableDate, @neighborhood, @description, @hostID, @fileImagePath, @lastUpdated)", sc);
 
         insert.Parameters.AddWithValue("@address", newProperty.getAddress());
         insert.Parameters.AddWithValue("@city", newProperty.getCity());
@@ -89,6 +90,7 @@ public partial class hostform2 : System.Web.UI.Page
         insert.Parameters.AddWithValue("@description", newProperty.getDescription());
         insert.Parameters.AddWithValue("@hostID", newProperty.getHostID());
         insert.Parameters.AddWithValue("@fileImagePath", newProperty.getImageFilePath());
+        insert.Parameters.AddWithValue("lastUpdated", newProperty.getLastUpdated());
         try
         {
         sc.Open();

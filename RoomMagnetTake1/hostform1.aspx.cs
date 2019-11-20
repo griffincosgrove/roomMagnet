@@ -16,10 +16,11 @@ public partial class hostform1 : System.Web.UI.Page
 {
     // connection string at the class level so we can reference it later. this is the string in the web.config !!
     SqlConnection sc = new SqlConnection(ConfigurationManager.ConnectionStrings["cs"].ConnectionString);
-
+    DateTime lastUpdated = DateTime.Now;
+    
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        
         //if (termsCheckbox.checked == false)
         //{
         //    btnCommitHost.Enabled = false;
@@ -49,7 +50,7 @@ public partial class hostform1 : System.Web.UI.Page
         if (checkPasswordsMatches() && checkIfUserExists() && checkPasswordLength())
         {
             Host newHost = new Host(getString(txtFirstName), getString(txtLastName), ddGender.Text, getString(txtEmail), getString(txtPhoneNumber),
-                getString(txtStreet), getString(txtCity), ddState.Text, getString(txtZip), convertToDateFormat(combineBirthday()));
+                getString(txtStreet), getString(txtCity), ddState.Text, getString(txtZip), convertToDateFormat(combineBirthday()), lastUpdated);
 
             Customer newCustomer = new Customer(getString(txtEmail),"y");
 
@@ -75,8 +76,8 @@ public partial class hostform1 : System.Web.UI.Page
                 sc.Close();
             }
 
-            SqlCommand command = new SqlCommand("INSERT into [dbo].[Host] (FirstName, LastName, Gender, Email, PhoneNumber, HostAddress, City, ZipCode, State, BirthDate) " +
-                "VALUES(@firstName, @lastName, @gender, @email, @phoneNumber, @hostAddress, @city, @zipcode, @state, @dateOfBirth)", sc);
+            SqlCommand command = new SqlCommand("INSERT into [dbo].[Host] (FirstName, LastName, Gender, Email, PhoneNumber, HostAddress, City, ZipCode, State, BirthDate, lastUpdated) " +
+                "VALUES(@firstName, @lastName, @gender, @email, @phoneNumber, @hostAddress, @city, @zipcode, @state, @dateOfBirth, @lastUpdated)", sc);
 
             command.Parameters.AddWithValue("@firstName", newHost.getFirstName());
             command.Parameters.AddWithValue("@lastName", newHost.getLastName());
@@ -88,6 +89,7 @@ public partial class hostform1 : System.Web.UI.Page
             command.Parameters.AddWithValue("@state", newHost.getState());
             command.Parameters.AddWithValue("@zipcode", newHost.getZipcode());
             command.Parameters.AddWithValue("@dateOfBirth", newHost.getDateOfBirth());
+            command.Parameters.AddWithValue("lastUpdated", newHost.getLastUpdated());
 
             try
             {
