@@ -14,10 +14,17 @@ public partial class indexSignedIn : System.Web.UI.Page
         {
             if (Session["USER_ID"].ToString() == "")
             {
-                Response.Redirect("indexSignedIn.aspx");
+                //if user_ID has not been cleared and still has default value of "", ie. user is not signed in -> go to index
+                Response.Redirect("index.aspx");
             }
+            // assuming this previous if does not go through, user will stay at signed-in page
         }
-        
+        //else, user_ID == null and the user is not signed in -> go to index 
+        else
+        {
+            Response.Redirect("index.aspx");
+        }
+
     }
 
 

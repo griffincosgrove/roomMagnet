@@ -151,7 +151,7 @@
                  data-unfold-animation-out="fadeOutRight"
                  data-unfold-duration="500">
                 <span class="position-relative">
-                  <span class="u-sidebar--account__toggle-text">Deborah Duke</span>
+                  <span class="u-sidebar--account__toggle-text"><asp:Label ID="hostNameLbl2" Text="User" runat="server"> </asp:Label></span>
                   <img class="u-sidebar--account__toggle-img" src="images/deborah.jpg" alt="Image Description">
                   <span class="badge badge-sm badge-success badge-pos rounded-circle">3</span>
                 </span>
@@ -487,13 +487,18 @@
                     <img class="img-fluid" src="images/room2.jpg" alt="Property 1">
                   </div>
                   <div class="media-body">
-                    <span class="text-dark">Furnished Home With a Backyard</span>
+                    <span class="text-dark"><asp:Label ID="listedPropertyLbl" Text="Furnished room with a backyard" runat="server"> </asp:Label>
+                    </span>
+                      <br />
+                       <span class="text-dark"><asp:Label ID="listedPropertyDescriptionLbl" Text="Furnished room with a backyard" runat="server"> </asp:Label>
+                    </span>
+                      <br />
+                       <span class="text-dark"><asp:Label ID="listedPropertyPriceLbl" Text="$500" runat="server"> </asp:Label>
+                    </span>
                     <small class="d-block text-secondary">Available Now</small>
                   </div>
                   <div class="media-body text-right">
-                    <span class="text-primary ml-3">
-                      $300/mo
-                    </span>
+                    
                   </div>
                   
                 </div>
@@ -501,26 +506,7 @@
             </div>
             <!-- End Card -->
 
-            <!-- Card -->
-            <div class="card card-frame mr-5 mb-3">
-              <a class="card-body p-4" href="#">
-                <div class="media align-items-center">
-                  <div class="u-avatar mr-3">
-                    <img class="img-fluid" src="images/room3.jpg" alt="Property 2">
-                  </div>
-                  <div class="media-body">
-                    <span class="text-dark">Spacious Home Close to Campus</span>
-                    <small class="d-block text-secondary">Available Now</small>
-                  </div>
-                  <div class="media-body text-right">
-                    <span class="text-primary ml-3">
-                      $425/mo
-                    </span>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <!-- End Card -->
+            
               
           </div>
         <!-- End Earning Sources -->

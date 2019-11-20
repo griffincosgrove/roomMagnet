@@ -2,7 +2,9 @@
 
 <!DOCTYPE html>
 <html lang="en">
+<form class="js-validate" runat="server">
 <head>
+    
   <!-- Title -->
   <title>Landing House - Property Description | Front - Responsive Website Template</title>
 
@@ -27,21 +29,16 @@
   <link rel="stylesheet" href="../../assets/css/theme.css">
 </head>
 <body>
-  <!-- ========== HEADER ========== -->
-  <header id="header" class="u-header u-header--navbar-bg">
-    <div class="u-header__section bg-primary">
-      <div id="logoAndNav" class="container">
+
+ <!-- ========== HEADER ========== -->
+  <header id="header" class="u-header u-header--floating-md">
+    <div id="logoAndNav" class="container">
+      <div class="u-header__section u-header--floating__inner">
         <!-- Nav -->
         <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar u-header__navbar--no-space">
           <!-- Logo -->
-          <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center u-header__navbar-brand-text-white" href="index.html" aria-label="Front">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="46px" height="46px" viewBox="0 0 46 46" xml:space="preserve" style="margin-bottom: 0;">
-              <path fill="#E1E4EA" opacity=".65" d="M23,41.1L23,41.1c-9.9,0-18-8-18-18l0,0c0-9.9,8-18,18-18h11.3c3.7,0,6.6,3,6.6,6.6v11.4C41,33,32.9,41.1,23,41.1z"/>
-              <path class="fill-white" opacity=".5" d="M28,36L28,36c-9.9,0-18-8-18-18l0,0c0-9.9,8-18,18-18h11.3C43,0.1,46,3.1,46,6.7v11.4C46,28,38,36,28,36z"/>
-              <path class="fill-white" opacity=".7" d="M18,46.1L18,46.1c-10,0-18-8-18-18l0,0c0-9.9,8-18,18-18h11.3c3.7,0,6.6,3,6.6,6.6v11.4C35.9,38.1,27.9,46.1,18,46.1z"/>
-              <path class="fill-primary" d="M17.4,34.1V18.4h10.2v2.9h-6.4v3.4H26v2.9h-4.8v6.5H17.4z"/>
-            </svg>
-            <span class="u-header__navbar-brand-text">Front</span>
+          <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center" href="indexSignedIn.aspx" aria-label="RoomMagnet">
+              <img src="images/logofinal4.svg">
           </a>
           <!-- End Logo -->
 
@@ -57,75 +54,33 @@
             </span>
           </button>
           <!-- End Responsive Toggle Button -->
-
+           
           <!-- Navigation -->
-          <div id="navBar" class="collapse navbar-collapse u-header__navbar-collapse">
+          <div id="navBar" class="collapse navbar-collapse u-header__navbar-collapse opensans">
             <ul class="navbar-nav u-header__navbar-nav">
-              <!-- Home -->
-              <li class="nav-item u-header__nav-item">
-                <a class="nav-link u-header__nav-link" href="index.html">Home</a>
-              </li>
-              <!-- End Home -->
-
-              <!-- Pages -->
-              <li class="nav-item hs-has-sub-menu u-header__nav-item"
-                  data-event="hover"
-                  data-animation-in="slideInUp"
-                  data-animation-out="fadeOut">
-                <a id="pagesMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="pagesSubMenu">Property pages</a>
-
-                <!-- Pages - Submenu -->
-                <ul id="pagesSubMenu" class="hs-sub-menu u-header__sub-menu" aria-labelledby="pagesMegaMenu" style="min-width: 230px;">
-                  <li><a class="nav-link u-header__sub-menu-nav-link" href="property-list.html">Listing</a></li>
-                  <li><a class="nav-link u-header__sub-menu-nav-link" href="property-grid.html">Listing (Grid)</a></li>
-                  <li><a class="nav-link u-header__sub-menu-nav-link" href="property-description.html">Property description</a></li>
-                </ul>
-                <!-- End Pages - Submenu -->
-              </li>
-              <!-- End Pages -->
-
-              <!-- Selling -->
-              <li class="nav-item u-header__nav-item">
-                <a class="nav-link u-header__nav-link" href="property-seller.html">Selling</a>
-              </li>
-              <!-- End Selling -->
 
               <!-- Demos -->
-              <li class="nav-item hs-has-mega-menu u-header__nav-item"
+              <li class="opensans nav-item hs-has-mega-menu u-header__nav-item"
                   data-event="hover"
                   data-animation-in="slideInUp"
                   data-animation-out="fadeOut"
-                  data-max-width="900px"
+                  data-max-width="400px"
                   data-position="right">
-                <a id="demosMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">Demos</a>
+                <a id="demosMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">How it Works</a>
 
                 <!-- Demos - Mega Menu -->
-                <div class="hs-mega-menu w-100 u-header__sub-menu" aria-labelledby="demosMegaMenu">
+                <div class="hs-mega-menu w-400 u-header__sub-menu" aria-labelledby="demosMegaMenu">
                   <div class="row no-gutters">
-                    <div class="col-lg-8">
+                    <div class="col-lg-12">
                       <div class="u-header__promo-card-deck">
                         <!-- Promo Item -->
                         <div class="u-header__promo-card u-header__promo-item">
-                          <a class="u-header__promo-link" href="../home/index.html">
+                          <a class="u-header__promo-link" href="#host">
                             <div class="media align-items-center">
-                              <img class="js-svg-injector u-header__promo-icon" src="../../assets/svg/icons/icon-21.svg" alt="SVG">
+                              <img class="u-header__promo-icon" src="images/host2.svg" alt="SVG">
                               <div class="media-body">
-                                <span class="u-header__promo-title">Main demo</span>
-                                <small class="u-header__promo-text">Main demo pages</small>
-                              </div>
-                            </div>
-                          </a>
-                        </div>
-                        <!-- End Promo Item -->
-
-                        <!-- Promo Item -->
-                        <div class="u-header__promo-card u-header__promo-item">
-                          <a class="u-header__promo-link" href="../app-marketplace/index.html">
-                            <div class="media align-items-center">
-                              <img class="js-svg-injector u-header__promo-icon" src="../../assets/svg/icons/icon-45.svg" alt="SVG">
-                              <div class="media-body">
-                                <span class="u-header__promo-title">App Marketplace <span class="badge badge-success badge-pill ml-1">New</span></span>
-                                <small class="u-header__promo-text">Marketplace app demo</small>
+                                <span class="u-header__promo-title">Host</span>
+                                <small class="u-header__promo-text">List your spare room to attract tenants.</small>
                               </div>
                             </div>
                           </a>
@@ -134,28 +89,15 @@
                       </div>
 
                       <div class="u-header__promo-card-deck">
-                        <!-- Promo Item -->
-                        <div class="u-header__promo-card u-header__promo-item">
-                          <a class="u-header__promo-link" href="../job/index.html">
-                            <div class="media align-items-center">
-                              <img class="js-svg-injector u-header__promo-icon" src="../../assets/svg/icons/icon-19.svg" alt="SVG">
-                              <div class="media-body">
-                                <span class="u-header__promo-title">Job</span>
-                                <small class="u-header__promo-text">Job vacancy demo</small>
-                              </div>
-                            </div>
-                          </a>
-                        </div>
-                        <!-- End Promo Item -->
 
                         <!-- Promo Item -->
                         <div class="u-header__promo-card u-header__promo-item">
-                          <a class="u-header__promo-link" href="../help-desk/index.html">
+                          <a class="u-header__promo-link" href="#tenant">
                             <div class="media align-items-center">
-                              <img class="js-svg-injector u-header__promo-icon" src="../../assets/svg/icons/icon-4.svg" alt="SVG">
+                              <img class=" u-header__promo-icon" src="images/getdiscovered1.svg" alt="SVG">
                               <div class="media-body">
-                                <span class="u-header__promo-title">Help Desk</span>
-                                <small class="u-header__promo-text">Help desk demo</small>
+                                <span class="u-header__promo-title">Tenant</span>
+                                <small class="u-header__promo-text">Find a place to room.</small>
                               </div>
                             </div>
                           </a>
@@ -164,46 +106,10 @@
                       </div>
 
                       <div class="u-header__promo-card-deck">
-                        <!-- Promo Item -->
-                        <div class="u-header__promo-card u-header__promo-item">
-                          <a class="u-header__promo-link" href="../crypto/index.html">
-                            <div class="media align-items-center">
-                              <img class="js-svg-injector u-header__promo-icon" src="../../assets/svg/icons/icon-5.svg" alt="SVG">
-                              <div class="media-body">
-                                <span class="u-header__promo-title">Crypto Landing</span>
-                                <small class="u-header__promo-text">Cryptocurrency demo</small>
-                              </div>
-                            </div>
-                          </a>
-                        </div>
-                        <!-- End Promo Item -->
 
-                        <!-- Promo Item -->
-                        <div class="u-header__promo-card u-header__promo-item">
-                          <div class="u-header__promo-link">
-                            <div class="media align-items-center">
-                              <img class="js-svg-injector u-header__promo-icon" src="../../assets/svg/icons/icon-23.svg" alt="SVG">
-                              <div class="media-body">
-                                <span class="u-header__promo-title text-secondary">New demos</span>
-                                <small class="u-header__promo-text">coming soon ...</small>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- End Promo Item -->
                       </div>
                     </div>
 
-                    <!-- Promo -->
-                    <div class="col-lg-4 u-header__promo d-none d-lg-block">
-                      <a class="d-block u-header__promo-inner" href="#">
-                        <div class="position-relative">
-                          <img class="img-fluid rounded mb-3" src="../../assets/img/380x227/img6.jpg" alt="Image Description">
-                        </div>
-                        <span class="text-secondary font-size-1">Front makes you look at things from a different perspectives.</span>
-                      </a>
-                    </div>
-                    <!-- End Promo -->
                   </div>
                 </div>
                 <!-- End Demos - Mega Menu -->
@@ -217,35 +123,20 @@
                   data-animation-out="fadeOut"
                   data-max-width="260px"
                   data-position="right">
-                <a id="docsMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">Docs</a>
+                <a id="docsMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">Help</a>
 
                 <!-- Docs - Submenu -->
                 <div class="hs-mega-menu u-header__sub-menu" aria-labelledby="docsMegaMenu" style="min-width: 330px;">
                   <!-- Promo Item -->
                   <div class="u-header__promo-item">
-                    <a class="u-header__promo-link" href="../../documentation/index.html">
+                    <a class="u-header__promo-link" href="">
                       <div class="media align-items-center">
-                        <img class="js-svg-injector u-header__promo-icon" src="../../assets/svg/icons/icon-2.svg" alt="SVG">
+                        <img class="u-header__promo-icon" src="images/faq.svg" alt="SVG">
                         <div class="media-body">
                           <span class="u-header__promo-title">
-                            Documentation
-                            <span class="badge badge-primary badge-pill ml-1">v2.9</span>
+                            FAQ
                           </span>
-                          <small class="u-header__promo-text">Development guides</small>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <!-- End Promo Item -->
-
-                  <!-- Promo Item -->
-                  <div class="u-header__promo-item">
-                    <a class="u-header__promo-link" href="../../starter/index.html">
-                      <div class="media align-items-center">
-                        <img class="js-svg-injector u-header__promo-icon" src="../../assets/svg/icons/icon-1.svg" alt="SVG">
-                        <div class="media-body">
-                          <span class="u-header__promo-title">Get started</span>
-                          <small class="u-header__promo-text">Components and snippets</small>
+                          <small class="u-header__promo-text">We've got the answer.</small>
                         </div>
                       </div>
                     </a>
@@ -258,8 +149,8 @@
                       <div class="col-6">
                         <div class="u-header__promo-footer-item">
                           <small class="text-muted d-block">Check what's new</small>
-                          <a class="small" href="../../documentation/getting-started/changelog.html">
-                            Changelog
+                          <a class="small" href="">
+                            Our Blog
                           </a>
                         </div>
                       </div>
@@ -279,16 +170,21 @@
               </li>
               <!-- End Docs -->
 
-              <!-- Button -->
+                <!-- Button -->
               <li class="nav-item u-header__nav-last-item">
-                <a class="btn btn-sm btn-light transition-3d-hover" href="https://themes.getbootstrap.com/product/front-multipurpose-responsive-template/" target="_blank">
-                  Buy Now
-                </a>
+                <asp:Button runat="server" ID="btnDashboard" Text="My Dashboard" OnClick="btnDashboard_Click" class="btn btn-sm btn-primary transition-3d-hover" />
+              </li>
+              <!-- End Button -->
+                <!-- Button -->
+              <li class="nav-item u-header__nav-last-item">
+                
+                  <asp:Button ID="btnLogOut" runat="server" Text="Log Out" class="btn btn-block btn-soft-primary transition-3d-hover" OnClick="btnLogOut_Click" Width="248px" />
               </li>
               <!-- End Button -->
             </ul>
           </div>
           <!-- End Navigation -->
+               
         </nav>
         <!-- End Nav -->
       </div>
@@ -298,106 +194,11 @@
 
   <!-- ========== MAIN CONTENT ========== -->
   <main id="content" role="main">
-    <!-- Gallery Section -->
-    <div class="container-fluid position-relative p-2 mb-3">
-      <div class="row mx-gutters-1">
-        <div class="col-md-8 col-lg-6">
-          <!-- Gallery -->
-          <a class="js-fancybox u-media-viewer" href="javascript:;"
-             data-src="../../assets/img/1920x1080/img36.jpg"
-             data-fancybox="fancyboxGallery6"
-             data-caption="Front in frames - image #01"
-             data-speed="700"
-             data-is-infinite="true">
-            <img class="img-fluid" src="../../assets/img/900x455/img1.jpg" alt="Image Description">
-
-            <div class="position-absolute bottom-0 right-0 pb-3 pr-3">
-              <span class="d-md-none btn btn-sm btn-white">
-                <span class="fas fa-expand mr-2"></span>
-                View Photos
-              </span>
-            </div>
-          </a>
-          <!-- End Gallery -->
-        </div>
-
-        <div class="col-md-4 col-lg-3 d-none d-md-inline-block">
-          <!-- Gallery -->
-          <a class="js-fancybox u-media-viewer mb-2" href="javascript:;"
-             data-src="../../assets/img/1920x1080/img37.jpg"
-             data-fancybox="fancyboxGallery6"
-             data-caption="Front in frames - image #02"
-             data-speed="700"
-             data-is-infinite="true">
-            <img class="img-fluid" src="../../assets/img/450x225/img1.jpg" alt="Image Description">
-          </a>
-          <!-- End Gallery -->
-
-          <!-- Gallery -->
-          <a class="js-fancybox u-media-viewer" href="javascript:;"
-             data-src="../../assets/img/1920x1080/img38.jpg"
-             data-fancybox="fancyboxGallery6"
-             data-caption="Front in frames - image #03"
-             data-speed="700"
-             data-is-infinite="true">
-            <img class="img-fluid" src="../../assets/img/450x225/img2.jpg" alt="Image Description">
-
-            <div class="position-absolute bottom-0 right-0 pb-3 pr-3">
-              <span class="d-sm-inline-block d-lg-none btn btn-sm btn-white">
-                <span class="fas fa-expand mr-2"></span>
-                View Photos
-              </span>
-            </div>
-          </a>
-          <!-- End Gallery -->
-        </div>
-
-        <div class="col-lg-3 d-none d-lg-inline-block">
-          <!-- Gallery -->
-          <a class="js-fancybox u-media-viewer mb-2" href="javascript:;"
-             data-src="../../assets/img/1920x1080/img39.jpg"
-             data-fancybox="fancyboxGallery6"
-             data-caption="Front in frames - image #04"
-             data-speed="700"
-             data-is-infinite="true">
-            <img class="img-fluid" src="../../assets/img/450x225/img3.jpg" alt="Image Description">
-          </a>
-          <!-- End Gallery -->
-
-          <!-- Gallery -->
-          <a class="js-fancybox u-media-viewer" href="javascript:;"
-             data-src="../../assets/img/1920x1080/img40.jpg"
-             data-fancybox="fancyboxGallery6"
-             data-caption="Front in frames - image #04"
-             data-speed="700"
-             data-is-infinite="true">
-            <img class="img-fluid" src="../../assets/img/450x225/img4.jpg" alt="Image Description">
-
-            <div class="position-absolute bottom-0 right-0 pb-3 pr-3">
-              <span class="d-none d-lg-inline-block btn btn-sm btn-white">
-                <span class="fas fa-expand mr-2"></span>
-                View Photos
-              </span>
-            </div>
-          </a>
-          <!-- End Gallery -->
-
-          <img class="js-fancybox d-none" alt="Image Description"
-               data-fancybox="fancyboxGallery6"
-               data-src="../../assets/img/1920x1080/img41.jpg"
-               data-caption="Front in frames - image #05"
-               data-speed="700"
-               data-is-infinite="true">
-          <img class="js-fancybox d-none" alt="Image Description"
-               data-caption="Front in frames - image #06"
-               data-src="../../assets/img/1920x1080/img42.jpg"
-               data-fancybox="fancyboxGallery6"
-               data-speed="700"
-               data-is-infinite="true">
-        </div>
-      </div>
-    </div>
-    <!-- End Gallery Section -->
+   <div>
+       </br>
+       </br>
+       </br>
+   </div>
 
     <!-- Property Description Section -->
     <div class="container space-bottom-2">
@@ -437,16 +238,16 @@
               <li class="breadcrumb-item"><a href="#">England</a></li>
               <li class="breadcrumb-item"><a href="#">London</a></li>
               <li class="breadcrumb-item"><a href="#">Studio</a></li>
-              <li class="breadcrumb-item active" aria-current="page">470 Lucy Forks, Patriciafurt, YC7B</li>
+              <li class="breadcrumb-item active" aria-current="page"><asp:Label ID="propLocationLBL2" Text="Neighborhood, City" runat="server"> </asp:Label></li>
             </ol>
           </nav>
           <!-- End Breadcrumb -->
 
-          <h1 class="h3 font-weight-medium">470 Lucy Forks, Patriciafurt, YC7B, London, England</h1>
+          <h1 class="h3 font-weight-medium"><asp:Label ID="propLocationLBL" Text="Neighborhood, City" runat="server"> </asp:Label></h1>
         </div>
 
         <div class="col-lg-4 align-self-lg-end text-lg-right mb-5 mb-lg-0">
-          <span class="h3 text-primary font-weight-medium">$8,999,000</span>
+          <span class="h3 text-primary font-weight-medium"><asp:Label ID="propPriceLbl" Text="$Price" runat="server"> </asp:Label></span>
         </div>
       </div>
       <!-- End Title -->
@@ -859,52 +660,13 @@
                  data-end-point="#stickyBlockEndPoint"
                  data-offset-top="24"
                  data-offset-bottom="0">
-              <!-- Header -->
-              <div class="media align-items-center mb-4">
-                <div class="u-avatar mr-3">
-                  <img class="img-fluid rounded-circle" src="../../assets/img/100x100/img8.jpg" alt="Image Description">
-                </div>
-                <div class="media-body">
-                  <h4 class="h6 mb-0">Ask me for more information</h4>
-                </div>
-              </div>
-              <!-- End Header -->
+              
 
               <!-- Form -->
               <form>
-                <select class="custom-select custom-select-sm mb-2">
-                  <option selected>Tell me more about this property</option>
-                  <option value="aboutProperty1">Request a showing</option>
-                  <option value="aboutProperty2">Request neighborhood information</option>
-                  <option value="aboutProperty3">Request recent area sales</option>
-                </select>
-
-                <div class="mb-2">
-                  <label class="sr-only" for="firstNameSr">First Name</label>
-                  <input type="text" class="form-control form-control-sm" name="text" id="firstNameSr" placeholder="First Name" aria-label="First Name">
-                </div>
-
-                <div class="mb-2">
-                  <label class="sr-only" for="lastNameSr">Last Name</label>
-                  <input type="text" class="form-control form-control-sm" name="text" id="lastNameSr" placeholder="Last Name" aria-label="Last Name">
-                </div>
-
-                <div class="mb-2">
-                  <label class="sr-only" for="emailSr">Email</label>
-                  <input type="email" class="form-control form-control-sm" name="text" id="emailSr" placeholder="Email" aria-label="Email">
-                </div>
-
-                <div class="mb-2">
-                  <label class="sr-only" for="phoneNumberSr">Phone number</label>
-                  <input type="tel" class="form-control form-control-sm" name="tel" id="phoneNumberSr" placeholder="Phone number" aria-label="Phone number">
-                </div>
-
-                <div class="mb-2">
-                  <label class="sr-only" for="propertyQuestionSr">Property question</label>
-                  <textarea class="form-control form-control-sm" rows="4" name="answer" id="propertyQuestionSr" placeholder="I would like more information about ..." aria-label="I would like more information about ..."></textarea>
-                </div>
-
-                <button type="button" class="btn btn-block btn-sm btn-primary btn-wide transition-3d-hover">Submit</button>
+                
+                <asp:Button ID="btnAddToFavorites" runat="server" Text="Save this Property!" class="btn btn-block btn-sm btn-primary btn-wide transition-3d-hover" OnClick="btnAddToFavorites_Click"/>
+                
               </form>
               <!-- End Form -->
             </div>
@@ -1403,4 +1165,5 @@
 
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMuwzhdXNIf_AuZb0vBYJbol4KvxaFji0&callback=initMap" type="text/javascript" ></script>
 </body>
+</form>
 </html>

@@ -126,25 +126,7 @@
 
             <!-- Account Login -->
             <li class="list-inline-item">
-              <!-- Account Sidebar Toggle Button -->
-              <a id="sidebarNavToggler" class="btn btn-xs btn-text-secondary u-sidebar--account__toggle-bg ml-1" href="javascript:;" role="button"
-                 aria-controls="sidebarContent"
-                 aria-haspopup="true"
-                 aria-expanded="false"
-                 data-unfold-event="click"
-                 data-unfold-hide-on-scroll="false"
-                 data-unfold-target="#sidebarContent"
-                 data-unfold-type="css-animation"
-                 data-unfold-animation-in="fadeInRight"
-                 data-unfold-animation-out="fadeOutRight"
-                 data-unfold-duration="500">
-                <span class="position-relative">
-                  <span class="u-sidebar--account__toggle-text">Mary Madison</span>
-                  <img class="u-sidebar--account__toggle-img" src="images/mary.jpg" alt="Image Description">
-                  <span class="badge badge-sm badge-success badge-pos rounded-circle">4</span>
-                </span>
-              </a>
-              <!-- End Account Sidebar Toggle Button -->
+              
             </li>
             <!-- End Account Login -->
           </ul>
@@ -938,14 +920,7 @@
                 </div>
                 <!-- End Radio Checkbox -->
 
-                <!-- Radio Checkbox -->
-                <div class="custom-control custom-checkbox font-size-1 text-lh-md mb-2">
-                  <input type="checkbox" class="custom-control-input" id="assetTypeRadioChechbox2" name="assetTypeRadioChechbox">
-                  <label class="custom-control-label" for="assetTypeRadioChechbox2">
-                    Foreclosure sales
-                  </label>
-                </div>
-                <!-- End Radio Checkbox -->
+                
               </div>
               <!-- End Asset Type -->
 
@@ -962,54 +937,9 @@
                         Pets allowed
                       </label>
                     </div>
-                    <!-- End Radio Checkbox -->
+                    <!-- End Radio Checkbox -->              
 
-                    <!-- Radio Checkbox -->
-                    <div class="custom-control custom-checkbox font-size-1 text-lh-md mb-2">
-                      <input type="checkbox" class="custom-control-input" id="featuresRadioChechbox2" name="featuresRadioChechbox">
-                      <label class="custom-control-label" for="featuresRadioChechbox2">
-                        Gas
-                      </label>
-                    </div>
-                    <!-- End Radio Checkbox -->
-
-                    <!-- Radio Checkbox -->
-                    <div class="custom-control custom-checkbox font-size-1 text-lh-md mb-2">
-                      <input type="checkbox" class="custom-control-input" id="featuresRadioChechbox3" name="featuresRadioChechbox">
-                      <label class="custom-control-label" for="featuresRadioChechbox3">
-                        Balcony
-                      </label>
-                    </div>
-                    <!-- End Radio Checkbox -->
-
-                    <!-- Radio Checkbox -->
-                    <div class="custom-control custom-checkbox font-size-1 text-lh-md mb-2">
-                      <input type="checkbox" class="custom-control-input" id="featuresRadioChechbox4" name="featuresRadioChechbox">
-                      <label class="custom-control-label" for="featuresRadioChechbox4">
-                        Garden
-                      </label>
-                    </div>
-                    <!-- End Radio Checkbox -->
                   </div>
-
-                  <div class="col-6">
-                    <!-- Radio Checkbox -->
-                    <div class="custom-control custom-checkbox font-size-1 mb-2">
-                      <input type="checkbox" class="custom-control-input" id="featuresRadioChechbox5" name="featuresRadioChechbox">
-                      <label class="custom-control-label" for="featuresRadioChechbox5">
-                        Laundry
-                      </label>
-                    </div>
-                    <!-- End Radio Checkbox -->
-
-                    <!-- Radio Checkbox -->
-                    <div class="custom-control custom-checkbox font-size-1 mb-2">
-                      <input type="checkbox" class="custom-control-input" id="featuresRadioChechbox6" name="featuresRadioChechbox">
-                      <label class="custom-control-label" for="featuresRadioChechbox6">
-                        Heating
-                      </label>
-                    </div>
-                    <!-- End Radio Checkbox -->
 
                     <!-- Radio Checkbox -->
                     <div class="custom-control custom-checkbox font-size-1 mb-2">
@@ -1020,139 +950,13 @@
                     </div>
                     <!-- End Radio Checkbox -->
 
-                    <!-- Radio Checkbox -->
-                    <div class="custom-control custom-checkbox font-size-1 mb-2">
-                      <input type="checkbox" class="custom-control-input" id="featuresRadioChechbox8" name="featuresRadioChechbox">
-                      <label class="custom-control-label" for="featuresRadioChechbox8">
-                        AC
-                      </label>
-                    </div>
-                    <!-- End Radio Checkbox -->
+              
                   </div>
                 </div>
               </div>
               <!-- End Features -->
 
-              <!-- Auction Type -->
-              <div class="border-bottom pb-4 mb-4">
-                <label class="form-label mb-2">Auction type</label>
-
-                <!-- Radio Checkbox -->
-                <div class="custom-control custom-checkbox font-size-1 text-lh-md mb-2">
-                  <input type="checkbox" class="custom-control-input" id="auctionTypeRadioChechbox1" name="auctionTypeRadioChechbox">
-                  <label class="custom-control-label" for="auctionTypeRadioChechbox1">
-                    Online auction
-                  </label>
-                </div>
-                <!-- End Radio Checkbox -->
-
-                <!-- Radio Checkbox -->
-                <div class="custom-control custom-checkbox font-size-1 text-lh-md mb-2">
-                  <input type="checkbox" class="custom-control-input" id="auctionTypeRadioChechbox2" name="auctionTypeRadioChechbox">
-                  <label class="custom-control-label" for="auctionTypeRadioChechbox2">
-                    In person auction
-                  </label>
-                </div>
-                <!-- End Radio Checkbox -->
-              </div>
-              <!-- End Auction Type -->
-
-              <!-- Condition -->
-              <div class="border-bottom pb-4 mb-4">
-                <label class="form-label mb-2">Condition</label>
-
-                <!-- Radio Checkbox -->
-                <div class="custom-control custom-checkbox font-size-1 text-lh-md mb-2">
-                  <input type="checkbox" class="custom-control-input" id="conditionRadioChechbox1" name="conditionRadioChechbox">
-                  <label class="custom-control-label" for="conditionRadioChechbox1">
-                    <span class="fas fa-home text-secondary mr-1"></span>
-                    Vacant
-                    <span class="d-block text-secondary">Not all foreclosed properties are empty. But for these, no eviction is needed.</span>
-                  </label>
-                </div>
-                <!-- End Radio Checkbox -->
-
-                <!-- Radio Checkbox -->
-                <div class="custom-control custom-checkbox font-size-1 text-lh-md mb-2">
-                  <input type="checkbox" class="custom-control-input" id="conditionRadioChechbox2" name="conditionRadioChechbox">
-                  <label class="custom-control-label" for="conditionRadioChechbox2">
-                    <span class="fas fa-door-open text-secondary mr-1"></span>
-                    Interior access available
-                    <span class="d-block text-secondary">Schedule a visit to view the property.</span>
-                  </label>
-                </div>
-                <!-- End Radio Checkbox -->
-
-                <!-- Radio Checkbox -->
-                <div class="custom-control custom-checkbox font-size-1 text-lh-md mb-2">
-                  <input type="checkbox" class="custom-control-input" id="conditionRadioChechbox3" name="conditionRadioChechbox">
-                  <label class="custom-control-label" for="conditionRadioChechbox3">
-                    <span class="fas fa-hand-holding-usd text-secondary mr-1"></span>
-                    Financing Available
-                    <span class="d-block text-secondary">These could be financed with a conventional mortgage or other private loan.</span>
-                  </label>
-                </div>
-                <!-- End Radio Checkbox -->
-              </div>
-              <!-- End Condition -->
-
-              <!-- Hide Properties -->
-              <div class="border-bottom pb-4 mb-4">
-                <label class="form-label mb-2">Hide Properties that:</label>
-
-                <!-- Radio Checkbox -->
-                <div class="custom-control custom-checkbox font-size-1 text-lh-md mb-2">
-                  <input type="checkbox" class="custom-control-input" id="hidePropertiesRadioChechbox1" name="hidePropertiesRadioChechbox">
-                  <label class="custom-control-label" for="hidePropertiesRadioChechbox1">
-                    Auction end soon
-                    <span class="d-block text-secondary">Ending in the next 3 days</span>
-                  </label>
-                </div>
-                <!-- End Radio Checkbox -->
-              </div>
-              <!-- End Hide Properties -->
-
-              <!-- Show Properties -->
-              <div class="border-bottom pb-4 mb-4">
-                <label class="form-label mb-2">Show Properties that have/are:</label>
-
-                <!-- Radio Checkbox -->
-                <div class="custom-control custom-checkbox font-size-1 text-lh-md mb-2">
-                  <input type="checkbox" class="custom-control-input" id="showPropertiesRadioChechbox1" name="showPropertiesRadioChechbox">
-                  <label class="custom-control-label" for="showPropertiesRadioChechbox1">
-                    Sold, Pending or Canceled
-                  </label>
-                </div>
-                <!-- End Radio Checkbox -->
-
-                <!-- Radio Checkbox -->
-                <div class="custom-control custom-checkbox font-size-1 text-lh-md mb-2">
-                  <input type="checkbox" class="custom-control-input" id="showPropertiesRadioChechbox2" name="showPropertiesRadioChechbox">
-                  <label class="custom-control-label" for="showPropertiesRadioChechbox2">
-                    Broker Co-up
-                  </label>
-                </div>
-                <!-- End Radio Checkbox -->
-
-                <!-- Radio Checkbox -->
-                <div class="custom-control custom-checkbox font-size-1 text-lh-md mb-2">
-                  <input type="checkbox" class="custom-control-input" id="showPropertiesRadioChechbox3" name="showPropertiesRadioChechbox">
-                  <label class="custom-control-label" for="showPropertiesRadioChechbox3">
-                    Reserve disclosed
-                  </label>
-                </div>
-                <!-- End Radio Checkbox -->
-
-                <!-- Radio Checkbox -->
-                <div class="custom-control custom-checkbox font-size-1 text-lh-md mb-2">
-                  <input type="checkbox" class="custom-control-input" id="showPropertiesRadioChechbox4" name="showPropertiesRadioChechbox">
-                  <label class="custom-control-label" for="showPropertiesRadioChechbox4">
-                    No buyer's premium
-                  </label>
-                </div>
-                <!-- End Radio Checkbox -->
-              </div>
-              <!-- End Show Properties -->
+             
 
               <!-- Buttons -->
               <div class="row mx-gutters-2">

@@ -17,19 +17,24 @@ public partial class hostdashboard : System.Web.UI.Page
         if (Session["USER_ID"] != null)
         {
             sc.Open();
-            SqlCommand displayHostDash = new SqlCommand();
-            displayHostDash.Connection = sc;
-            String searchString = "SELECT * FROM Host where Email = @USER_ID";
-            displayHostDash.CommandText = searchString;
-            displayHostDash.Parameters.AddWithValue("@USER_ID", Session["USER_ID"].ToString());
-            displayHostDash.ExecuteNonQuery();
-
-            SqlDataReader reader = displayHostDash.ExecuteReader();
+            
+            SqlCommand displayHostProperty = new SqlCommand();
+            displayHostProperty.Connection = sc;
+            String searchString2 = "SELECT Host.HostID, Host.FirstName, Host.LastName, Host.Email, Property.HostID, Property.Address, Property.ZipCode, Property.City,Property.Neighborhood, Property.AvailableDate, Property.MaxNumberOfGuests, Property.Price, Property.Description, Property.ImageFilePath FROM Host INNER JOIN Property ON Host.HostID = Property.HostID WHERE Host.Email = @USER_ID";
+            displayHostProperty.CommandText = searchString2;
+            displayHostProperty.Parameters.AddWithValue("@USER_ID", Session["USER_ID"].ToString());
+            displayHostProperty.ExecuteNonQuery();
+            SqlDataReader reader = displayHostProperty.ExecuteReader();
             if (reader.Read())
             {
                 hostNameLbl.Text = ("Welcome Host " + reader["FirstName"].ToString());
-                hostEmailLbl.Text = (reader["Email"].ToString());
+                hostNameLbl2.Text = (reader["FirstName"].ToString() + " " + reader["LastName"].ToString());
+                listedPropertyLbl.Text = ("<b>Address: </b>" + reader["Address"].ToString());
+                listedPropertyDescriptionLbl.Text = ("<b>Description: </b>" + reader["Description"].ToString());
+                listedPropertyPriceLbl.Text = ("<b>Price: </b>" + reader["Price"].ToString());
             }
+            
+            
         }
     }
 }

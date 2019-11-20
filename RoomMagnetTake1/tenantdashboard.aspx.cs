@@ -28,6 +28,7 @@ public partial class tenantdashboard : System.Web.UI.Page
             if (reader.Read())
             {
                 tenantNameLbl.Text = ("Welcome Tenant " + reader["FirstName"].ToString());
+                tenantNameLbl2.Text = (reader["FirstName"].ToString() + " " + reader["LastName"].ToString());
                 tenantEmailLbl.Text = (reader["Email"].ToString());
             }
         }

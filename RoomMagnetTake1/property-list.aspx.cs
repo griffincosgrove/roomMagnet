@@ -328,6 +328,7 @@ public partial class property_list : System.Web.UI.Page
         {
             ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "NoDatabaseAlertMessage", "alert('No Properties Found')", true);
         }
+        sc.Close();
     }
 
 
@@ -606,6 +607,7 @@ public partial class property_list : System.Web.UI.Page
         {
             ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "NoDatabaseAlertMessage", "alert('No Properties Found')", true);
         }
+        sc.Close();
     }
 
      

@@ -168,18 +168,10 @@
               <!-- End Docs -->
 
               <!-- Button -->
-              <li class="nav-item u-header__nav-last-item">
-                <a class="btn btn-sm btn-primary transition-3d-hover" href="login.html">
-                  Log In
-                </a>
-              </li>
+              
               <!-- End Button -->
                 <!-- Button -->
-              <li class="nav-item u-header__nav-last-item">
-                <a class="btn btn-sm btn-primary transition-3d-hover" href="signup.html">
-                  Sign Up
-                </a>
-              </li>
+              <%--  --%>
               <!-- End Button -->
             </ul>
           </div>

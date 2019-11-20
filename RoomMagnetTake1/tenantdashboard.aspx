@@ -139,7 +139,7 @@
                  data-unfold-animation-out="fadeOutRight"
                  data-unfold-duration="500">
                 <span class="position-relative">
-                  <span class="u-sidebar--account__toggle-text">Mary Madison</span>
+                  <span class="u-sidebar--account__toggle-text"><asp:Label ID="tenantNameLbl2" Text="User" runat="server"> </asp:Label></span>
                   <img class="u-sidebar--account__toggle-img" src="images/mary.jpg" alt="Image Description">
                   <span class="badge badge-sm badge-success badge-pos rounded-circle">4</span>
                 </span>
