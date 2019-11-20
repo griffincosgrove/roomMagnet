@@ -19,6 +19,15 @@ public partial class hostform1 : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
+
+        //if (termsCheckbox.checked == false)
+        //{
+        //    btnCommitHost.Enabled = false;
+        //}
+        //if (termsCheckbox.Checked == true)
+        //{
+        //    btnCommitHost.Enabled = true;
+        //}
         //txtFirstName.Text = "Deborah";
         //txtLastName.Text = "Duke";
         //ddMonth.SelectedValue = "June";
@@ -186,6 +195,8 @@ public partial class hostform1 : System.Web.UI.Page
         return retBool;
     }
 
+
+ 
 }
 
 
