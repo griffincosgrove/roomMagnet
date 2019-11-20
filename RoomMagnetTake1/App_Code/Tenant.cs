@@ -16,8 +16,9 @@ public class Tenant
     private string phoneNumber;
     private DateTime dateOfBirth;
     private String tenantType;
+    private DateTime lastUpdated;
 
-    public Tenant(string firstName, string lastName, String gender, string email, string phoneNumber, DateTime dateOfBirth, String tenantType)
+    public Tenant(string firstName, string lastName, String gender, string email, string phoneNumber, DateTime dateOfBirth, String tenantType, DateTime lastUpdated)
     {
         setfirstName(firstName);
         setLastName(lastName);
@@ -26,6 +27,7 @@ public class Tenant
         setPhoneNumber(phoneNumber);
         setDateOfBirth(dateOfBirth);
         setTenantType(tenantType);
+        setLastUpdated(lastUpdated);
     }
     public void setfirstName(string firstName)
     {
@@ -88,5 +90,13 @@ public class Tenant
         this.tenantType = tenantType;
     }
 
+    public DateTime getLastUpdated()
+    {
+        return lastUpdated;
+    }
 
+    public void setLastUpdated(DateTime lastUpdated)
+    {
+        this.lastUpdated = lastUpdated;
+    }
 }

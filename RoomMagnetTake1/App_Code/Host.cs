@@ -17,9 +17,10 @@ public class Host
     private String state;
     private String zipcode;
     private DateTime dateOfBirth;
+    private DateTime lastUpdated;
 
     public Host(String firstName, String lastName, String gender, String email, String phoneNumber,
-        String streetAddress, String city, String state, String zipcode, DateTime dateOfBirth)
+        String streetAddress, String city, String state, String zipcode, DateTime dateOfBirth, DateTime lastUpdated)
     {
         setFirstName(firstName);
         setLastName(lastName);
@@ -31,6 +32,7 @@ public class Host
         setState(state);
         setZipcode(zipcode);
         setDateOfBirth(dateOfBirth);
+        setLastUpdated(lastUpdated);
     }
 
     //Getters & Setters
@@ -125,5 +127,15 @@ public class Host
     public void setDateOfBirth(DateTime dateOfBirth)
     {
         this.dateOfBirth = dateOfBirth;
+    }
+    //-----------------------------------------------------------------------
+    public DateTime getLastUpdated()
+    {
+        return lastUpdated;
+    }
+
+    public void setLastUpdated(DateTime lastUpdated)
+    {
+        this.lastUpdated = lastUpdated;
     }
 }

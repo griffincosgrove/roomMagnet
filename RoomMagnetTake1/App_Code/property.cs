@@ -16,11 +16,12 @@ public class Property
     private string description;
     private int hostID;
     private string imageFilePath;
+    private DateTime lastUpdated;
 
 
 
     public Property(string address, string city, String zipcode, String state, double price, int maxNumberOfGuests, DateTime availableDate, string neighborhood,
-        string description, int hostID, String imageFilePath)
+        string description, int hostID, String imageFilePath, DateTime lastUpdated)
     {
         setAddress(address);
         setCity(city);
@@ -33,7 +34,7 @@ public class Property
         setDescription(description);
         setHostID(hostID);
         setImageFilePath(imageFilePath);
-
+        setLastUpdated(lastUpdated);
 
     }
     ///SETTERS
@@ -146,6 +147,16 @@ public class Property
     public int getHostID()
     {
         return this.hostID;
+    }
+
+    public DateTime getLastUpdated()
+    {
+        return lastUpdated;
+    }
+
+    public void setLastUpdated(DateTime lastUpdated)
+    {
+        this.lastUpdated = lastUpdated;
     }
 
 

@@ -11,6 +11,7 @@ public partial class tenantform1 : System.Web.UI.Page
 {
     // connection string at the class level so we can reference it later. this is the string in the web.config !!
     SqlConnection sc = new SqlConnection(ConfigurationManager.ConnectionStrings["cs"].ConnectionString);
+    DateTime lastUpdated = DateTime.Now;
 
     protected void Page_Load(object sender, EventArgs e)
     {
@@ -57,11 +58,11 @@ public partial class tenantform1 : System.Web.UI.Page
 
             //create new Tenant object
             Tenant newTenant = new Tenant(getString(txtFirstName), getString(txtLastName), ddGender.Text, getString(txtEmail), getString(txtPhonenumber), convertToDateFormat(combineBirthday()),
-                ddTenantType.Text);
+                ddTenantType.Text, lastUpdated);
 
             //new paramterized query to insert a tenant
-            SqlCommand command = new SqlCommand("INSERT into [dbo].[Tenant] (FirstName, LastName, Gender, Email, PhoneNumber, BirthDate, TenantType) " +
-                "VALUES(@firstName, @lastName, @gender, @email, @phoneNumber, @dateOfBirth, @tenantType)", sc);
+            SqlCommand command = new SqlCommand("INSERT into [dbo].[Tenant] (FirstName, LastName, Gender, Email, PhoneNumber, BirthDate, TenantType, lastUpdated) " +
+                "VALUES(@firstName, @lastName, @gender, @email, @phoneNumber, @dateOfBirth, @tenantType, @lastUpdated)", sc);
 
             command.Parameters.AddWithValue("@firstName", newTenant.getFirstName());
             command.Parameters.AddWithValue("@lastName", newTenant.getLastName());
@@ -70,6 +71,7 @@ public partial class tenantform1 : System.Web.UI.Page
             command.Parameters.AddWithValue("@phoneNumber", newTenant.getPhoneNumber());
             command.Parameters.AddWithValue("@dateOfBirth", newTenant.getDateOfBirth());
             command.Parameters.AddWithValue("@tenantType", newTenant.getTenantType());
+            command.Parameters.AddWithValue("lastUpdated", newTenant.getLastUpdated());
 
             try
             {
