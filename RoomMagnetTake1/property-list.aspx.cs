@@ -273,14 +273,7 @@ public partial class property_list : System.Web.UI.Page
                 span8.InnerHtml = " 1";
                 li3.Controls.Add(span8);
 
-                HtmlGenericControl li4 = new HtmlGenericControl("li");
-                li4.Attributes["class"] = "list-inline-item mr-3";
-                li4.Attributes["title"] = "Square Feet";
-                ul.Controls.Add(li4);
-                HtmlGenericControl span9 = new HtmlGenericControl("span");
-                span9.Attributes["class"] = "fas fa-ruler-combined text-muted mr-1";
-                span9.InnerHtml = " xxsquarefeet";
-                li4.Controls.Add(span9);
+          
 
                 HtmlGenericControl pDescription = new HtmlGenericControl("p");
                 pDescription.Attributes["class"] = "font-size-1";
@@ -304,54 +297,17 @@ public partial class property_list : System.Web.UI.Page
                 anchorContact.Attributes["href"] = "javascript:;";
                 div13.Controls.Add(anchorContact);
 
-                HtmlGenericControl spanContact = new HtmlGenericControl("span");
-                spanContact.Attributes["class"] = "fas fa-envelope mr-1";
-                spanContact.InnerHtml = " Message";
-                anchorContact.Controls.Add(spanContact);
-
-                HtmlGenericControl anchorSave = new HtmlGenericControl("a");
-                anchorSave.Attributes["class"] = "text-secondary mr-4";
-                anchorSave.Attributes["href"] = "javascript:;";
-                div13.Controls.Add(anchorSave);
-
-
-
-
-                HtmlGenericControl spanSave = new HtmlGenericControl("span");
-                spanSave.Attributes["class"] = "fas fa-star mr-1";
-                //spanSave.InnerHtml = " Favorite";
-                //this is the fav button 
-
-                var favorite = new Button
-                {
-                    ID = "Favorite" + count,
-                    CommandArgument = count.ToString(),
-                    //get rid of count from here
-                    Text = "Favorite" + count
-                    
-
-                };
                 
-                favorite.Attributes["type"] = "button";
 
-                favorite.Attributes["class"] = "fas fa-star mr-1";
-                //favorite.Attributes[""] = "btnFavorite_Click";
-                favorite.Attributes["href"] = "tenantdashboard.aspx";
-                spanSave.Controls.Add(favorite);
-                anchorSave.Controls.Add(spanSave);
 
-                //HtmlGenericControl anchorDetails = new HtmlGenericControl("a");
-                //anchorDetails.Attributes["class"] = "btn btn-sm btn-soft-primary transition-3d-hover ml-auto";
-                //anchorDetails.Attributes["href"] = "property-description.aspx";
-                //anchorDetails.Attributes["class"] = "btn btn-sm btn-soft-primary transition-3d-hover ml-auto";
 
-                //anchorDetails.InnerHtml = " Details";
-                //div13.Controls.Add(anchorDetails);
+
+              
 
                 HtmlGenericControl btnDetails = new HtmlGenericControl("asp:button");
                 btnDetails.Attributes["class"] = "btn btn-sm btn-soft-primary transition-3d-hover ml-auto";
                 btnDetails.Attributes["id"] = "btnDetails" + count;
-                btnDetails.InnerHtml = "Details";
+                btnDetails.InnerHtml = "Favorite";
                 btnDetails.Attributes["href"] = "property-description.aspx";
                 btnDetails.Attributes["OnClick"] = "btnDetails_Click(" + propertyID + "," + count.ToString() + ")";
                 btnDetails.Attributes["runat"] = "server";
@@ -367,8 +323,7 @@ public partial class property_list : System.Web.UI.Page
 // btnDetails.Click += new EventHandler(btnDetails_Click);
 // div13.Controls.Add(btnDetails);
 
-searchClass result = new searchClass(firstName, neighborhood, Convert.ToInt32(price));
-                results[count] = result;
+
                 count++;
 
             }
