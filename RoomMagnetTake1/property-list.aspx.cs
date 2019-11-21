@@ -13,7 +13,6 @@ public partial class property_list : System.Web.UI.Page
 {
     SqlConnection sc = new SqlConnection(ConfigurationManager.ConnectionStrings["cs"].ConnectionString);
     int count;
-    searchClass[] results = new searchClass[10];
 
     protected void Page_Load(object sender, EventArgs e)
     {

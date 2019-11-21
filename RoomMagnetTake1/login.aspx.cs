@@ -59,6 +59,7 @@ public partial class login : System.Web.UI.Page
                         if(findhost.ExecuteReader().HasRows)
                         {
                             Session["Type"] = "host";
+                            Session["hostID"] = getHostID().ToString();
                             Response.Redirect("hostdashboard.aspx");
                             
                         }
@@ -132,5 +133,17 @@ public partial class login : System.Web.UI.Page
     {
         String returnString = HttpUtility.HtmlEncode(txt.Text);
         return returnString;
+    }
+
+    protected int getHostID()
+    {
+        SqlConnection sc = new SqlConnection(ConfigurationManager.ConnectionStrings["cs"].ConnectionString);
+        int retInt = 0;
+        SqlCommand command = new SqlCommand("Select hostID from host where UPPER(email) = UPPER(@email)", sc);
+        command.Parameters.AddWithValue("@email", Session["User_ID"].ToString());
+        sc.Open();
+        retInt = Convert.ToInt32(command.ExecuteScalar());
+        sc.Close();
+        return retInt;
     }
 }
