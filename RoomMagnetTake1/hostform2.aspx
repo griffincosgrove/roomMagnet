@@ -462,7 +462,7 @@
                          data-success-class="u-has-success"></asp:TextBox>
                     <asp:CompareValidator ID="CompareValidator1" runat="server" ValueToCompare="0" ControlToValidate="txtPrice"
 
-ErrorMessage="Must enter positive integers" Operator="GreaterThan" Type="Integer" ForeColor="Red"></asp:CompareValidator>
+ErrorMessage="Must enter positive number" Operator="GreaterThan" Type="Integer" ForeColor="Red"></asp:CompareValidator>
                 </div>
               </div>
               </div>
