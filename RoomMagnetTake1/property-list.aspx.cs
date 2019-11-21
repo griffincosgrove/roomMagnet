@@ -7,13 +7,17 @@ using System.Web.UI.WebControls;
 using System.Web.UI.HtmlControls;
 using System.Data.SqlClient;
 using System.Configuration;
+using System.Web.Services;
 
 public partial class property_list : System.Web.UI.Page
 {
     SqlConnection sc = new SqlConnection(ConfigurationManager.ConnectionStrings["cs"].ConnectionString);
+    int count;
+    searchClass[] results = new searchClass[10];
 
     protected void Page_Load(object sender, EventArgs e)
     {
+        count = 0;
         /*
         if (Session["zipCode"] != null)
         {
@@ -31,9 +35,10 @@ public partial class property_list : System.Web.UI.Page
         }
 
     }
+    
+  
 
-
-    protected void btnSearch_Click(object sender, EventArgs e)
+        protected void btnSearch_Click(object sender, EventArgs e)
     {
         Session["zipCode"] = searchPropertySr.Text;
         Session["City"] = searchPropertySr.Text;
@@ -51,13 +56,13 @@ public partial class property_list : System.Web.UI.Page
             bool isZip = Int32.TryParse(searchTxt, out num);
             if(isZip == true)
             {
-                searchString = "SELECT Host.HostID, Host.FirstName, Host.LastName, Host.Gender, Host.Email, Property.Address, Property.ZipCode, Property.City,Property.Neighborhood, Property.AvailableDate, Property.MaxNumberOfGuests, Property.Price, Property.Description, Property.ImageFilePath FROM Host INNER JOIN Property ON Host.HostID = Property.HostID  where Property.ZipCode = @zipcode";
+                searchString = "SELECT Host.HostID, Host.FirstName, Host.LastName, Host.Gender, Host.Email, Property.PropertyID, Property.Address, Property.ZipCode, Property.City,Property.Neighborhood, Property.AvailableDate, Property.MaxNumberOfGuests, Property.Price, Property.Description, Property.ImageFilePath FROM Host INNER JOIN Property ON Host.HostID = Property.HostID  where Property.ZipCode = @zipcode";
                 displayProperty.CommandText = searchString;
                 displayProperty.Parameters.AddWithValue("@zipcode", Session["ZipCode"].ToString());
             }
             else
             {
-                searchString = "SELECT Host.HostID, Host.FirstName, Host.LastName, Host.Gender, Host.Email, Property.Address, Property.ZipCode, Property.City,Property.Neighborhood, Property.AvailableDate, Property.MaxNumberOfGuests, Property.Price, Property.Description, Property.ImageFilePath FROM Host INNER JOIN Property ON Host.HostID = Property.HostID  where Property.City = @City";
+                searchString = "SELECT Host.HostID, Host.FirstName, Host.LastName, Host.Gender, Host.Email, Property.PropertyID, Property.Address, Property.ZipCode, Property.City,Property.Neighborhood, Property.AvailableDate, Property.MaxNumberOfGuests, Property.Price, Property.Description, Property.ImageFilePath FROM Host INNER JOIN Property ON Host.HostID = Property.HostID  where Property.City = @City";
                 displayProperty.CommandText = searchString;
                 displayProperty.Parameters.AddWithValue("@city", Session["City"].ToString());
             }
@@ -68,12 +73,11 @@ public partial class property_list : System.Web.UI.Page
         }
         
         SqlDataReader readProperty = displayProperty.ExecuteReader();
-
-
         if (readProperty.HasRows)
         {
             while (readProperty.Read())
             {
+                
 
                 String city = readProperty["City"].ToString();
                 String neighborhood = readProperty["NeighborHood"].ToString();
@@ -84,6 +88,8 @@ public partial class property_list : System.Web.UI.Page
                 DateTime availableDate = Convert.ToDateTime(readProperty["AvailableDate"]);
                 String displayedAvailableDate = availableDate.ToString("MM/dd/yyy");
                 String filePath = readProperty["ImageFilePath"].ToString();
+                int propertyID = Convert.ToInt32(readProperty["PropertyID"]);
+               
 
 
 
@@ -183,10 +189,13 @@ public partial class property_list : System.Web.UI.Page
                 small.InnerHtml = "Date Available:  " + displayedAvailableDate;
                 div7.Controls.Add(small);
 
-                HtmlGenericControl span3 = new HtmlGenericControl("span");
-                span3.Attributes["class"] = "d-block";
-                span3.InnerHtml = firstName + " " + lastName;
-                div7.Controls.Add(span3);
+              
+                HtmlGenericControl lblName = new HtmlGenericControl("label");
+                lblName.Attributes["class"] = "d-block";
+                lblName.Attributes["id"] = "lblName" + count.ToString();
+
+                lblName.InnerHtml = firstName + " " + lastName;
+                div7.Controls.Add(lblName);
 
                 HtmlGenericControl div8 = new HtmlGenericControl("div");
                 div8.Attributes["class"] = "col-md-8";
@@ -229,6 +238,7 @@ public partial class property_list : System.Web.UI.Page
 
                 HtmlGenericControl span5 = new HtmlGenericControl("span");
                 span5.Attributes["class"] = "fas fa-map-marker-alt mr-1" ;
+              Session["address"] = neighborhood + ", " + city;
                 span5.InnerText = "     " + neighborhood + ", " + city;
                 anchortagDescription.Controls.Add(span5);
 
@@ -304,30 +314,125 @@ public partial class property_list : System.Web.UI.Page
                 anchorSave.Attributes["href"] = "javascript:;";
                 div13.Controls.Add(anchorSave);
 
+
+
+
                 HtmlGenericControl spanSave = new HtmlGenericControl("span");
                 spanSave.Attributes["class"] = "fas fa-star mr-1";
-                spanSave.InnerHtml = " Favorite";
+                //spanSave.InnerHtml = " Favorite";
+                //this is the fav button 
+
+                var favorite = new Button
+                {
+                    ID = "Favorite" + count,
+                    CommandArgument = count.ToString(),
+                    //get rid of count from here
+                    Text = "Favorite" + count
+                    
+
+                };
+                
+                favorite.Attributes["type"] = "button";
+
+                favorite.Attributes["class"] = "fas fa-star mr-1";
+                //favorite.Attributes[""] = "btnFavorite_Click";
+                favorite.Attributes["href"] = "tenantdashboard.aspx";
+                spanSave.Controls.Add(favorite);
                 anchorSave.Controls.Add(spanSave);
 
-                HtmlGenericControl anchorDetails = new HtmlGenericControl("a");
-                anchorDetails.Attributes["class"] = "btn btn-sm btn-soft-primary transition-3d-hover ml-auto";
-                anchorDetails.Attributes["href"] = "property-description.aspx";
-                anchorDetails.InnerHtml = " Details";
-                div13.Controls.Add(anchorDetails);
+                //HtmlGenericControl anchorDetails = new HtmlGenericControl("a");
+                //anchorDetails.Attributes["class"] = "btn btn-sm btn-soft-primary transition-3d-hover ml-auto";
+                //anchorDetails.Attributes["href"] = "property-description.aspx";
+                //anchorDetails.Attributes["class"] = "btn btn-sm btn-soft-primary transition-3d-hover ml-auto";
 
-                HtmlGenericControl spanDetails = new HtmlGenericControl("span");
-                spanDetails.Attributes["class"] = "fas fa-angle-right ml-1";
-                
-                anchorDetails.Controls.Add(spanDetails);
+                //anchorDetails.InnerHtml = " Details";
+                //div13.Controls.Add(anchorDetails);
 
+                HtmlGenericControl btnDetails = new HtmlGenericControl("asp:button");
+                btnDetails.Attributes["class"] = "btn btn-sm btn-soft-primary transition-3d-hover ml-auto";
+                btnDetails.Attributes["id"] = "btnDetails" + count;
+                btnDetails.InnerHtml = "Details";
+                btnDetails.Attributes["href"] = "property-description.aspx";
+                btnDetails.Attributes["OnClick"] = "btnDetails_Click(" + propertyID + "," + count.ToString() + ")";
+                btnDetails.Attributes["runat"] = "server";
+                div13.Controls.Add(btnDetails);
+
+// Button btnDetails = new Button();
+// btnDetails.ID = "Details";
+
+// btnDetails.Text = "Details";
+//// btnDetails.Attributes.Add("runat", "server");
+//// btnDetails.Attributes["type"] = "button";
+//// btnDetails.Attributes.Add("onclick", "btnDetails_Click(" + count.ToString() + ")");
+// btnDetails.Click += new EventHandler(btnDetails_Click);
+// div13.Controls.Add(btnDetails);
+
+searchClass result = new searchClass(firstName, neighborhood, Convert.ToInt32(price));
+                results[count] = result;
+                count++;
 
             }
+
+
 
         }
         else
         {
             ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "NoDatabaseAlertMessage", "alert('No Properties Found')", true);
         }
+        
+
+    }
+    //middleman
+    [WebMethod]
+    public static Boolean AddHostInfoToTenantFavortites(int PropertyID)
+    {
+        //set "tenant id/email" session variable to the passed in parameter tenantID
+        String email = HttpContext.Current.Session["USER_ID"].ToString();
+        
+        //use the "tenantID" variable above(which is the email string) to get the actual tenant id (the int we need to add to favprop) because the tenantid is whats added
+        SqlConnection sc = new SqlConnection(ConfigurationManager.ConnectionStrings["cs"].ConnectionString);
+        sc.Open();
+
+        //get tenant id using tenants email (tenantid above)
+        SqlCommand getTenantIDUsingEmail = new SqlCommand();
+        getTenantIDUsingEmail.Connection = sc;
+        getTenantIDUsingEmail.CommandText = "Select TenantID from Tenant where email=@email";
+        getTenantIDUsingEmail.Parameters.AddWithValue("@email", email);
+        SqlDataReader readGetTenantIDUsingEmail = getTenantIDUsingEmail.ExecuteReader();
+        int tID=0;
+        while (readGetTenantIDUsingEmail.Read())
+        {
+
+            tID = Convert.ToInt32(readGetTenantIDUsingEmail["TenantID"]);
+            HttpContext.Current.Session["TenantIDSesh"] = tID;
+
+        }
+        readGetTenantIDUsingEmail.Close();
+        //not executed yet
+
+
+
+
+
+        try
+        {
+            //insert the two parameters into the database table favorited properties
+            SqlCommand insertIntoFavorites = new SqlCommand("INSERT INTO FavoritedProperties (TenantID, PropertyID ) VALUES (@tenantId,@propertyId)", sc);
+            insertIntoFavorites.Parameters.AddWithValue("@tenantId", tID);
+            insertIntoFavorites.Parameters.AddWithValue("@propertyId", PropertyID);
+            insertIntoFavorites.ExecuteNonQuery();
+            
+        }
+
+        catch
+        {
+            return false;
+        }
+        return true;
+
+
+
     }
 
 

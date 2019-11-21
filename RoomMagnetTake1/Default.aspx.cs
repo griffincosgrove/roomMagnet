@@ -10,6 +10,11 @@ public partial class _Default : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         Session["Zipcode"] = "";
+        Session["detailsName"] = "";
+        Session["TenantIDSesh"] = "";
+        Session["PropertyIDSesh"] = "";
+
+        Session["HostIDSesh"] = "";
         Session["USER_ID"] = "";
         Session["SearchFromTDash"] = false;
         Session["Type"] = ""; //this is for tenant or host
