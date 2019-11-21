@@ -19,7 +19,6 @@ public class Property
     private DateTime lastUpdated;
 
 
-
     public Property(string address, string city, String zipcode, String state, double price, int maxNumberOfGuests, DateTime availableDate, string neighborhood,
         string description, int hostID, String imageFilePath, DateTime lastUpdated)
     {

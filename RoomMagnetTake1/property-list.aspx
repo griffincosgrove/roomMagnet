@@ -151,7 +151,6 @@
         </div>
       </div>
       <!-- End Topbar -->
-
       <div id="logoAndNav" class="container">
         <!-- Nav -->
         <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar u-header__navbar--no-space">
@@ -357,6 +356,8 @@
 
  
   <form id="content" role="main" runat="server">
+      <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="true">
+</asp:ScriptManager>
     <!-- Search Section -->
     <div class="bg-light">
       <div class="container space-1">
@@ -2318,7 +2319,44 @@
   <script src="../../assets/js/components/hs.fancybox.js"></script>
   <script src="../../assets/js/components/hs.svg-injector.js"></script>
   <script src="../../assets/js/components/hs.go-to.js"></script>
+    
+    <script type="text/javascript">
+   
+        function btnDetails_Click(PropertyID,count) {
+            $.ajax({
+                type: "POST",
+                url: "property-list.aspx/AddHostInfoToTenantFavortites",
+                data: JSON.stringify({PropertyID }),
+                contentType: "application/json; charset=utf-8",
+                success: function (result) {
+                    if (result){
+                          $('#btnDetails'+count).toggleClass('active') //active should be the change to the button
 
+                    }
+                }
+            });
+            //var lblName = "lblName";
+            //var count = count;
+            //var res = lblName.concat(count);
+            //var favname = document.getElementById(res).innerText;
+            //return confirm("property favorited" + favname);
+
+
+            //PageMethods.Info(S);
+
+            
+        //    PageMethods.btnDetails_Click(Success, Failure)
+        //}function Success(result) {  
+        //        alert(result);  
+        //    }  
+  
+        //    function Failure(error) {  
+        //        alert(error);  
+        //    }  
+
+        //alert(result);
+    }
+</script>
   <!-- JS Plugins Init. -->
   <script>
     $(window).on('load', function () {
@@ -2566,7 +2604,10 @@
        
         // initialization of go to
       $.HSCore.components.HSGoTo.init('.js-go-to');
-    });s
+      
+      //add favorited property to tenant
+            $()
+    });
   </script>
 </body>
 </html>
