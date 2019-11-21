@@ -145,7 +145,7 @@
                                 data-unfold-duration="500">
                                 <span class="position-relative">
                                     <span class="u-sidebar--account__toggle-text"><asp:Label ID="tenantNameLbl2" Text="User" runat="server"> </asp:Label></span>
-                                    <img class="u-sidebar--account__toggle-img" src="images/mary.jpg" alt="Image Description">
+                                    <img class="u-sidebar--account__toggle-img" src="images/deborah.jpg" alt="Image Description">
                                     <span class="badge badge-sm badge-success badge-pos rounded-circle">4</span>
                                 </span>
                             </a>
@@ -375,7 +375,7 @@
                         <!-- User Info -->
                         <div class="media d-block d-sm-flex align-items-sm-center">
                             <div class="u-lg-avatar position-relative mb-3 mb-sm-0 mr-3">
-                                <img class="img-fluid rounded-circle" src="images/mary.jpg" alt="Image Description">
+                                <img class="img-fluid rounded-circle" src="images/deborah.jpg" alt="Image Description">
                                 <span class="badge badge-md badge-outline-success badge-pos badge-pos--bottom-right rounded-circle">
                                     <span class="fas fa-check"></span>
                                 </span>
@@ -472,8 +472,8 @@
 
                                 <div class="form-group">
 
-                                        <asp:TextBox ID="txtInbox" runat="server" class="form-control" name="hostInbox"  TextMode="MultiLine" placeholder="hi lets video chat" aria-label="Enter your email address" required aria-describedby="emailLabel"
-                                            data-msg="Invalid Message."
+                                        <asp:TextBox ID="txtInbox" runat="server" class="form-control" name="hostInbox"  TextMode="MultiLine" placeholder="hi lets video chat" aria-label="Enter your email address" aria-describedby="emailLabel"
+                                            data-msg="Invalid Message"
                                             data-error-class="u-has-error"
                                             data-success-class="u-has-success" ReadOnly="True"></asp:TextBox>
 

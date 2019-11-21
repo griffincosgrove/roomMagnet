@@ -30,7 +30,7 @@ public partial class HostMessageCenter : System.Web.UI.Page
             {
                 tenantNameLbl2.Text = (reader["FirstName"].ToString() + " " + reader["LastName"].ToString());
                 hostID = Convert.ToInt32(reader["HostID"]);
-                tenantNameLbl.Text = ("Hi, Tenant " + reader["FirstName"].ToString() + "!");
+                tenantNameLbl.Text = ("Hi, Host " + reader["FirstName"].ToString() + "!");
                 tenantEmailLbl.Text = (reader["Email"].ToString());
 
             }
