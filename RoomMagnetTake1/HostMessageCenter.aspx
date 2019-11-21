@@ -461,6 +461,29 @@
                         
 
                     </div>
+                    <div class="row">
+                        <!-- Input -->
+                        <div class="col-sm-6 mb-6">
+                            <div class="js-form-message">
+                                <label id="lblInbox" class="form-label">
+                                    Inbox:
+                 
+                                </label>
+
+                                <div class="form-group">
+
+                                        <asp:TextBox ID="txtInbox" runat="server" class="form-control" name="hostInbox"  TextMode="MultiLine" placeholder="hi lets video chat" aria-label="Enter your email address" required aria-describedby="emailLabel"
+                                            data-msg="Invalid Message."
+                                            data-error-class="u-has-error"
+                                            data-success-class="u-has-success" ReadOnly="True"></asp:TextBox>
+
+                                        <small class="form-text text-muted">Messages may be monitored by an Admin.</small>
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- End Input -->
+
+                    </div>
 
                     <div class="row">
                         <!-- Input -->
@@ -472,7 +495,8 @@
                                 </label>
 
                                 <div class="form-group">
-                                        <asp:TextBox ID="TenantMsgtxt" runat="server" class="form-control" name="TenantMsgtxt"  placeholder="Reach out to the property owner" aria-label="Enter your email address" required aria-describedby="emailLabel"
+
+                                        <asp:TextBox ID="TenantMsgtxt" runat="server" class="form-control" name="TenantMsgtxt"  placeholder="Respond to Tenant" aria-label="Enter your email address" required aria-describedby="emailLabel"
                                             data-msg="Invalid Message."
                                             data-error-class="u-has-error"
                                             data-success-class="u-has-success"></asp:TextBox>

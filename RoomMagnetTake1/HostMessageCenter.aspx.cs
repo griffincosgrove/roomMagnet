@@ -20,36 +20,57 @@ public partial class HostMessageCenter : System.Web.UI.Page
             tenantEmailLbl.Text = Session["USER_ID"].ToString();
             tenantNameLbl2.Text = Session["USER_ID"].ToString();
 
-
             //select tenant information to insert into heading
-            SqlCommand selectTenantInfo = new SqlCommand("Select * from Host where Email= @userid", sc);
-            selectTenantInfo.Parameters.AddWithValue("@userid", Session["USER_ID"].ToString());
+            SqlCommand selectHostInfo = new SqlCommand("Select * from Host where Email= @userid", sc);
+            selectHostInfo.Parameters.AddWithValue("@userid", Session["USER_ID"].ToString());
 
-
-            SqlDataReader reader = selectTenantInfo.ExecuteReader();
+            int hostID = 0;
+            SqlDataReader reader = selectHostInfo.ExecuteReader();
             if (reader.Read())
             {
                 tenantNameLbl2.Text = (reader["FirstName"].ToString() + " " + reader["LastName"].ToString());
-
+                hostID = Convert.ToInt32(reader["HostID"]);
                 tenantNameLbl.Text = ("Hi, Tenant " + reader["FirstName"].ToString() + "!");
                 tenantEmailLbl.Text = (reader["Email"].ToString());
+
             }
             reader.Close();
 
-
+            
             //Sql command to get the message stuff
+            SqlCommand getTenantID = new SqlCommand("Select TenantID from MessageCenter where HostID = @hostId", sc);
+            getTenantID.Parameters.AddWithValue("@hostId", hostID);
+            int tID = 0;
+            SqlDataReader getTID = getTenantID.ExecuteReader();
+            if (getTID.Read())
+            {
+                tID = Convert.ToInt32(getTID["TenantID"]);
+            }
+            getTID.Close();
+
+            SqlCommand tenantName = new SqlCommand("Select * from Tenant where TenantID= @tenantId ", sc);
+            tenantName.Parameters.AddWithValue("@tenantId", tID);
+            SqlDataReader getTenantName = tenantName.ExecuteReader();
+            String name = "";
+            if (getTenantName.Read())
+            {
+                name = "Message from " + getTenantName["FirstName"].ToString() +  " " + getTenantName["LastName"].ToString();
+            }
+
+            getTenantName.Close();
+
             SqlCommand getMessages = new SqlCommand("Select * from MessageCenter where TenantID= @tenantId AND HostID = @hostId", sc);
-            getMessages.Parameters.AddWithValue("@tenantId", Session["TenantIDSesh"].ToString());
-            getMessages.Parameters.AddWithValue("@hostId", Session["HostIDSesh"].ToString());
+            getMessages.Parameters.AddWithValue("@tenantId", tID);
+            getMessages.Parameters.AddWithValue("@hostId", hostID);
 
             SqlDataReader messageReader = getMessages.ExecuteReader();
             while (messageReader.Read())
             {
 
                 String messages = messageReader["Message"].ToString();
-                String time = messageReader["Message"].ToString().ToString();
-                String messageWithTime = messages + "      " + time;
-
+                String time = messageReader["msgSentTime"].ToString();
+                String messageWithTime = name+ ":  " + messages + ", Received: " + time;
+                txtInbox.Text = messageWithTime;
 
                 ////dynamically create divs
                 //HtmlGenericControl div1 = new HtmlGenericControl("div");

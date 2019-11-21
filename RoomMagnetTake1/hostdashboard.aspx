@@ -442,7 +442,7 @@
                         data-event="hover"
                         data-animation-in="slideInUp"
                         data-animation-out="fadeOut">
-                      <a class="nav-link u-header__nav-link" href="javascript:;" >
+                      <a class="nav-link u-header__nav-link" href="HostMessageCenter.aspx" >
                         Messages
                       </a>
                     </li>
