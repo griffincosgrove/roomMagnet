@@ -13,7 +13,7 @@ public partial class _Default : System.Web.UI.Page
         Session["detailsName"] = "";
         Session["TenantIDSesh"] = "";
         Session["PropertyIDSesh"] = "";
-
+        Session["hostID"] = "";
         Session["HostIDSesh"] = "";
         Session["USER_ID"] = "";
         Session["SearchFromTDash"] = false;
