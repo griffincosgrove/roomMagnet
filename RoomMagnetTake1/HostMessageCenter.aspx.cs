@@ -22,7 +22,7 @@ public partial class HostMessageCenter : System.Web.UI.Page
 
 
             //select tenant information to insert into heading
-            SqlCommand selectTenantInfo = new SqlCommand("Select * from Tenant where Email= @userid", sc);
+            SqlCommand selectTenantInfo = new SqlCommand("Select * from Host where Email= @userid", sc);
             selectTenantInfo.Parameters.AddWithValue("@userid", Session["USER_ID"].ToString());
 
 
